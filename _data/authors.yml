@@ -1,0 +1,8 @@
+Martijn Froeling:
+  name   : "Martijn Froeling"
+  avatar : "/assets/images/authors/bjs.jpg"
+  bio    : "University Medical Center Utrecht"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mfroeling"

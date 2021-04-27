@@ -5,6 +5,7 @@ title: "About QMRITools"
 
 sidebar:
   nav: "about"
+  
 toc: true
 
 ---
