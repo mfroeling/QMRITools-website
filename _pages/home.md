@@ -31,7 +31,10 @@ permalink: /
 {% capture notice-text %}
 This website describes the functionality of QMRITools, a toolbox for analysis of quantitative magnetic resonance imaging data. The package contains processing tools related to quantitative MRI and spectroscopy of muscle, heart and nerves.
 
-** test **
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3820494.svg)](https://doi.org/10.5281/zenodo.3820494){:target="_blank"}
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.01204/status.svg)](https://doi.org/10.21105/joss.01204){:target="_blank"}
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues){:target="_blank"}
+
 {% endcapture %}
 
 <div class="notice--info" align="center">
