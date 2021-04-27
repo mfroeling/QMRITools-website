@@ -15,15 +15,6 @@ email:                    m.froeling@gmail.com
 #twitter_username: 
 github_username:          mfroeling 
 
-#github settings
-show_downloads:           false
-github:
-  zip_url:                https://github.com/mfroeling/QMRITools/releases/download/2.3.1/QMRITools.zip
-  tar_url:                https://github.com/mfroeling/QMRITools/releases/download/2.3.1/QMRITools.zip
-  owner_url:              https://github.com/mfroeling
-  owner_name:             Martijn Froeling, PhD
-
-
 # theme settings
 markdown:                 kramdown
 remote_theme:             mmistakes/minimal-mistakes
@@ -32,8 +23,8 @@ search:                   true
 
 # website settings
 google_analytics:         UA-164529139-1
-url:                      http://mfroeling.github.io/QMRITools
-baseurl:                  /QMRITools/
+url:                      "https://qmritools.netlify.com"
+baseurl:                  ""
 repository:               mfroeling/QMRITools
 logo:                     "/assets/images/icon.png"
 
