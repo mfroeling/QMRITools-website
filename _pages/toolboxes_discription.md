@@ -1,10 +1,10 @@
 ---
 
-permalink: /Toolboxes_discription/
+permalink: /toolboxes/discription/
 title: "Discription of toolboxes"
 
 sidebar:
-  nav: "Toolboxes"
+  nav: "toolboxes"
   
 toc: true
 
@@ -53,7 +53,7 @@ Herraez et al. 2002). It also contains a function that allows simulating
 gradient echo Dixon data. Most of the functionality is demonstrated in
 the `demo.nb`.
 
-![IDEAL based Dixon reconstruction: fitted fat fractions as a function of the imposed fat fraction, SNR and B0 field offset.](../assets/images/dixon.png)
+![IDEAL based Dixon reconstruction: fitted fat fractions as a function of the imposed fat fraction, SNR and B0 field offset.](../../assets/images/dixon.png)
 
 ## ElastixTools
 
@@ -81,7 +81,7 @@ homogeneously distributed gradient directions for DWI experiments. It
 also provides functions to convert bval and bvec files to bmatrix and
 vice versa. Most of the functionality is demonstrated in the `demo.nb`.
 
-![The graphical user interface of the gradient generation tool.](../assets/images/gradients-2.png)
+![The graphical user interface of the gradient generation tool.](../../assets/images/gradients-2.png)
 
 ## ImportTools
 
@@ -99,7 +99,7 @@ There are two main functions: non linear fitting and Bayesian fitting
 `demo.nb`.
 
 <p align="center">
-<img src="../assets/images/ivim.png" alt="Visualization of IVIM fitting."  width="80%" />
+<img src="../../assets/images/ivim.png" alt="Visualization of IVIM fitting."  width="80%" />
 </p>
 
 ## JcouplingTools
@@ -164,7 +164,7 @@ echo data (Marty et al. 2016). Therefore it provides functions to
 simulate and evaluate EPG. Some of the functionality is demonstrated in
 the `demo.nb`.
 
-![Demonstration of EPG based T2 fitting: the fitted water T2 relaxation as a function of B1, SNR and fat fraction.](../assets/images/epg-t2.png)
+![Demonstration of EPG based T2 fitting: the fitted water T2 relaxation as a function of B1, SNR and fat fraction.](../../assets/images/epg-t2.png)
 
 ## SimulationTools
 
@@ -180,9 +180,9 @@ and allows to fit spectra using simulated basis spectra. Some of the functionali
 is demonstrated in the `demo.nb`. Dynamic spectra and chemical shift data can be denoised
 using PCA based de-noising (Froeling et al. 2020). 
 
-![Comparison of fitted and measured 31P spectra of muscle.](../assets/images/spectra_fit.gif)
+![Comparison of fitted and measured 31P spectra of muscle.](../../assets/images/spectra_fit.gif)
 
-![Resulting basis spectra of a fit of 31P spectra of muacle.](../assets/images/spectra_fit.jpg)
+![Resulting basis spectra of a fit of 31P spectra of muacle.](../../assets/images/spectra_fit.jpg)
 
 ## TensorTools
 
@@ -195,7 +195,7 @@ detections using REKINDLE (Tax et al. 2015) and data preparation
 includes drift correction (Vos et al. 2017). Most of the functionality
 is demonstrated in the `demo.nb`.
 
-![MD and FA as a function of SNR and fat fraction. Results are from simulated data using an iWLLS algorithm with outlier rejection.](../assets/images/dti.png)
+![MD and FA as a function of SNR and fat fraction. Results are from simulated data using an iWLLS algorithm with outlier rejection.](../../assets/images/dti.png)
 
 ## TaggingTools
 Currently under development
@@ -203,7 +203,7 @@ Currently under development
 ## VisteTools
 
 Import and export functions for tensor data which can be used in the
-[vIST/e](https://sourceforge.net/projects/viste/) tractography tool. None
+[vIST/e](https://sourceforge.net/projects/viste/){:target="_blank"} tractography tool. None
 of the functionality is demonstrated in the `demo.nb`.
 
 ## References

@@ -1,10 +1,10 @@
 ---
 
-permalink: /Toolboxes/
+permalink: /toolboxes/
 title: "List of toolboxes and functionality"
 
 sidebar:
-  nav: "Toolboxes"
+  nav: "toolboxes"
 
 ---
 
