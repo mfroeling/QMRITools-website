@@ -4,7 +4,7 @@ permalink: /documentation/
 title: "QMRITools Documentation and installation"
 
 sidebar:
-  nav: "documentation"
+  nav: "Documentation"
 
 ---
 

@@ -5,8 +5,6 @@ title: "List of toolboxes and functionality"
 
 sidebar:
   nav: "Toolboxes"
-  
-toc: true
 
 ---
 
