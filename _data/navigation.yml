@@ -2,40 +2,48 @@ main:
   - title:                   "Home"
     url:                     /
     description:             "QMRITools Home"
+  - title:                   "Toolboxes"
+    url:                     /Toolboxes/
+    description:             "List of toolboxes and functionality"
+  - title:                   "Documentation"
+    url:                     /Documentation/
+    description:             "List of toolboxes and functionality"
   - title:                   "About"
     url:                     /about/
-    description:             "QMRITools information and lincence"
-    children:                
-       - title:              "test"
-         url:                /about_test/
+    description:             "QMRITools information and lincence"    
 
 
-# software sidebar links
-software:
-  - title: "Software & Code"
+# Toolboxes sidebar links
+Toolboxes:
+  - title: "Toolboxes"
     children:
-        - title: "How to access code"
-          url: /software/
-        - title: "Contribute your code"
+      - title: "Toolboxes and functionality"
+        url: /toolboxes/
+      - title: "List of toolboxes"
+        url: /toolboxes_list/
+      - title: "Discription of toolboxes"
+        url: /toolboxes_discription/
+
+# Documentation sidebar links
+Documentation:
+  - title: "Documentation"
+    children:
+      - title: "Toolboxes and functionality"
+        url: /toolboxes/
+      - title: "List of toolboxes"
+        url: /toolboxes_list/
+      - title: "Discription of toolboxes"
+        url: /toolboxes_discription/
+
+# About sidebar links
+about:
+  - title: "About QMRITools"
+    children:
+        - title: "Information"
+          url: /about/
+        - title: "Licence"
           url: /software_contribute/
-
-  - title: "Software Packages"
+  - title: ""
     children:
-        - title: "COMPLETE LIST"
-          url: /software_all/
-        - title: "Analysis & Quantification"
-          url: /software_analysis/
-        - title: "Data Simulation & Basis Set Generation"
-          url: /software_simulation/
-        - title: "Deidentification"
-          url: /software_deid/
-        - title: "Input/Output"
-          url: /software_io/
-        - title: "Processing"
-          url: /software_processing/
-        - title: "Reproducible Workflows"
-          url: /software_reproducible_workflows/
-        - title: "Visualization"
-          url: /software_visualization/
-
-
+        - title: ""
+          url: /

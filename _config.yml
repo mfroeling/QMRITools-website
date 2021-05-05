@@ -4,12 +4,14 @@
 # Theme Settings
 markdown:                 kramdown
 remote_theme:             mmistakes/minimal-mistakes
-minimal_mistakes_skin:    "dark"
+minimal_mistakes_skin:    "neon"
 
 
 # Site Settings
-locale:                   "en-US"
 title:                    QMRITools
+locale:                   "en-US"
+name:                     "Martijn Froeling"
+email:                    m.froeling@gmail.com
 description:              >- # this means to ignore newlines
                           This website describes the functionality of QMRITools, a toolbox for analysis 
                           of quantitative magnetic resonance imaging data. The package contains 
@@ -18,7 +20,7 @@ tagline:                  QMRITools for Mathematica
 search:                   true
 url:                      "https://qmritools.netlify.com"
 baseurl:                  ""
-repository:               mfroeling/QMRITools
+repository:               mfroeling/QMRITools-website
 logo:                     "/assets/images/icon.png"
 
 
