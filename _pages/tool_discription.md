@@ -1,6 +1,6 @@
 ---
 
-permalink: /toolboxes/discription/
+permalink: /tool/discription/
 title: "Discription of toolboxes"
 
 sidebar:

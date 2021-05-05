@@ -3,7 +3,7 @@ main:
     url:                     /
     description:             "QMRITools Home"
   - title:                   "Toolboxes"
-    url:                     /toolboxes/
+    url:                     /tool/
     description:             "List of toolboxes and functionality"
   - title:                   "Documentation"
     url:                     /doc/
@@ -18,11 +18,11 @@ toolboxes:
   - title: "Toolboxes"
     children:
       - title: "Toolboxes and functionality"
-        url: /toolboxes/
+        url: /tool/
       - title: "List of toolboxes"
-        url: /toolboxes/list/
+        url: /tool/list/
       - title: "Discription of toolboxes"
-        url: /toolboxes/discription/
+        url: /tool/discription/
 
 # Documentation sidebar links
 documentation:
@@ -44,8 +44,4 @@ about:
         - title: "Information"
           url: /about/
         - title: "Licence"
-          url: /software/contribute/
-  - title: ""
-    children:
-        - title: ""
-          url: /
+          url: /about/licence/

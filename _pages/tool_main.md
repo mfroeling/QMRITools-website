@@ -1,6 +1,6 @@
 ---
 
-permalink: /toolboxes/
+permalink: /tool/
 title: "List of toolboxes and functionality"
 
 sidebar:
