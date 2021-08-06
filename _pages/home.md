@@ -35,7 +35,6 @@ This website describes the functionality of QMRITools, a toolbox for analysis of
 [![DOI](https://joss.theoj.org/papers/10.21105/joss.01204/status.svg)](https://doi.org/10.21105/joss.01204){:target="_blank"}
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mfroeling/QMRITools){:target="_blank"}
 
-
 [![MR-Hub](assets/images/MR-Hub.png)](https://ismrm.github.io/mrhub/){:target="_blank"}
 [![MRSHub](assets/images/MRSHub.png)](https://mrshub.org/software_analysis/#QMRITools){:target="_blank"}
 [![OpenSourceImaging](assets/images/open_source_images.png)](https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/){:target="_blank"}
@@ -44,6 +43,12 @@ This website describes the functionality of QMRITools, a toolbox for analysis of
 
 <div class="notice--info" align="center">
   <h1>Welcome to QMRITools!</h1>
+  <p align="center">
+  <img 
+  src="../../assets/images/icon.png"
+  title="QMRTools" 
+  alt="QMRTools | by Martijn Froeling PhD"/>
+</p>
   {{ notice-text | markdownify }}
 </div>
 

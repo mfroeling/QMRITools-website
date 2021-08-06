@@ -9,12 +9,25 @@ sidebar:
 toc: true
   
 ---
+<p align="center">
 
-[![wolfram language](../assets/images/wolfram_language.png)](https://www.wolfram.com/language/){:target="_blank"}
-[![wolfram workbench](../assets/images/wolfram_workbench.jpg)](https://www.wolfram.com/workbench/){:target="_blank"}
-[![eclipse](../assets/images/eclipse.png)](https://www.eclipse.org/){:target="_blank"}
-[![Wolfram Mathematica](../assets/images/wolfram_mathematica.png)](http://www.wolfram.com/mathematica/){:target="_blank"}
-[![Wolfram Community](../assets/images/community.png)](https://community.wolfram.com/groups/-/m/t/1661539){:target="_blank"}
+<a href="https://www.wolfram.com/language/" target="_blank" style="text-decoration: none">
+<img alt="wolfram language" title="wolfram language" src="../assets/images/wolfram_language.png">
+</a>
+<a href="https://www.wolfram.com/workbench/" target="_blank" style="text-decoration: none">
+<img alt="wolfram workbench" title="wolfram workbench" src="../assets/images/wolfram_workbench.jpg">
+</a>
+<a href="https://www.eclipse.org/" target="_blank" style="text-decoration: none">
+<img alt="eclipse" title="eclipse" src="../assets/images/eclipse.png">
+</a>
+<a href="http://www.wolfram.com/mathematica/" target="_blank" style="text-decoration: none">
+<img alt="Wolfram Mathematica" title="Wolfram Mathematica" src="../assets/images/wolfram_mathematica.png">
+</a>
+<a href="https://community.wolfram.com/groups/-/m/t/1661539" target="_blank" style="text-decoration: none">
+<img alt="Wolfram Community" title="Wolfram Community" src="../assets/images/community.png">
+</a>
+
+</p>
 
 `QMRITools` is a collection of tools and functions for processing
 quantitative MRI data. The toolbox is developed for the [Wolfram

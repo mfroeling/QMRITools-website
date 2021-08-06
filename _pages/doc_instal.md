@@ -15,13 +15,8 @@ Manual installation:
 1.	Download the `QMRITools.zip`.
 2.	Extract the `QMRITools` folder and place it in the Mathematica UserBaseDirectory &gt; Applications.
 
-`FileNameJoin[{$UserBaseDirectory, "Applications"}]`
-
-Automatic installation:
-1.	Download the `QMRITools-2.3.3.paclet`.
-2.	Install the packlet using `PacletInstall`.
-
-`PackletInstall["xxx\\QMRITools-2.3.3.paclet"]`  
+If you want to know your UserBaseDirectory run the following code in mathematica
+`SystemOpen[FileNameJoin[{$UserBaseDirectory, "Applications"}]]`
 
 Some functions of QMRITools call on external executables and software.
 These executables need to be present in “QMRITools” and are included in
@@ -40,7 +35,9 @@ All functionality is tested under Windows 10 with the latest Mathematica
 version. The Mathematica code is cross platform compatible with the
 exception of the external tools which are compiled for each OS. The
 toolbox provides compiled versions for each OS but their functionality
-is not guaranteed. The Elastix version used is 4.9 with OpenCL support.
+is not guaranteed. 
+
+The Elastix version used is 4.9 with OpenCL support.
 Additionally Elastix needs to be compiles with the PCA metrics, all DTI
 related parameters and all affine related parameters.
 

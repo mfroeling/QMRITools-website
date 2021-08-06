@@ -7,7 +7,7 @@ main:
     description:             "List of toolboxes and functionality"
   - title:                   "Documentation"
     url:                     /doc/
-    description:             "List of toolboxes and functionality"
+    description:             "QMRITools documentation"
   - title:                   "About"
     url:                     /about/
     description:             "QMRITools information and lincence"    
@@ -19,8 +19,6 @@ toolboxes:
     children:
       - title: "Toolboxes and functionality"
         url: /tool/
-      - title: "List of toolboxes"
-        url: /tool/list/
       - title: "Discription of toolboxes"
         url: /tool/discription/
 
@@ -34,8 +32,6 @@ documentation:
         url: /doc/instal/
       - title: "Demonstartion"
         url: /doc/demo/
-      - title: "Documentation"
-        url: /doc/documentation/
 
 # About sidebar links
 about:
