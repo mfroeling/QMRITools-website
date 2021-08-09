@@ -19,8 +19,8 @@ toolboxes:
     children:
       - title: "Toolboxes and functionality"
         url: /tool/
-      - title: "Discription of toolboxes"
-        url: /tool/discription/
+      - title: "Description of toolboxes"
+        url: /tool/description/
 
 # Documentation sidebar links
 documentation:

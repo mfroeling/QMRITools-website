@@ -94,10 +94,10 @@ defaults:
       type:               posts
     values:
       layout:             single
-      author_profile:     true
+      author_profile:     false
       read_time:          false
       comments:           false
-      share:              true
+      share:              false
       related:            false
 # _pages
   - scope:
@@ -108,7 +108,7 @@ defaults:
       author_profile:     false
       read_time:          false
       comments:           false
-      share:              true
+      share:              false
       related:            false
 
 github: [metadata]

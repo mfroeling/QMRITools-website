@@ -1,7 +1,7 @@
 ---
 
-permalink: /tool/discription/
-title: "Discription of toolboxes"
+permalink: /tool/description/
+title: "Description of toolboxes"
 
 sidebar:
   nav: "toolboxes"
@@ -11,7 +11,7 @@ toc: true
 ---
 
 <a name="top"></a>
-On this page you can find a small discription of the functionality
+On this page you can find a small description of the functionality
 of the toolboxes included in `QMRITools`. For a full overview of all
 functionality see the [documentation](../doc) or the [function listing notebook](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/All-Functions.nb){:target="_blank"}.
 For toolboxes that have the `demo.nb` tag most of the most of the functionality [demo notebook](../doc/demo/).
@@ -19,7 +19,7 @@ For toolboxes that have the `demo.nb` tag most of the most of the functionality 
 
 --------------------------------------------------------------------------
 
-# CardiacTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# CardiacTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 A collection of tools to analyze cardiac data. The main features are
@@ -40,7 +40,7 @@ width="90%"/>
 
 --------------------------------------------------------------------------
 
-# CoilTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# CoilTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 A collection of tools to evaluate and visualize complex multi-coil data. The functions
 are specific for analysis of multi-coil magnitude and noise data which
@@ -59,16 +59,15 @@ width="90%"/>
 
 --------------------------------------------------------------------------
 
-# DenoiseTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# DenoiseTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The toobox provides two algorithms that allow denoising of DWI data. The
 first is based on and LMMSE framework (Aja-Fernandez et al. 2008) and
 the second is based on a random matrix theory and Principal component
-analysis framework (Veraart, Fieremans, and Novikov 2016; Veraart et al.
-2016). Furthermore, it provides an anisotropic filters for denoising the
+analysis framework (Veraart et al. 2016). Furthermore, it provides an anisotropic filters for denoising the
 estimated diffusion tensor which provides more reliable fiber
-orientation analysis and fiber tractography (Lee, Chung, and Alexander 2006; Damon et al. 2021). 
+orientation analysis and fiber tractography (Lee et al. 2006; Damon et al. 2021). 
 
 <p align="center">
 <img 
@@ -81,7 +80,7 @@ width="90%"/>
 
 --------------------------------------------------------------------------
 
-# DixonTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# DixonTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 An IDEAL based Dixon reconstruction algorithm (Reeder et al. 2005; Yu et
@@ -109,7 +108,7 @@ width="90%"/>
 
 --------------------------------------------------------------------------
 
-# ElastixTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# ElastixTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 A wrapper that calls the Elastix registration framework (Klein et al.
@@ -137,7 +136,7 @@ width="90%"/>
 
 --------------------------------------------------------------------------
 
-# GeneralTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# GeneralTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 This toolbox provides core functions used in many other functions and
@@ -148,7 +147,7 @@ rescaling, transformation and padding.
 
 --------------------------------------------------------------------------
 
-# GradientTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# GradientTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The main feature is an algorithm that uses static repulsion (Jones,
@@ -162,52 +161,80 @@ vice versa.
 
 --------------------------------------------------------------------------
 
-# ImportTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# ImportTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 Allows importing DCM data or DCM header attributes. These functions are
 rarely used since the toolbox mostly uses the NIfTY data format and
 provides tools to convert DCM to NIfTI via
 [dcm2niix](https://github.com/rordenlab/dcm2niix). 
+Furthermore the default DCM importing capability of Mathematica has improved over the years.
 
 
 --------------------------------------------------------------------------
 
-# IVIMTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# IVIMTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The toolbox includes functions to perform IVIM fitting of DWI data.
 There are two main functions: non linear fitting and Bayesian fitting
-(Orton et al. 2014). 
+(Orton et al. 2014). It also contains functions to remove the IVIM bias signal from 
+diffusion weighted data using multiple b-values (de Luca et al. 2017). 
 
 <p align="center">
-<img src="../../assets/images/ivim.png" alt="Visualization of IVIM fitting."  width="80%" />
+<img src="../../assets/images/ivim fit.jpg"
+title="ivim fitting " 
+alt="effect of inculding ivim into the DTI fit."  
+width="90%"/>
+</p>
+
+<p align="center">
+<img src="../../assets/images/ivim.png" 
+title="ivim plot"
+alt="Visualization of IVIM fitting."  
+width="90%" />
 </p>
 
 
 --------------------------------------------------------------------------
 
-# JcouplingTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# JcouplingTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 A toolbox that allows simulation of NMR spectra using Hamiltonians based
 on methods from [FID-A](https://github.com/CIC-methods/FID-A). It allows
-simulating large spin systems (Castillo, Patiny, and Wist 2011) and was
-mainly implemented to investigate fat spectra in TSE (Stokes et al.
-2013). 
+simulating large spin systems (Castillo et al. 2011) and was initially implemented 
+to investigate fat spectra in TSE acquisitions of muscle (Stokes et al.
+2013). However its most prominent application now is to generate basis spectra for
+fitting acquired MRS data.
+
+<p align="center">
+<img src="../../assets/images/jcoupling.png" 
+title="Simulated 31p spectra"
+alt="Simulated 31p spectra."  
+width="90%" />
+</p>
 
 
 --------------------------------------------------------------------------
 
-# MaskingTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# MaskingTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 Tools for masking and homogenization of data. It provides functions for
 smoothing cutting and merging masks and functions for the evaluation of
 data within masks. 
 
+<p align="center">
+<img src="../../assets/images/segment.gif" 
+title="Muscle segmentation"
+alt="Visualization of manual segmented muscles."  
+width="90%" />
+</p>
+
+
 --------------------------------------------------------------------------
 
-# NiftiTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# NiftiTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 Import and export of the NIfTI file format. Part of the code is based on
@@ -221,7 +248,7 @@ experiments which are probably not generalizable.
 
 --------------------------------------------------------------------------
 
-# PhysiologyTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# PhysiologyTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 Functions for importing and analyzing Philips physiology logging and
 RespirAct trace files. The functions are rarely used and not well
@@ -230,17 +257,24 @@ supported.
 
 --------------------------------------------------------------------------
 
-# PlottingTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# PlottingTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 A variety of functions for visualization of various data types. The main
 functions are ‘PlotData’ and ‘PlotData3D’ which allow viewing 2D, 3D and
 4D data. 
 
+<p align="center">
+<img src="../../assets/images/PlotData.png" 
+title="PlotData window"
+alt="Data viewer for 2D, 3D and 4D data."  
+width="90%" />
+</p>
+
 
 --------------------------------------------------------------------------
 
-# Reconstruction Tools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# ReconstructionTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 A variety of function for raw MRI data reconstruction. The main goal was to 
 create a set of functions that allow for the reconstruction of multi coil 3D CSI 
@@ -249,7 +283,7 @@ data and and low SNR 31P imaging data.
 
 --------------------------------------------------------------------------
 
-# ProcessingTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# ProcessingTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The toolbox comprises a variety of functions that allow data
@@ -258,24 +292,50 @@ data sets into one continuous data set (Froeling et al. 2015) or to
 split data of two legs into two separate data-sets. Furthermore, it
 contains a collection of functions for data evaluation and analysis.
 
+<p align="center">
+<img src="../../assets/images/joining.png" 
+title="Joining data acquired in multiple stacks"
+alt="Joining data acquired in multiple stacks."  
+width="90%" />
+</p>
+
+<p align="center">
+<img src="../../assets/images/split.jpg" 
+title="Split data in left and right"
+alt="Automatically find the plan where to split data into left and right leg."  
+width="90%" />
+</p>
+
 
 --------------------------------------------------------------------------
 
-# RelaxometryTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# RelaxometryTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 A collection of tools to fit T2, T2\*, T1rho and T1 relaxometry data.
 The main function of this toolbox is an extended phase graph (EPG)
 (Weigel 2015) method for multi-compartment T2 fitting of multi-echo spin
 echo data (Marty et al. 2016). Therefore it provides functions to
-simulate and evaluate EPG. 
+simulate and evaluate EPG (Keene et al. 2020). 
 
-![Demonstration of EPG based T2 fitting: the fitted water T2 relaxation as a function of B1, SNR and fat fraction.](../../assets/images/epg-t2.png)
+<p align="center">
+<img src="../../assets/images/epg.jpg" 
+title="EPG simulation with slice profile"
+alt="Simulated EPG signal over the slice profile for combined water and fat signals."  
+width="90%" />
+</p>
+
+<p align="center">
+<img src="../../assets/images/epg-t2.png" 
+title="EPG fitting simulation"
+alt="Demonstration of EPG based T2 fitting: the fitted water T2 relaxation as a function of B1, SNR and fat fraction."  
+width="90%" />
+</p>
 
 
 --------------------------------------------------------------------------
 
-# SimulationTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# SimulationTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The main purpose of this toolbox is to simulate DTI based DWI data and
@@ -285,21 +345,31 @@ the simulated signals (Froeling et al. 2013).
 
 --------------------------------------------------------------------------
 
-# SpectroTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# SpectroTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The main purpose of this toolbox is to process and visualize spectra data
 and allows to fit spectra using simulated basis spectra. Dynamic spectra and 
 chemical shift data can be denoised using PCA based de-noising (Froeling et al. 2020). 
 
-![Comparison of fitted and measured 31P spectra of muscle.](../../assets/images/spectra_fit.gif)
+<p align="center">
+<img src="../../assets/images/spectra_fit.gif" 
+title="31P spectra fitting"
+alt="Comparison of fitted and measured 31P spectra of muscle."  
+width="90%" />
+</p>
 
-![Resulting basis spectra of a fit of 31P spectra of muacle.](../../assets/images/spectra_fit.jpg)
+<p align="center">
+<img src="../../assets/images/spectra_fit.jpg" 
+title="fit results"
+alt="Resulting basis spectra of a fit of 31P spectra of muscle."  
+width="90%" />
+</p>
 
 
 --------------------------------------------------------------------------
 
-# TensorTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# TensorTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 `demo.nb`<br>
 The original toolbox where the project started. The main functions in
@@ -310,34 +380,45 @@ default method is an iterative weighted linear least squares approach
 detections using REKINDLE (Tax et al. 2015) and data preparation
 includes drift correction (Vos et al. 2017). 
 
-![MD and FA as a function of SNR and fat fraction. Results are from simulated data using an iWLLS algorithm with outlier rejection.](../../assets/images/dti.png)
+<p align="center">
+<img src="../../assets/images/tensor.png" 
+title="Fitted tensor"
+alt="Fitted tensor from DTI data of calf muscle."  
+width="90%" />
+</p>
+
+<p align="center">
+<img src="../../assets/images/dti.png" 
+title="Tensor simulation"
+alt="MD and FA as a function of SNR and fat fraction. Results are from simulated data using an iWLLS algorithm with outlier rejection."  
+width="90%" />
+</p>
 
 
 --------------------------------------------------------------------------
 
-#TractographyTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# TractographyTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 `demo.nb`<br>
 
 
 --------------------------------------------------------------------------
 
-# TaggingTools [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# TaggingTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 Currently under development
 
 
 --------------------------------------------------------------------------
 
-# VisteTools
+# VisteTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 Import and export functions for tensor data which can be used in the
-[vIST/e](https://sourceforge.net/projects/viste/){:target="_blank"} tractography tool. None
-of the functionality is demonstrated in the `demo.nb`.
+[vIST/e](https://sourceforge.net/projects/viste/){:target="_blank"} tractography tool. 
 
 
 --------------------------------------------------------------------------
 
-# References [![up](../../assets/images/arrow.png)](../discription/#top "Top of page")
+# References [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 
 - Abdul-Rahman, Hussein S., Munther A. Gdeisat, David R. Burton, Michael
 J. Lalor, Francis Lilley, and Christopher J. Moore. 2007. “Fast and
@@ -400,9 +481,7 @@ path.” *Applied Optics* 41 (35): 7437. [link](https://doi.org/10.1364/AO.41.00
 
 - Jones, D. K., M. A. Horsfield, and A. Simmons. 1999. “Optimal strategies
 for measuring diffusion in anisotropic systems by magnetic resonance
-imaging.” *Magnetic Resonance in Medicine* 42 (3). Division of Medical
-Physics, University of Leicester, Leicester Royal Infirmary, Leicester
-LE1 5WW, United Kingdom.: 515–25. [link](https://doi.org/10.1002/(SICI)1522-2594).
+imaging.” *Magnetic Resonance in Medicine* 42 (3). [link](https://doi.org/10.1002/(SICI)1522-2594).
 
 - Klein, Stefan, Marius Staring, Keelin Murphy, Max A. Viergever, and
 Josien P. W. Pluim. 2010. “Elastix: A toolbox for intensity-based
@@ -410,12 +489,12 @@ medical image registration.” *IEEE Transactions on Medical Imaging* 29
 (1): 196–205. [link](https://doi.org/10.1109/TMI.2009.2035616).
 
 - Lee, Jee Eun, M. K. Chung, and A. L. Alexander. 2006. “Evaluation of
-Anisotropic Filters for Diffusion Tensor Imaging.” In *3[link](sup)rd[link](/sup)
-Ieee International Symposium on Biomedical Imaging*, 77–80. IEEE. [link](https://doi.org/10.1109/ISBI.2006.1624856).
+Anisotropic Filters for Diffusion Tensor Imaging.” In *IEEE International 
+Symposium on Biomedical Imaging*, 77–80. IEEE. [link](https://doi.org/10.1109/ISBI.2006.1624856).
 
 - Damon, B. M., Ding, Z., Hooijmans, M. T., Anderson, A. W., Zhou, X., 
 Coolbaugh, C. L., George, M. K., & Landman, B. A. (2021). "A MATLAB toolbox for muscle 
-diffusion-tensor MRI tractography. Journal of Biomechanics, 124, 110540. [link](https://doi.org/10.1016/j.jbiomech.2021.110540)
+diffusion-tensor MRI tractography." *Journal of Biomechanics*, 124, 110540. [link](https://doi.org/10.1016/j.jbiomech.2021.110540)
 
 - Marty, Benjamin, Pierre Yves Baudin, Harmen Reyngoudt, Noura Azzabou,
 Ericky C. A. Araujo, Pierre G. Carlier, and Paulo L. de Sousa. 2016.
@@ -427,6 +506,9 @@ relaxometry with stimulated echo compensation.” *NMR in Biomedicine* 29
 “Improved intravoxel incoherent motion analysis of diffusion
 weighted imaging by data driven Bayesian modeling.” *Magnetic Resonance
 in Medicine* 71 (1): 411–20. [link](https://doi.org/10.1002/mrm.24649).
+
+- De Luca, A., Bertoldo, A., & Froeling, M. (2017). "Effects of perfusion on DTI and DKI 
+estimates in the skeletal muscle. *Magnetic Resonance in Medicine*, 78(1), 233–246. [link](https://doi.org/10.1002/mrm.26373)
 
 - Reeder, Scott B., Angel R. Pineda, Zhifei Wen, Ann Shimakawa, Huanzhou
 Yu, Jean H. Brittain, Garry E. Gold, Christopher H. Beaulieu, and
@@ -471,6 +553,12 @@ Medicine* 77 (1): 285–99. [link](https://doi.org/10.1002/mrm.26124).
 - Weigel, Matthias. 2015. “Extended phase graphs: Dephasing, RF pulses,
 and echoes - pure and simple.” *Journal of Magnetic Resonance Imaging*
 41 (2). Wiley-Blackwell: 266–95. [link](https://doi.org/10.1002/jmri.24619).
+
+- Keene, K. R., Beenakker, J. W. M., Hooijmans, M. T., Naarding, K. J., Niks, E. H., Otto, L. A. M., 
+van der Pol, W. L., Tannemaat, M. R., Kan, H. E., and Froeling, M. "T2 relaxation-time mapping in healthy and diseased skeletal muscle using extended phase graph algorithms." *Magnetic Resonance in Medicine*, 84(5), 2656–2670. [link](https://doi.org/10.1002/mrm.28290)
+
+- Keene, K. R., Beenakker, J. W. M., Hooijmans, M. T., Naarding, K. J., Niks, E. H., Otto, L. A. M., 
+van der Pol, W. L., Tannemaat, M. R., Kan, H. E., and Froeling, M. "T2 relaxation-time mapping in healthy and diseased skeletal muscle using extended phase graph algorithms." *Magnetic Resonance in Medicine*, mrm.28290. [link](https://doi.org/10.1002/mrm.28290)
 
 - Yu, Huanzhou, Ann Shimakawa, Charles A. McKenzie, Ethan Brodsky, Jean H.
 Brittain, and Scott B. Reeder. 2008. “Multiecho water-fat separation and

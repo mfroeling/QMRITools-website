@@ -29,7 +29,11 @@ permalink: /
 ---
 
 {% capture notice-text %}
-This website describes the functionality of QMRITools, a toolbox for analysis of quantitative magnetic resonance imaging data. The package contains processing tools related to quantitative MRI and spectroscopy of muscle, heart and nerves.
+`QMRITools` is a collection of tools and functions for processing quantitative MRI data and runs in the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/) and is developed and 
+maintained by [Martijn Froeling](https://www.researchgate.net/profile/Martijn-Froeling){:target="_blank"}. 
+The toolbox was developed mostly in the context of quantitative muscle ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}), 
+nerve and cardiac magnetic resonance imaging. The library of functions grows along with the research it is
+used for.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3820494.svg)](https://doi.org/10.5281/zenodo.3820494){:target="_blank"}
 [![DOI](https://joss.theoj.org/papers/10.21105/joss.01204/status.svg)](https://doi.org/10.21105/joss.01204){:target="_blank"}
@@ -44,19 +48,13 @@ This website describes the functionality of QMRITools, a toolbox for analysis of
 <div class="notice--info" align="center">
   <h1>Welcome to QMRITools!</h1>
   <p align="center">
-  <img 
-  src="../../assets/images/icon.png"
-  title="QMRTools" 
-  alt="QMRTools | by Martijn Froeling PhD"/>
-</p>
+  	<a href="https://github.com/mfroeling/QMRITools/" target="_blank" style="text-decoration: none">
+  	<img src="../../assets/images/icon.png" title="QMRTools" alt="QMRTools | by Martijn Froeling PhD" width="100"/>
+  	</a>
+  </p>
   {{ notice-text | markdownify }}
 </div>
 
-QMRITools is developed and maintained by [Martijn Froeling](https://www.researchgate.net/profile/Martijn-Froeling){:target="_blank"}
-`QMRITools` is a collection of tools and functions for processing quantitative MRI data and runs in the latest version of
-[Wolfram Mathematica](http://www.wolfram.com/mathematica/). The toolbox was developed mostly in the 
-context of quantitative muscle ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}), 
-nerve and cardiac magnetic resonance imaging. The library of functions grows along with the research it is
-used for.
+This website describes the functionality of `QMRITools`, a toolbox for analysis of quantitative magnetic resonance imaging data. The package contains processing tools related to quantitative MRI and spectroscopy of muscle, heart and nerves.
 
 {% include feature_row %}
