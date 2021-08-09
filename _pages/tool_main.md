@@ -11,7 +11,8 @@ sidebar:
 `QMRITools` contains various toolboxes dedicated to various quantitative MRI techniques. It supports 
 import and export of various file formats, but the main fileformat on which the tools are build is *.nii. The main focus is on Diffusion tensor imaging, extended phase graph based T2 mapping, Dixon reconstruction and phosphorus spectroscopy. It also contains some general function for de-noising of multidimensional data, masking and data processing. 
 
-The full list of toolboxes can be found below and a short description of each toolbox is given [here](../toolboxes_description). 
+The full list of toolboxes can be found below and a short description of each toolbox is given [here](../tool/description). 
+
 A notebook with all functions and their description can be found [here](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/All-Functions.nb){:target="_blank"}.
 
 `QMRITools` contains the following toolboxes:

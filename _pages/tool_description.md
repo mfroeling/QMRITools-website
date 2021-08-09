@@ -399,7 +399,16 @@ width="90%" />
 
 # TractographyTools [![up](../../assets/images/arrow.png)](../description/#top "Top of page")
 `demo.nb`<br>
+This toolbox provides functions to perform fiber tractography and fiber analysis.
+The toolbox is still under development and currently only the tractography algorithm is implemented in 
+the release.
 
+<p align="center">
+<img src="../../assets/images/fiber.jpg" 
+title="Soleus fiber tractography"
+alt="Fiber tractgraphy of the soleus muscle color coded for fiber direction."  
+width="90%" />
+</p>
 
 --------------------------------------------------------------------------
 
