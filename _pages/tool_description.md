@@ -406,7 +406,7 @@ the release.
 <p align="center">
 <img src="../../assets/images/fiber.jpg" 
 title="Soleus fiber tractography"
-alt="Fiber tractgraphy of the soleus muscle color coded for fiber direction."  
+alt="Fiber tractgraphy of the soleus muscle color coded for fiber direction."
 width="90%" />
 </p>
 
