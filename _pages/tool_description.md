@@ -288,9 +288,9 @@ data and and low SNR 31P imaging data.
 `demo.nb`<br>
 The toolbox comprises a variety of functions that allow data
 manipulation and analysis. The main functions allow joining multiple
-data sets into one continuous data set (Froeling et al. 2015) or to
-split data of two legs into two separate data-sets. Furthermore, it
-contains a collection of functions for data evaluation and analysis.
+data sets with overlapping slices into one continuous data set (Froeling et al. 2015) 
+and to automatically split data of two legs into two separate data-sets. 
+Furthermore, it contains a collection of functions for data evaluation and analysis.
 
 <p align="center">
 <img src="../../assets/images/joining.png" 
