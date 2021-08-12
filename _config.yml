@@ -4,7 +4,7 @@
 # Theme Settings
 markdown:                 kramdown
 remote_theme:             mmistakes/minimal-mistakes
-minimal_mistakes_skin:    "contrast"
+minimal_mistakes_skin:    "dark"
 
 
 # Site Settings

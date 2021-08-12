@@ -6,7 +6,7 @@ title: "Documentation and installation"
 sidebar:
   nav: "documentation"
     
-toc: true
+toc: false
 
 ---
 
@@ -28,6 +28,14 @@ The installation manual can be found [here](../doc/instal).
 
 ---------------------------------------------------------------------
 
+
+# Demonstrations [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
+
+The tool includes demonstration code and data which can be found [here](../doc/demo).
+
+---------------------------------------------------------------------
+
+
 # Documentation [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
 
 A notebook with all functions and their description can be found [here](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/All-Functions.nb){:target="_blank"}.
@@ -37,9 +45,3 @@ found [here](../../assets/htmldoc/guide/QMRITools.html){:target="_blank"}.
 <p align="center">
 <img src="../../assets/images/Guide.PNG" alt="Guides QMRITools mathematica documentation"  width="80%" />
 </p>
-
----------------------------------------------------------------------
-
-# Demonstrations [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
-
-The tool includes demonstration code and data which can be found [here](../doc/demo).

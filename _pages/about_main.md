@@ -35,10 +35,9 @@ language](https://www.wolfram.com/language/) and maintained using
 [Wolfram workbench](https://www.wolfram.com/workbench/) for
 [eclipse](https://www.eclipse.org/) and runs in the latest version of
 [Wolfram Mathematica](http://www.wolfram.com/mathematica/). The toolbox does not provide a GUI and its
-primary goal is to allow for fast and batch data processing, and
+primary goal is to allow for fast batch data processing, and
 facilitate development and prototyping of new functions. The core of the
-toolbox contains various functions for data manipulation and
-restructuring.
+toolbox contains various functions for data manipulation and restructuring.
 
 The toolbox was developed mostly in the context of quantitative muscle
 ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}), nerve and cardiac magnetic resonance imaging. The library of functions grows along with the research it is
