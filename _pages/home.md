@@ -4,7 +4,7 @@ layout: splash
 permalink: /
 
 feature_row:
-- image_path: /assets/images/front-process.jpg
+- image_path: /assets/images/front-process.png
   alt: "Analysis & Processing"
   title: "Analysis & Processing"
   excerpt: "QMRITools contains various toolboxes for the quantitative analysis muscle, nerve and cardiac data."
@@ -12,7 +12,7 @@ feature_row:
   btn_label: "To the toolboxes"
   btn_class: "btn--info btn--small"
 
-- image_path: assets/images/front-simulation.jpg
+- image_path: assets/images/front-simulation.png
   alt: "Simulation & Validation"
   title: "Simulation & Validation"
   excerpt: "QMRITools conatains functions for the simulation of diffusion, dixon, EPG T2 mapping and spectroscopy data."
@@ -20,7 +20,7 @@ feature_row:
   btn_label: "To the descriptions"
   btn_class: "btn--info btn--small"
 
-- image_path: /assets/images/front-demo.jpg
+- image_path: /assets/images/front-demo.png
   alt: "Demo & Documentation"
   title: "Demo & Documentation"
   excerpt: "For all functions extended documentation and demonstrations are available. It also includes various example data sets."     
