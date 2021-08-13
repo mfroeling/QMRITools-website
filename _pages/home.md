@@ -36,7 +36,7 @@ feature_row:
 [![DOI Joss](https://joss.theoj.org/papers/10.21105/joss.01204/status.svg)](https://doi.org/10.21105/joss.01204){:target="_blank"}
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mfroeling/QMRITools){:target="_blank"}
 
-[![Github](assets/images/github.png)](https://https://github.com/mfroeling/QMRITools){:target="_blank"}
+[![Github](assets/images/github.png)](https://github.com/mfroeling/QMRITools){:target="_blank"}
 [![MR-Hub](assets/images/MR-Hub.png)](https://ismrm.github.io/mrhub/){:target="_blank"}
 [![MRSHub](assets/images/MRSHub.png)](https://mrshub.org/software_analysis/#QMRITools){:target="_blank"}
 [![OpenSourceImaging](assets/images/open_source_images.png)](https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/){:target="_blank"}
