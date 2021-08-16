@@ -45,7 +45,7 @@ The `demo.nb` contains the following demonstrations.
 
 # General functions
 
->  -Define Data
+> - Define Data
 > - Data Operations
 > - Filters
 > - Operation ignoring zeros
