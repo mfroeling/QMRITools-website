@@ -140,7 +140,7 @@ The `demo.nb` contains the following demonstrations.
 > - Fat STEAM with various TEs
 
 # Cardiac data processing and simulation
- 
+
 > - Simulate Cardiac Shape
 > - Analyse Cardiac shape
 > - Cardiac Segmentation
