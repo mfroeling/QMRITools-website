@@ -1,6 +1,7 @@
 # config file for the webbsite
 
-environment: production
+environment:              production
+google_analytics:         UA-164529139-2
 
 # Theme Settings
 markdown:                 kramdown
