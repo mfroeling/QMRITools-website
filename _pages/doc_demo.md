@@ -10,6 +10,7 @@ toc: True
 
 ---
 
+<a name="top"></a>
 The release contains a zip file
 [DemoAndTest.zip](https://github.com/mfroeling/QMRITools/releases/download/2.0/DemoAndTest.zip)
 in which there is a file `demo.nb` and a folder `DemoData`. 
@@ -20,14 +21,14 @@ folder as the notebook.
 
 The `demo.nb` contains the following demonstrations. 
 
-# Initialization
+# Initialization [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Loading the toolbox definitions
 > - Verbose loading
 > - List all Packages and toolboxes
 > - Memory Usage
 
-# Basic Data manipulation and visualisation
+# Basic Data manipulation and visualisation [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Importing Data
 > - Plotting data Data
@@ -43,14 +44,14 @@ The `demo.nb` contains the following demonstrations.
 >  	- Example make both legs left
 > - Joining multiple stacks
 
-# General functions
+# General functions [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Define Data
 > - Data Operations
 > - Filters
 > - Operation ignoring zeros
 
-# Masking
+# Masking [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Import Data 
 > - Create Mask
@@ -60,7 +61,7 @@ The `demo.nb` contains the following demonstrations.
 > 	- Extract Data from Masks
 > - Rescaling Segmentations
 
-# Registration using Elastix
+# Registration using Elastix [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Import Data
 > - Affine Transformation
@@ -69,7 +70,7 @@ The `demo.nb` contains the following demonstrations.
 > 	- Constrained in one direction
 > - Register And Apply to other Data
 
-# Dixon and Phase unwrapping
+# Dixon and Phase unwrapping [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Simulated phase unwrapping
 > 	- Simulate some Data
@@ -80,25 +81,25 @@ The `demo.nb` contains the following demonstrations.
 > 	- Calculate a T2 star map from the echos
 > 	- Perform iDeal reconstruction with initial B0 and T2star
 
-# Simulate Dixon Data and fit testing
+# Simulate Dixon Data and fit testing [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Simulate the Dixon signal
 > - Fit the simulated Dixon signal
 > - Evaluate the fits
 
-# ME-SE  (TSE) T2 mapping
+# ME-SE  (TSE) T2 mapping [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Import Data
 > - Define Slice Profiles
 > - calibrate and Fit the data
 
-# Simulate EPG Data and fit testing
+# Simulate EPG Data and fit testing [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Simulate the EPG signal
 > - Fit the simulated EPG signal
 > - Evaluate the fits
 
-# DTI and IVIM 
+# DTI and IVIM  [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Generating diffusion gradients
 > - Import The Data
@@ -115,19 +116,19 @@ The `demo.nb` contains the following demonstrations.
 > 	- Analyse Tensor parameters
 > 	- Calculate Tensor angles
 
-# Simulate Tensor Data and fit testing
+# Simulate Tensor Data and fit testing [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Simulate Diffusion signal
 > - Fit the simulated diffusion signal
 > - Evaluate the fits
 
-# Fiber Tractography
+# Fiber Tractography [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Import The Data
 > - Process the data for tractography
 > - Fiber Tractography
 
-# J-coupling simulations
+# J-coupling simulations [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Spin systems
 > 	- Predefined spin systems
@@ -139,7 +140,7 @@ The `demo.nb` contains the following demonstrations.
 > 	- STEAM
 > - Fat STEAM with various TEs
 
-# Cardiac data processing and simulation
+# Cardiac data processing and simulation [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Simulate Cardiac Shape
 > - Analyse Cardiac shape

@@ -13,8 +13,8 @@ toc: true
 <a name="top"></a>
 On this page you can find a small description of the functionality
 of the toolboxes included in `QMRITools`. For a full overview of all
-functionality see the [documentation](../doc) or the [function listing notebook](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/All-Functions.nb){:target="_blank"}.
-For toolboxes that have the `demo.nb` tag most of the most of the functionality [demo notebook](../doc/demo/).
+functionality see the [documentation](../../assets/htmldoc/guide/QMRITools.html){:target="_blank"} or the [function listing notebook](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/All-Functions.nb){:target="_blank"}.
+For toolboxes that have the `demo.nb` tag most of the most of the functionality [demo notebook](../../doc/demo/).
 
 
 --------------------------------------------------------------------------
