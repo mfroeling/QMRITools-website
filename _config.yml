@@ -1,9 +1,10 @@
 # config file for the webbsite
 
+environment: production
 
 # Theme Settings
 markdown:                 kramdown
-remote_theme:             mmistakes/minimal-mistakes
+theme:                    minimal-mistakes-jekyll
 minimal_mistakes_skin:    "dark"
 
 
@@ -26,7 +27,7 @@ logo:                     "/assets/images/icon.png"
 
 # Analytics
 analytics:
-  provider:               "google-universal"
+  provider:               "google-gtag"
   google:
     tracking_id:          UA-164529139-2
     anonymize_ip:         false
