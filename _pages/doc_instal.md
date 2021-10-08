@@ -11,6 +11,8 @@ sidebar:
 The latest release can be found
 [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}.
 
+#Installation
+
 Manual installation:
 1.	Download the `QMRITools.zip`.
 2.	Extract the `QMRITools` folder and place it in the Mathematica UserBaseDirectory &gt; Applications.
@@ -18,6 +20,20 @@ Manual installation:
 If you want to know your UserBaseDirectory run the following code in mathematica
 
 `SystemOpen[FileNameJoin[{$UserBaseDirectory, "Applications"}]]`
+
+Alternatively you can also use the `$BaseDirectory` if you want the tools to be availible to all users.
+
+Automatic installation:
+1.	Download the `QMRITools-x.x.x.paclet`.
+2.	Install the packlet using `PacletInstall`.
+
+`PackletInstall["download folder\\QMRIToolsx-x.x.x.paclet"]`  
+
+Or alternatively you can directly install it from the latest release page
+
+`PackletInstall["https://github.com/mfroeling/QMRITools/releases/download/x.x.x/QMRITools-x.x.x.paclet"]`
+
+#External dependencies
 
 Some functions of QMRITools call on external executables and software.
 These executables need to be present in “QMRITools” and are included in
@@ -44,6 +60,8 @@ related parameters and all affine related parameters.
 
 Although cross platform compatibility is provided I have only limited
 options for testing so if any issues arise please let me know.
+
+#Loading the toolbox
 
 The toolbox can be loaded by using
 	
