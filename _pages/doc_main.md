@@ -6,7 +6,7 @@ title: "Documentation and installation"
 sidebar:
   nav: "documentation"
     
-toc: false
+toc: true
 
 ---
 

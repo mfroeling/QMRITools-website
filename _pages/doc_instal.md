@@ -6,12 +6,16 @@ title: "QMRITools installation"
 sidebar:
   nav: "documentation"
 
+toc: true
+
 ---
 
-The latest release can be found
-[here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}.
+<a name="top"></a>
+The latest release can be found [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}.
 
-#Installation
+---------------------------------------------------------------------
+
+# Installation [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
 
 Manual installation:
 1.	Download the `QMRITools.zip`.
@@ -33,7 +37,9 @@ Or alternatively you can directly install it from the latest release page
 
 `PackletInstall["https://github.com/mfroeling/QMRITools/releases/download/x.x.x/QMRITools-x.x.x.paclet"]`
 
-#External dependencies
+---------------------------------------------------------------------
+
+# External dependencies [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
 
 Some functions of QMRITools call on external executables and software.
 These executables need to be present in “QMRITools” and are included in
@@ -61,7 +67,9 @@ related parameters and all affine related parameters.
 Although cross platform compatibility is provided I have only limited
 options for testing so if any issues arise please let me know.
 
-#Loading the toolbox
+---------------------------------------------------------------------
+
+# Loading the toolbox [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
 
 The toolbox can be loaded by using
 	
