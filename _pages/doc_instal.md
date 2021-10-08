@@ -16,7 +16,7 @@ The latest release can be found [here](https://github.com/mfroeling/QMRITools/re
 ---------------------------------------------------------------------
 
 # Installation [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
-
+ 
 Manual installation:
 1.	Download the `QMRITools.zip`.
 2.	Extract the `QMRITools` folder and place it in the Mathematica UserBaseDirectory &gt; Applications.
