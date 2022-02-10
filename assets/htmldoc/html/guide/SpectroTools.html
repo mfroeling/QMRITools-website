@@ -1,0 +1,163 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>SpectroTools&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{??, , , }" />
+<meta name="keywords" content="SpectroTools" />
+
+<meta name="description" content="QMRITools package. Functions for fitting, processing and analysis of MRS data." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'SpectroTools.en';</script>
+</head>
+
+<body id="guide">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/ApodizeEcho.html"><span class="dropdownPad">ApodizeEcho</span></a>
+     </li>
+     <li>
+      <a href="../ref/ApodizeFid.html"><span class="dropdownPad">ApodizeFid</span></a>
+     </li>
+     <li>
+      <a href="../ref/ApodizePadEcho.html"><span class="dropdownPad">ApodizePadEcho</span></a>
+     </li>
+     <li>
+      <a href="../ref/ApodizePadFid.html"><span class="dropdownPad">ApodizePadFid</span></a>
+     </li>
+     <li>
+      <a href="../ref/ApodizePadSpectra.html"><span class="dropdownPad">ApodizePadSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/ApodizeSpectra.html"><span class="dropdownPad">ApodizeSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/ChangeDwellTimeFid.html"><span class="dropdownPad">ChangeDwellTimeFid</span></a>
+     </li>
+     <li>
+      <a href="../ref/CompareFidFitPlot.html"><span class="dropdownPad">CompareFidFitPlot</span></a>
+     </li>
+     <li>
+      <a href="../ref/CompareSpectraFitPlot.html"><span class="dropdownPad">CompareSpectraFitPlot</span></a>
+     </li>
+     <li>
+      <a href="../ref/CorrectTEFid.html"><span class="dropdownPad">CorrectTEFid</span></a>
+     </li>
+     <li>
+      <a href="../ref/CorrectTESpec.html"><span class="dropdownPad">CorrectTESpec</span></a>
+     </li>
+     <li>
+      <a href="../ref/CSIInterface.html"><span class="dropdownPad">CSIInterface</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExportSparSdat.html"><span class="dropdownPad">ExportSparSdat</span></a>
+     </li>
+     <li>
+      <a href="../ref/FindSpectraPpmShift.html"><span class="dropdownPad">FindSpectraPpmShift</span></a>
+     </li>
+     <li>
+      <a href="../ref/FitSpectra.html"><span class="dropdownPad">FitSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/FitSpectraResultTable.html"><span class="dropdownPad">FitSpectraResultTable</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetGyro.html"><span class="dropdownPad">GetGyro</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetPpmRange.html"><span class="dropdownPad">GetPpmRange</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetSpectraBasisFunctions.html"><span class="dropdownPad">GetSpectraBasisFunctions</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetTimePpmRange.html"><span class="dropdownPad">GetTimePpmRange</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetTimeRange.html"><span class="dropdownPad">GetTimeRange</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportSparSdat.html"><span class="dropdownPad">ImportSparSdat</span></a>
+     </li>
+     <li>
+      <a href="../ref/MakeSpectraResultPlot.html"><span class="dropdownPad">MakeSpectraResultPlot</span></a>
+     </li>
+     <li>
+      <a href="../ref/PadEcho.html"><span class="dropdownPad">PadEcho</span></a>
+     </li>
+     <li>
+      <a href="../ref/PadFid.html"><span class="dropdownPad">PadFid</span></a>
+     </li>
+     <li>
+      <a href="../ref/PadSpectra.html"><span class="dropdownPad">PadSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/PhaseCorrectSpectra.html"><span class="dropdownPad">PhaseCorrectSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/PhaseShiftSpectra.html"><span class="dropdownPad">PhaseShiftSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/PlotCSIData.html"><span class="dropdownPad">PlotCSIData</span></a>
+     </li>
+     <li>
+      <a href="../ref/PlotFid.html"><span class="dropdownPad">PlotFid</span></a>
+     </li>
+     <li>
+      <a href="../ref/PlotSpectra.html"><span class="dropdownPad">PlotSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/ReadjMRUI.html"><span class="dropdownPad">ReadjMRUI</span></a>
+     </li>
+     <li>
+      <a href="../ref/ShiftSpectra.html"><span class="dropdownPad">ShiftSpectra</span></a>
+     </li>
+     <li>
+      <a href="../ref/SpectraFitResult.html"><span class="dropdownPad">SpectraFitResult</span></a>
+     </li>
+     <li>
+      <a href="../ref/TimeShiftEcho.html"><span class="dropdownPad">TimeShiftEcho</span></a>
+     </li>
+     <li>
+      <a href="../ref/TimeShiftFid.html"><span class="dropdownPad">TimeShiftFid</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/QMRITools.html"><span class="dropdownPad">QMRITools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="main-heading"><h1 class="main-title">SpectroTools</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="185280935"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for fitting, processing and analysis of MRS data.</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="501967282"></a><span class="IFSans"><a class="package-symbol" href="../ref/FitSpectra.html">FitSpectra</a></span> <span class="dash">&mdash;</span> a function that fits a set of basis spectra to the input spectra.</p><p class="singleFunction"><a name="293366195"></a><span class="IFSans"><a class="package-symbol" href="../ref/GetSpectraBasisFunctions.html">GetSpectraBasisFunctions</a></span> <span class="dash">&mdash;</span> a function that generates a set of basis spectra.</p><p class="singleFunction"><a name="457074368"></a><span class="IFSans"><a class="package-symbol" href="../ref/CSIInterface.html">CSIInterface</a></span> <span class="dash">&mdash;</span> Opens and interface for processing 3DCSI data.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="281136866"></a><a href="../ref/ApodizeFid.html">ApodizeFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ApodizePadFid.html">ApodizePadFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PadFid.html">PadFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ApodizeEcho.html">ApodizeEcho</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ApodizePadEcho.html">ApodizePadEcho</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PadEcho.html">PadEcho</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ApodizeSpectra.html">ApodizeSpectra</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ApodizePadSpectra.html">ApodizePadSpectra</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PadSpectra.html">PadSpectra</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="182514716"></a><a href="../ref/GetTimePpmRange.html">GetTimePpmRange</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GetPpmRange.html">GetPpmRange</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GetTimeRange.html">GetTimeRange</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GetGyro.html">GetGyro</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="192312660"></a><a href="../ref/PlotSpectra.html">PlotSpectra</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PlotFid.html">PlotFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PlotCSIData.html">PlotCSIData</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/MakeSpectraResultPlot.html">MakeSpectraResultPlot</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CompareSpectraFitPlot.html">CompareSpectraFitPlot</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CompareFidFitPlot.html">CompareFidFitPlot</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/FitSpectraResultTable.html">FitSpectraResultTable</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="139647655"></a><a href="../ref/FindSpectraPpmShift.html">FindSpectraPpmShift</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PhaseCorrectSpectra.html">PhaseCorrectSpectra</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/PhaseShiftSpectra.html">PhaseShiftSpectra</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/TimeShiftFid.html">TimeShiftFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/TimeShiftEcho.html">TimeShiftEcho</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ChangeDwellTimeFid.html">ChangeDwellTimeFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CorrectTEFid.html">CorrectTEFid</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CorrectTESpec.html">CorrectTESpec</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ShiftSpectra.html">ShiftSpectra</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/SpectraFitResult.html">SpectraFitResult</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="57197084"></a><a href="../ref/ReadjMRUI.html">ReadjMRUI</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportSparSdat.html">ImportSparSdat</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ExportSparSdat.html">ExportSparSdat</a></p><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/QMRITools.html">QMRITools</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

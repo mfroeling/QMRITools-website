@@ -1,0 +1,68 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>TensorCalc&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="TensorCalc" />
+
+<meta name="description" content="TensorCalc[data, gradients, bvalue] calculates the diffusion tensor for the given dataset. Allows for one unweighted image and one b value. Gradient directions must be in the form {{x1,y1,z1}, ..., {xn,yn,zn}} without the unweighted gradient direction. bvalue is a singe number indicating the b-value used. TensorCalc[data, gradients, bvec] calculates the diffusion tensor for the given dataset. allows for multiple unweighted images and multiple bvalues. allows for differnt tensor fitting methods. gradient directions must be in the form {{x1,y1,z1}, ..., {xn,yn,zn}} with the unweighted direction as {0,0,0}. bvec the bvector, with a bvalue defined for each gradient direction. b value for unweighted images is 0. TensorCalc[data, bmatix] calculates the diffusion tensor for the given dataset. allows for multiple unweighted images and multiple bvalues. bmat is the bmatrix which can be generated usiong Bmatrix. The bvalue assumed to be is in s/mm^2 and therfore the output is in mm^2/2. TensorCalc[] is based on DOI: 10.1016/j.neuroimage.2013.05.028 and 10.1002/mrm.25165." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'TensorCalc.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`TensorTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`TensorTools`</span><h1 class="main-title">TensorCalc</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">TensorCalc[data, <span class="IF"><span class="TI">gradients</span></span>, bvalue] calculates the diffusion tensor for the given dataset. Allows for one unweighted image and one b value. 
+Gradient directions must be in the form {{x1,y1,z1}, ..., {xn,yn,zn}} without the unweighted gradient direction.
+bvalue is a singe number indicating the b-value used.
+TensorCalc[data, <span class="IF"><span class="TI">gradients</span></span>, bvec] calculates the diffusion tensor for the given dataset. allows for multiple unweighted images and multiple bvalues.
+allows for differnt tensor fitting methods. gradient directions must be in the form {{x1,y1,z1}, ..., {xn,yn,zn}} with the unweighted direction as {0,0,0}.
+bvec the bvector, with a <span class="IF"><span class="TI">bvalue</span></span> defined for each gradient direction. b value for unweighted images is 0.
+TensorCalc[data, bmatix] calculates the diffusion tensor for the given dataset. allows for multiple unweighted images and multiple bvalues.
+bmat is the bmatrix which can be generated usiong Bmatrix.
+
+The <span class="IF"><span class="TI">bvalue</span></span> assumed to be is in s/mm^2 and therfore the output is in mm^2/2.
+
+TensorCalc[] is based on DOI: 10.1016/j.neuroimage.2013.05.028 and 10.1002/mrm.25165.</div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="72986733"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="508635427"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></span> is an option for all Calc fucntions. When true the proceses of the calculation is shown.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Method.html">Method</a></td><td>&quot;iWLLS&quot;</td><td><span class="TT">Method is an option for various algorithm-intensive functions that specifies what internal methods they should use.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Calc when using bvector. When True also the S0 is given as output.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span><span class="specialcharacters">Calc. If true outliers will be rejected in the fit<span class="comma">,</span> only works with WLLS.
+If </span><span class="IF"><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></span> is given the outlier map is given.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Parallelize.html">Parallelize</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF">Parallelize<span class="openbracket">[</span><span class="TI">expr</span><span class="closebracket">]</span></span> evaluates <span class="IF"><span class="TI">expr</span></span> using automatic parallelization.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/RobustFitParameters.html">RobustFitParameters</a></td><td><span class="openbrace">{</span>0.0001<span class="comma">,</span> 6<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></span>Parameters is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span><span class="specialcharacters">Calc. gives the threshold for stopping the itterations and the kappa for the outlier marging<span class="comma">,</span> <span class="openbrace">{</span>tr<span class="comma">,</span>kappa<span class="closebrace">}</span>.</span></span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

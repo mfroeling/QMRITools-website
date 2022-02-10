@@ -1,0 +1,106 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>CardiacTools&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{??, , , }" />
+<meta name="keywords" content="CardiacTools" />
+
+<meta name="description" content="QMRITools package: Functions for processing cardiac MRI data." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'CardiacTools.en';</script>
+</head>
+
+<body id="guide">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/BullseyePlot.html"><span class="dropdownPad">BullseyePlot</span></a>
+     </li>
+     <li>
+      <a href="../ref/CalculateWallMap.html"><span class="dropdownPad">CalculateWallMap</span></a>
+     </li>
+     <li>
+      <a href="../ref/CardiacCoordinateSystem.html"><span class="dropdownPad">CardiacCoordinateSystem</span></a>
+     </li>
+     <li>
+      <a href="../ref/CardiacSegment.html"><span class="dropdownPad">CardiacSegment</span></a>
+     </li>
+     <li>
+      <a href="../ref/CardiacSegmentMask.html"><span class="dropdownPad">CardiacSegmentMask</span></a>
+     </li>
+     <li>
+      <a href="../ref/CentralAxes.html"><span class="dropdownPad">CentralAxes</span></a>
+     </li>
+     <li>
+      <a href="../ref/CreatHeart.html"><span class="dropdownPad">CreatHeart</span></a>
+     </li>
+     <li>
+      <a href="../ref/ECVCalc.html"><span class="dropdownPad">ECVCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExcludeSlices.html"><span class="dropdownPad">ExcludeSlices</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetMaskSegmentPoints.html"><span class="dropdownPad">GetMaskSegmentPoints</span></a>
+     </li>
+     <li>
+      <a href="../ref/HelixAngleCalc.html"><span class="dropdownPad">HelixAngleCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/MakeECVBloodMask.html"><span class="dropdownPad">MakeECVBloodMask</span></a>
+     </li>
+     <li>
+      <a href="../ref/MaskHelix.html"><span class="dropdownPad">MaskHelix</span></a>
+     </li>
+     <li>
+      <a href="../ref/PlotSegmentMask.html"><span class="dropdownPad">PlotSegmentMask</span></a>
+     </li>
+     <li>
+      <a href="../ref/PlotSegments.html"><span class="dropdownPad">PlotSegments</span></a>
+     </li>
+     <li>
+      <a href="../ref/RadialSample.html"><span class="dropdownPad">RadialSample</span></a>
+     </li>
+     <li>
+      <a href="../ref/TransmuralPlot.html"><span class="dropdownPad">TransmuralPlot</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/QMRITools.html"><span class="dropdownPad">QMRITools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="main-heading"><h1 class="main-title">CardiacTools</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="754101538"></a><a href="../guide/QMRITools.html">QMRITools</a> package: Functions for processing cardiac MRI data.</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="73478804"></a><span class="IFSans"><a class="package-symbol" href="../ref/HelixAngleCalc.html">HelixAngleCalc</a></span> <span class="dash">&mdash;</span> Calculates the fiber architecture matrix (<a href="https://jcmr-online.biomedcentral.com/articles/10.1186/1532-429X-17-S1-P15">link</a>)</p><p class="singleFunction"><a name="54136648"></a><span class="IFSans"><a class="package-symbol" href="../ref/BullseyePlot.html">BullseyePlot</a></span> <span class="dash">&mdash;</span> Makes a bullseye-plot (<a href="https://www.ahajournals.org/doi/10.1161/hc0402.102975">link</a>)</p><p class="singleFunction"><a name="178298887"></a><span class="IFSans"><a class="package-symbol" href="../ref/ExcludeSlices.html">ExcludeSlices</a></span> <span class="dash">&mdash;</span> Excludes unreliable slices from cardiac DTI data.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="88758343"></a><span class="IFSans"><a class="package-symbol" href="../ref/CardiacSegment.html">CardiacSegment</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/CardiacSegmentMask.html">CardiacSegmentMask</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/GetMaskSegmentPoints.html">GetMaskSegmentPoints</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/CentralAxes.html">CentralAxes</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/RadialSample.html">RadialSample</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/CalculateWallMap.html">CalculateWallMap</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/CardiacCoordinateSystem.html">CardiacCoordinateSystem</a></span></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="637878952"></a><a href="../ref/CreatHeart.html">CreatHeart</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/MaskHelix.html">MaskHelix</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/PlotSegments.html">PlotSegments</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/PlotSegmentMask.html">PlotSegmentMask</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/TransmuralPlot.html">TransmuralPlot</a></span></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="172742261"></a><span class="IFSans"><a class="package-symbol" href="../ref/ECVCalc.html">ECVCalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/MakeECVBloodMask.html">MakeECVBloodMask</a></span> </p><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/QMRITools.html">QMRITools</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

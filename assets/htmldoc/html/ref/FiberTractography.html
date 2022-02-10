@@ -1,0 +1,64 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>FiberTractography&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="FiberTractography" />
+
+<meta name="description" content="FiberTractography[tensor, vox] performs fibertractography on the tensor with voxels dimensions vox. FiberTractography[tensor, vox, {par, {min, max}}] performs fibertractography on the tensor with voxels dimensions vox with additional stoppin criteria par, where tracts are only generated between values of par min and max. FiberTractography[tensor, vox, {{par, {min, max}}, ..}] performs fibertractography on the tensor with voxels dimensions vox with multiple additional stopping criteria." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'FiberTractography.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`TractographyTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`TractographyTools`</span><h1 class="main-title">FiberTractography</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">FiberTractography[tensor, vox] performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span>.
+FiberTractography[tensor, <span class="IF"><span class="TI">vox</span></span>, {par, {min, max}}] performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with additional stoppin criteria
+par, where tracts are only generated between values of par min and max.
+FiberTractography[tensor, <span class="IF"><span class="TI">vox</span></span>, {{par, {min, max}}, ..}] performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with 
+multiple additional stopping criteria.</div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="513266122"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="275269142"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></td><td><span class="openbrace">{</span>10<span class="comma">,</span> 200<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed tract range.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></td><td>30</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed angle change per tract step.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorFilps.html">TensorFilps</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Filps is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is fliped<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorPermutations.html">TensorPermutations</a></td><td><span class="openbrace">{</span>x<span class="comma">,</span> y<span class="comma">,</span> z<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Permutations is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is permuted<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/InterpolationOrder.html">InterpolationOrder</a></td><td>1</td><td><span class="TT"><span class="specialcharacters">InterpolationOrder is an option for Interpolation<span class="comma">,</span> as well as ListLinePlot<span class="comma">,</span> ListPlot3D<span class="comma">,</span> ListContourPlot<span class="comma">,</span> and related functions<span class="comma">,</span> that specifies what order of interpolation to use.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/StopThreshhold.html">StopThreshhold</a></td><td>0.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/StopThreshhold.html">StopThreshhold</a></span> is an option for <span class="IF">FiberTractography</span> and defines the stop threshhold which is a value between 0 and 1.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/StepSize.html">StepSize</a></td><td>2</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/StepSize.html">StepSize</a></span> is an option for <span class="IF">FiberTractography</span> and defines the tractography step size.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Method.html">Method</a></td><td>&quot;Euler&quot;</td><td><span class="TT">Method is an option for various algorithm-intensive functions that specifies what internal methods they should use.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MaxSeedPoints.html">MaxSeedPoints</a></td><td><a href="http://reference.wolfram.com/language/ref/Infinity.html">Infinity</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MaxSeedPoints.html">MaxSeedPoints</a></span> is an option for <span class="IF">FiberTractography</span> and defines the maximum number of seedspoints to be used.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TracMonitor.html">TracMonitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TracMonitor.html">TracMonitor</a></span> is an option for <span class="IF">FiberTractography</span>. When set True it prints the progress.</span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

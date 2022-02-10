@@ -1,0 +1,60 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>GetPulseProfile&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="GetPulseProfile" />
+
+<meta name="description" content="GetPulseProfile[excitation, refocus] gives the pusl angle profiles for the exitation and refocussing pulses. a pulse is defined as {&quot;name&quot;, flipangle, {G_strnth, Dur, BW}}. GetPulseProfile[{&quot;name&quot;, flipangle, {G_strnth, Dur, BW}}] gives detaile slice profile information of one pulse. output is {ex_angle _profiel, ref_angel _profile, {plots}}. output for single pulse is {{distance, Mt, Mz, Mx, My, ang, phase}, plots}." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'GetPulseProfile.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`SimulationTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`SimulationTools`</span><h1 class="main-title">GetPulseProfile</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">GetPulseProfile[excitation, refocus] gives the pusl angle profiles for the exitation and refocussing pulses.
+a pulse is defined as {&quot;name&quot;, flipangle, {G_strnth, Dur, BW}}.
+GetPulseProfile[{&quot;name&quot;, flipangle, {G_strnth, Dur, BW}}] gives detaile slice profile information of one pulse.
+
+output is {ex_angle_profiel, ref_angel_profile, {plots}}.
+output for single pulse is {{distance, Mt, Mz, Mx, My, ang, phase}, plots}.</div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="93862209"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="15202850"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/MagnetizationVector.html">MagnetizationVector</a></td><td><span class="openbrace">{</span>0<span class="comma">,</span> 0<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MagnetizationVector.html">MagnetizationVector</a></span> is an option for <span class="IF">GetPulseProfile</span>. It defines the start magnetization vector for the bloch simulation.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/SliceRange.html">SliceRange</a></td><td>12</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/SliceRange.html">SliceRange</a></span> is an option for <span class="IF">GetPulseProfile</span><span class="specialcharacters">. It specifies over which range the slice profile is generated <span class="openparenthesis">(</span>in mm<span class="closeparenthesis">)</span>. the total profile is 2x</span><span class="IF"><a class="package-symbol" href="../ref/SliceRange.html">SliceRange</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/SliceRangeSamples.html">SliceRangeSamples</a></td><td>25</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/SliceRange.html">SliceRange</a></span>Samples is an option for <span class="IF">GetPulseProfile</span>. defines how many samples are used to generate half a puls profile.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FatFieldStrength.html">FatFieldStrength</a></td><td>0</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FatFieldStrength.html">FatFieldStrength</a></span> is an option for <span class="IF">GetPulseProfile</span>. If the value &gt;0 it will calculate the shift of the fat refocussing pulse compared to the fat exitation pulse.
+The shift is in <span class="IF"><a class="package-symbol" href="../ref/SliceRange.html">SliceRange</a></span>Samples steps.</span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

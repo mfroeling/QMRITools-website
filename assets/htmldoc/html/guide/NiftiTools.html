@@ -1,0 +1,118 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>NiftiTools&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{??, , , }" />
+<meta name="keywords" content="NiftiTools" />
+
+<meta name="description" content="QMRITools package. Functions for importing and exporting Nifti (*.nii) data." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'NiftiTools.en';</script>
+</head>
+
+<body id="guide">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/CompressNiiFiles.html"><span class="dropdownPad">CompressNiiFiles</span></a>
+     </li>
+     <li>
+      <a href="../ref/CorrectNiiOrientation.html"><span class="dropdownPad">CorrectNiiOrientation</span></a>
+     </li>
+     <li>
+      <a href="../ref/DcmToNii.html"><span class="dropdownPad">DcmToNii</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExportBmat.html"><span class="dropdownPad">ExportBmat</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExportBval.html"><span class="dropdownPad">ExportBval</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExportBvec.html"><span class="dropdownPad">ExportBvec</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExportNii.html"><span class="dropdownPad">ExportNii</span></a>
+     </li>
+     <li>
+      <a href="../ref/ExtractNiiFiles.html"><span class="dropdownPad">ExtractNiiFiles</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetNiiOrientation.html"><span class="dropdownPad">GetNiiOrientation</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportBmat.html"><span class="dropdownPad">ImportBmat</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportBval.html"><span class="dropdownPad">ImportBval</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportBvalvec.html"><span class="dropdownPad">ImportBvalvec</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportBvec.html"><span class="dropdownPad">ImportBvec</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportExploreDTItens.html"><span class="dropdownPad">ImportExploreDTItens</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportNii.html"><span class="dropdownPad">ImportNii</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportNiiDiff.html"><span class="dropdownPad">ImportNiiDiff</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportNiiDix.html"><span class="dropdownPad">ImportNiiDix</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportNiiT1.html"><span class="dropdownPad">ImportNiiT1</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportNiiT2.html"><span class="dropdownPad">ImportNiiT2</span></a>
+     </li>
+     <li>
+      <a href="../ref/MakeNiiOrentationQ.html"><span class="dropdownPad">MakeNiiOrentationQ</span></a>
+     </li>
+     <li>
+      <a href="../ref/MakeNiiOrentationS.html"><span class="dropdownPad">MakeNiiOrentationS</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/QMRITools.html"><span class="dropdownPad">QMRITools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="main-heading"><h1 class="main-title">NiftiTools</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="342527371"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for importing and exporting <a href="https://nifti.nimh.nih.gov/">Nifti</a> (*.nii) data.</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="24311410"></a><span class="IFSans"><a class="package-symbol" href="../ref/DcmToNii.html">DcmToNii</a></span> <span class="dash">&mdash;</span> Converts DICOM files to nifti (*.nii) using Cris Rodens Dcm2Nii.exe.</p><p class="singleFunction"><a name="383444423"></a><span class="IFSans"><a class="package-symbol" href="../ref/ImportNii.html">ImportNii</a></span> <span class="dash">&mdash;</span> Import data from Nifti (*.nii).</p><p class="singleFunction"><a name="142722386"></a><span class="IFSans"><a class="package-symbol" href="../ref/ExportNii.html">ExportNii</a></span> <span class="dash">&mdash;</span> Export data to Nifti (*.nii).</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="125823353"></a><a href="../ref/ExtractNiiFiles.html">ExtractNiiFiles</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CompressNiiFiles.html">CompressNiiFiles</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="485515364"></a><a href="../ref/ImportNiiDiff.html">ImportNiiDiff</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportNiiDix.html">ImportNiiDix</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportNiiT1.html">ImportNiiT1</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportNiiT2.html">ImportNiiT2</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportExploreDTItens.html">ImportExploreDTItens</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="7223027"></a><a href="../ref/ImportBmat.html">ImportBmat</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportBval.html">ImportBval</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportBvalvec.html">ImportBvalvec</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ImportBvec.html">ImportBvec</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ExportBmat.html">ExportBmat</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ExportBval.html">ExportBval</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ExportBvec.html">ExportBvec</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="253619534"></a><a href="../ref/CorrectNiiOrientation.html">CorrectNiiOrientation</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GetNiiOrientation.html">GetNiiOrientation</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/MakeNiiOrentationQ.html">MakeNiiOrentationQ</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/MakeNiiOrentationS.html">MakeNiiOrentationS</a></p><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/QMRITools.html">QMRITools</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

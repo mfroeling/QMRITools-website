@@ -1,0 +1,130 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>GradientTools&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{??, , , }" />
+<meta name="keywords" content="GradientTools" />
+
+<meta name="description" content="QMRITools package. Functions for diffusion gradient optimization and manipulation." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'GradientTools.en';</script>
+</head>
+
+<body id="guide">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/Bmatrix.html"><span class="dropdownPad">Bmatrix</span></a>
+     </li>
+     <li>
+      <a href="../ref/BmatrixCalc.html"><span class="dropdownPad">BmatrixCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/BmatrixConv.html"><span class="dropdownPad">BmatrixConv</span></a>
+     </li>
+     <li>
+      <a href="../ref/BmatrixInv.html"><span class="dropdownPad">BmatrixInv</span></a>
+     </li>
+     <li>
+      <a href="../ref/BmatrixRot.html"><span class="dropdownPad">BmatrixRot</span></a>
+     </li>
+     <li>
+      <a href="../ref/BmatrixToggle.html"><span class="dropdownPad">BmatrixToggle</span></a>
+     </li>
+     <li>
+      <a href="../ref/CalculateMoments.html"><span class="dropdownPad">CalculateMoments</span></a>
+     </li>
+     <li>
+      <a href="../ref/ConditionNumberCalc.html"><span class="dropdownPad">ConditionNumberCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/ConvertGrads.html"><span class="dropdownPad">ConvertGrads</span></a>
+     </li>
+     <li>
+      <a href="../ref/CorrectBmatrix.html"><span class="dropdownPad">CorrectBmatrix</span></a>
+     </li>
+     <li>
+      <a href="../ref/CorrectGradients.html"><span class="dropdownPad">CorrectGradients</span></a>
+     </li>
+     <li>
+      <a href="../ref/EnergyCalc.html"><span class="dropdownPad">EnergyCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/FinalGrads.html"><span class="dropdownPad">FinalGrads</span></a>
+     </li>
+     <li>
+      <a href="../ref/FindOrder.html"><span class="dropdownPad">FindOrder</span></a>
+     </li>
+     <li>
+      <a href="../ref/FullGrad.html"><span class="dropdownPad">FullGrad</span></a>
+     </li>
+     <li>
+      <a href="../ref/GenerateGradients.html"><span class="dropdownPad">GenerateGradients</span></a>
+     </li>
+     <li>
+      <a href="../ref/GenerateGradientsGUI.html"><span class="dropdownPad">GenerateGradientsGUI</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetGradientScanOrder.html"><span class="dropdownPad">GetGradientScanOrder</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetSliceNormal.html"><span class="dropdownPad">GetSliceNormal</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetSliceNormalDir.html"><span class="dropdownPad">GetSliceNormalDir</span></a>
+     </li>
+     <li>
+      <a href="../ref/GradBmatrix.html"><span class="dropdownPad">GradBmatrix</span></a>
+     </li>
+     <li>
+      <a href="../ref/GradSeq.html"><span class="dropdownPad">GradSeq</span></a>
+     </li>
+     <li>
+      <a href="../ref/ImportGradObj.html"><span class="dropdownPad">ImportGradObj</span></a>
+     </li>
+     <li>
+      <a href="../ref/OverPlusCalc.html"><span class="dropdownPad">OverPlusCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/UniqueBvalPosition.html"><span class="dropdownPad">UniqueBvalPosition</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/QMRITools.html"><span class="dropdownPad">QMRITools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="main-heading"><h1 class="main-title">GradientTools</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="717344485"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for diffusion gradient optimization and manipulation.</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="187614699"></a><span class="IFSans"><a class="package-symbol" href="../ref/GenerateGradients.html">GenerateGradients</a></span> <span class="dash">&mdash;</span> Optimizes a gradient set (<a href="https://doi.org/10.1002/mrm.26259">link</a> and <a href="https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1522-2594(199909)42:3%3C515::AID-MRM14%3E3.0.CO;2-Q">link</a>).</p><p class="singleFunction"><a name="477824089"></a><span class="IFSans"><a class="package-symbol" href="../ref/GenerateGradientsGUI.html">GenerateGradientsGUI</a></span> <span class="dash">&mdash;</span> Optimizes a gradient set using a GUI.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="665687835"></a><a href="../ref/FinalGrads.html">FinalGrads</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/FindOrder.html">FindOrder</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/FullGrad.html">FullGrad</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/ConvertGrads.html">ConvertGrads</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="299749532"></a><a href="../ref/GetGradientScanOrder.html">GetGradientScanOrder</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/UniqueBvalPosition.html">UniqueBvalPosition</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CorrectBmatrix.html">CorrectBmatrix</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CorrectGradients.html">CorrectGradients</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="6605367"></a><a href="../ref/ConditionNumberCalc.html">ConditionNumberCalc</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/EnergyCalc.html">EnergyCalc</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/OverPlusCalc.html">OverPlusCalc</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="55876362"></a><a href="../ref/Bmatrix.html">Bmatrix</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/BmatrixCalc.html">BmatrixCalc</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/BmatrixConv.html">BmatrixConv</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/BmatrixInv.html">BmatrixInv</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/BmatrixRot.html">BmatrixRot</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/BmatrixToggle.html">BmatrixToggle</a></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="105510261"></a><a href="../ref/ImportGradObj.html">ImportGradObj</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GradSeq.html">GradSeq</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GradBmatrix.html">GradBmatrix</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/CalculateMoments.html">CalculateMoments</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GetSliceNormal.html">GetSliceNormal</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../ref/GetSliceNormalDir.html">GetSliceNormalDir</a></p><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/QMRITools.html">QMRITools</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

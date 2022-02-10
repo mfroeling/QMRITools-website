@@ -1,0 +1,124 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>TensorTools&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{??, , , }" />
+<meta name="keywords" content="TensorTools" />
+
+<meta name="description" content="QMRITools package: Functions for fitting processing and analysis of DTI data." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'TensorTools.en';</script>
+</head>
+
+<body id="guide">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/ADCCalc.html"><span class="dropdownPad">ADCCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/AngleCalc.html"><span class="dropdownPad">AngleCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/AngleMap.html"><span class="dropdownPad">AngleMap</span></a>
+     </li>
+     <li>
+      <a href="../ref/ColorFAPlot.html"><span class="dropdownPad">ColorFAPlot</span></a>
+     </li>
+     <li>
+      <a href="../ref/ConcatenateDiffusionData.html"><span class="dropdownPad">ConcatenateDiffusionData</span></a>
+     </li>
+     <li>
+      <a href="../ref/Correct.html"><span class="dropdownPad">Correct</span></a>
+     </li>
+     <li>
+      <a href="../ref/Deriv.html"><span class="dropdownPad">Deriv</span></a>
+     </li>
+     <li>
+      <a href="../ref/DriftCorrect.html"><span class="dropdownPad">DriftCorrect</span></a>
+     </li>
+     <li>
+      <a href="../ref/ECalc.html"><span class="dropdownPad">ECalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/EigensysCalc.html"><span class="dropdownPad">EigensysCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/EigenvalCalc.html"><span class="dropdownPad">EigenvalCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/EigenvecCalc.html"><span class="dropdownPad">EigenvecCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/FACalc.html"><span class="dropdownPad">FACalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/FlipGradientOrientation.html"><span class="dropdownPad">FlipGradientOrientation</span></a>
+     </li>
+     <li>
+      <a href="../ref/FlipTensorOrientation.html"><span class="dropdownPad">FlipTensorOrientation</span></a>
+     </li>
+     <li>
+      <a href="../ref/ParameterCalc.html"><span class="dropdownPad">ParameterCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/RemoveIsoImages.html"><span class="dropdownPad">RemoveIsoImages</span></a>
+     </li>
+     <li>
+      <a href="../ref/ResidualCalc.html"><span class="dropdownPad">ResidualCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/SigmaCalc.html"><span class="dropdownPad">SigmaCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/SortDiffusionData.html"><span class="dropdownPad">SortDiffusionData</span></a>
+     </li>
+     <li>
+      <a href="../ref/TensorCalc.html"><span class="dropdownPad">TensorCalc</span></a>
+     </li>
+     <li>
+      <a href="../ref/TensorCorrect.html"><span class="dropdownPad">TensorCorrect</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/QMRITools.html"><span class="dropdownPad">QMRITools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="main-heading"><h1 class="main-title">TensorTools</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="125074041"></a><a href="../guide/QMRITools.html">QMRITools</a> package: Functions for fitting processing and analysis of DTI data.</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="101003707"></a><span class="IFSans"><a class="package-symbol" href="../ref/TensorCalc.html">TensorCalc</a></span> <span class="dash">&mdash;</span> Calculates the diffusion tensor. The default settings use an iterative WLLS (<a href="https://www.sciencedirect.com/science/article/abs/pii/S1053811913005223?via%3Dihub">link</a>) estimator with REKINDLE outlier rejection (<a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.25165">link</a>).</p><p class="singleFunction"><a name="347129251"></a><span class="IFSans"><a class="package-symbol" href="../ref/SortDiffusionData.html">SortDiffusionData</a></span> <span class="dash">&mdash;</span> Sorts the diffusion data for ascending b-value.</p><p class="singleFunction"><a name="859691517"></a><span class="IFSans"><a class="package-symbol" href="../ref/ParameterCalc.html">ParameterCalc</a></span> <span class="dash">&mdash;</span> Calculates the MD, FA, and eigenvalues of the tensor.</p><p class="singleFunction"><a name="468326633"></a><span class="IFSans"><a class="package-symbol" href="../ref/ResidualCalc.html">ResidualCalc</a></span> <span class="dash">&mdash;</span> Calculates the tensor residuals.</p><p class="singleFunction"><a name="138599439"></a><span class="IFSans"><a class="package-symbol" href="../ref/DriftCorrect.html">DriftCorrect</a></span> <span class="dash">&mdash;</span> Correct diffusion data for signal drift (<a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.26124">link</a>).</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="309144122"></a><span class="IFSans"><a class="package-symbol" href="../ref/FlipGradientOrientation.html">FlipGradientOrientation</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="369937430"></a><span class="IFSans"><a class="package-symbol" href="../ref/ConcatenateDiffusionData.html">ConcatenateDiffusionData</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/RemoveIsoImages.html">RemoveIsoImages</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/SigmaCalc.html">SigmaCalc</a></span></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="48253380"></a><span class="IFSans"><a class="package-symbol" href="../ref/EigensysCalc.html">EigensysCalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/EigenvalCalc.html">EigenvalCalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/EigenvecCalc.html">EigenvecCalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/ADCCalc.html">ADCCalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/FACalc.html">FACalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/ECalc.html">ECalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/AngleCalc.html">AngleCalc</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/AngleMap.html">AngleMap</a></span></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="394600162"></a><span class="IFSans"><a class="package-symbol" href="../ref/Correct.html">Correct</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/TensorCorrect.html">TensorCorrect</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/Deriv.html">Deriv</a></span></p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
+  <a name="162354254"></a>
+  <span class="IFSans"><a class="package-symbol" href="../ref/ColorFAPlot.html">ColorFAPlot</a></span>
+ </p><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/QMRITools.html">QMRITools</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

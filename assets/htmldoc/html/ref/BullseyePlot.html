@@ -1,0 +1,66 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>BullseyePlot&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="BullseyePlot" />
+
+<meta name="description" content="BullseyePlot[data, segmask] generates a AHA-17 segement bullseye plot. BullseyePlot[list] generates a AHA-17 segement bullseye plot of the lists (which needs to have 17 values) provide. data is a 3D volume used for the plot. segmask is the AHA-17 segmentation resulting form the CardiacSegment function when AHA17 is selected. Output is a bullseye plot or a plotwindow, depending on the Method which can be &quot;Dynamic&quot; else it will be static. BullseyePlot[] is based on DOI: 10.1161/hc0402.102975." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'BullseyePlot.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`CardiacTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`CardiacTools`</span><h1 class="main-title">BullseyePlot</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">BullseyePlot[data, segmask] generates a AHA-17 segement bullseye plot. 
+BullseyePlot[list] generates a AHA-17 segement bullseye plot of the lists (which needs to have 17 values) provide.
+
+data is a 3D volume used for the plot. 
+segmask is the AHA-17 segmentation resulting form the CardiacSegment function when AHA17 is selected.
+
+Output is a bullseye plot or a plotwindow, depending on the Method which can be &quot;Dynamic&quot; else it will be static.
+
+BullseyePlot[] is based on DOI: 10.1161/hc0402.102975.</div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="301012967"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="123549414"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/TextOffset.html">TextOffset</a></td><td>0.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TextOffset.html">TextOffset</a></span> is an option for <span class="IF">BullseyePlot</span><span class="specialcharacters">. Determines where the text is placed<span class="comma">,</span> can be 0 to 1.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TextSize.html">TextSize</a></td><td>12</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TextSize.html">TextSize</a></span> is an option for <span class="IF">BullseyePlot</span>. Determines the text size.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/PlotRange.html">PlotRange</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT">PlotRange is an option for graphics functions that specifies what range of coordinates to include in a plot. </span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/ColorFunction.html">ColorFunction</a></td><td>&quot;TemperatureMap&quot;</td><td><span class="TT">ColorFunction is an option for graphics functions that specifies a function to apply to determine colors of elements. </span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/BullPlotMethod.html">BullPlotMethod</a></td><td>&quot;Dynamic&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/BullPlotMethod.html">BullPlotMethod</a></span> is an option for <span class="IF">BullseyePlot</span>. Can be &quot;Dynamic&quot; of &quot;Normal&quot;. 
+&quot;Dynamic&quot; allows to change plotting parameters in Manipulation window.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TextNumberForm.html">TextNumberForm</a></td><td><span class="openbrace">{</span>5<span class="comma">,</span> 2<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TextNumberForm.html">TextNumberForm</a></span> is an option for <span class="IF">BullseyePlot</span>. Specifies how many number and decimals to use like in NumberForm.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/ImageSize.html">ImageSize</a></td><td>200</td><td><span class="TT">ImageSize is an option that specifies the overall size of an image to display for an object. </span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

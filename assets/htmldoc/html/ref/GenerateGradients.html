@@ -1,0 +1,60 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>GenerateGradients&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="GenerateGradients" />
+
+<meta name="description" content="GenerateGradients[numb] optimizes a set with numb gradients, numb mus be an integer. GenerateGradients[{numb, fixed}] optimizes a set with numb gradients, numb must ba an integer and fixed a list of 3D coordiantes e.g. {{0,0,1},{0,1,0}}. The fixed gradients will not be moved. GenerateGradients[{numb1, numb2 ...}, alpha] optimizes a multi shel gradient set with numb gradients per shel. If alpha is set to 0.5 equal importance is given tothe optimal distribution of each shell en the enitre set. if alpha is 0 only the sub shels will be optimized, if alpha is set to 1 only the global set wil be optimized. GenerateGradients[] is based on DOI: 10.1002/mrm.26259 and 10.1002/(SICI)1522-2594(199909)42:3&lt;515::AID-MRM14&gt;3.0.CO;2-Q." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'GenerateGradients.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`GradientTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`GradientTools`</span><h1 class="main-title">GenerateGradients</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">GenerateGradients[numb] optimizes a set with numb gradients, numb mus be an integer.
+GenerateGradients[{numb, fixed}] optimizes a set with numb gradients, numb must ba an integer and fixed a list of 3D coordiantes e.g. {{0,0,1},{0,1,0}}. The fixed gradients will not be moved.
+GenerateGradients[{numb1, numb2 ...}, alpha] optimizes a multi shel gradient set with numb gradients per shel. If alpha is set to 0.5 equal importance is given tothe optimal distribution of each shell en the enitre set. if alpha is 0 only the sub shels will be optimized, if alpha is set to 1 only the global set wil be optimized.
+
+GenerateGradients[] is based on DOI: 10.1002/mrm.26259 and 10.1002/(SICI)1522-2594(199909)42:3&lt;515::AID-MRM14&gt;3.0.CO;2-Q.</div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="547094204"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="36380654"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/Steps.html">Steps</a></td><td>1000</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Steps.html">Steps</a></span> is an option GenerateGrads and is the number of step that is used.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Runs.html">Runs</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Runs.html">Runs</a></span> is an option for <span class="IF">GenerateGradients</span>. Set how often the minimalization function is run. The best solution of all runs is the output. Default value is 1.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/VisualOpt.html">VisualOpt</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/VisualOpt.html">VisualOpt</a></span> is an option for <span class="IF">GenerateGradients</span>. Show the minimalization proces of eacht calculation step. Default is False.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/GradType.html">GradType</a></td><td>&quot;Normal&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/GradType.html">GradType</a></span> is an option <span class="IF">GenerateGradients</span><span class="specialcharacters">. It specifies what type of gradient set wil be produced<span class="comma">,</span> &quot;Normal&quot; or &quot;OverPlus&quot;.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ConditionCalc.html">ConditionCalc</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ConditionCalc.html">ConditionCalc</a></span> is an option for <span class="IF">GenerateGradients</span> if set to true <span class="IF">GenerateGradients</span> will also give the condition number evolution of the system.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FullSphere.html">FullSphere</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FullSphere.html">FullSphere</a></span> is an option for <span class="IF">GenerateGradients</span>. If set True the gradients will be optimized on a full sphere rather than half a sphere.</span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

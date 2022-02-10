@@ -1,0 +1,73 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>HelixAngleCalc&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="HelixAngleCalc" />
+
+<meta name="description" content="HelixAngleCalc[eigenvectors, mask, vox] calculates the helix angle matrix of cardiac data using only a left ventricle mask. HelixAngleCalc[eigenvectors, mask, maskp, vox] calculates the helix angle matrix of cardiac data using only a left ventricle mask, and a maskp for visualization. HelixAngleCalc[eigenvectors, mask, centerpoint, vec, inout, vox] calculates the helix angle matrix of cardiac data using only a left ventricle mask. HelixAngleCalc[eigenvectors, mask, maskp, centerpoint, vec, inout, vox] calculates the helix angle matrix of cardiac data using a left vantricle mask and a maskp for visualization. eigenvectors are the tensor eigenvectors calculated with EigenvecCalc. mask is a mask of the left ventricle. maskp is a mask used for visualization. vox is the voxels size, {slice, x, y}. The folowing values are calculated automaticlay Using CentralAxes but can also be provided as an input. centerpoint is the center of each slice calculated with CentralAxes. inout is the inner and outer radius calcualted with CentralAxes. vec is the vector describin the central axes of the heart, calculated with CentralAxes. Output is het fiber angle matrix FAM = {9, slice, x, y} or {FAM, plot}. The angles are in degrees. HelixAngleCalc[] is based on DOI: 10.1186/1532-429X-17-S1-P15." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'HelixAngleCalc.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`CardiacTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`CardiacTools`</span><h1 class="main-title">HelixAngleCalc</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">HelixAngleCalc[eigenvectors, <span class="IF"><span class="TI">mask</span></span>, vox] calculates the helix angle matrix of cardiac data using only a left ventricle <span class="IF"><span class="TI">mask</span></span>.
+HelixAngleCalc[eigenvectors, <span class="IF"><span class="TI">mask</span></span>, maskp, vox] calculates the helix angle matrix of cardiac data using only a left ventricle <span class="IF"><span class="TI">mask</span></span>, and a maskp for visualization.
+HelixAngleCalc[eigenvectors, <span class="IF"><span class="TI">mask</span></span>, centerpoint, vec, inout, vox]  calculates the helix angle matrix of cardiac data using only a left ventricle <span class="IF"><span class="TI">mask</span></span>.
+HelixAngleCalc[eigenvectors, <span class="IF"><span class="TI">mask</span></span>, maskp, centerpoint, vec, inout, vox] calculates the helix angle matrix of cardiac data using a left vantricle <span class="IF"><span class="TI">mask</span></span> and a maskp for visualization.
+
+eigenvectors are the tensor <span class="IF"><span class="TI">eigenvectors</span></span> calculated with EigenvecCalc.
+mask is a <span class="IF"><span class="TI">mask</span></span> of the left ventricle.
+maskp is a <span class="IF"><span class="TI">mask</span></span> used for visualization.
+vox is the voxels size, {slice, x, y}.
+
+The folowing values are calculated automaticlay Using CentralAxes but can also be provided as an input.
+centerpoint is the center of each slice calculated with CentralAxes.
+inout is the inner and outer radius calcualted with CentralAxes.
+vec is the vector describin the central axes of the heart, calculated with CentralAxes.
+
+Output is het fiber angle matrix FAM = {9, slice, x, y} or {FAM, plot}.
+The angles are in degrees. 
+
+HelixAngleCalc[] is based on DOI: 10.1186/1532-429X-17-S1-P15.</div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="369859938"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="233614095"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/ShowPlot.html">ShowPlot</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ShowPlot.html">ShowPlot</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CentralAxes.html">CentralAxes</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF">HelixAngleCalc</span> and <span class="IF"><a class="package-symbol" href="../ref/CardiacCoordinateSystem.html">CardiacCoordinateSystem</a></span>. True shows the fit of the central axes and outpu the plot as extra output.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/LCMMethod.html">LCMMethod</a></td><td>&quot;WallMap&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/LCMMethod.html">LCMMethod</a></span> is an option for <span class="IF">HelixAngleCalc</span> and LMCSytemCalc. Can be &quot;<span class="IF"><a class="package-symbol" href="../ref/CentralAxes.html">CentralAxes</a></span>&quot; or &quot;WallMap&quot;. 
+&quot;<span class="IF"><a class="package-symbol" href="../ref/CentralAxes.html">CentralAxes</a></span>&quot; uses wall distance calculation using projection of the centarl axes and circular approximation of the ventricle. This method is fairly fast and uses <span class="IF"><a class="package-symbol" href="../ref/CentralAxes.html">CentralAxes</a></span> internaly.
+&quot;WallMap&quot; uses wall distance interpolation and subsequential gradient calculation. Can take long for high res datasets but is most accurate. Uses <span class="IF"><a class="package-symbol" href="../ref/CalculateWallMap.html">CalculateWallMap</a></span> internaly.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/AxesMethod.html">AxesMethod</a></td><td>&quot;Quadratic&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/AxesMethod.html">AxesMethod</a></span> is an option for <span class="IF">HelixAngleCalc</span> and <span class="IF"><a class="package-symbol" href="../ref/CentralAxes.html">CentralAxes</a></span> and <span class="IF"><a class="package-symbol" href="../ref/CardiacCoordinateSystem.html">CardiacCoordinateSystem</a></span><span class="specialcharacters">. Can be &quot;Linear&quot;<span class="comma">,</span> &quot;Quadratic&quot;<span class="comma">,</span> &quot;Cubic&quot;.</span></span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

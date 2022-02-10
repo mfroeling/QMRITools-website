@@ -1,0 +1,124 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>QMRITools&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{??, , , }" />
+<meta name="keywords" content="QMRITools" />
+
+<meta name="description" content="QMRITools package written by Martijn Froeling. Contains various sub-packages with functions for processing, evaluating, simulating, importing, exporting and simulating of quantitative MRI data. It provides a range of functions to process DWI, DTI, Dixon and T2mapping data, phase unwrapping etc. If additional features are required please contact me on m.froeling@gmail.com" />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'QMRITools.en';</script>
+</head>
+
+<body id="guide">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/CardiacTools.html"><span class="dropdownPad">CardiacTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/CoilTools.html"><span class="dropdownPad">CoilTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/DenoiseTools.html"><span class="dropdownPad">DenoiseTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/DixonTools.html"><span class="dropdownPad">DixonTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/ElastixTools.html"><span class="dropdownPad">ElastixTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/GeneralTools.html"><span class="dropdownPad">GeneralTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/GradientTools.html"><span class="dropdownPad">GradientTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/ImportTools.html"><span class="dropdownPad">ImportTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/IVIMTools.html"><span class="dropdownPad">IVIMTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/JcouplingTools.html"><span class="dropdownPad">JcouplingTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/MaskingTools.html"><span class="dropdownPad">MaskingTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/NiftiTools.html"><span class="dropdownPad">NiftiTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/PhysiologyTools.html"><span class="dropdownPad">PhysiologyTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/PlottingTools.html"><span class="dropdownPad">PlottingTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/ProcessingTools.html"><span class="dropdownPad">ProcessingTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/ReconstructionTools.html"><span class="dropdownPad">ReconstructionTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/RelaxometryTools.html"><span class="dropdownPad">RelaxometryTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/SimulationTools.html"><span class="dropdownPad">SimulationTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/SpectroTools.html"><span class="dropdownPad">SpectroTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/TaggingTools.html"><span class="dropdownPad">TaggingTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/TensorTools.html"><span class="dropdownPad">TensorTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/TractographyTools.html"><span class="dropdownPad">TractographyTools</span></a>
+     </li>
+     <li>
+      <a href="../guide/VisteTools.html"><span class="dropdownPad">VisteTools</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/QMRITools.html"><span class="dropdownPad">QMRITools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="main-heading"><h1 class="main-title">QMRITools</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="616745991"></a>QMRITools package written by Martijn Froeling. <span class='br'>&nbsp;</span>Contains various sub-packages with functions for processing, evaluating, simulating, importing, exporting and simulating of quantitative MRI data.<span class='br'>&nbsp;</span>It provides a range of functions to process DWI, DTI, Dixon and T2mapping data, phase unwrapping etc.<span class='br'>&nbsp;</span>If additional features are required please contact me on m.froeling@gmail.com</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="477633887"></a><span class="IFSans"><a href="../guide/CardiacTools.html">CardiacTools</a></span> <span class="dash">&mdash;</span> Functions for processing cardiac MRI data.</p><p class="singleFunction"><a name="232714109"></a><span class="IFSans"><a href="../guide/DenoiseTools.html">DenoiseTools</a></span> <span class="dash">&mdash;</span> Functions for noise suppression of multi dimensional MRI data.</p><p class="singleFunction"><a name="66216567"></a><span class="IFSans"><a href="../guide/DixonTools.html">DixonTools</a></span> <span class="dash">&mdash;</span> Functions for Dixon data reconstruction and analysis. </p><p class="singleFunction"><a name="517095776"></a><span class="IFSans"><a href="../guide/ElastixTools.html">ElastixTools</a></span> <span class="dash">&mdash;</span> Functions for data registration using the <a href="https://elastix.lumc.nl/">Elastix</a> software. </p><p class="singleFunction"><a name="165376383"></a><span class="IFSans"><a href="../guide/GeneralTools.html">GeneralTools</a></span> <span class="dash">&mdash;</span> Functions that are used in other tools. </p><p class="singleFunction"><a name="802208633"></a><span class="IFSans"><a href="../guide/GradientTools.html">GradientTools</a></span> <span class="dash">&mdash;</span> Functions for diffusion gradient optimization and manipulation.</p><p class="singleFunction"><a name="149941791"></a><span class="IFSans"><a href="../guide/IVIMTools.html">IVIMTools</a></span> <span class="dash">&mdash;</span> Functions for fitting and analysis of IVIM MRI data.</p><p class="singleFunction"><a name="118820786"></a><span class="IFSans"><a href="../guide/JcouplingTools.html">JcouplingTools</a></span> <span class="dash">&mdash;</span> Functions for simulation of j-coupled spectra.</p><p class="singleFunction"><a name="409057696"></a><span class="IFSans"><a href="../guide/MaskingTools.html">MaskingTools</a></span> <span class="dash">&mdash;</span> Functions for generating and processing of masks and segmentations.</p><p class="singleFunction"><a name="694971446"></a><span class="IFSans"><a href="../guide/NiftiTools.html">NiftiTools</a></span> <span class="dash">&mdash;</span> Functions for importing and exporting <a href="https://nifti.nimh.nih.gov/">Nifti</a> (*.nii) data.</p><p class="singleFunction"><a name="249276998"></a><span class="IFSans"><a href="../guide/PlottingTools.html">PlottingTools</a></span> <span class="dash">&mdash;</span> Functions for displaying and visualization of multi dimensional data. </p><p class="singleFunction"><a name="185210090"></a><span class="IFSans"><a href="../guide/ProcessingTools.html">ProcessingTools</a></span> <span class="dash">&mdash;</span> Functions for generals processing of data.</p><p class="singleFunction"><a name="95232703"></a><span class="IFSans"><a href="../guide/ReconstructionTools.html">ReconstructionTools</a></span> <span class="dash">&mdash;</span> Functions for basic MRI reconstruction and coil combination.</p><p class="singleFunction"><a name="472343599"></a><span class="IFSans"><a href="../guide/RelaxometryTools.html">RelaxometryTools</a></span> <span class="dash">&mdash;</span> Functions for fitting and analysis of relaxometry data (e.g. T2, T1 and T1rho).</p><p class="singleFunction"><a name="43424256"></a><span class="IFSans"><a href="../guide/SimulationTools.html">SimulationTools</a></span> <span class="dash">&mdash;</span> Functions for simulating various MRI contrasts such as DWI, DTI, Dixon and EPG data. </p><p class="singleFunction"><a name="479178129"></a><span class="IFSans"><a href="../guide/SpectroTools.html">SpectroTools</a></span> <span class="dash">&mdash;</span> Functions for fitting, processing and analysis of MRS data.</p><p class="singleFunction"><a name="511139367"></a><span class="IFSans"><a href="../guide/TaggingTools.html">TaggingTools</a></span> <span class="dash">&mdash;</span> Functions for the analysis of tagging MRI data.</p><p class="singleFunction"><a name="212486955"></a><span class="IFSans"><a href="../guide/TensorTools.html">TensorTools</a></span> <span class="dash">&mdash;</span> Functions for fitting processing and analysis of DTI data.</p><p class="singleFunction"><a name="714579119"></a><span class="IFSans"><a href="../guide/TractographyTools.html">TractographyTools</a></span> <span class="dash">&mdash;</span> Functions for <a href="https://community.wolfram.com/groups/-/m/t/2283047">DTI based fiber tractography</a>.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList"><a name="175121666"></a><a href="../guide/CoilTools.html">CoilTools</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../guide/ImportTools.html">ImportTools</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../guide/PhysiologyTools.html">PhysiologyTools</a><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a href="../guide/VisteTools.html">VisteTools</a></p><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/QMRITools.html">QMRITools</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

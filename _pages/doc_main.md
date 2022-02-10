@@ -38,7 +38,7 @@ The tool includes demonstration code and data which can be found [here](../doc/d
 
 # Documentation [![up](../../assets/images/arrow.png)](../doc/#top "Top of page")
 
-A notebook with all functions and their description can be found [here](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/All-Functions.nb){:target="_blank"}.
+A notebook with all functions and their description can be found [here](../../assets/All-Functions.nb){:target="_blank"}.
 Documentation of all functions and their options is fully integrated in the Mathematica documentation. An online version of the full documentation can be 
 found [here](../../assets/htmldoc/html/guide/QMRITools.html){:target="_blank"}.
 
