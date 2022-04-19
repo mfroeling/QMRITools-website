@@ -13,7 +13,7 @@
 <meta name="historydata" content="{XX, , , }" />
 <meta name="keywords" content="B1MapCalc" />
 
-<meta name="description" content="B1MapCalc[data, TR, alpha] calculates the B1 map from a dual TR {tr1, tr2} acquisition (AFI) using magnitude data with reference angle alpha. data has dimensions {z, {tr1,tr2}, x, y}. B1MapCalc[dataTr1, dataTr2, TR, alpha] where dataTr1 and and dataTr2 can have any dimensions. B1MapCalc[chan1, chan2, {f, phase, scale}, TR, alpha] calculates the b1map of two channels with singal fraction f for chan1 and 1-f for chan2 using phase for the combination. the total b1 is scaled with scale. B1MapCalc[chan1, chan2, {{f1, f2}, phase, scale}, TR, aplha] calculates the b1map of two channels with singal fraction f1 for chan1 and f2 for chan2 using phase for the combination. the total b1 is scaled with scale. The Output can be &quot;Map&quot;, &quot;MagPhase&quot;, or &quot;Complex&quot;} B1MapCalc[] is based on DOI: 10.1002/mrm.21120." />
+<meta name="description" content="B1MapCalc[data, TR, alpha] calculates the B1 map from a dual TR {tr1, tr2} acquisition (AFI) using magnitude data with reference angle alpha. data has dimensions {z, {tr1,tr2}, x, y}. B1MapCalc[dataTr1, dataTr2, TR, alpha] where dataTr1 and and dataTr2 can have any dimensions. The Output can be &quot;Map&quot;, &quot;MagPhase&quot;, or &quot;Complex&quot;} B1MapCalc[] is based on DOI: 10.1002/mrm.21120." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
 <script>var baselang = 'B1MapCalc.en';</script>
 </head>
@@ -24,10 +24,6 @@
   <div class="functionIntro">B1MapCalc[data, <span class="IF"><span class="TI">TR</span></span>, alpha] calculates the B1 map from a dual <span class="IF"><span class="TI">TR</span></span> {tr1, tr2} acquisition (AFI) using magnitude <span class="IF"><span class="TI">data</span></span> with reference angle <span class="IF"><span class="TI">alpha</span></span>.
 data has dimensions {z, {tr1,tr2}, x, y}.
 B1MapCalc[dataTr1, dataTr2, <span class="IF"><span class="TI">TR</span></span>, alpha] where dataTr1 and and dataTr2 can have any dimensions.
-B1MapCalc[chan1, chan2, {f, phase, scale}, <span class="IF"><span class="TI">TR</span></span>, alpha] calculates the b1map of two channels with singal fraction f for chan1 and 1-f for chan2 using 
-phase for the combination. the total b1 is scaled with scale.
-B1MapCalc[chan1, chan2, {{f1, f2}, phase, scale}, <span class="IF"><span class="TI">TR</span></span>, aplha] calculates the b1map of two channels with singal fraction f1 for chan1 and f2 for chan2 using 
-phase for the combination. the total b1 is scaled with scale.
 
 The Output can be &quot;Map&quot;, &quot;MagPhase&quot;, or &quot;Complex&quot;}
 
@@ -36,17 +32,18 @@ B1MapCalc[] is based on DOI: 10.1002/mrm.21120.</div>
    <h1 class="toggle">Details</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="692394062"></a>The following options can be given: </li>
+     <li><a name="40826435"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="181499068"></a>
+      <a name="151814574"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
        <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/B1Output.html">B1Output</a></td><td>&quot;Map&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/B1Output.html">B1Output</a></span> is an option for <span class="IF">B1MapCalc</span><span class="specialcharacters">. Values can be &quot;Map&quot;<span class="comma">,</span> &quot;MagPhase&quot;<span class="comma">,</span> or &quot;Complex&quot;.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/B1Masking.html">B1Masking</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/B1Masking.html">B1Masking</a></span> is an option for <span class="IF">B1MapCalc</span>. If True then values where S2 is larger than S1 are masked.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/B1FilterData.html">B1FilterData</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/B1FilterData.html">B1FilterData</a></span> is an option for <span class="IF">B1MapCalc</span>. If True <span class="IF"><a class="package-symbol" href="../ref/HammingFilter.html">HammingFilter</a></span>Data is applied to the data before B1 calculation.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/B1Masking.html">B1Masking</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/B1Masking.html">B1Masking</a></span> is an option for <span class="IF">B1MapCalc</span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> then values where S2 is larger than S1 are masked.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/B1FilterData.html">B1FilterData</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/B1FilterData.html">B1FilterData</a></span> is an option for <span class="IF">B1MapCalc</span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> HammingFilterData is applied to the data before B1 calculation.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ReferenceB1.html">ReferenceB1</a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ReferenceB1.html">ReferenceB1</a></span> is an option for <span class="IF">B1MapCalc</span>. Default value is None. Can be given a numeric value in uT.</span></td></tr>
       </table>
      </li>
     </ul>
