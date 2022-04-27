@@ -1,7 +1,6 @@
 # config file for the webbsite
 
 environment:              production
-google_analytics:         UA-164529139-2
 
 # Theme Settings
 markdown:                 kramdown
@@ -30,7 +29,7 @@ logo:                     "/assets/images/icon.png"
 analytics:
   provider:               "google-gtag"
   google:
-    tracking_id:          UA-164529139-2
+    tracking_id:          G-9NE9434KNY
     anonymize_ip:         false
 
 
@@ -59,7 +58,6 @@ footer:
 # Reading Files
 include:
   - _pages
-  - _posts
 
 
 # Outputting
@@ -90,17 +88,6 @@ tag_archive:
 
 # website pages and posts
 defaults:
-# _posts
-  - scope:
-      path:               "_posts"
-      type:               posts
-    values:
-      layout:             single
-      author_profile:     false
-      read_time:          false
-      comments:           false
-      share:              false
-      related:            false
 # _pages
   - scope:
       path:               "_pages"
