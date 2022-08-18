@@ -12,7 +12,7 @@ toc: True
 
 <a name="top"></a>
 The release contains a zip file
-[DemoAndTest.zip](https://github.com/mfroeling/QMRITools/releases/download/2.0/DemoAndTest.zip)
+[DemoAndTest.zip](https://github.com/mfroeling/QMRITools/releases/download/2.9.3/DemoAndTest.zip)
 in which there is a file `demo.nb` and a folder `DemoData`. 
 To have a global overview of the functionality of the toolbox
 you can download this folder and run the `demo.nb`. By default the
