@@ -10,7 +10,7 @@
 
 <title>FitSpectra&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="FitSpectra" />
 
 <meta name="description" content="FitSpectra[specBasis, spec, {st, end}, dt, {lwvals, lwamsp}] Fits the basis spectra from GetSpectraBasisFunctions to the spec overt the ppm range {st, end} and dt the dweltime." />
@@ -20,26 +20,35 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`SpectroTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`SpectroTools`</span><h1 class="main-title">FitSpectra</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/SpectroTools.html"><span class="dropdownPad">SpectroTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FitSpectra</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../ref/FitSpectra.html">FitSpectra</a><span class="openbracket">[</span><span class="TI">specBasis</span><span class="comma">,</span><span class="TI">spec</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">st</span><span class="comma">,</span><span class="TI">end</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">dt</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">lwvals</span><span class="comma">,</span><span class="TI">lwamsp</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsSpectroTools/ref/FitSpectra.html">FitSpectra</a><span class="openbracket">[</span><span class="TI">specBasis</span><span class="comma">,</span><span class="TI">spec</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">st</span><span class="comma">,</span><span class="TI">end</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">dt</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">lwvals</span><span class="comma">,</span><span class="TI">lwamsp</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
    </p>
    <p class="code-description">Fits the basis spectra from <span class="IF"><a class="package-symbol" href="../ref/GetSpectraBasisFunctions.html">GetSpectraBasisFunctions</a></span> to the spec overt the ppm range {st, end} and dt the dweltime.</p>
   </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="5137098"></a>The following options can be given: </li>
+     <li><a name="742438107"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="222804787"></a>
+      <a name="54674424"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/SpectraNucleus.html">SpectraNucleus</a></td><td>&quot;1H&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/SpectraNucleus.html">SpectraNucleus</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/GetSpectraBasisFunctions.html">GetSpectraBasisFunctions</a></span> and <span class="IF">FitSpectra</span><span class="specialcharacters"> and specifies which nucleus to Simulate or fit<span class="comma">,</span> see GyromagneticRatio.</span></span></td></tr>
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/SpectraNucleus.html">SpectraNucleus</a></td><td>&quot;1H&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/SpectraNucleus.html">SpectraNucleus</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/GetSpectraBasisFunctions.html">GetSpectraBasisFunctions</a></span> and <span class="IF">FitSpectra</span><span class="specialcharacters"> and specifies which nucleus to Simulate or fit<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/GyromagneticRatio.html">GyromagneticRatio</a></span>.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/SpectraPpmShift.html">SpectraPpmShift</a></td><td>4.65</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/SpectraPpmShift.html">SpectraPpmShift</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/GetSpectraBasisFunctions.html">GetSpectraBasisFunctions</a></span> and <span class="IF">FitSpectra</span><span class="specialcharacters"> and defines how much the center frequency is shifted<span class="comma">,</span> default is water at 4.65 ppm.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/SpectraFieldStrength.html">SpectraFieldStrength</a></td><td>3</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/SpectraFieldStrength.html">SpectraFieldStrength</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/GetSpectraBasisFunctions.html">GetSpectraBasisFunctions</a></span> and <span class="IF">FitSpectra</span> and sets the field strenght at which the simulations and fitting is perforemd.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PaddingFactor.html">PaddingFactor</a></td><td>2</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PaddingFactor.html">PaddingFactor</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/PadFid.html">PadFid</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/PadSpectra.html">PadSpectra</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/ApodizePadFid.html">ApodizePadFid</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/ApodizePadSpectra.html">ApodizePadSpectra</a></span> and <span class="IF">FitSpectra</span>. It Specifies with which factro to lengthen the fid.</span></td></tr>
@@ -53,6 +62,27 @@
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="809201062"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/FitSpectra.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0cza1mk6vs0r9prp595l98w-nn19tk"
+       data-code="Files/FitSpectra.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/SpectroTools.html">SpectroTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

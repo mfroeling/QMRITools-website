@@ -25,17 +25,28 @@ __copyToClipboard.load = function() {
     var langs = ['en', 'ja', 'zh'],
         lang = (langs.indexOf(window.navigator.language) > -1) ? window.navigator.language : 'en';
 
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/input-template.html', input);
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/output-template.html', output);
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/inline-template.html', inline);
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/inlineblock-template.html', inlineblock);
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/block-template.html', block);
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/code-clipboard-template.html', codeClipboard);
-    __copyToClipboard.ajax('/common/js/clipboard/2.0/not-copiable-template.html', notCopiable);
+	// Locate the <script src="<...>/clipboard.js" /> that loaded this file.
+	// https://stackoverflow.com/a/4440632
+	var scriptLocation = document
+		.querySelectorAll("script[src*='clipboard.js'")
+		.item(0)
+		.attributes
+		.getNamedItem("src")
+		.value;
+
+	var base = scriptLocation.replace("clipboard.js", "");
+
+    __copyToClipboard.ajax(base + './input-template.html', input);
+    __copyToClipboard.ajax(base + './output-template.html', output);
+    __copyToClipboard.ajax(base + './inline-template.html', inline);
+    __copyToClipboard.ajax(base + './inlineblock-template.html', inlineblock);
+    __copyToClipboard.ajax(base + './block-template.html', block);
+    __copyToClipboard.ajax(base + './code-clipboard-template.html', codeClipboard);
+    __copyToClipboard.ajax(base + './not-copiable-template.html', notCopiable);
 /*  __copyToClipboard.ajax('/common/js/clipboard/2.0/image-map.html', imageMap); */
 
     setTimeout(function() {
-        __copyToClipboard.ajax('/common/js/clipboard/2.0/clipboard-text.'+lang+'.json', __copyToClipboard.clipboard);
+        __copyToClipboard.ajax(base + './clipboard-text.'+lang+'.json', __copyToClipboard.clipboard);
     }, 1000);
 }
 

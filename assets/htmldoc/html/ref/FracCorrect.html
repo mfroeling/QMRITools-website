@@ -10,7 +10,7 @@
 
 <title>FracCorrect&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="FracCorrect" />
 
 <meta name="description" content="FracCorrect[fraction, time] corrects the signal fraction calculated with the IVIM model for tissue relaxation and acquisition parameters. After correction the signal fraction can be regarded as volume fraction. FracCorrect[{fraction1, fraction2}, time] corrects the signal fraction1 and fraction2 from a 3 compartement IVIM model. time is {{te, tr}, {t2t, t21}, {t1t, t11}} or {{te, tr}, {t2t, t21, t22}, {t1t, t11, t12}}. where t2t and t1t are &quot;tissue&quot; relaxation times and t11 t12, t21 and t22 the &quot;fluid&quot; relaxation times. The te and tr as well as the relaxation times T2 and T1 can be defines in any time unit as long as they are consistant for all, e.g. all in ms. output is the corrected fraction maps." />
@@ -20,18 +20,50 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`IVIMTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`IVIMTools`</span><h1 class="main-title">FracCorrect</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">FracCorrect[fraction, time] corrects the signal <span class="IF"><span class="TI">fraction</span></span> calculated with the IVIM model for tissue relaxation and acquisition parameters.
-After correction the signal <span class="IF"><span class="TI">fraction</span></span> can be regarded as volume <span class="IF"><span class="TI">fraction</span></span>.
-FracCorrect[{fraction1, fraction2}, time] corrects the signal fraction1 and fraction2 from a 3 compartement IVIM model. 
-
-time is {{te, tr}, {t2t, t21}, {t1t, t11}} or {{te, tr}, {t2t, t21, t22}, {t1t, t11, t12}}.
-where t2t and t1t are &quot;tissue&quot; relaxation times and t11 t12, t21 and t22 the &quot;fluid&quot; relaxation times.
-
-The te and tr as well as the relaxation times T2 and T1 can be defines in any <span class="IF"><span class="TI">time</span></span> unit as long as they are consistant for all, e.g. all in ms.
-
-output is the corrected <span class="IF"><span class="TI">fraction</span></span> maps.</div>
- </div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/IVIMTools.html"><span class="dropdownPad">IVIMTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FracCorrect</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsIVIMTools/ref/FracCorrect.html">FracCorrect</a><span class="openbracket">[</span><span class="TI">fraction</span><span class="comma">,</span><span class="TI">time</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">corrects the signal <span class="IF"><span class="TI">fraction</span></span> calculated with the IVIM model for tissue relaxation and acquisition parameters. After correction the signal <span class="IF"><span class="TI">fraction</span></span> can be regarded as volume <span class="IF"><span class="TI">fraction</span></span>. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsIVIMTools/ref/FracCorrect.html">FracCorrect</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">fraction</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">fraction</span><sub><span class="TR">2</span></sub><span class="closebrace">}</span><span class="comma">,</span><span class="TI">time</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">corrects the signal fraction1 and fraction2 from a 3 compartement IVIM model. <span class="IF"><span class="TI">time</span></span> is {{te, tr}, {t2t, t21}, {t1t, t11}} or {{te, tr}, {t2t, t21, t22}, {t1t, t11, t12}}. where t2t and t1t are &quot;tissue&quot; relaxation times and t11 t12, t21 and t22 the &quot;fluid&quot; relaxation times. The te and tr as well as the relaxation times T2 and T1 can be defines in any <span class="IF"><span class="TI">time</span></span> unit as long as they are consistant for all, e.g. all in ms. output is the corrected <span class="IF"><span class="TI">fraction</span></span> maps.</p>
+  </div>
+ </div><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="167731231"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/FracCorrect.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0g3vbzsv1rb313csrxvki-c15ci5"
+       data-code="Files/FracCorrect.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/IVIMTools.html">IVIMTools</a>
+    </li>
+   </ul>
+  </div></section>
   
 
   

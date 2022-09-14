@@ -10,7 +10,7 @@
 
 <title>FindOutliers&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="FindOutliers" />
 
 <meta name="description" content="FindOutliers[data] finds the outliers of a list of data." />
@@ -20,27 +20,36 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`ProcessingTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`ProcessingTools`</span><h1 class="main-title">FindOutliers</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/ProcessingTools.html"><span class="dropdownPad">ProcessingTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FindOutliers</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../ref/FindOutliers.html">FindOutliers</a><span class="openbracket">[</span><span class="TI">data</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsProcessingTools/ref/FindOutliers.html">FindOutliers</a><span class="openbracket">[</span><span class="TI">data</span><span class="closebracket">]</span></span>
    </p>
    <p class="code-description">finds the outliers of a list of data.</p>
   </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="100696096"></a>The following options can be given: </li>
+     <li><a name="45650605"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="899099276"></a>
+      <a name="815878566"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
        <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/OutlierMethod.html">OutlierMethod</a></td><td>&quot;IQR&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutlierMethod.html">OutlierMethod</a></span> is an option for <span class="IF">FindOutliers</span><span class="specialcharacters">. values can be &quot;IQR&quot;<span class="comma">,</span> &quot;SIQR&quot; or &quot;aIQR&quot;. &quot;IRQ&quot; is used for normly distributed data<span class="comma">,</span> &quot;SIQR&quot; or &quot;aIQR&quot; are better for skewed distributions.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutlierOutput.html">OutlierOutput</a></td><td>&quot;Mask&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutlierOutput.html">OutlierOutput</a></span> is an option for <span class="IF">FindOutliers</span><span class="specialcharacters">. If value is &quot;Mask&quot; it gives a list of 1 for data and 0 for outliers. Else the output is <span class="openbrace">{</span>data<span class="comma">,</span> outliers<span class="closebrace">}</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutlierOutput.html">OutlierOutput</a></td><td>&quot;Mask&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutlierOutput.html">OutlierOutput</a></span> is an option for <span class="IF">FindOutliers</span>. If value is &quot;<span class="IF"><a class="package-symbol" href="../ref/Mask.html">Mask</a></span><span class="specialcharacters">&quot; it gives a list of 1 for data and 0 for outliers. Else the output is <span class="openbrace">{</span>data<span class="comma">,</span> outliers<span class="closebrace">}</span>.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutlierIterations.html">OutlierIterations</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutlierIterations.html">OutlierIterations</a></span> is an option for <span class="IF">FindOutliers</span>. Specifies how many iterations are used to find the outliers. 
 Each itteration the outliers are reevaluated on the data with the previously found outliers alread rejected.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutlierRange.html">OutlierRange</a></td><td>1.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutlierRange.html">OutlierRange</a></span> is an option for <span class="IF">FindOutliers</span>. Specifies how many times the IQR is considred an oulier.</span></td></tr>
@@ -49,6 +58,27 @@ Each itteration the outliers are reevaluated on the data with the previously fou
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="27016952"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/FindOutliers.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0gckzsytmpfwqz4iypovlg-qdco6"
+       data-code="Files/FindOutliers.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/ProcessingTools.html">ProcessingTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

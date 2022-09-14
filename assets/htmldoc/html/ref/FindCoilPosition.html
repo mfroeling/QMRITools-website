@@ -10,27 +10,36 @@
 
 <title>FindCoilPosition&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="FindCoilPosition" />
 
-<meta name="description" content="FindCoilPosition[weights] finds the coil posision by locating the highest intensity location in the coil weight map, which can be obtianed by LoadCoilSetup or SumOfSquares. Internally it uses MakeWeightMask to remove the noise of the weightmasks. FindCoilPosition[weights, mask] limits the search region to the provided mask." />
+<meta name="description" content="FindCoilPosition[weights] finds the coil posision by locating the highest intensity location in the coil weight map,which can be obtianed by LoadCoilSetup or SumOfSquares. Internally it uses MakeWeightMask to remove the noise of the weightmasks. FindCoilPosition[weights, mask] limits the search region to the provided mask." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
 <script>var baselang = 'FindCoilPosition.en';</script>
 </head>
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`CoilTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`CoilTools`</span><h1 class="main-title">FindCoilPosition</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">FindCoilPosition[weights] finds the coil posision by locating the highest intensity location in the coil weight map, which can be obtianed by LoadCoilSetup or SumOfSquares.
-Internally it uses MakeWeightMask to remove the noise of the weightmasks.
-FindCoilPosition[weights, mask] limits the search region to the provided mask.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FindCoilPosition</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsCoilTools/ref/FindCoilPosition.html">FindCoilPosition</a><span class="openbracket">[</span><span class="TI">weights</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">finds the coil posision by locating the highest intensity location in the coil weight map,which can be obtianed by <span class="IF"><a class="package-symbol" href="../ref/LoadCoilSetup.html">LoadCoilSetup</a></span> or <span class="IF"><a class="package-symbol" href="../ref/SumOfSquares.html">SumOfSquares</a></span>. Internally it uses <span class="IF"><a class="package-symbol" href="../ref/MakeWeightMask.html">MakeWeightMask</a></span> to remove the noise of the weightmasks. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsCoilTools/ref/FindCoilPosition.html">FindCoilPosition</a><span class="openbracket">[</span><span class="TI">weights</span><span class="comma">,</span><span class="TI">mask</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">limits the search region to the provided <span class="IF"><span class="TI">mask</span></span>.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="795494029"></a>The following options can be given: </li>
+     <li><a name="570157169"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="20504175"></a>
+      <a name="21947768"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -42,6 +51,19 @@ FindCoilPosition[weights, mask] limits the search region to the provided mask.</
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="573343924"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/FindCoilPosition.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0tf7oprt3bip58ea0xzjbqqa-jrm1ae"
+       data-code="Files/FindCoilPosition.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
   </div></section>
   
 

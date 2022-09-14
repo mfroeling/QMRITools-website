@@ -10,7 +10,7 @@
 
 <title>BayesianIVIMFit2&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="BayesianIVIMFit2" />
 
 <meta name="description" content="BayesianIVIMFit2[data, bval, init, mask] performs bayesian IVIM fit of data. data is the data which should be {slice, Ndiff, x, y}. bval is the bvector whould be length Ndiff. init is the initalization of the bayesian fit which comes from IVIMCalc, (without S0 using 2 compartments). mask is the region in which the bayesian fit is performed. output is {f1, dc, pdc1}. The fraction is defined between 0 and 1, the dc, pdc1 is in mm^2/s." />
@@ -20,22 +20,29 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`IVIMTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`IVIMTools`</span><h1 class="main-title">BayesianIVIMFit2</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">BayesianIVIMFit2[data, <span class="IF"><span class="TI">bval</span></span>, <span class="IF"><span class="TI">init</span></span>, mask] performs bayesian IVIM fit of <span class="IF"><span class="TI">data</span></span>.
-
-data is the <span class="IF"><span class="TI">data</span></span> which should be {slice, Ndiff, x, y}.
-bval is the bvector whould be length Ndiff.
-init is the initalization of the bayesian fit which comes from IVIMCalc, (without S0 using 2 compartments).
-mask is the region in which the bayesian fit is performed.
-
-output is {f1, dc, pdc1}. The fraction is defined between 0 and 1, the dc, pdc1 is in mm^2/s.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/IVIMTools.html"><span class="dropdownPad">IVIMTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">BayesianIVIMFit2</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsIVIMTools/ref/BayesianIVIMFit2.html">BayesianIVIMFit2</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">bval</span><span class="comma">,</span><span class="TI">init</span><span class="comma">,</span><span class="TI">mask</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">performs bayesian IVIM fit of <span class="IF"><span class="TI">data</span></span>. <span class="IF"><span class="TI">data</span></span> is the <span class="IF"><span class="TI">data</span></span> which should be {slice, Ndiff, x, y}. <span class="IF"><span class="TI">bval</span></span> is the bvector whould be length Ndiff. <span class="IF"><span class="TI">init</span></span> is the initalization of the bayesian fit which comes from <span class="IF"><a class="package-symbol" href="../ref/IVIMCalc.html">IVIMCalc</a></span>, (without S0 using 2 compartments). mask is the region in which the bayesian fit is performed. output is {f1, dc, pdc1}. The fraction is defined between 0 and 1, the dc, pdc1 is in mm^2/s.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="3274598"></a>The following options can be given: </li>
+     <li><a name="167817665"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="90902554"></a>
+      <a name="317550467"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -45,15 +52,36 @@ output is {f1, dc, pdc1}. The fraction is defined between 0 and 1, the dc, pdc1 
 three values must be given <span class="openbrace">{</span>itterations<span class="comma">,</span> burn steps<span class="comma">,</span> sample density<span class="closebrace">}</span>.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/UpdateStep.html">UpdateStep</a></td><td><span class="openbrace">{</span>0.5<span class="comma">,</span> 0.2<span class="comma">,</span> 0.5<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/UpdateStep.html">UpdateStep</a></span> is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. It determines how often the parameters are updated. Is optimized during the first 500 burn steps.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FixPseudoDiff.html">FixPseudoDiff</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FixPseudoDiff.html">FixPseudoDiff</a></span> is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. If the pDc1 and pD2 were fixed in <span class="IF"><a class="package-symbol" href="../ref/IVIMCalc.html">IVIMCalc</a></span> this value should be <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/CorrectPar.html">CorrectPar</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/CorrectPar.html">CorrectPar</a></span> is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it removes the values outside the contraints using <span class="IF"><a class="package-symbol" href="../ref/CorrectParMap.html">CorrectParMap</a></span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FixPseudoDiffSD.html">FixPseudoDiffSD</a></td><td>0.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FixPseudoDiffSD.html">FixPseudoDiffSD</a></span> is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. Gives the standard deviation of pDc1 and pD2 if <span class="IF"><a class="package-symbol" href="../ref/FixPseudoDiff.html">FixPseudoDiff</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/CorrectPar.html">CorrectPar</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Correct.html">Correct</a></span>Par is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it removes the values outside the contraints using <span class="IF"><a class="package-symbol" href="../ref/Correct.html">Correct</a></span>ParMap.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FixPseudoDiffSD.html">FixPseudoDiffSD</a></td><td>0.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FixPseudoDiff.html">FixPseudoDiff</a></span>SD is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. Gives the standard deviation of pDc1 and pD2 if <span class="IF"><a class="package-symbol" href="../ref/FixPseudoDiff.html">FixPseudoDiff</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span>.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutputSamples.html">OutputSamples</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutputSamples.html">OutputSamples</a></span> is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. If set <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> the full marcov chain is given as an additionaln output.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FitConstrains.html">FitConstrains</a></td><td><span class="openbrace">{</span><span class="openbrace">{</span>0.000500201<span class="comma">,</span> 0.9995<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>0.0000453999<span class="comma">,</span> 0.00334597<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>0.000911882<span class="comma">,</span> 1.<span class="closebrace">}</span><span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FitConstrains.html">FitConstrains</a></span> is an option for <span class="IF">BayesianIVIMFit2</span> and <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit3.html">BayesianIVIMFit3</a></span>. Gives the contraints of the parameters. 
-The values are used for displaying the histograms and for the initialization if <span class="IF"><a class="package-symbol" href="../ref/CorrectPar.html">CorrectPar</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span>.</span></td></tr>
+The values are used for displaying the histograms and for the initialization if <span class="IF"><a class="package-symbol" href="../ref/Correct.html">Correct</a></span>Par is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span>.</span></td></tr>
       </table>
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="218630997"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/BayesianIVIMFit2.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0xv4l2vyctxenpayl12pemib8elmzc91ja-dwga1j"
+       data-code="Files/BayesianIVIMFit2.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/IVIMTools.html">IVIMTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

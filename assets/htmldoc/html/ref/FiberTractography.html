@@ -10,7 +10,7 @@
 
 <title>FiberTractography&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="FiberTractography" />
 
 <meta name="description" content="FiberTractography[tensor, vox] performs fibertractography on the tensor with voxels dimensions vox. FiberTractography[tensor, vox, {par, {min, max}}] performs fibertractography on the tensor with voxels dimensions vox with additional stoppin criteria par, where tracts are only generated between values of par min and max. FiberTractography[tensor, vox, {{par, {min, max}}, ..}] performs fibertractography on the tensor with voxels dimensions vox with multiple additional stopping criteria." />
@@ -20,19 +20,41 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`TractographyTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`TractographyTools`</span><h1 class="main-title">FiberTractography</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">FiberTractography[tensor, vox] performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span>.
-FiberTractography[tensor, <span class="IF"><span class="TI">vox</span></span>, {par, {min, max}}] performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with additional stoppin criteria
-par, where tracts are only generated between values of par min and max.
-FiberTractography[tensor, <span class="IF"><span class="TI">vox</span></span>, {{par, {min, max}}, ..}] performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with 
-multiple additional stopping criteria.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/TractographyTools.html"><span class="dropdownPad">TractographyTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FiberTractography</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span>. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with additional stoppin criteria par, where tracts are only generated between values of par min and max. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="comma">,</span>..<span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with multiple additional stopping criteria.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="350111689"></a>The following options can be given: </li>
+     <li><a name="469605868"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="73555794"></a>
+      <a name="142135526"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -40,8 +62,8 @@ multiple additional stopping criteria.</div>
        <col width="43%" />
        <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></td><td><span class="openbrace">{</span>10<span class="comma">,</span> 200<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed tract range.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></td><td>30</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed angle change per tract step.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorFilps.html">TensorFilps</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TensorFilps.html">TensorFilps</a></span> is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is fliped<span class="comma">,</span> see Flip</span><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Orientation.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorPermutations.html">TensorPermutations</a></td><td><span class="openbrace">{</span>x<span class="comma">,</span> y<span class="comma">,</span> z<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TensorPermutations.html">TensorPermutations</a></span> is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is permuted<span class="comma">,</span> see Flip</span><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Orientation.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorFilps.html">TensorFilps</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Filps is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is fliped<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorPermutations.html">TensorPermutations</a></td><td><span class="openbrace">{</span>x<span class="comma">,</span> y<span class="comma">,</span> z<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Permutations is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is permuted<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/InterpolationOrder.html">InterpolationOrder</a></td><td>1</td><td><span class="TT"><span class="specialcharacters">InterpolationOrder is an option for Interpolation<span class="comma">,</span> as well as ListLinePlot<span class="comma">,</span> ListPlot3D<span class="comma">,</span> ListContourPlot<span class="comma">,</span> and related functions<span class="comma">,</span> that specifies what order of interpolation to use.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/StopThreshhold.html">StopThreshhold</a></td><td>0.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/StopThreshhold.html">StopThreshhold</a></span> is an option for <span class="IF">FiberTractography</span> and defines the stop threshhold which is a value between 0 and 1.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/StepSize.html">StepSize</a></td><td>2</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/StepSize.html">StepSize</a></span> is an option for <span class="IF">FiberTractography</span> and defines the tractography step size.</span></td></tr>
@@ -52,6 +74,27 @@ multiple additional stopping criteria.</div>
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="715045385"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/FiberTractography.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0bgtp89qj6t2olc652a9doq7e7d11r-l3z6t3"
+       data-code="Files/FiberTractography.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/TractographyTools.html">TractographyTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

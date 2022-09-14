@@ -10,7 +10,7 @@
 
 <title>CalibrateEPGT2Fit&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="CalibrateEPGT2Fit" />
 
 <meta name="description" content="CalibrateEPGT2Fit[datan, times, angle] calculates the Fat T2 ralaxation that will be used in the EPGT2fit. Outputs the fat T2 value." />
@@ -20,17 +20,29 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`RelaxometryTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`RelaxometryTools`</span><h1 class="main-title">CalibrateEPGT2Fit</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">CalibrateEPGT2Fit[datan, <span class="IF"><span class="TI">times</span></span>, angle] calculates the Fat T2 ralaxation that will be used in the EPGT2fit.
-
-Outputs the fat T2 value.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/RelaxometryTools.html"><span class="dropdownPad">RelaxometryTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">CalibrateEPGT2Fit</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsRelaxometryTools/ref/CalibrateEPGT2Fit.html">CalibrateEPGT2Fit</a><span class="openbracket">[</span><span class="TI">datan</span><span class="comma">,</span><span class="TI">times</span><span class="comma">,</span><span class="TI">angle</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">calculates the Fat T2 ralaxation that will be used in the EPGT2fit. Outputs the fat T2 value.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="43374583"></a>The following options can be given: </li>
+     <li><a name="592633969"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="159449411"></a>
+      <a name="46868944"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -38,13 +50,34 @@ Outputs the fat T2 value.</div>
        <col width="43%" />
        <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/EPGRelaxPars.html">EPGRelaxPars</a></td><td><span class="openbrace">{</span><span class="openbrace">{</span>0<span class="comma">,</span> 100<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>20<span class="comma">,</span> 300<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>1400.<span class="comma">,</span> 365.<span class="closebrace">}</span><span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGRelaxPars.html">EPGRelaxPars</a></span> is and option for <span class="IF"><a class="package-symbol" href="../ref/EPGT2Fit.html">EPGT2Fit</a></span><span class="specialcharacters">. Needs to be <span class="openbrace">{</span>T1muscl<span class="comma">,</span> T1Fat<span class="comma">,</span> T2Fat<span class="closebrace">}</span> in ms<span class="comma">,</span> defaul is <span class="openbrace">{</span>1400<span class="comma">,</span>365<span class="comma">,</span>137<span class="closebrace">}</span> in ms.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGFitPoints.html">EPGFitPoints</a></td><td>50</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGFitPoints.html">EPGFitPoints</a></span> is a option for <span class="IF">CalibrateEPGT2Fit</span> and <span class="IF"><a class="package-symbol" href="../ref/EPGT2Fit.html">EPGT2Fit</a></span>. Number of points is 200 by default.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGMethodCal.html">EPGMethodCal</a></td><td>&quot;2comp&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGMethodCal.html">EPGMethodCal</a></span> is an option for <span class="IF">CalibrateEPGT2Fit</span> and <span class="IF"><a class="package-symbol" href="../ref/EPGT2Fit.html">EPGT2Fit</a></span><span class="specialcharacters">. The calibration can be done using &quot;1comp&quot;<span class="comma">,</span> &quot;2comp&quot;<span class="comma">,</span> &quot;2compF&quot;.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGMethodCal.html">EPGMethodCal</a></td><td>&quot;2comp&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGMethod.html">EPGMethod</a></span>Cal is an option for <span class="IF">CalibrateEPGT2Fit</span> and <span class="IF"><a class="package-symbol" href="../ref/EPGT2Fit.html">EPGT2Fit</a></span><span class="specialcharacters">. The calibration can be done using &quot;1comp&quot;<span class="comma">,</span> &quot;2comp&quot;<span class="comma">,</span> &quot;2compF&quot;.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGFatShift.html">EPGFatShift</a></td><td>0.</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGFatShift.html">EPGFatShift</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/EPGT2Fit.html">EPGT2Fit</a></span>. Specfies the amount of shift of the fat refocussing pulse relative to the fat exitation pulse.
-Can be obtained form GetPulseProfile.</span></td></tr>
+Can be obtained form <span class="IF"><a class="package-symbol" href="../ref/GetPulseProfile.html">GetPulseProfile</a></span>.</span></td></tr>
       </table>
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="307178078"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/CalibrateEPGT2Fit.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/00ucwjynu5dspdm3jc3wgf205plfswd5y-fc56eo"
+       data-code="Files/CalibrateEPGT2Fit.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/RelaxometryTools.html">RelaxometryTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

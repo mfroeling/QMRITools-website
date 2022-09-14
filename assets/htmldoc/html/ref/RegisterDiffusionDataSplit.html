@@ -10,7 +10,7 @@
 
 <title>RegisterDiffusionDataSplit&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="RegisterDiffusionDataSplit" />
 
 <meta name="description" content="RegisterDiffusionDataSplit[dtidata, vox] is identical to Register diffusion data however left and right side of the data are registered seperately. RegisterDiffusionDataSplit[{dtidata, vox}, {anatdata, voxa}] is identical to Register diffusion data however left and right side of the data are registered seperately. RegisterDiffusionDataSplit[{dtidata, dtimask, vox}, {anatdata, anatmask, voxa}] is identical to Register diffusion data however left and right side of the data are registered seperately. Splitting the data is done using the function CutData and merged wit Stich data. Output is the registered data." />
@@ -20,20 +20,41 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`ElastixTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`ElastixTools`</span><h1 class="main-title">RegisterDiffusionDataSplit</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">RegisterDiffusionDataSplit[dtidata, vox] is identical to Register diffusion data however left and right side of the data are registered seperately.
-RegisterDiffusionDataSplit[{dtidata, vox}, {anatdata, voxa}] is identical to Register diffusion data however left and right side of the data are registered seperately.
-RegisterDiffusionDataSplit[{dtidata, dtimask, vox}, {anatdata, anatmask, voxa}] is identical to Register diffusion data however left and right side of the data are registered seperately.
-
-Splitting the data is done using the function CutData and merged wit Stich data.
-Output is the registered data.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/ElastixTools.html"><span class="dropdownPad">ElastixTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">RegisterDiffusionDataSplit</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterDiffusionDataSplit.html">RegisterDiffusionDataSplit</a><span class="openbracket">[</span><span class="TI">dtidata</span><span class="comma">,</span><span class="TI">vox</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">is identical to Register diffusion data however left and right side of the data are registered seperately. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterDiffusionDataSplit.html">RegisterDiffusionDataSplit</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">dtidata</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">anatdata</span><span class="comma">,</span><span class="TI">voxa</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">is identical to Register diffusion data however left and right side of the data are registered seperately. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterDiffusionDataSplit.html">RegisterDiffusionDataSplit</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">dtidata</span><span class="comma">,</span><span class="TI">dtimask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">anatdata</span><span class="comma">,</span><span class="TI">anatmask</span><span class="comma">,</span><span class="TI">voxa</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">is identical to Register diffusion data however left and right side of the data are registered seperately. Splitting the data is done using the function <span class="IF"><a class="package-symbol" href="../ref/CutData.html">CutData</a></span> and merged wit Stich data. Output is the registered data.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="393753929"></a>The following options can be given: </li>
+     <li><a name="316162098"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="316696001"></a>
+      <a name="405146566"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -89,6 +110,27 @@ Values can be &quot;First&quot;<span class="comma">,</span> &quot;Mean&quot; or 
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="315543395"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/RegisterDiffusionDataSplit.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0s6xdt1ioq2wm7lgkw1e7v6peun8y8-fh5g4l"
+       data-code="Files/RegisterDiffusionDataSplit.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/ElastixTools.html">ElastixTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

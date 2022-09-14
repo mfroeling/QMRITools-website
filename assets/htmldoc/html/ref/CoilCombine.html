@@ -10,33 +10,51 @@
 
 <title>CoilCombine&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="CoilCombine" />
 
-<meta name="description" content="CoilCombine[sig] combines the coil signals sig. Where sig is {nCoils, ...}. CoilCombine[sig, cov] combines the coil signals sig. Where sig is {nCoils, ...} and cov the complex noise correlation matrix. CoilCombine[sig, cov, sens] combines the coil signals sig. Where sig is {nCoils, ...} and cov the complex noise correlation matrix and sense the coils sensitivitys. Possible coil combination methods are &quot;Sum&quot;, &quot;RootSumSqaures&quot;, &quot;RoemerEqualNoise&quot;, &quot;RoemerEqualSignal&quot;, &quot;WSVD&quot;. RootSumSquares needs the signal. Can be performed with and without the noise covaricance matrix RoemerEqualNoise needs the signal and the noise covaricance matrix. Can be performed with and without the sense data, without sense data the sensisity is estimated using the singal and the RSS reconstrucntion of the signa. RoemerEqualSignal needs the signal and the noise covaricance matrix and the sense data. WSVD needs the signal and the noise covariance matrix." />
+<meta name="description" content="CoilCombine[sig] combines the coil signals sig. Where sig is {nCoils,...}. CoilCombine[sig, cov] combines the coil signals sig. Where sig is {nCoils, ...} and cov the complex noise correlation matrix. CoilCombine[sig, cov, sens] combines the coil signals sig. Where sig is {nCoils, ...} and cov the complex noise correlation matrix and sense the coils sensitivitys. Possible coil combination methods are &quot;Sum&quot;, &quot;RootSumSqaures&quot;, &quot;RoemerEqualNoise&quot;, &quot;RoemerEqualSignal&quot;, &quot;WSVD&quot;. RootSumSquares needs the signal. Can be performed with and without the noise covaricance matrix RoemerEqualNoise needs the signal and the noise covaricance matrix. Can be performed with and without the sense data, without sense data the sensisity is estimated using the singal and the RSS reconstrucntion of the signa. RoemerEqualSignal needs the signal and the noise covaricance matrix and the sense data. WSVD needs the signal and the noise covariance matrix." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
 <script>var baselang = 'CoilCombine.en';</script>
 </head>
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`ReconstructionTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`ReconstructionTools`</span><h1 class="main-title">CoilCombine</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">CoilCombine[sig] combines the coil signals sig. Where sig is {nCoils, ...}.  
-CoilCombine[sig, cov] combines the coil signals sig. Where sig is {nCoils, ...} and cov the complex noise correlation matrix.
-CoilCombine[sig, cov, sens] combines the coil signals sig. Where sig is {nCoils, ...} and cov the complex noise correlation matrix and sense the coils sensitivitys.
-
-Possible coil combination methods are &quot;Sum&quot;, &quot;RootSumSqaures&quot;, &quot;RoemerEqualNoise&quot;, &quot;RoemerEqualSignal&quot;, &quot;WSVD&quot;.
-RootSumSquares needs the signal. Can be performed with and without the noise covaricance matrix
-RoemerEqualNoise needs the signal and the noise covaricance matrix. Can be performed with and without the sense data, without sense data the sensisity is estimated using the singal and the RSS reconstrucntion of the signa.
-RoemerEqualSignal needs the signal and the noise covaricance matrix and the sense data.
-WSVD needs the signal and the noise covariance matrix.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/ReconstructionTools.html"><span class="dropdownPad">ReconstructionTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">CoilCombine</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsReconstructionTools/ref/CoilCombine.html">CoilCombine</a><span class="openbracket">[</span><span class="TI">sig</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">combines the coil signals <span class="IF"><span class="TI">sig</span></span>. Where <span class="IF"><span class="TI">sig</span></span> is {nCoils,...}. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsReconstructionTools/ref/CoilCombine.html">CoilCombine</a><span class="openbracket">[</span><span class="TI">sig</span><span class="comma">,</span><span class="TI">cov</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">combines the coil signals <span class="IF"><span class="TI">sig</span></span>. Where <span class="IF"><span class="TI">sig</span></span> is {nCoils, ...} and <span class="IF"><span class="TI">cov</span></span> the complex noise correlation matrix. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsReconstructionTools/ref/CoilCombine.html">CoilCombine</a><span class="openbracket">[</span><span class="TI">sig</span><span class="comma">,</span><span class="TI">cov</span><span class="comma">,</span><span class="TI">sens</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">combines the coil signals <span class="IF"><span class="TI">sig</span></span>. Where <span class="IF"><span class="TI">sig</span></span> is {nCoils, ...} and <span class="IF"><span class="TI">cov</span></span> the complex noise correlation matrix and sense the coils sensitivitys. Possible coil combination methods are &quot;Sum&quot;, &quot;RootSumSqaures&quot;, &quot;RoemerEqualNoise&quot;, &quot;RoemerEqualSignal&quot;, &quot;WSVD&quot;. RootSumSquares needs the signal. Can be performed with and without the noise covaricance matrix RoemerEqualNoise needs the signal and the noise covaricance matrix. Can be performed with and without the sense data, without sense data the sensisity is estimated using the singal and the RSS reconstrucntion of the signa. RoemerEqualSignal needs the signal and the noise covaricance matrix and the sense data. WSVD needs the signal and the noise covariance matrix.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="109295530"></a>The following options can be given: </li>
+     <li><a name="693795375"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="519870752"></a>
+      <a name="14831062"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -48,6 +66,27 @@ WSVD needs the signal and the noise covariance matrix.</div>
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="281173254"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/CoilCombine.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0mevpbncy4li7pynsky7zr-exosyg"
+       data-code="Files/CoilCombine.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/ReconstructionTools.html">ReconstructionTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

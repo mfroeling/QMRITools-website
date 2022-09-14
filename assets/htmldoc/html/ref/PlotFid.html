@@ -10,7 +10,7 @@
 
 <title>PlotFid&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="PlotFid" />
 
 <meta name="description" content="PlotFid[fid, dwell] plots the fid assuming dwell as the sampeling time. PlotFid[time, fid] plot the fid where time is the timing of the fid which can be obtained with GetTimeRange." />
@@ -20,16 +20,35 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`SpectroTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`SpectroTools`</span><h1 class="main-title">PlotFid</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">PlotFid[fid, dwell] plots the <span class="IF"><span class="TI">fid</span></span> assuming <span class="IF"><span class="TI">dwell</span></span> as the sampeling time.
-PlotFid[time, fid] plot the <span class="IF"><span class="TI">fid</span></span> where time is the timing of the <span class="IF"><span class="TI">fid</span></span> which can be obtained with GetTimeRange.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/SpectroTools.html"><span class="dropdownPad">SpectroTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">PlotFid</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsSpectroTools/ref/PlotFid.html">PlotFid</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">dwell</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">plots the <span class="IF"><span class="TI">fid</span></span> assuming <span class="IF"><span class="TI">dwell</span></span> as the sampeling <span class="IF"><span class="TI">time</span></span>. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsSpectroTools/ref/PlotFid.html">PlotFid</a><span class="openbracket">[</span><span class="TI">time</span><span class="comma">,</span><span class="TI">fid</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">plot the <span class="IF"><span class="TI">fid</span></span> where <span class="IF"><span class="TI">time</span></span> is the timing of the <span class="IF"><span class="TI">fid</span></span> which can be obtained with <span class="IF"><a class="package-symbol" href="../ref/GetTimeRange.html">GetTimeRange</a></span>.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="122031"></a>The following options can be given: </li>
+     <li><a name="56762674"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="760277232"></a>
+      <a name="8284149"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -38,6 +57,8 @@ PlotFid[time, fid] plot the <span class="IF"><span class="TI">fid</span></span> 
        <tr class="lineAbove" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/PlotRange.html">PlotRange</a></td><td><a href="http://reference.wolfram.com/language/ref/Full.html">Full</a></td><td><span class="TT">PlotRange is an option for graphics functions that specifies what range of coordinates to include in a plot. </span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Method.html">Method</a></td><td>&quot;All&quot;</td><td><span class="TT">Method is an option for various algorithm-intensive functions that specifies what internal methods they should use.</span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/GridLines.html">GridLines</a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT">GridLines is an option for two-dimensional graphics functions that specifies grid lines. </span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PlotColor.html">PlotColor</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PlotColor.html">PlotColor</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/GradientPlot.html">GradientPlot</a></span> can be any color or gradient color name.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/GridLineSpacing.html">GridLineSpacing</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/GridLineSpacing.html">GridLineSpacing</a></span> is an option of <span class="IF"><a class="package-symbol" href="../ref/TransmuralPlot.html">TransmuralPlot</a></span>. It defines the spacing of the gridlines.</span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/AspectRatio.html">AspectRatio</a></td><td>0.2</td><td><span class="TT">AspectRatio is an option for Graphics and related functions that specifies the ratio of height to width for a plot. </span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/ImageSize.html">ImageSize</a></td><td>750</td><td><span class="TT">ImageSize is an option that specifies the overall size of an image to display for an object. </span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/PlotLabel.html">PlotLabel</a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT">PlotLabel is an option for graphics functions that specifies an overall label for a plot. </span></td></tr>
@@ -45,6 +66,27 @@ PlotFid[time, fid] plot the <span class="IF"><span class="TI">fid</span></span> 
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="455318323"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/PlotFid.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0hykgphproyt92ho1c3f-htdb5h"
+       data-code="Files/PlotFid.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/SpectroTools.html">SpectroTools</a>
+    </li>
+   </ul>
   </div></section>
   
 

@@ -10,7 +10,7 @@
 
 <title>PCADeNoise&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="PCADeNoise" />
 
 <meta name="description" content="PCADeNoise[data] removes rician noise from the data with PCA. PCADeNoise[data, mask] removes rician noise from the data with PCA only withing the mask. PCADeNoise[data, mask, sig] removes rician noise from the data with PCA only withing the mask using sig as prior knowledge or fixed value. Output is de {data denoise, sigma map} by default if PCAOutput is Full then fitted {data dnoise , {sigma fit, average sigma}, {number components, number of fitted voxesl, number of max fits}, total fit -time per 500 ittt}. PCADeNoise[] is based on DOI: 10.1016/j.neuroimage.2016.08.016 and 10.1002/mrm.26059." />
@@ -20,21 +20,38 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`DenoiseTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`DenoiseTools`</span><h1 class="main-title">PCADeNoise</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">PCADeNoise[data] removes rician noise from the data with PCA.
-PCADeNoise[data, mask] removes rician noise from the data with PCA only withing the mask.
-PCADeNoise[data, mask, sig] removes rician noise from the data with PCA only withing the mask using sig as prior knowledge or fixed value.
-
-Output is de {data denoise, sigma map} by default if PCAOutput is Full then fitted {data dnoise , {sigma fit, average sigma}, {number components, number of fitted voxesl, number of max fits}, total fit -time per 500 ittt}.
-
-PCADeNoise[] is based on DOI: 10.1016/j.neuroimage.2016.08.016 and 10.1002/mrm.26059.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">PCADeNoise</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDenoiseTools/ref/PCADeNoise.html">PCADeNoise</a><span class="openbracket">[</span><span class="TI">data</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">removes rician noise from the <span class="IF"><span class="TI">data</span></span> with PCA. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDenoiseTools/ref/PCADeNoise.html">PCADeNoise</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">mask</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">removes rician noise from the <span class="IF"><span class="TI">data</span></span> with PCA only withing the <span class="IF"><span class="TI">mask</span></span>. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDenoiseTools/ref/PCADeNoise.html">PCADeNoise</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">sig</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">removes rician noise from the <span class="IF"><span class="TI">data</span></span> with PCA only withing the <span class="IF"><span class="TI">mask</span></span> using <span class="IF"><span class="TI">sig</span></span> as prior knowledge or fixed value. Output is de {data denoise, sigma map} by default if <span class="IF"><a class="package-symbol" href="../ref/PCAOutput.html">PCAOutput</a></span> is Full then fitted {data dnoise , {sigma fit, average sigma}, {number components, number of fitted voxesl, number of max fits}, total fit -time per 500 ittt}. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDenoiseTools/ref/PCADeNoise.html">PCADeNoise</a><span class="openbracket">[</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">is based on DOI: 10.1016/j.neuroimage.2016.08.016 and 10.1002/mrm.26059.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="709936991"></a>The following options can be given: </li>
+     <li><a name="31693119"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="389517221"></a>
+      <a name="6507838"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -50,6 +67,19 @@ Else the output is <span class="openbrace">{</span>datao<span class="comma">,</s
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="145406098"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/PCADeNoise.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0bcl4249dwcq516iro7rpoc16-couuck"
+       data-code="Files/PCADeNoise.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
   </div></section>
   
 

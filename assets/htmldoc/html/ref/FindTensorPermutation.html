@@ -10,7 +10,7 @@
 
 <title>FindTensorPermutation&mdash;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
+<meta name="historydata" content="{, , , }" />
 <meta name="keywords" content="FindTensorPermutation" />
 
 <meta name="description" content="FindTensorPermutation[tensor, vox] performs tractography for all tensor permutations and gives back the one that has the longest tracts. FindTensorPermutation[tensor, vox, {par, {min, max}}] same but with additional stoppin criteria par, where tracts are only generated between values of par min and max. FindTensorPermutation[tensor, vox, {{par, {min, max}}, ..}] same but with with multiple additional stopping criteria. Ouput = {permutations, flips, plot} FindTensorPermutation[] is based on DOI: 10.1016/j.media.2014.05.012." />
@@ -20,21 +20,47 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`TractographyTools`</div><div class="main-heading"><span class="main-title-top">QMRITools`TractographyTools`</span><h1 class="main-title">FindTensorPermutation</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">FindTensorPermutation[tensor, vox] performs tractography for all <span class="IF"><span class="TI">tensor</span></span> permutations and gives back the one that has the longest tracts.
-FindTensorPermutation[tensor, <span class="IF"><span class="TI">vox</span></span>, {par, {min, max}}] same but with additional stoppin criteria par, where tracts are only generated between values of par min and max.
-FindTensorPermutation[tensor, <span class="IF"><span class="TI">vox</span></span>, {{par, {min, max}}, ..}] same but with with multiple additional stopping criteria.
-
-Ouput = {permutations, flips, plot}
-
-FindTensorPermutation[] is based on DOI: 10.1016/j.media.2014.05.012.</div>
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/TractographyTools.html"><span class="dropdownPad">TractographyTools</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FindTensorPermutation</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FindTensorPermutation.html">FindTensorPermutation</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">performs tractography for all <span class="IF"><span class="TI">tensor</span></span> permutations and gives back the one that has the longest tracts. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FindTensorPermutation.html">FindTensorPermutation</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">same but with additional stoppin criteria par, where tracts are only generated between values of par min and max. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FindTensorPermutation.html">FindTensorPermutation</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="comma">,</span>..<span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">same but with with multiple additional stopping criteria. Ouput = {permutations, flips, plot} </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FindTensorPermutation.html">FindTensorPermutation</a><span class="openbracket">[</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">is based on DOI: 10.1016/j.media.2014.05.012.</p>
+  </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
+   <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="232162302"></a>The following options can be given: </li>
+     <li><a name="240889622"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="190370203"></a>
+      <a name="103685536"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -51,6 +77,27 @@ FindTensorPermutation[] is based on DOI: 10.1016/j.media.2014.05.012.</div>
      </li>
     </ul>
    </div>
+  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
+   <div id="126091830"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/FindTensorPermutation.en/I_1.png"
+       data-in-width="147"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0isw4o5226t1chf2l7i1jpg8y-cdcvc4"
+       data-code="Files/FindTensorPermutation.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/TractographyTools.html">TractographyTools</a>
+    </li>
+   </ul>
   </div></section>
   
 
