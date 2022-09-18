@@ -11,15 +11,13 @@ toc: True
 ---
 
 <a name="top"></a>
-The release contains a zip file
-[DemoAndTest.zip](https://github.com/mfroeling/QMRITools/releases/download/2.9.3/DemoAndTest.zip)
-in which there is a file `demo.nb` and a folder `DemoData`. 
-To have a global overview of the functionality of the toolbox
-you can download this folder and run the `demo.nb`. By default the
-`demo.nb` looks for the folders `DemoData` in the same
+The release contains and repository contains [demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources)
+in which there is a file `Demonstrations.nb` and a folder `DemoData`. 
+If the tool has been installed as a packlet the packlet folder conains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
+`Demonstrations.nb` looks for the folders `DemoData` in the same
 folder as the notebook.
 
-The `demo.nb` contains the following demonstrations. 
+The `Demonstrations.nb` contains the following demonstrations. 
 
 # Initialization [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
@@ -34,6 +32,10 @@ The `demo.nb` contains the following demonstrations.
 > - Plotting data Data
 > - Automatically find cross section images
 > - Rescaling Data
+> - Data Operations
+>	- Rotate data Dimensions
+>	- Remove singleton dimensions from data
+> 	- Data array to vector
 > - Cropping
 > 	- Automatic crop
 > 	- Apply To Rescaled Data
@@ -43,11 +45,12 @@ The `demo.nb` contains the following demonstrations.
 >  	- Split and Stitch
 >  	- Example make both legs left
 > - Joining multiple stacks
+>	- Joining multiple data sets
+>	- Splitting joined data
 
 # General functions [![up](../../assets/images/arrow.png)](../demo/#top "Top of page")
 
 > - Define Data
-> - Data Operations
 > - Filters
 > - Operation ignoring zeros
 
@@ -56,6 +59,7 @@ The `demo.nb` contains the following demonstrations.
 > - Import Data 
 > - Create Mask
 > 	- Automated and threshold masking
+>	- Mask smoothing
 > 	- Manual segmentation processing
 > 	- Splitting segmentation in slice direction
 > 	- Extract Data from Masks
