@@ -21,21 +21,21 @@ Manual installation:
 1.	Download the `QMRITools.zip`.
 2.	Extract the `QMRITools` folder and place it in the Mathematica UserBaseDirectory &gt; Applications.
 
-If you want to know your UserBaseDirectory run the following code in mathematica
+If you want to know your UserBaseDirectory run the following code in Mathematica
 
 `SystemOpen[FileNameJoin[{$UserBaseDirectory, "Applications"}]]`
 
-Alternatively you can also use the `$BaseDirectory` if you want the tools to be availible to all users.
+Alternatively you can also use the `$BaseDirectory` if you want the tools to be available to all users.
 
 Automatic installation:
 1.	Download the `QMRITools-x.x.x.paclet`.
-2.	Install the packlet using `PacletInstall`.
+2.	Install the paclet using `PacletInstall`.
 
-`PackletInstall["download folder\\QMRIToolsx-x.x.x.paclet"]`  
+`PacletInstall["download folder\\QMRIToolsx-x.x.x.paclet"]`  
 
 Or alternatively you can directly install it from the latest release page
 
-`PackletInstall["https://github.com/mfroeling/QMRITools/releases/download/x.x.x/QMRITools-x.x.x.paclet"]`
+`PacletInstall["https://github.com/mfroeling/QMRITools/releases/download/x.x.x/QMRITools-x.x.x.paclet"]`
 
 ---------------------------------------------------------------------
 
@@ -96,4 +96,4 @@ To print the documentation of all functions use
     QMRIToolsFuncPrint["toolboxname"]
 
 A list off all functions and their help can be found in
-`All-Functions.nb`, which is alos availible as a [pdf file](https://github.com/mfroeling/QMRITools/releases/download/2.0/All-Functions.pdf).
+`All-Functions.nb`, which is also available as a [pdf file](https://github.com/mfroeling/QMRITools/releases/download/2.0/All-Functions.pdf).

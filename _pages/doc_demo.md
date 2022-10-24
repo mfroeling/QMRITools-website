@@ -11,9 +11,9 @@ toc: True
 ---
 
 <a name="top"></a>
-The release contains and repository contains [demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources)
+The release and repository contains [a demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources)
 in which there is a file `Demonstrations.nb` and a folder `DemoData`. 
-If the tool has been installed as a packlet the packlet folder conains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
+If the tool has been installed as a paclet the paclet folder conains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
 `Demonstrations.nb` looks for the folders `DemoData` in the same
 folder as the notebook.
 
