@@ -32,7 +32,8 @@ feature_row:
 
 {% capture notice-text %}
 
-[![DOI zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.5763703.svg)](https://doi.org/10.5281/zenodo.5763703){:target="_blank"}
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7266917.svg)](https://doi.org/10.5281/zenodo.7266917)
+{:target="_blank"}
 [![DOI Joss](https://joss.theoj.org/papers/10.21105/joss.01204/status.svg)](https://doi.org/10.21105/joss.01204){:target="_blank"}
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mfroeling/QMRITools){:target="_blank"}
 
