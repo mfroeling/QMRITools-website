@@ -1,5 +1,5 @@
 ---
-title: "QMRITools"
+title: "Quantitative analysis of muscle, nerve and cardiac MRI data"
 layout: splash
 permalink: /
 
@@ -7,7 +7,7 @@ feature_row:
 - image_path: /assets/images/front-process.png
   alt: "Analysis & Processing"
   title: "Analysis & Processing"
-  excerpt: "QMRITools contains various toolboxes for the quantitative analysis muscle, nerve and cardiac data."
+  excerpt: "QMRITools contains various toolboxes for the quantitative analysis muscle, nerve and cardiac MRI data."
   url: /tool/
   btn_label: "To the toolboxes"
   btn_class: "btn--info btn--small"
