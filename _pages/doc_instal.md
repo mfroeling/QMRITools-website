@@ -54,15 +54,13 @@ their website.
     -   elastix.exe
     -   transformix.exe
 
-All functionality is tested under Windows 10 with the latest Mathematica
+All functionality is tested under Windows and MacOS with the latest Mathematica
 version. The Mathematica code is cross platform compatible with the
 exception of the external tools which are compiled for each OS. The
 toolbox provides compiled versions for each OS but their functionality
 is not guaranteed. 
-
-The Elastix version used is 4.9 with OpenCL support.
-Additionally Elastix needs to be compiles with the PCA metrics, all DTI
-related parameters and all affine related parameters.
+The Elastix version used is 5.0.1 with OpenCL support.
+For dcm2niix various version are included. 
 
 Although cross platform compatibility is provided I have only limited
 options for testing so if any issues arise please let me know.
