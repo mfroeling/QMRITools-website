@@ -12,7 +12,7 @@ Martijn Froeling has done his master's (July 2009) in Biomedical Engineering at 
 
 ![Martijn Froeling](../assets/images/port1-s.jpg)
 
-- [ORCID](https://orcid.org/my-orcid?orcid=0000-0003-3841-0497){:target="_blank"}
+- [ORCID](https://orcid.org/0000-0003-3841-0497){:target="_blank"}
 - [Pubmed](https://pubmed.ncbi.nlm.nih.gov/?term=Froeling+M&sort=date&size=200){:target="_blank"}
 - [Google Scholar](https://scholar.google.nl/citations?user=zvsSOy4AAAAJ){:target="_blank"}
 - [ResearcherID](https://www.webofscience.com/wos/author/record/1290660){:target="_blank"}
