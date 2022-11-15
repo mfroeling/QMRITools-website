@@ -5,7 +5,7 @@ environment:              production
 # Theme Settings
 markdown:                 kramdown
 theme:                    minimal-mistakes-jekyll
-minimal_mistakes_skin:    "dark"
+minimal_mistakes_skin:    "contrast"
 
 
 # Site Settings
