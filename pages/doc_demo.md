@@ -80,6 +80,12 @@ The `Demonstrations.nb` contains the following demonstrations.
 > 	- Calculate a T2 star map from the echos
 > 	- Perform iDeal reconstruction with initial B0 and T2star
 
+### Fasciculation Detection
+
+> - Import and select the Data
+> - Find and select activations
+> - Analyze and Evaluate activations
+
 ### Simulate Dixon Data and fit testing
 
 > - Simulate the Dixon signal
