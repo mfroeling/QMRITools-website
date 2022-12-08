@@ -34,7 +34,7 @@ repetitive single-shot DWI of musculature: Spatial and temporal patterns in
 the calves of healthy volunteers and consideration of unintended muscle 
 activities as underlying mechanism. 
 NMR in Biomedicine, 28(7), 801–810. [link››](https://doi.org/10.1002/nbm.3311)
-> -Heskamp, L., Birkbeck, M. G., Whittaker, R. G., Schofield, I. S., 
+> - Heskamp, L., Birkbeck, M. G., Whittaker, R. G., Schofield, I. S., 
 Blamire, A. M. (2021). The muscle twitch profile assessed with 
 motor unit magnetic resonance imaging. 
 NMR in Biomedicine, 34(3). [link››](https://doi.org/10.1002/NBM.4466)
