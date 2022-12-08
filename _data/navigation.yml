@@ -1,45 +1,33 @@
-main:
-  - title:                   "Home"
-    url:                     /
-    description:             "QMRITools Home"
-  - title:                   "Toolboxes"
-    url:                     /tool/
-    description:             "List of toolboxes and functionality"
-  - title:                   "Documentation"
-    url:                     /doc/
-    description:             "QMRITools documentation"
-  - title:                   "About"
-    url:                     /about/
-    description:             "QMRITools information and lincence"    
+- title: Home
+  url: /
+  side: left
 
+- title: Toolboxes
+  url: /tool/
+  side: left     
+    
+- title: Documentation
+  url: /doc/
+  side: left
+  dropdown:
+  - title: Installation
+    url: /doc/instal/
+  - title: Demonstartion
+    url: /doc/demo/
+  - title: Guide pages
+    url: /assets/htmldoc/html/guide/qmritools
 
-# Toolboxes sidebar links
-toolboxes:
-  - title: "Toolboxes"
-    children:
-      - title: "Toolboxes and functionality"
-        url: /tool/
-      - title: "Description of toolboxes"
-        url: /tool/description/
+- title: About
+  url: /about/
+  side: left
+  dropdown:
+  - title: QMRITools
+    url: /about/
+  - title: Licence
+    url: /about/licence/
+  - title: Biography
+    url: /about/bio/    
 
-# Documentation sidebar links
-documentation:
-  - title: "Documentation"
-    children:
-      - title: "QMRITools"
-        url: /doc/
-      - title: "Installation"
-        url: /doc/instal/
-      - title: "Demonstartion"
-        url: /doc/demo/
-
-# About sidebar links
-about:
-  - title: "About QMRITools"
-    children:
-        - title: "Information"
-          url: /about/
-        - title: "Licence"
-          url: /about/licence/
-        - title: "Biography"
-          url: /about/bio/
+- title: Contact
+  url: /contact/
+  side: left
