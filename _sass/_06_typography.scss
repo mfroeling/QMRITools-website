@@ -344,11 +344,11 @@ mark {
 
 @font-face {
   font-family: 'iconfont';
-  src: url('/assets/fonts/iconfont.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/iconfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/assets/fonts/iconfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/iconfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('https://qmritools.netlify.app/assets/fonts/iconfont.eot'); /* IE9 Compat Modes */
+  src: url('https://qmritools.netlify.app/assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://qmritools.netlify.app/assets/fonts/iconfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://qmritools.netlify.app/assets/fonts/iconfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://qmritools.netlify.app/assets/fonts/iconfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .iconfont       { font-family: iconfont; }
