@@ -1,4 +1,5 @@
 ---
+
 title: "Quantitative analysis of muscle, nerve and cardiac MRI data"
 layout: frontpage
 permalink: /
@@ -15,7 +16,7 @@ widget2:
   title: "Simulation & Validation"
   url: /tool/
   image: front-simulation.png
-  text: QMRITools conatains functions for the simulation of diffusion, dixon, EPG T2 mapping and spectroscopy data.'
+  text: 'QMRITools conatains functions for the simulation of diffusion, dixon, EPG T2 mapping and spectroscopy data.'
   
 widget3:
   title: "Demo & Documentation"
