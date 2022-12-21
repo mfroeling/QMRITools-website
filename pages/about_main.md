@@ -34,8 +34,8 @@ used for and started as a toolbox to analyze DWI data of muscle. Since
 then it has grown to include many other features such as cardiac
 analysis (tagging and T1 mapping), dixon reconstruction, EPG modeling
 and fitting, j-coupling simulations and more. It currently contains over
-350 custom functions (over 20.000 lines of code) complete with
-documentation and demonstrations.
+450 custom functions (over 30.000 lines of code) complete with more than 750
+documentation pages and demonstrations for each toolbox.
 
 <p align="center"><img 
 src="/assets/images/processing.png" 
