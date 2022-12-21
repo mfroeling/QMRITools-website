@@ -47,6 +47,8 @@ widget3:
 <a href="https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/" target="_blank" style="text-decoration: none; border-bottom: none;">
 <img alt="OpenSourceImaging" title="OpenSourceImaging" src="/assets/images/open_source_images.png"></a>
 <br><br>
+Release 3.0 is live!! With this release the fist steps are made toward [Muscle-Bids](https://muscle-bids.github.io/) compatibility.
+<br><br>
 </div>
 <br><br>
 This website describes the functionality of `QMRITools`, a toolbox for analysis of quantitative magnetic resonance imaging data. `QMRITools` is a collection of tools and functions for processing quantitative MRI data, runs in the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/) and is developed and maintained by [Martijn Froeling](https://www.researchgate.net/profile/Martijn-Froeling){:target="_blank"}. The toolbox was initially developed for the analysis of diffusion imaging data of skeletal muscle ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}). Over the years it has grown in its functionality and is currently used for the analysis, processing and simulations of quantitative muscle, nerve and cardiac magnetic resonance imaging and spectroscopy data. The library of functions grows along with the research it is used for.
