@@ -47,7 +47,7 @@ widget3:
 <a href="https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/" target="_blank" style="text-decoration: none; border-bottom: none;">
 <img alt="OpenSourceImaging" title="OpenSourceImaging" src="/assets/images/open_source_images.png"></a>
 <br><br>
-Release 3.0 is live!! With this release the fist steps are made toward [Muscle-Bids](https://muscle-bids.github.io/) compatibility.
+Release <b>3.0</b> is live!! With this release the fist steps are made toward <a href="https://muscle-bids.github.io/" target="_blank">Muscle-Bids</a> compatibility.
 <br><br>
 </div>
 <br><br>
