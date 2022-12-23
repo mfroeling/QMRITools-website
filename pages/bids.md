@@ -20,7 +20,7 @@ A Muscle-BIDS pipeline can support the following steps:
 3. Analysis of processed Muscle-BIDS data
 4. Converstion of Muscle-BIDS output to DICOM
 
-Currently QMRITools supports step 1 for Philips MRI data if the data acquistion is preformed in a standardized way. Further more it fully supports step 2 and 3 for DIXON, T2 and DTI processing and anlysis.  On this page, for each step it is explained how QMRITools handles Muscle-BIDS data and what function can be used. Eventualy the aim is to be able to fully automate steps 1 to 4 using standalone scrips that only need to be configured once per study or dataset. 
+Currently QMRITools supports step 1 for Philips MRI data if the data acquistion is preformed in a standardized way. Further more it fully supports step 2 and 3 for DIXON, T2 and DTI processing and anlysis. On this page, for each step it is explained how QMRITools handles Muscle-BIDS data and what function can be used. Eventualy the aim is to be able to fully automate steps 1 to 4 using standalone scrips that only need to be configured once per study or dataset. 
 
 ## QMRITools Muscle-BIDS definitions
 
@@ -101,9 +101,92 @@ The QMRITools software uses following suffixes:
 	- `_t2g`: The global T2 calcualted with exponential fitting.
 	- `_data`: The data used for fitting.
 
+#### Example of a MuscleBids dataset
+
+Below is an exmple of a Muscle Bids datasets containing two subjects and two types. For each tipes 5 stacks were acquired.
+
+<div style="
+	background-color:black; 
+	font-family:Roboto Mono,SFMono-Regular,Consolas,Menlo,monospace; 
+	line-height: 1.17; 
+	padding-top: 25px; 
+	padding-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white; 
+	font-weight: bold; 
+	font-size: 12px">
+└─02_rawdata/<br>
+&nbsp;&nbsp;├─sub-Test001/<br>
+&nbsp;&nbsp;│&nbsp;├─ses-001/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;├─dix/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-001_megre_imag.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-001_megre_imag.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-001_megre.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─..<<34>>..<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-005_megre_ph.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-005_megre_real.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;└─sub-Test001_ses-001_stk-005_megre_real.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;├─dwi/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-001_dwi_dti.bval<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-001_dwi_dti.bvec<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-001_dwi_dti.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─..<<14>>..<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-005_dwi_dti.bvec<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-005_dwi_dti.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;└─sub-Test001_ses-001_stk-005_dwi_dti.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;└─raw/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─101_20221213162506_20221212-set1_Ph_20221212-set1_SURVEY_2_LEG_GR.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─101_20221213162506_20221212-set1_Ph_20221212-set1_SURVEY_2_LEG_GR.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─201_20221213162506_20221212-set1_Ph_20221212-set1_SURVEY_2_LEG_GR.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─..<<512>>..<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─905_20221213162506_20221212-set1_Ph_20221212-set1_WIP_DTI5_SE.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─905_20221213162506_20221212-set1_Ph_20221212-set1_WIP_DTI5_SE.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;└─DcmToNiiLog.txt<br>
+&nbsp;&nbsp;│&nbsp;├─BIDSConvert.log<br>
+&nbsp;&nbsp;│&nbsp;└─FileTree.txt<br>
+&nbsp;&nbsp;├─sub-Test002/<br>
+&nbsp;&nbsp;│&nbsp;├─ses-001/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;├─dix/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-001_megre_imag.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-001_megre_imag.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-001_megre.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─..<<34>>..<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-005_megre_ph.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-005_megre_real.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;└─sub-Test002_ses-001_stk-005_megre_real.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;├─dwi/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-001_dwi_dti.bval<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-001_dwi_dti.bvec<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-001_dwi_dti.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─..<<14>>..<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-005_dwi_dti.bvec<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-005_dwi_dti.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;│&nbsp;└─sub-Test002_ses-001_stk-005_dwi_dti.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;└─raw/<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─101_20221213173147_20221212-set2_Ph_20221212-set2_SURVEY_2_LEG-1_GR.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─101_20221213173147_20221212-set2_Ph_20221212-set2_SURVEY_2_LEG-1_GR.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─201_20221213173147_20221212-set2_Ph_20221212-set2_SURVEY_2_LEG-2_GR.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─..<<432>>..<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─805_20221213173147_20221212-set2_Ph_20221212-set2_WIP_DTI5_SE.json<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;├─805_20221213173147_20221212-set2_Ph_20221212-set2_WIP_DTI5_SE.nii.gz<br>
+&nbsp;&nbsp;│&nbsp;│&nbsp;&nbsp;&nbsp;└─DcmToNiiLog.txt<br>
+&nbsp;&nbsp;│&nbsp;├─BIDSConvert.log<br>
+&nbsp;&nbsp;│&nbsp;└─FileTree.txt<br>
+&nbsp;&nbsp;├─DcmToNii_221222-123645.log<br>
+&nbsp;&nbsp;├─DcmToNii_221222-123816.log<br>
+&nbsp;&nbsp;├─DcmToNii_221222-150508.log<br>
+&nbsp;&nbsp;├─DcmToNii_221222-173029.log<br>
+&nbsp;&nbsp;├─DcmToNii_221222-183923.log<br>
+&nbsp;&nbsp;├─FileTreeMain.txt<br>
+&nbsp;&nbsp;└─FileTree.txt
+</div>
+
 ### Converstion of DICOM to raw Muscle-BIDS NIfTI
 
 Work in progress
+
+
 
 ### Processing of Muscle-BIDS data
 
