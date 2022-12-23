@@ -65,7 +65,7 @@ The QMRITools software uses following suffixes:
 	- `_phi`: the static phase offset from the iDeal reconstruction.
 	- `_real`: the real data used for fitting.
 	- `_imag`: the imaginary data used for fitting.
-- `dwi`
+- `_dwi`
 	- `_md`: The mean diffusivity from DTI fitting.
 	- `_rd`: The radial diffusivity from DTI fitting.
 	- `_fa`: The fractional anaisotropy from DTI fitting.
@@ -88,7 +88,7 @@ The QMRITools software uses following suffixes:
 	- `_fasc`: The identified fasculation from MU-MRI analysis. 
 	- `_norm`: Normalized data per volume used for fasculation detection.
 	- `_data`: The data used for fitting.
-- `t2`
+- `_t2`
 	- `_b1`: The B1 map from the EPG-based fitting.
 	- `_t2w`: The T2 water map from the EPG-based fitting.
 	- `_t2f`: The T2 fat map from the EPG-based fitting.
@@ -101,6 +101,13 @@ The QMRITools software uses following suffixes:
 	- `_s0g`: The estimated signal at TE = 0 ms from exponential fitting.
 	- `_t2g`: The global T2 calcualted with exponential fitting.
 	- `_data`: The data used for fitting.
+- `_seg`
+	- `_man`: Indicates the segmentations have been drawn manualy.
+	- `_megre`: Indicates the segmentation aligns with the megre data.
+	- `_dwi`: Indicates the segmentation aligns with the dwi data.
+	- `_t2`: \ Indicates the segmentation aligns with the t2 data.
+	- `_smooth`: Indicates the segmentations have been processed with a mask smoothing algorithm.
+	- `_ero`: Indicates the segmentations have been eroded.
 
 #### Example of a MuscleBids dataset
 
