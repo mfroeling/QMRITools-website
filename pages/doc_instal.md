@@ -7,12 +7,10 @@ permalink: /doc/instal/
 header: no
 ---
 
-The latest release can be found [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}.
-
 
 ### Installation
 
-The latest release can be found [here](https://github.com/mfroeling/QMRITools/releases).
+The latest release can be found [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}.
 The toolbox is best installed via the Mathematica paclet system.  
 
 Automatic installation:

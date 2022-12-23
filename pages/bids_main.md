@@ -37,11 +37,12 @@ QMRITools files and folders within Muscle-BIDS can currently contain and recogni
 
 #### Muscle-BIDS types
 
-The current datatype suffixes are recognized and can be automatically be processed:
+The current datatype suffixes are recognized and can be automatically be processed and have their own folders:
 
 - `_megre`: Multi echo gradient echo scans (minimal of 3 echos) that will be used to perform Dixon reconstruction.
 - `_dwi`: Diffusion weigthed data. All diffusion weighted data has the same preporocessing. Based on the script configuration it can be used for: fasculation detection, DTI analysis or IVIM analysis, or any combination of these.
 - `_t2`: Multi echo spin echo scans that will be used for EPG-based T2 reconstruction.
+- `_seg`: Muscle segmentations.
 
 #### Muscle-BIDS suffixes
 
