@@ -17,6 +17,10 @@
   - title: Guide pages
     url: /assets/htmldoc/html/guide/qmritools
 
+- title: Muscle-BIDS
+  url: /bids/
+  side: left
+
 - title: About
   url: /about/
   side: left

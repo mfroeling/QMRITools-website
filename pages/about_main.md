@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "About QMRITools"
+subheadline: "a little bit of history"
+teaser: "If you used it, please cite us"
 permalink: /about/
 header: no
 ---

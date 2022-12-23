@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "QMRITools demonstration"
+subheadline: "If you want examples... here the are"
+teaser: "If you need more contact us!"
 permalink: /doc/demo/
 header: no
 ---

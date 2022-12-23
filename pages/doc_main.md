@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "Documentation and installation"
+subheadline: "How to use and install QMRITools"
+teaser: "I hope it helps..."
 permalink: /doc/
 header: no
 ---

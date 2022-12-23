@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "Biography"
+subheadline: "Yes its all about me..."
+teaser: "Martijn Froeling"
 permalink: /about/bio
 header: no
 ---
