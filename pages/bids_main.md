@@ -105,7 +105,7 @@ The QMRITools software uses following suffixes:
 	- `_man`: Indicates the segmentations have been drawn manually.
 	- `_megre`: Indicates the segmentation aligns with the megre data.
 	- `_dwi`: Indicates the segmentation aligns with the dwi data.
-	- `_t2`: \ Indicates the segmentation aligns with the t2 data.
+	- `_t2`:  Indicates the segmentation aligns with the t2 data.
 	- `_smooth`: Indicates the segmentations have been processed with a mask smoothing algorithm.
 	- `_ero`: Indicates the segmentations have been eroded.
 
