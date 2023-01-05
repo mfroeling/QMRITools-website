@@ -20,6 +20,15 @@
 - title: Muscle-BIDS
   url: /bids/
   side: left
+  dropdown:
+  - title: Muscle-BIDS
+    url: /bids/
+  - title: Files and folders
+    url: /bids/files_folders/
+  - title: Entities and suffixes
+    url: /bids/ents_suffs/
+  - title: QMRITools and Muscle-BIDS
+    url: /bids/qmritools/
 
 - title: About
   url: /about/
