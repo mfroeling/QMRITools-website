@@ -4,6 +4,7 @@ title: "QMRITools installation"
 subheadline: "How to install QMRITools"
 teaser: "If it doesn't work, read again."
 permalink: /doc/instal/
+
 header: no
 ---
 
@@ -44,9 +45,9 @@ versions you can replace them but functionality is not guaranteed. For
 the latest version of these tools and their user license please visit
 their website.
 
--   [dcm2niix](https://github.com/rordenlab/dcm2niix/)
+-   [dcm2niix](https://github.com/rordenlab/dcm2niix/){:target="_blank"}
     -   dcm2niix.exe
--   [Elastix](http://elastix.isi.uu.nl/)
+-   [Elastix](http://elastix.isi.uu.nl/){:target="_blank"}
     -   elastix.exe
     -   transformix.exe
 
