@@ -2,8 +2,10 @@
 
 layout: page
 title: "Muscle-BIDS"
+
 subheadline: "Why QMRITools uses Muscle-BIDS"
 teaser: "Muscle-BIDS is a work in progress..."
+
 permalink: /bids/
 header: no
 
