@@ -30,25 +30,31 @@ widget3:
 <div align="center" ><h1>Welcome to QMRITools!</h1></div>
 
 <div class="t60" align="center" style="background-color: #D3D3D3; border-radius: 10px;">
-<br>
-<a href="https://doi.org/10.5281/zenodo.7266917" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="DOI" title="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7266917.svg"></a>   
-<a href="https://joss.theoj.org/papers/10.21105/joss.01204" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="DOI Joss" title="DOI Joss" src="https://joss.theoj.org/papers/10.21105/joss.01204/status.svg"></a>   
-<a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="contributions welcome" title="contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>   
+	<br>
+	
+	<a href="https://doi.org/10.5281/zenodo.7266917" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="DOI" title="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7266917.svg"></a>   
+	<a href="https://joss.theoj.org/papers/10.21105/joss.01204" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="DOI Joss" title="DOI Joss" src="https://joss.theoj.org/papers/10.21105/joss.01204/status.svg"></a>   
+	<a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="contributions welcome" title="contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>   
+	
+	<br><br>
+	<a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="Github" title="Github" src="/assets/images/github.png" style="margin-right:10px"></a>  
+	<a href="https://ismrm.github.io/mrhub/" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="MR-Hub" title="MR-Hub" src="/assets/images/MR-Hub.png" style="margin-right:10px"></a>   
+	<a href="https://mrshub.org/software_analysis/#QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="MRSHub" title="MRSHub" src="/assets/images/MRSHub.png" style="margin-right:10px"></a>   
+	<a href="https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/" target="_blank" style="text-decoration: none; border-bottom: none;">
+	<img alt="OpenSourceImaging" title="OpenSourceImaging" src="/assets/images/open_source_images.png"></a>
+	
+	<br><br>
+	Release <b>3.0</b> is live!! With this release the fist steps are made toward <a href="https://muscle-bids.github.io/" target="_blank">Muscle-Bids</a> compatibility.
+	
+	<br><br>
+	</div>
+
 <br><br>
-<a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="Github" title="Github" src="/assets/images/github.png" style="margin-right:10px"></a>  
-<a href="https://ismrm.github.io/mrhub/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="MR-Hub" title="MR-Hub" src="/assets/images/MR-Hub.png" style="margin-right:10px"></a>   
-<a href="https://mrshub.org/software_analysis/#QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="MRSHub" title="MRSHub" src="/assets/images/MRSHub.png" style="margin-right:10px"></a>   
-<a href="https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="OpenSourceImaging" title="OpenSourceImaging" src="/assets/images/open_source_images.png"></a>
-<br><br>
-Release <b>3.0</b> is live!! With this release the fist steps are made toward <a href="https://muscle-bids.github.io/" target="_blank">Muscle-Bids</a> compatibility.
-<br><br>
-</div>
-<br><br>
+
 This website describes the functionality of `QMRITools`, a toolbox for analysis of quantitative magnetic resonance imaging data. `QMRITools` is a collection of tools and functions for processing quantitative MRI data, runs in the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/) and is developed and maintained by [Martijn Froeling](https://www.researchgate.net/profile/Martijn-Froeling){:target="_blank"}. The toolbox was initially developed for the analysis of diffusion imaging data of skeletal muscle ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}). Over the years it has grown in its functionality and is currently used for the analysis, processing and simulations of quantitative muscle, nerve and cardiac magnetic resonance imaging and spectroscopy data. The library of functions grows along with the research it is used for.
