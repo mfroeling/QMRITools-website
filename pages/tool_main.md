@@ -1,10 +1,13 @@
 ---
 layout: page
+permalink: /tool/
+
 title: "List of toolboxes"
 subheadline: "a toolbox for each application and more"
 teaser: "more are comming soon..."
-permalink: /tool/
+
 header: no
+
 ---
 
 `QMRITools` contains various toolboxes dedicated to various quantitative MRI techniques. It supports 

@@ -2,11 +2,11 @@
 
 layout: page
 permalink: /contact/thanks/
-header: no
 
 title: "Thanks!"
 subheadline: 'Awesome, you reached out!'
 
+header: no
 
 ---
 

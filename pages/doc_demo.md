@@ -1,14 +1,17 @@
 ---
+
 layout: page
+permalink: /doc/demo/
+
 title: "QMRITools demonstration"
 subheadline: "If you want examples... here the are"
 teaser: "If you need more contact us!"
-permalink: /doc/demo/
+
 header: no
+
 ---
 
-<a name="top"></a>
-The release and repository contains [a demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources)
+The release and repository contains [a demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources){:target="_blank"}
 in which there is a file `Demonstrations.nb` and a folder `DemoData`. 
 If the tool has been installed as a paclet the paclet folder conains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
 `Demonstrations.nb` looks for the folders `DemoData` in the same

@@ -2,10 +2,11 @@
 
 layout: page
 permalink: /contact/
-header: no
 
 title: "Contact"
 subheadline: 'Get in contact with the team'
+
+header: no
 
 ---
 

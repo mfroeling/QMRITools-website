@@ -1,8 +1,12 @@
 ---
+
 layout: page
 permalink: /about/licence
+
 title: "QMRITools licence"
+
 header: no
+
 ---
 
 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause){:target="_blank"}
@@ -21,5 +25,4 @@ you from committing patent infringement. So, before you do anything with
 this program, make sure that you have permission to do so not merely in
 terms of copyright, but also in terms of patent law.
 
-Some code in the NiiTools packages was based on
-<https://github.com/tomdelahaije/nifti-converter>
+Some code in the NiiTools packages was based on [nifti-converter](https://github.com/tomdelahaije/nifti-converter){:target="_blank"}

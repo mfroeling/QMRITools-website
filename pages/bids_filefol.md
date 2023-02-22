@@ -1,10 +1,12 @@
 ---
 
 layout: page
+permalink: /bids/files_folders/
+
 title: "Files and folders"
 subheadline: "Naming conventions of files and folders"
 teaser: "Muscle-BIDS file structure explained."
-permalink: /bids/files_folders/
+
 header: no
 
 ---

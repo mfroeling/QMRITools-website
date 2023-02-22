@@ -1,22 +1,31 @@
 ---
 layout: page
+permalink: /doc/
+
 title: "Documentation and installation"
 subheadline: "How to use and install QMRITools"
 teaser: "I hope it helps..."
-permalink: /doc/
+
 header: no
+
+images:
+  - image_id: 'addon'
+    image_name: 'addons.PNG'
+    image_title: 'QMRITools package add on'
+    image_alt: 'QMRITools package add on' 
+  - image_id: 'guide'
+    image_name: 'Guide.PNG'
+    image_title: 'Guides QMRITools mathematica documentation'
+    image_alt: 'Guides QMRITools mathematica documentation' 
+
 ---
 
-<a name="top"></a>
 The toolbox always works within the latest version of 
 Mathematica and does not support any backward
 compatibility. After the toolbox is installed correctly it should show
 up as a package in the Mathematica add-ons.
 
-<p align="center">
-<img src="/assets/images/addons.PNG" alt="QMRITools package add on"  width="80%" />
-</p>
-
+{% include page-image im_id="addon" %}
 
 ### Installation
 
@@ -34,6 +43,4 @@ A notebook with all functions and their description can be found [here](https://
 Documentation of all functions and their options is fully integrated in the Mathematica documentation. An online version of the full documentation can be 
 found [here](../assets/htmldoc/html/guide/qmritools){:target="_blank"}.
 
-<p align="center">
-<img src="/assets/images/Guide.PNG" alt="Guides QMRITools mathematica documentation"  width="80%" />
-</p>
+{% include page-image im_id="guide" %}

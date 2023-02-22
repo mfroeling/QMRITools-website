@@ -1,10 +1,24 @@
 ---
+
 layout: page
+permalink: /about/
+
 title: "About QMRITools"
 subheadline: "a little bit of history"
 teaser: "If you used it, please cite us"
-permalink: /about/
+
 header: no
+
+images:
+  - image_id: 'proc'
+    image_name: 'processing.png'
+    image_title: 'Quantitative muscle MRI processing'
+    image_alt: 'Quantitative muscle MRI processing' 
+  - image_id: 'app'
+    image_name: 'applications of QMRITools.png'
+    image_title: 'Applications of QMRITools'
+    image_alt: 'Applications of QMRITools' 
+
 ---
 
 <p align="center">
@@ -39,11 +53,7 @@ and fitting, j-coupling simulations and more. It currently contains over
 450 custom functions (over 30.000 lines of code) complete with more than 750
 documentation pages and demonstrations for each toolbox.
 
-<p align="center"><img 
-src="/assets/images/processing.png" 
-title="Quantitative muscle MRI processing"
-alt="Quantitative muscle MRI processing"  
-width="85%" /></p>
+{% include page-image im_id="proc" %}
 
 ### Referencing
 
@@ -65,11 +75,7 @@ When using the toolbox please cite one of the following references:
 	[link](https://onlinelibrary.wiley.com/doi/full/10.1002/nbm.4119){:target="_blank"}
 
 
-<p align="center"><img 
-src="/assets/images/applications of QMRITools.png" 
-title="applications of QMRITools"
-alt="applications of QMRITools"  
-width="90%" /></p>
+{% include page-image im_id="app" %}
 
 
 ### Publications using QMRITools

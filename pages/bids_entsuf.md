@@ -1,10 +1,12 @@
 ---
 
 layout: page
+permalink: /bids/ents_suffs/
+
 title: "Entities and suffixes"
 subheadline: "Naming conventions of entities and suffixes"
 teaser: "The boring stuff but usefull..."
-permalink: /bids/ents_suffs/
+
 header: no
 
 ---
