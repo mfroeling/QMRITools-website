@@ -23,15 +23,15 @@ images:
 
 <p align="center">
 <a href="https://www.wolfram.com/language/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="wolfram language" title="wolfram language" src="/assets/images/wolfram_language.png"></a>
+<img alt="wolfram language" title="wolfram language" src="../assets/images/wolfram_language.png"></a>
 <a href="https://www.wolfram.com/workbench/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="wolfram workbench" title="wolfram workbench" src="/assets/images/wolfram_workbench.jpg"></a>
+<img alt="wolfram workbench" title="wolfram workbench" src="../assets/images/wolfram_workbench.jpg"></a>
 <a href="https://www.eclipse.org/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="eclipse" title="eclipse" src="/assets/images/eclipse.png"></a>
+<img alt="eclipse" title="eclipse" src="../assets/images/eclipse.png"></a>
 <a href="http://www.wolfram.com/mathematica/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="Wolfram Mathematica" title="Wolfram Mathematica" src="/assets/images/wolfram_mathematica.png"></a>
+<img alt="Wolfram Mathematica" title="Wolfram Mathematica" src="../assets/images/wolfram_mathematica.png"></a>
 <a href="https://community.wolfram.com/groups/-/m/t/1661539" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="Wolfram Community" title="Wolfram Community" src="/assets/images/community.png"></a>
+<img alt="Wolfram Community" title="Wolfram Community" src="../assets/images/community.png"></a>
 </p>
 
 `QMRITools` is a collection of tools and functions for processing
