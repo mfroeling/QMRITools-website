@@ -54,7 +54,7 @@ For each data folder, the data that can be stored there is defined by its suffix
 	- `_t1w_fs`: T1 weighted data with fat suppression.
 	- `_t2w`: T2 weighted data.
 	- `_t2w_fs`: T2 weighted data with fat suppression.
-- `dix`
+- `megre`
 	- `_dix`: Data intended for Dixon reconstruction.
 - `dwi`	
 	 - `_ivim`: DWI data intended for IVIM modelling.
