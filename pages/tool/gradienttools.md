@@ -18,12 +18,12 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 The main feature is an algorithm that uses static repulsion (Jones,
 Horsfield, and Simmons 1999; Froeling et al. 2017) to generate
 homogeneously distributed gradient directions for DWI experiments which
-is also availible as a [standalone tool](https://www.massive-data.org/#h.cytj3ar4i2v). 
+is also availible as a standalone tool which can be found [here](https://www.massive-data.org/#h.cytj3ar4i2v) or [here](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources).
 It also provides functions to convert bval and bvec files to bmatrix and vice versa. [Back››](/tool/)
 
 {% include page-images %}

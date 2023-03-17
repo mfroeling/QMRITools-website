@@ -4,7 +4,12 @@
 
 - title: Toolboxes
   url: /tool/
-  side: left     
+  side: left
+  dropdown:
+  - title: List of toolboxes
+    url: /tool/
+  - title: Diffusion gradient optimization
+    url: /tool/gradient/
     
 - title: Documentation
   url: /doc/
@@ -39,7 +44,7 @@
   - title: Licence
     url: /about/licence/
   - title: Biography
-    url: /about/bio/    
+    url: /about/bio/
 
 - title: Contact
   url: /contact/
