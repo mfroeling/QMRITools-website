@@ -25,7 +25,9 @@ images:
 <a href="https://www.wolfram.com/language/" target="_blank" style="text-decoration: none; border-bottom: none;">
 <img alt="wolfram language" title="wolfram language" src="../assets/images/wolfram_language.png"></a>
 <a href="https://www.wolfram.com/workbench/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="wolfram workbench" title="wolfram workbench" src="../assets/images/wolfram_workbench.jpg"></a>
+<img alt="wolfram workbench" title="wolfram workbench" src="../assets/images/wolfram_workbench.png"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=WolframResearch.wolfram" target="_blank" style="text-decoration: none; border-bottom: none;">
+<img alt="visual studio code" title="visual studio code" src="../assets/images/visual-studio-code.png"></a>
 <a href="https://www.eclipse.org/" target="_blank" style="text-decoration: none; border-bottom: none;">
 <img alt="eclipse" title="eclipse" src="../assets/images/eclipse.png"></a>
 <a href="http://www.wolfram.com/mathematica/" target="_blank" style="text-decoration: none; border-bottom: none;">
