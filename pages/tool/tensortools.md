@@ -18,7 +18,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 The original toolbox where the project started. The main functions in
 this toolbox are to fit and evaluate the diffusion tensor model. Various
@@ -37,7 +37,7 @@ includes drift correction (Vos et al. 2017). [Back››](/tool/)
 > - Veraart, Jelle, Jan Sijbers, Stefan Sunaert, Alexander Leemans, and Ben
 Jeurissen. 2013. “Weighted linear least squares estimation of diffusion
 MRI parameters: Strengths, limitations, and pitfalls.” *NeuroImage* 81
-(November). Elsevier Inc.: 335–46. [link››](https://doi.org/10.1016/j.neuroimage.2013.05.028). 
+(November). Elsevier Inc.: 335–46. [link››](https://doi.org/10.1016/j.neuroimage.2013.05.028).
 > - Tax, Chantal M.W., Willem M. Otte, Max A. Viergever, Rick M. Dijkhuizen,
 and Alexander Leemans. 2015. “REKINDLE: Robust Extraction of Kurtosis
 INDices with Linear Estimation.” *Magnetic Resonance in Medicine* 73

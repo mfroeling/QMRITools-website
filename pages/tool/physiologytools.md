@@ -9,8 +9,8 @@ header: no
 
 ---
 
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 Functions for importing and analyzing Philips physiology logging and
 RespirAct trace files. The functions are rarely used and not well
-supported. 
+supported.

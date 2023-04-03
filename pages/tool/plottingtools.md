@@ -18,7 +18,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 A variety of functions for visualization of various data types. The main
 functions are ‘PlotData’ and ‘PlotData3D’ which allow viewing 2D, 3D and

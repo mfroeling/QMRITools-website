@@ -17,11 +17,12 @@ Within the bids standard filenames contain information label such as subject nam
 ## File Names
 
 Next to the folder structure, the file names of a Muscle-BIDS dataset will tell a lot about what kind of file it is and what it contains. A Muscle-BIDS name contains a list of entities followed by a list of suffixes and is ended with an extension. In Muscle-BIDS filenames `"-"` and `"_"` have special meanings and can never be used outside their intended use.
-- An entity starts with a known key followed by its value (label or index) separated by an `"-”` and multiple entities are separated by a `"_"` 
+
+- An entity starts with a known key followed by its value (label or index) separated by an `"-”` and multiple entities are separated by a `"_"`
 **Example:** `<key1>-<label>_<key2>-<index>`
 - A suffix or list of suffixes comes after the entities and each suffix is separated by a `"_"`
-	- The first suffix describes the data type and must be maintained
-	- The rest of the suffixes can be ones chosen from the defined suffixes per data type or a custom one
+  - The first suffix describes the data type and must be maintained
+  - The rest of the suffixes can be ones chosen from the defined suffixes per data type or a custom one
 **Example:** `<key1>-<label>_<key2>-<index>_<suf1>_<suf2>`
 - The extension finalizes the file name
 **Example:** `<key1>-<label>_<key2>-<index>_<suf1>_<suf2>.<ext>`
@@ -47,16 +48,16 @@ To prevent ambiguity most MRI acquisitions are stored in predefined folders. Mus
 An example of a folder structure is shown below:
 
 <div style="
-	background-color:black; 
-	font-family:Roboto Mono,SFMono-Regular,Consolas,Menlo,monospace; 
-	line-height: 1.17; 
-	padding-top: 25px; 
-	padding-bottom: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-	color: white; 
-	font-weight: bold; 
-	font-size: 12px">
+  background-color:black;
+  font-family:Roboto Mono,SFMono-Regular,Consolas,Menlo,monospace;
+  line-height: 1.17;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px">
 
 └─example/<br>
 &nbsp;&nbsp;├─sub-cont001/<br>

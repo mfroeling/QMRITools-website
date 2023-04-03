@@ -21,7 +21,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 The main purpose of this toolbox is to simulate DTI based DWI data and
 contains some functions to easily perform analysis of the fit results of
@@ -36,5 +36,5 @@ the simulated signals (Froeling et al. 2013). [Back››](/tool/)
 > - Froeling, Martijn, Aart J. Nederveen, Klaas Nicolay, and Gustav J.
 Strijkers. 2013. “DTI of human skeletal muscle: The effects of diffusion
 encoding parameters, signal-to-noise ratio and T2 on tensor indices and
-fiber tracts.” *NMR in Biomedicine* 26 (11): 1339–52. 
+fiber tracts.” *NMR in Biomedicine* 26 (11): 1339–52.
 [link››](https://doi.org/10.1002/nbm.2959).

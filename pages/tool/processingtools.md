@@ -18,12 +18,12 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 The toolbox comprises a variety of functions that allow data
 manipulation and analysis. The main functions allow joining multiple
-data sets with overlapping slices into one continuous data set (Froeling et al. 2015) 
-and to automatically split data of two legs into two separate data-sets. 
+data sets with overlapping slices into one continuous data set (Froeling et al. 2015)
+and to automatically split data of two legs into two separate data-sets.
 Furthermore, it contains a collection of functions for data evaluation and analysis. [Back››](/tool/)
 
 {% include page-images %}
@@ -33,7 +33,7 @@ Furthermore, it contains a collection of functions for data evaluation and analy
 ### References
 
 > - Froeling, Martijn, Jos Oudeman, G. J. Gustav J. Strijkers, Mario Maas,
-M. R. Maarten R. Drost, Klaas Nicolay, and Aart J. A. J. Nederveen. 2015. 
+M. R. Maarten R. Drost, Klaas Nicolay, and Aart J. A. J. Nederveen. 2015.
 “Muscle Changes Detected with Diffusion-Tensor Imaging after
-Long-Distance Running.” *Radiology* 274 (2): 548–62. 
+Long-Distance Running.” *Radiology* 274 (2): 548–62.
 [link››](https://doi.org/10.1148/radiol.14140702).

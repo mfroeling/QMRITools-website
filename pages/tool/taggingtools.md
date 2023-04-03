@@ -9,6 +9,6 @@ header: no
 
 ---
 
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 Currently under development. [Back››](/tool/)

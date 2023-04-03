@@ -27,12 +27,11 @@ QMRITools contains a couple of Muscle-BIDS scripts. Of course, all functionality
 
 Currently, QMRITools supports step 1 for Philips MRI data if the data acquisition is performed in a standardized way. Furthermore, it fully supports steps 2 and 3 for DIXON, T2 and DTI processing and analysis. On this page, for each step, it is explained how QMRITools handles Muscle-BIDS data and what function can be used. Eventually, the aim is to be able to fully automate steps 1 to 4 using stand-alone scripts that only need to be configured once per study or data set.
 
-
-## General guidelines 
+## General guidelines
 
 Within `QMRITools` a Muscle-BIDS dataset is composed of:
 
-> - One NIfTI file containing the image data. 
+> - One NIfTI file containing the image data.
 > - One JSON header named identical to the NIfTI file containing the imaging parameters relevant to the specific acquisition type and processing.
 
 Multi-slice 2D acquisitions are saved as a 3D NIfTI volume. Where the voxel size stored in the Nifti file is the slice spacing rather than the actual slice thickness. In the header, the actual slice thickness and slice spacing are stored.
@@ -43,16 +42,16 @@ A Muscle-BIDS dataset must contain the source data, which in this case is the un
 `QMRITools` add various other logging and file tree files to each folder that are not mandatory but can be useful and are sometimes needed for processing. An example of a Muscle-BIDS folder structure is given below:
 
 <div style="
-	background-color:black; 
-	font-family:Roboto Mono,SFMono-Regular,Consolas,Menlo,monospace; 
-	line-height: 1.17; 
-	padding-top: 25px; 
-	padding-bottom: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-	color: white; 
-	font-weight: bold; 
-	font-size: 12px">
+  background-color:black;
+  font-family:Roboto Mono,SFMono-Regular,Consolas,Menlo,monospace;
+  line-height: 1.17;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px">
 └─sourcedata/<br>
 &nbsp;&nbsp;├─sub-Test001/<br>
 &nbsp;&nbsp;│&nbsp;└─ses-001/<br>
@@ -153,4 +152,3 @@ A Muscle-BIDS dataset must contain the source data, which in this case is the un
 &nbsp;&nbsp;├─DcmToNii_281222-091810.log<br>
 &nbsp;&nbsp;└─FileTree.txt
 </div>
-

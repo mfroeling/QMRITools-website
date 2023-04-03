@@ -18,7 +18,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 An IDEAL based Dixon reconstruction algorithm (Reeder et al. 2005; Yu et
 al. 2008). The method provides multi-peak fitting B0 field and T2-

@@ -12,12 +12,12 @@ header: no
 ---
 
 The release and repository contains [a demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources){:target="_blank"}
-in which there is a file `Demonstrations.nb` and a folder `DemoData`. 
+in which there is a file `Demonstrations.nb` and a folder `DemoData`.
 If the tool has been installed as a paclet the paclet folder conains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
 `Demonstrations.nb` looks for the folders `DemoData` in the same
 folder as the notebook.
 
-The `Demonstrations.nb` contains the following demonstrations. 
+The `Demonstrations.nb` contains the following demonstrations.
 
 ### Initialization
 
@@ -33,20 +33,20 @@ The `Demonstrations.nb` contains the following demonstrations.
 > - Automatically find cross section images
 > - Rescaling Data
 > - Data Operations
->	- Rotate data Dimensions
->	- Remove singleton dimensions from data
-> 	- Data array to vector
+>   - Rotate data Dimensions
+>   - Remove singleton dimensions from data
+>   - Data array to vector
 > - Cropping
-> 	- Automatic crop
-> 	- Apply To Rescaled Data
-> 	- Manual crop
-> 	- Reverse the Crop
+>   - Automatic crop
+>   - Apply To Rescaled Data
+>   - Manual crop
+>   - Reverse the Crop
 > - Splitting Data
->  	- Split and Stitch
->  	- Example make both legs left
+>   - Split and Stitch
+>   - Example make both legs left
 > - Joining multiple stacks
->	- Joining multiple data sets
->	- Splitting joined data
+>   - Joining multiple data sets
+>   - Splitting joined data
 
 ### General functions
 
@@ -56,13 +56,13 @@ The `Demonstrations.nb` contains the following demonstrations.
 
 ### Masking
 
-> - Import Data 
+> - Import Data
 > - Create Mask
-> 	- Automated and threshold masking
->	- Mask smoothing
-> 	- Manual segmentation processing
-> 	- Splitting segmentation in slice direction
-> 	- Extract Data from Masks
+>   - Automated and threshold masking
+>   - Mask smoothing
+>   - Manual segmentation processing
+>   - Splitting segmentation in slice direction
+>   - Extract Data from Masks
 > - Rescaling Segmentations
 
 ### Registration using Elastix
@@ -70,20 +70,20 @@ The `Demonstrations.nb` contains the following demonstrations.
 > - Import Data
 > - Affine Transformation
 > - B-spline Registration of two legs
-> 	- Full Registration
-> 	- Constrained in one direction
+>   - Full Registration
+>   - Constrained in one direction
 > - Register And Apply to other Data
 
 ### Dixon and Phase unwrapping
 
 > - Simulated phase unwrapping
-> 	- Simulate some Data
-> 	- Unwrap simulated Data
+>   - Simulate some Data
+>   - Unwrap simulated Data
 > - Dixon data
-> 	- Import Data
-> 	- Create a B0Map from phase data
-> 	- Calculate a T2 star map from the echos
-> 	- Perform iDeal reconstruction with initial B0 and T2star
+>   - Import Data
+>   - Create a B0Map from phase data
+>   - Calculate a T2 star map from the echos
+>   - Perform iDeal reconstruction with initial B0 and T2star
 
 ### Fasciculation Detection
 
@@ -109,22 +109,22 @@ The `Demonstrations.nb` contains the following demonstrations.
 > - Fit the simulated EPG signal
 > - Evaluate the fits
 
-### DTI and IVIM 
+### DTI and IVIM
 
 > - Generating diffusion gradients
 > - Import The Data
 > - Prep the IVIM and DTI data
-> 	- Sort and mask
-> 	- Denoise DWI data
-> 	- Motion and eddy current correction
+>   - Sort and mask
+>   - Denoise DWI data
+>   - Motion and eddy current correction
 > - IVIM Fitting
-> 	- Whole volume calibrate
-> 	- IVIM fit 
-> 	- Split signals into perfusion and diffusion
+>   - Whole volume calibrate
+>   - IVIM fit
+>   - Split signals into perfusion and diffusion
 > - Tensor analysis
-> 	- Fit the tensors
-> 	- Analyse Tensor parameters
-> 	- Calculate Tensor angles
+>   - Fit the tensors
+>   - Analyse Tensor parameters
+>   - Calculate Tensor angles
 
 ### Simulate Tensor Data and fit testing
 
@@ -141,13 +141,13 @@ The `Demonstrations.nb` contains the following demonstrations.
 ### J-coupling simulations
 
 > - Spin systems
-> 	- Predefined spin systems
-> 	- Custom spin systems
+>   - Predefined spin systems
+>   - Custom spin systems
 > - Glutamate spectra with Steam
 > - Simulate Fat Spectra
-> 	- PulseAcquire
-> 	- Spin echo
-> 	- STEAM
+>   - PulseAcquire
+>   - Spin echo
+>   - STEAM
 > - Fat STEAM with various TEs
 
 ### Cardiac data processing and simulation
@@ -155,6 +155,6 @@ The `Demonstrations.nb` contains the following demonstrations.
 > - Simulate Cardiac Shape
 > - Analyse Cardiac shape
 > - Cardiac Segmentation
-> 	- perform segmentation
-> 	- Analyse data based on segmentation
-> 	- Visualize results
+>   - perform segmentation
+>   - Analyse data based on segmentation
+>   - Visualize results

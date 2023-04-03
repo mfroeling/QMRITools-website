@@ -18,7 +18,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 A collection of tools to fit T2, T2\*, T1rho and T1 relaxometry data.
 The main function of this toolbox is an extended phase graph (EPG)
@@ -40,7 +40,7 @@ Ericky C. A. Araujo, Pierre G. Carlier, and Paulo L. de Sousa. 2016.
 “Simultaneous muscle water T2and fat fraction mapping using transverse
 relaxometry with stimulated echo compensation.” *NMR in Biomedicine* 29
 (4): 431–43. [link››](https://doi.org/10.1002/nbm.3459).
-> - Keene, K. R., Beenakker, J. W. M., Hooijmans, M. T., Naarding, K. J., Niks, E. H., 
-Otto, L. A. M., van der Pol, W. L., Tannemaat, M. R., Kan, H. E., and Froeling, M. "T2 relaxation-time 
-mapping in healthy and diseased skeletal muscle using extended phase graph 
+> - Keene, K. R., Beenakker, J. W. M., Hooijmans, M. T., Naarding, K. J., Niks, E. H.,
+Otto, L. A. M., van der Pol, W. L., Tannemaat, M. R., Kan, H. E., and Froeling, M. "T2 relaxation-time
+mapping in healthy and diseased skeletal muscle using extended phase graph
 algorithms." *Magnetic Resonance in Medicine*, 84(5), 2656–2670. [link››](https://doi.org/10.1002/mrm.28290)

@@ -21,7 +21,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 A wrapper that calls the Elastix registration framework (Klein et al.
 2010; Shamonin 2013). The toolbox determines what registration or
@@ -40,6 +40,6 @@ again loaded into Mathematica. [Back››](/tool/)
 Josien P. W. Pluim. 2010. “Elastix: A toolbox for intensity-based
 medical image registration.” *IEEE Transactions on Medical Imaging* 29
 (1): 196–205. [link››](https://doi.org/10.1109/TMI.2009.2035616).
->  - Shamonin, Denis. 2013. “Fast parallel image registration on CPU and GPU
+> - Shamonin, Denis. 2013. “Fast parallel image registration on CPU and GPU
 for diagnostic classification of Alzheimer’s disease.” *Frontiers in
 Neuroinformatics* 7 (January): 50. [link››](https://doi.org/10.3389/fninf.2013.00050).

@@ -15,7 +15,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 This toolbox provides core functions used in many other functions and
 features. The functions comprise amongst others: data cropping,

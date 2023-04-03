@@ -18,7 +18,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 The toobox provides two algorithms that allow denoising of DWI data. The
 first is based on and LMMSE framework (Aja-Fernandez et al. 2008) and
@@ -42,8 +42,8 @@ Shenton, and Carl Fredrik Westin. 2008. “Restoration of DWI data using a
 rician LMMSE estimator.” *IEEE Transactions on Medical Imaging* 27 (10):
 1389–1403. [link››](https://doi.org/10.1109/TMI.2008.920609).
 > - Lee, Jee Eun, M. K. Chung, and A. L. Alexander. 2006. “Evaluation of
-Anisotropic Filters for Diffusion Tensor Imaging.” In *IEEE International 
+Anisotropic Filters for Diffusion Tensor Imaging.” In *IEEE International
 Symposium on Biomedical Imaging*, 77–80. IEEE. [link››](https://doi.org/10.1109/ISBI.2006.1624856).
-> - Damon, B. M., Ding, Z., Hooijmans, M. T., Anderson, A. W., Zhou, X., 
-Coolbaugh, C. L., George, M. K., & Landman, B. A. (2021). "A MATLAB toolbox for muscle 
+> - Damon, B. M., Ding, Z., Hooijmans, M. T., Anderson, A. W., Zhou, X.,
+Coolbaugh, C. L., George, M. K., & Landman, B. A. (2021). "A MATLAB toolbox for muscle
 diffusion-tensor MRI tractography." *Journal of Biomechanics*, 124, 110540. [link››](https://doi.org/10.1016/j.jbiomech.2021.110540)

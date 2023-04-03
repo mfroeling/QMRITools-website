@@ -10,7 +10,7 @@ header: no
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 Import and export of the NIfTI file format. Part of the code is based on
 previously implemented

@@ -15,12 +15,12 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 Methods for detecting muscle fasculations from diffusion data. When muscles
-contract it causes signal dropouts in diffusion weighted data (Steidle 2015). 
-The method for detecting muscle fasculations using optimized measurement protocols 
-has been named MU-MRI (Heskamp 2021). Here methods allow to detect these 
+contract it causes signal dropouts in diffusion weighted data (Steidle 2015).
+The method for detecting muscle fasculations using optimized measurement protocols
+has been named MU-MRI (Heskamp 2021). Here methods allow to detect these
 fasculations from any type of diffusion weighted data. [Back››](/tool/)
 
 {% include page-images %}
@@ -29,12 +29,12 @@ fasculations from any type of diffusion weighted data. [Back››](/tool/)
 
 ### References
 
-> - Steidle, G.,  Schick, F. (2015). Addressing spontaneous signal voids in 
-repetitive single-shot DWI of musculature: Spatial and temporal patterns in 
-the calves of healthy volunteers and consideration of unintended muscle 
-activities as underlying mechanism. 
-NMR in Biomedicine, 28(7), 801–810. [link››](https://doi.org/10.1002/nbm.3311)
-> - Heskamp, L., Birkbeck, M. G., Whittaker, R. G., Schofield, I. S., 
-Blamire, A. M. (2021). The muscle twitch profile assessed with 
-motor unit magnetic resonance imaging. 
-NMR in Biomedicine, 34(3). [link››](https://doi.org/10.1002/NBM.4466)
+> - Steidle, G.,  Schick, F. (2015). Addressing spontaneous signal voids in
+  repetitive single-shot DWI of musculature: Spatial and temporal patterns in
+  the calves of healthy volunteers and consideration of unintended muscle
+  activities as underlying mechanism. 
+  NMR in Biomedicine, 28(7), 801–810. [link››](https://doi.org/10.1002/nbm.3311)
+> - Heskamp, L., Birkbeck, M. G., Whittaker, R. G., Schofield, I. S.,
+  Blamire, A. M. (2021). The muscle twitch profile assessed with
+  motor unit magnetic resonance imaging. 
+  NMR in Biomedicine, 34(3). [link››](https://doi.org/10.1002/NBM.4466)

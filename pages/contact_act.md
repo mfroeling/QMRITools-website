@@ -10,4 +10,4 @@ header: no
 
 ---
 
-Your message has been received, we will get in contact with you soon. 
+Your message has been received, we will get in contact with you soon.

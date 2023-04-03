@@ -35,5 +35,5 @@ It also provides functions to convert bval and bvec files to bmatrix and vice ve
 > - Froeling, Martijn, Chantal M. W. Tax, Sjoerd B. Vos, Peter R. Luijten,
 and Alexander Leemans. 2017. “MASSIVE brain dataset: Multiple
 acquisitions for standardization of structural imaging validation and
-evaluation.” *Magnetic Resonance in Medicine* 77 (5). 
+evaluation.” *Magnetic Resonance in Medicine* 77 (5).
 Milan: 1797–1809. [link››](https://doi.org/10.1002/mrm.26259).

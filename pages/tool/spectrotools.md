@@ -18,10 +18,10 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 The main purpose of this toolbox is to process and visualize spectra data
-and allows to fit spectra using simulated basis spectra. Dynamic spectra and 
+and allows to fit spectra using simulated basis spectra. Dynamic spectra and
 chemical shift data can be denoised using PCA based de-noising (Froeling et al. 2020). [Back››](/tool/)
 
 {% include page-images %}
@@ -30,7 +30,7 @@ chemical shift data can be denoised using PCA based de-noising (Froeling et al. 
 
 ### References
 
-> - Froeling, M., Prompers, J. J., Klomp, D. W. J., & van der Velden, T. A. 2021. 
-"PCA denoising and Wiener deconvolution of 31P 3D CSI data to enhance effective 
-SNR and improve point spread function." *Magnetic Resonance in Medicine* 85 (6) , 
-[link››](https://doi.org/10.1002/mrm.28654) 
+> - Froeling, M., Prompers, J. J., Klomp, D. W. J., & van der Velden, T. A. 2021.
+"PCA denoising and Wiener deconvolution of 31P 3D CSI data to enhance effective
+SNR and improve point spread function." *Magnetic Resonance in Medicine* 85 (6) ,
+[link››](https://doi.org/10.1002/mrm.28654)

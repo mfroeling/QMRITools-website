@@ -15,7 +15,7 @@ images:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 Tools for masking and homogenization of data. It provides functions for
 smoothing cutting and merging masks and functions for the evaluation of

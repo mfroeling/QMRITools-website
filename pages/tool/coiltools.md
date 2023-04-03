@@ -14,7 +14,7 @@ images:
 
 ---
 
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}) 
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
 
 A collection of tools to evaluate and visualize complex multi-coil data. The functions
 are specific for analysis of multi-coil magnitude and noise data which

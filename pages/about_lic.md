@@ -11,7 +11,6 @@ header: no
 
 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause){:target="_blank"}
 
-
 Note that restrictions imposed by these patents (and possibly others)
 exist independently of and may be in conflict with the freedoms granted
 in BSD-3-Clause license, which refers to copyright of the program, not
