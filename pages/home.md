@@ -50,6 +50,8 @@ widget3:
   <br><br>
   Release <b>3.0</b> is live!! With this release the fist steps are made toward <a href="https://muscle-bids.github.io/" target="_blank">Muscle-Bids</a> compatibility.
   <br><br>
+  Live discussion with the Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a> and the role of computational Wolfram technology.
+  <br><br>
 </div>
 <br>
 

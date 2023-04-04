@@ -55,6 +55,10 @@ and fitting, j-coupling simulations and more. It currently contains over
 450 custom functions (over 30.000 lines of code) complete with more than 750
 documentation pages and demonstrations for each toolbox.
 
+If you want to learn more about the workings of QMRIToools you can watch a live discussion with the 
+Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a> 
+and the role of computational Wolfram technology.
+
 {% include page-image im_id="proc" %}
 
 ### Referencing
