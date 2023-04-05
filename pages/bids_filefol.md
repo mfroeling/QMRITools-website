@@ -31,8 +31,8 @@ Based on the Muscle-BIDS filename and its location it should be clear what data 
 
 > - "sub-test01_ses-001_megre_b0.nii"
 > - "sub-test01_ses-001_rep-flexion_dwi_dti_md.nii"
-> - "sub-anonab_ses-002_stac-upper_wt2_t2.nii.gz"
-> - "sub-anonab_ses-002_stac-upper_wt2_t2.json"
+> - "sub-anonab_ses-002_stk-upper_wt2_t2.nii.gz"
+> - "sub-anonab_ses-002_stk-upper_wt2_t2.json"
 
 ## Folders
 

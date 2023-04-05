@@ -19,16 +19,16 @@ The toolbox is best installed via the Mathematica paclet system.
 
 Automatic installation:
 
-1. Download the `QMRITools-2.3.3.paclet`.
+1. Download the latest `QMRITools-x.x.x.paclet`.
 2. Install the paclet using `PacletInstall`.
 
-`PacletInstall["xxx\\QMRITools-2.3.3.paclet"]`  
+`PacletInstall["xxx\\QMRITools-x.x.x.paclet"]`  
 
 Or alternatively you can directly install it from the latest release page
 
 `PacletInstall["https://github.com/mfroeling/QMRITools/releases/download/x.x.x/QMRITools-x.x.x.paclet"]`
 
-If you prefer you can also use the manual installation:
+If you prefer you can also use the manual installation which is not recommended:
 
 1. Download the `QMRITools.zip`.
 2. Extract the `QMRITools` folder and place it in the Mathematica UserBaseDirectory &gt; Applications.
@@ -49,10 +49,10 @@ the latest version of these tools and their user license please visit
 their website.
 
 - [dcm2niix](https://github.com/rordenlab/dcm2niix/){:target="_blank"}
-  - dcm2niix.exe
-- [Elastix](http://elastix.isi.uu.nl/){:target="_blank"}
-  - elastix.exe
-  - transformix.exe
+  - dcm2niix
+- [Elastix](https://elastix.lumc.nl/){:target="_blank"}
+  - elastix
+  - transformix
 
 All functionality is tested under Windows and MacOS with the latest Mathematica
 version. The Mathematica code is cross platform compatible with the
@@ -84,12 +84,12 @@ A list of all DTITools functions or functions per toolbox is generated
 by
 
     QMRIToolsFunctions[]
-    QMRIToolsFunctions["toolboxname"]
+    QMRIToolsFunctions["toolbox name"]
 
 To print the documentation of all functions use
 
     QMRIToolsFuncPrint[]
-    QMRIToolsFuncPrint["toolboxname"]
+    QMRIToolsFuncPrint["toolbox name"]
 
 A list off all functions and their help can be found in
 `All-Functions.nb`, which is also available as a [pdf file](https://github.com/mfroeling/QMRITools/releases/download/2.0/All-Functions.pdf).

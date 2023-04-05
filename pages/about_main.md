@@ -55,15 +55,15 @@ and fitting, j-coupling simulations and more. It currently contains over
 450 custom functions (over 30.000 lines of code) complete with more than 750
 documentation pages and demonstrations for each toolbox.
 
-If you want to learn more about the workings of QMRIToools you can watch a live discussion with the 
-Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a> 
+If you want to learn more about the workings of QMRITools you can watch a live discussion with the
+Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a>
 and the role of computational Wolfram technology.
 
 {% include page-image im_id="proc" %}
 
 ### Referencing
 
-When using the toolbox please cite one of the following references:
+When using the toolbox it is appreciated if you cite one of the following articles:
 
 1. Froeling M: *QMRTools: a Mathematica toolbox for quantitative MRI
   analysis*. J Open Source Softw 2019; 4:1204.

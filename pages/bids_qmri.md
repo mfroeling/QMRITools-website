@@ -35,7 +35,7 @@ Currently, the following automated processing scripts exist:
 > - Dixon reconstruction using “_megre” data.
 > - IVIM-DTI preprocessing and modelling using “_dwi” data.
 > - Water T2 calculation using “_mese” data using EPG modelling.
-> - Mering multiple stacks into one dataset.
+> - Merging multiple stacks into one dataset.
 
 The following automated processing scripts are being developed:
 

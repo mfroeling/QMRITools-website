@@ -5,7 +5,7 @@ permalink: /bids/ents_suffs/
 
 title: "Entities and suffixes"
 subheadline: "Naming conventions of entities and suffixes"
-teaser: "The boring stuff but usefull..."
+teaser: "The boring stuff but useful..."
 
 header: no
 
@@ -92,7 +92,7 @@ When the raw input data is processed its outputs are stored in the derived data 
   - `_mean`: The geometric mean of each b-value.
   - `_den`: The denoised dwi data.
   - `_reg`: The registered dwi data.
-  - `_sig`: The noise sigma estimated using PCA denosing.
+  - `_sig`: The noise sigma estimated using PCA denoising.
   - `_snr`: The SNR map per volume.
   - `_snr0`: The average SNR of all b = 0 s/mm2 volumes.
 - `dwi_dti`

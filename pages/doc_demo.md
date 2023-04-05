@@ -13,7 +13,7 @@ header: no
 
 The release and repository contains [a demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources){:target="_blank"}
 in which there is a file `Demonstrations.nb` and a folder `DemoData`.
-If the tool has been installed as a paclet the paclet folder conains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
+If the tool has been installed as a paclet the paclet folder contains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
 `Demonstrations.nb` looks for the folders `DemoData` in the same
 folder as the notebook.
 
@@ -26,7 +26,7 @@ The `Demonstrations.nb` contains the following demonstrations.
 > - List all Packages and toolboxes
 > - Memory Usage
 
-### Basic Data manipulation and visualisation
+### Basic Data manipulation and visualization
 
 > - Importing Data
 > - Plotting data Data
@@ -123,7 +123,7 @@ The `Demonstrations.nb` contains the following demonstrations.
 >   - Split signals into perfusion and diffusion
 > - Tensor analysis
 >   - Fit the tensors
->   - Analyse Tensor parameters
+>   - Analyze Tensor parameters
 >   - Calculate Tensor angles
 
 ### Simulate Tensor Data and fit testing
@@ -153,8 +153,8 @@ The `Demonstrations.nb` contains the following demonstrations.
 ### Cardiac data processing and simulation
 
 > - Simulate Cardiac Shape
-> - Analyse Cardiac shape
+> - Analyze Cardiac shape
 > - Cardiac Segmentation
 >   - perform segmentation
->   - Analyse data based on segmentation
+>   - Analyze data based on segmentation
 >   - Visualize results
