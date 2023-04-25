@@ -32,6 +32,8 @@
     url: /bids/files_folders/
   - title: Entities and suffixes
     url: /bids/ents_suffs/
+  - title: Muscle segmentation
+    url: /bids/segment/
   - title: QMRITools and Muscle-BIDS
     url: /bids/qmritools/
 
