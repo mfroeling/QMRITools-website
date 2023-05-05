@@ -88,7 +88,7 @@ When the raw input data is processed its outputs are stored in the derived data 
   - `_phi`: the static phase offset from the iDeal reconstruction.
   - `_real`: the real data used for fitting.
   - `_imag`: the imaginary data used for fitting.
-  - `_dwi`
+- `_dwi`
   - `_mean`: The geometric mean of each b-value.
   - `_den`: The denoised dwi data.
   - `_reg`: The registered dwi data.
