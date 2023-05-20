@@ -17,7 +17,7 @@
   dropdown:
   - title: Installation
     url: /doc/instal/
-  - title: Demonstartion
+  - title: Demonstration
     url: /doc/demo/
   - title: Guide pages
     url: /assets/htmldoc/html/guide/qmritools
