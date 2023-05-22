@@ -9,7 +9,29 @@ teaser: "A generalized muscle naming convention for BIDS"
 
 header: no
 
+images:
+  - image_id: 'lower'
+    image_name: 'LowerLimb.gif'
+    image_title: 'muscles of the lower limb'
+    image_alt: 'muscles of the lower limb' 
+
 ---
+
+Since most labs tipically have their own coding for their muscle [segmentations](https://muscle-bids.github.io/specs#segmentation-labels) converting
+between the labels can be challenging and prone to error. Therefore here we propose a common muscle coding that can serve as a translation between coding systems. The coding contains 6 numbers.
+
+- the first number indicates the location (here upper or lower limb)
+- the second number indicates which region of the limb (e.g. upper arm or forearm)
+- the third number indicates the muscle compartment (e.g. the anterior superficial compartment of the forearm)
+- the forth number indicates the muscle (e.g. the Gastrocnemius muscle)
+- the fifth number indicates the muscle heads if there are any (e.g. the Gastrocnemius medial head)
+- the sixth and last number indicates the side (e.g. both, left, or right)
+
+By looking at the code on can understand if it refers to a limb, muscle group or a muscle. Furthermore it facilitates translation of muscle labels. Instead of providing label translation from each lab to another each time it is needed each lab can specify their translation of the labels to the common labeling only once.
+
+If you are looking for images of each muscle please take a look [here](https://www.muscle-atlas.org/muscle/) where we provide images of all muscles of the upper and lower limb free to use.
+
+{% include page-image im_id="lower" %}
 
 ## The muscle code table
 
