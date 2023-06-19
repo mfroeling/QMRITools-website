@@ -18,6 +18,10 @@ images:
     image_name: 'applications of QMRITools.png'
     image_title: 'Applications of QMRITools'
     image_alt: 'Applications of QMRITools' 
+  - image_id: 'award'
+    image_name: 'ToolAward.png'
+    image_title: 'Best Open Source Tool Award for quantitative MRI'
+    image_alt: 'Best Open Source Tool Award for quantitative MRI' 
 
 ---
 
@@ -52,8 +56,11 @@ used for and started as a toolbox to analyze DWI data of muscle. Since
 then it has grown to include many other features such as cardiac
 analysis (tagging and T1 mapping), dixon reconstruction, EPG modeling
 and fitting, j-coupling simulations and more. It currently contains over
-450 custom functions (over 30.000 lines of code) complete with more than 750
-documentation pages and demonstrations for each toolbox.
+450 custom functions (over 30.000 lines of code) complete with more than 750 documentation pages and demonstrations for each toolbox.
+
+During the 2023 ISMRM in Toronto QMRITools was awarded received the "Best Open Source Tool Award" from the Quantitative MRI study group.
+
+{% include page-image im_id="award" %}
 
 If you want to learn more about the workings of QMRITools you can watch a live discussion with the
 Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a>
