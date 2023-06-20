@@ -50,6 +50,8 @@ primary goal is to allow for fast batch data processing, and
 facilitate development and prototyping of new functions. The core of the
 toolbox contains various functions for data manipulation and restructuring.
 
+{% include page-image im_id="app" %}
+
 The toolbox was developed mostly in the context of quantitative muscle
 ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}), nerve and cardiac magnetic resonance imaging. The library of functions grows along with the research it is
 used for and started as a toolbox to analyze DWI data of muscle. Since
@@ -60,6 +62,7 @@ and fitting, j-coupling simulations and more. It currently contains over
 
 {% include page-image im_id="proc" %}
 
+### Awards and media
 
 During the 2023 ISMRM in Toronto QMRITools was awarded received the "Best Open Source Tool Award" from the Quantitative MRI study group.
 
@@ -86,8 +89,6 @@ When using the toolbox it is appreciated if you cite one of the following articl
 4. Schlaffke L, et al.: *Multi‐center evaluation of stability and reproducibility of
   quantitative MRI measures in healthy calf muscles*. NMR Biomed. 2019;32:e4119
   [link](https://onlinelibrary.wiley.com/doi/full/10.1002/nbm.4119){:target="_blank"}
-
-{% include page-image im_id="app" %}
 
 ### Publications using QMRITools
 
