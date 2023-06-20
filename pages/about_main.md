@@ -58,6 +58,9 @@ analysis (tagging and T1 mapping), dixon reconstruction, EPG modeling
 and fitting, j-coupling simulations and more. It currently contains over
 450 custom functions (over 30.000 lines of code) complete with more than 750 documentation pages and demonstrations for each toolbox.
 
+{% include page-image im_id="proc" %}
+
+
 During the 2023 ISMRM in Toronto QMRITools was awarded received the "Best Open Source Tool Award" from the Quantitative MRI study group.
 
 {% include page-image im_id="award" %}
@@ -65,8 +68,6 @@ During the 2023 ISMRM in Toronto QMRITools was awarded received the "Best Open S
 If you want to learn more about the workings of QMRITools you can watch a live discussion with the
 Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a>
 and the role of computational Wolfram technology.
-
-{% include page-image im_id="proc" %}
 
 ### Referencing
 
