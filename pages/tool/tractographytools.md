@@ -8,12 +8,15 @@ tags: tools
 header: no
 
 images:
-  - image_name: 'calf muscles tractograpy.png'
-    image_title: 'Fiber tractgraphy of the soleus, tibiablis and gastroc muscles, color coded for fiber length.'
-    image_alt: 'calf muscles fiber tractograpy'
+  - image_name: 'calf muscles tractography.png'
+    image_title: 'Fiber tractography of the soleus, tibiablis and gastroc muscles, color coded for fiber length.'
+    image_alt: 'calf muscles fiber tractography'
   - image_name: 'muscle fiber tractography.jpg'
-    image_title: 'Fiber tractgraphy of the soleus muscle color coded for fiber direction.'
-    image_alt: 'muscles fiber tractograpy'	
+    image_title: 'Fiber tractography of the soleus muscle color coded for fiber direction.'
+    image_alt: 'muscles fiber tractography'
+  - image_name: 'line.gif'
+    image_title: 'Fiber tractography of the whole leg segmented per muscle.'
+    image_alt: 'whole leg muscles fiber tractography'
 
 ---
 
