@@ -8,153 +8,30 @@
 		<meta charset="utf-8">
 	
 
-<title>RegisterData&mdash;Wolfram Language Documentation</title>
+<title>RegisterData&#226;&#8364;&#8221;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{, , , }" />
+<meta name="historydata" content="{XX, , , }" />
 <meta name="keywords" content="RegisterData" />
 
-<meta name="description" content="RegisterData[data] registers the data series. If data is 3D it performs multiple 2D registration,if data is 4D it performs multipe 3D registration. The target is the first image orvolume in the series. RegisterData[{data, vox}] registers the data series using the given voxel size. RegisterData[{data, mask}] registers the data series only using data whithin the mask. RegisterData[{data, mask, vox}] registers the data series using the given voxel size only using data within the mask. RegisterData[target, moving] registers the moving data to the target data. target can be 2D or 3D. moving can be the same of one dimension higher than the target. RegisterData[{target, mask, vox}, {moving, mask, vox}] registers the data using the given voxel size only using data within the mask. RegisterData[{target, vox}, moving] registers the data using the given voxel size. RegisterData[target, {moving, vox}] registers the data using the given voxel size. RegisterData[{target, vox}, {moving, vox}] registers the data using the given voxel size. RegisterData[{target, mask}, moving] registers the data series only using data whithin the mask. RegisterData[target, {moving, mask}] registers the data series only using data whithin the mask. RegisterData[{target, mask}, moving] registers the data series only using data whithin the mask. RegisterData[{target, mask}, {moving, mask}] registers the data series only using data whithin the mask. RegisterData[target, {moving, mask, vox}] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, mask}, {moving, mask, vox}] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, vox}, {moving, mask, vox}] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, mask, vox}, moving] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, mask, vox}, {moving, mask}] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, mask, vox}, {moving, vox}] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, mask}, {moving, vox}] registers the data series using the given voxel size only using data within the mask. RegisterData[{target, vox}, {moving, mask}] registers the data series using the given voxel size only using data within the mask. Output is the registered data with the dimensions of the moving data. If OutputTransformation is True it also outputs the translation, rotation scale and skew of all images or volumes. RegisterData[] is based on DOI: 10.1109/TMI.2009.2035616 and 10.3389/fninf.2013.00050." />
+<meta name="description" content="RegisterData[data] registers the data series. If data is 3D it performs multiple 2D registration,if data is 4D it performs multipe 3D registration. The input data can be in the forms: data,{data,vox},{data,mask} or {data,mask,vox}. RegisterData[target, moving] registers the moving data to the target data. target can be 2D or 3D. moving can be the same of one dimension higher than the target. The inputs target and moving can be in the forms: data, {data, vox}, {data, mask} or {data, mask, vox}. Output is the registered data with the dimensions of the moving data. If OutputTransformation is True it also outputs the translation, rotation scale and skew of all images or volumes. RegisterData[] is based on DOI: 10.1109/TMI.2009.2035616 and 10.3389/fninf.2013.00050." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
 <script>var baselang = 'RegisterData.en';</script>
 </head>
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu related-guides">Related Guides</a>
-    <ul class="sub_menu">
-     <li>
-      <a href="../guide/ElastixTools.html"><span class="dropdownPad">ElastixTools</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">RegisterData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">RegisterData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
     <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="TI">data</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series. If <span class="IF"><span class="TI">data</span></span> is 3D it performs multiple 2D registration,if <span class="IF"><span class="TI">data</span></span> is 4D it performs multipe 3D registration. The <span class="IF"><span class="TI">target</span></span> is the first image orvolume in the series. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series only using <span class="IF"><span class="TI">data</span></span> whithin the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
+   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series. If <span class="IF"><span class="TI">data</span></span> is 3D it performs multiple 2D registration,if <span class="IF"><span class="TI">data</span></span> is 4D it performs multipe 3D registration. The input <span class="IF"><span class="TI">data</span></span> can be in the forms: <span class="IF"><span class="TI">data</span></span>,{data,vox},{data,mask} or {data,mask,vox}. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
     <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">moving</span></span> data to the <span class="IF"><span class="TI">target</span></span> data. <span class="IF"><span class="TI">target</span></span> can be 2D or 3D. <span class="IF"><span class="TI">moving</span></span> can be the same of one dimension higher than the <span class="IF"><span class="TI">target</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> using the given voxel size. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> using the given voxel size. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> using the given voxel size. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series only using <span class="IF"><span class="TI">data</span></span> whithin the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series only using <span class="IF"><span class="TI">data</span></span> whithin the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series only using <span class="IF"><span class="TI">data</span></span> whithin the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series only using <span class="IF"><span class="TI">data</span></span> whithin the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">target</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">mask</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">registers the <span class="IF"><span class="TI">data</span></span> series using the given voxel size only using <span class="IF"><span class="TI">data</span></span> within the <span class="IF"><span class="TI">mask</span></span>. Output is the registered <span class="IF"><span class="TI">data</span></span> with the dimensions of the <span class="IF"><span class="TI">moving</span></span> data. If <span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it also outputs the translation, rotation scale and skew of all images or volumes. </p>
+   <p class="code-description">registers the moving data to the target data. target can be 2D or 3D. moving can be the same of one dimension higher than the target. The inputs target and moving can be in the forms: data, <span class="IF"><span class="TI"><span class="openbrace">{</span>data</span></span>, vox}, {data, mask} or {data, mask, vox}. Output is the registered data with the dimensions of the <span class="IF"><span class="TI">moving</span></span> data. If <span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is True it also outputs the translation, rotation scale and skew of all images or volumes. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
@@ -163,12 +40,12 @@
    <p class="code-description">is based on DOI: 10.1109/TMI.2009.2035616 and 10.3389/fninf.2013.00050.</p>
   </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details and Options</h1>
+   <h1 class="toggle">Details</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="15459330"></a>The following options can be given: </li>
+     <li><a name="414123083"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="846437992"></a>
+      <a name="10857302"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -178,9 +55,9 @@
 It specifies the number of iterations used by the registration functions.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Resolutions.html">Resolutions</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Resolutions.html">Resolutions</a></span> is an options for <span class="IF">RegisterData</span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF">RegisterData</span>Transform. 
 It specifies the number of scale space resolutions used by the registration functions.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/HistogramBins.html">HistogramBins</a></td><td>64</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Hist.html">Hist</a></span>ogramBins is an options for <span class="IF">RegisterData</span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF">RegisterData</span>Transform. 
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/HistogramBins.html">HistogramBins</a></td><td>32</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Hist.html">Hist</a></span>ogramBins is an options for <span class="IF">RegisterData</span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF">RegisterData</span>Transform. 
 It specifies the number of bins of the joined histogram used by the registration functions.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/NumberSamples.html">NumberSamples</a></td><td>4000</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/NumberSamples.html">NumberSamples</a></span> is an options for <span class="IF">RegisterData</span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF">RegisterData</span>Transform. 
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/NumberSamples.html">NumberSamples</a></td><td>5000</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/NumberSamples.html">NumberSamples</a></span> is an options for <span class="IF">RegisterData</span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF">RegisterData</span>Transform. 
 It specifies the number of random samples that are taken each iteration used by the registration functions.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/InterpolationOrderReg.html">InterpolationOrderReg</a></td><td>3</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/InterpolationOrderReg.html">InterpolationOrderReg</a></span> is an options for <span class="IF">RegisterData</span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF">RegisterData</span>Transform. 
 It specifies the interpolation order used in the registration functions.</span></td></tr>
@@ -203,33 +80,31 @@ It specifies if the temp directory should be deleted after the registration is f
 It spefifies if the location of the temp directory should be deplayed.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is an option for <span class="IF">RegisterData</span> ad <span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters">.
 It specifies if the tranformation paramters <span class="openparenthesis">(</span>translation<span class="comma">,</span> rotation<span class="comma">,</span> scale and skew<span class="closeparenthesis">)</span> should be given as output in the registration functions.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></td><td><span class="openbrace">{</span>False<span class="comma">,</span> Automatic<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></span> is an option for <span class="IF">RegisterData</span><span class="specialcharacters">. The value is <span class="openbrace">{</span>bool<span class="comma">,</span> gpu<span class="closebrace">}</span> where bool is </span><span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span><span class="specialcharacters"> or False<span class="comma">,</span> and gpu is the gpu ID which is an integer or Automatic.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></td><td>3</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></span> is an option for <span class="IF">RegisterData</span>. It speciefies how many PCA components are used if method is set to &quot;PCA&quot;.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></td><td><span class="openbrace">{</span>False<span class="comma">,</span> Automatic<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></span> is an option for <span class="IF">RegisterData</span><span class="specialcharacters">. The value is <span class="openbrace">{</span>bool<span class="comma">,</span> gpu<span class="closebrace">}</span> where bool is True or False<span class="comma">,</span> and gpu is the gpu ID which is an integer or Automatic.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></span> is an option for <span class="IF">RegisterData</span>. It speciefies how many PCA components are used if method is set to &quot;PCA&quot;.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></span> is an option for <span class="IF">RegisterData</span>. If set to True it will print a plot of the Metric.</span></td></tr>
       </table>
      </li>
     </ul>
    </div>
-  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
-   <div id="83586350"
+  </div></section><section id="Examples"><h1 id="92142117" class="toggle open">Examples</h1><div class="hideable">
+   <div id="120839613"
        class="clipboard-input"
        data-in="In[1]:="
        data-in-num="1"
        data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
        data-src="Files/RegisterData.en/I_1.png"
-       data-in-width="147"
-       data-in-height="21"
-       data-link="https://wolfram.com/xid/0nxgdpbhs8dxtwfqko93m-bn1txc"
-       data-code="Files/RegisterData.en/i_1.txt"
+       data-in-width="125"
+       data-in-height="18"
+       data-link="https://wolfram.com/xid/0nxgdpbhs8dxtwfqko93m-b98ap7"
+       data-code="Files\RegisterData.en\i_1.txt"
        ></div>
    <div class="clear"><!-- --></div>
-  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
-   <h1>Related Guides</h1>
-   <ul class="functionList">
-    <span class="special-character FilledVerySmallSquare">&#9642;</span>
-    <li>
-     <a href="../guide/ElastixTools.html">ElastixTools</a>
-    </li>
-   </ul>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList">
+    <span class="IF">&quot;XXXX&quot;</span>
+   </p>
   </div></section>
   
 

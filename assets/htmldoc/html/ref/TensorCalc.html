@@ -8,9 +8,9 @@
 		<meta charset="utf-8">
 	
 
-<title>TensorCalc&mdash;Wolfram Language Documentation</title>
+<title>TensorCalc&#226;&#8364;&#8221;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{, , , }" />
+<meta name="historydata" content="{XX, , , }" />
 <meta name="keywords" content="TensorCalc" />
 
 <meta name="description" content="TensorCalc[data, gradients, bvalue] calculates the diffusion tensor for the given dataset. Allows for one unweighted image and one b value. Gradient directions must be in the form {{x1,y1,z1}, ..., {xn,yn,zn}} without the unweighted gradient direction. bvalue is a singe number indicating the b-value used. TensorCalc[data, gradients, bvec] calculates the diffusion tensor for the given dataset. allows for multiple unweighted images and multiple bvalues. allows for differnt tensor fitting methods. gradient directions must be in the form {{x1,y1,z1}, ..., {xn,yn,zn}} with the unweighted direction as {0,0,0}. bvec the bvector, with a bvalue defined for each gradient direction. b value for unweighted images is 0. TensorCalc[data, bmatix] calculates the diffusion tensor for the given dataset. allows for multiple unweighted images and multiple bvalues. bmat is the bmatrix which can be generated usiong Bmatrix. The bvalue assumed to be is in s/mm^2 and therfore the output is in mm^2/2. TensorCalc[] is based on DOI: 10.1016/j.neuroimage.2013.05.028 and 10.1002/mrm.25165." />
@@ -20,16 +20,7 @@
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu related-guides">Related Guides</a>
-    <ul class="sub_menu">
-     <li>
-      <a href="../guide/TensorTools.html"><span class="dropdownPad">TensorTools</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">TensorCalc</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">TensorCalc</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
     <span class="IF"><a class="package-symbol" href="../QMRIToolsTensorTools/ref/TensorCalc.html">TensorCalc</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">gradients</span><span class="comma">,</span><span class="TI">bvalue</span><span class="closebracket">]</span></span>
@@ -55,49 +46,46 @@
    <p class="code-description">is based on DOI: 10.1016/j.neuroimage.2013.05.028 and 10.1002/mrm.25165.</p>
   </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details and Options</h1>
+   <h1 class="toggle">Details</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="251952524"></a>The following options can be given: </li>
+     <li><a name="64209256"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="213596591"></a>
+      <a name="28099120"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></span> is an option for all Calc fucntions. When true the proceses of the calculation is shown.</span></td></tr>
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></span> is an option for many processing functions. When true the proceses of the calculation is shown.</span></td></tr>
        <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Method.html">Method</a></td><td>&quot;iWLLS&quot;</td><td><span class="TT">Method is an option for various algorithm-intensive functions that specifies what internal methods they should use.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Calc when using bvector. When <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> also the S0 is given as output.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Calc when using bvector. When True also the s0 is given as output.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span><span class="specialcharacters">Calc. If true outliers will be rejected in the fit<span class="comma">,</span> only works with WLLS.
 If </span><span class="IF"><a class="package-symbol" href="../ref/FullOutput.html">FullOutput</a></span> is given the outlier map is given.</span></td></tr>
-       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Parallelize.html">Parallelize</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF">Parallelize<span class="openbracket">[</span><span class="TI">expr</span><span class="closebracket">]</span></span> evaluates <span class="IF"><span class="TI">expr</span></span> using automatic parallelization.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/RobustFitParameters.html">RobustFitParameters</a></td><td><span class="openbrace">{</span>0.0001<span class="comma">,</span> 6<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></span>Parameters is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span><span class="specialcharacters">Calc. gives the threshold for stopping the itterations and the kappa for the outlier marging<span class="comma">,</span> <span class="openbrace">{</span>tr<span class="comma">,</span>kappa<span class="closebrace">}</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Parallelize.html">Parallelize</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF">Parallelize<span class="openbracket">[</span><span class="TI">expr</span><span class="closebracket">]</span></span> evaluates <span class="IF"><span class="TI">expr</span></span> using automatic parallelization.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/RobustFitParameters.html">RobustFitParameters</a></td><td><span class="openbrace">{</span>0.001<span class="comma">,</span> 6<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/RobustFit.html">RobustFit</a></span>Parameters is an option for <span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span><span class="specialcharacters">Calc. gives the threshold for stopping the itterations and the kappa for the outlier marging<span class="comma">,</span> <span class="openbrace">{</span>tr<span class="comma">,</span>kappa<span class="closebrace">}</span>.</span></span></td></tr>
       </table>
      </li>
     </ul>
    </div>
-  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
-   <div id="171872063"
+  </div></section><section id="Examples"><h1 id="28683122" class="toggle open">Examples</h1><div class="hideable">
+   <div id="386034847"
        class="clipboard-input"
        data-in="In[1]:="
        data-in-num="1"
        data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
        data-src="Files/TensorCalc.en/I_1.png"
-       data-in-width="147"
-       data-in-height="21"
-       data-link="https://wolfram.com/xid/0nxgdpbhs8dxtwfeb84fe-c4l3l9"
-       data-code="Files/TensorCalc.en/i_1.txt"
+       data-in-width="125"
+       data-in-height="18"
+       data-link="https://wolfram.com/xid/0nxgdpbhs8dxtwfeb84fe-gn4coh"
+       data-code="Files\TensorCalc.en\i_1.txt"
        ></div>
    <div class="clear"><!-- --></div>
-  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
-   <h1>Related Guides</h1>
-   <ul class="functionList">
-    <span class="special-character FilledVerySmallSquare">&#9642;</span>
-    <li>
-     <a href="../guide/TensorTools.html">TensorTools</a>
-    </li>
-   </ul>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList">
+    <span class="IF">&quot;XXXX&quot;</span>
+   </p>
   </div></section>
   
 

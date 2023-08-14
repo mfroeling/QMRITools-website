@@ -8,33 +8,24 @@
 		<meta charset="utf-8">
 	
 
-<title>EPGT2Fit&mdash;Wolfram Language Documentation</title>
+<title>EPGT2Fit&#226;&#8364;&#8221;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{, , , }" />
+<meta name="historydata" content="{XX, , , }" />
 <meta name="keywords" content="EPGT2Fit" />
 
-<meta name="description" content="EPGT2Fit[data, {Necho, detlaTE}, {exitation, refoucs}] fits the T2 based on Marty B et.al. Simultaneous muscle water T2 and fat fraction mapping using transverse relaxometry with stimulated echo compensation. Exitation and refocus are the RF pulse angles e.g. 90,180. They can also be a range of angeles over the slice profile as defined by GetSliceProfile. The output is in units as defined by the detlaTE, e.g. if detlaTE is in ms the output is in ms. The exitation and refocus are defined in Degrees. Output is {{{T2map,B1Map},{wat, fat, fatMap}, residual},callibration} or {{T2map,B1Map},{wat, fat, fatMap}, residual}. EPGT2Fit[] is based on DOI: 10.1002/nbm.3459." />
+<meta name="description" content="EPGT2Fit[data, {nEcho, detlaTE}, {exitation, refoucs}] fits the t2 based on Marty B et.al. Simultaneous muscle water t2 and fat fraction mapping using transverse relaxometry with stimulated echo compensation. Exitation and refocus are the RF pulse angles e.g. 90,180. They can also be a range of angeles over the slice profile as defined by GetSliceProfile. The output is in units as defined by the detlaTE, e.g. if detlaTE is in ms the output is in ms. The exitation and refocus are defined in Degrees. Output is {{{T2map,B1Map},{wat, fat, fatMap}, residual},callibration} or {{T2map,B1Map},{wat, fat, fatMap}, residual}. EPGT2Fit[] is based on DOI: 10.1002/nbm.3459." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
 <script>var baselang = 'EPGT2Fit.en';</script>
 </head>
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu related-guides">Related Guides</a>
-    <ul class="sub_menu">
-     <li>
-      <a href="../guide/RelaxometryTools.html"><span class="dropdownPad">RelaxometryTools</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">EPGT2Fit</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">EPGT2Fit</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsRelaxometryTools/ref/EPGT2Fit.html">EPGT2Fit</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span>Necho<span class="comma">,</span><span class="TI">detlaTE</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">exitation</span><span class="comma">,</span><span class="TI">refoucs</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsRelaxometryTools/ref/EPGT2Fit.html">EPGT2Fit</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">nEcho</span><span class="comma">,</span><span class="TI">detlaTE</span><span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">exitation</span><span class="comma">,</span><span class="TI">refoucs</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">fits the T2 based on Marty B et.al. Simultaneous muscle water T2 and fat fraction mapping using transverse relaxometry with stimulated echo compensation. Exitation and refocus are the RF pulse angles e.g. 90,180. They can also be a range of angeles over the slice profile as defined by GetSliceProfile. The output is in units as defined by the detlaTE, e.g. if detlaTE is in ms the output is in ms. The exitation and refocus are defined in Degrees. Output is {{{T2map,B1Map},{wat, fat, fatMap}, residual},callibration} or {{T2map,B1Map},{wat, fat, fatMap}, residual}. </p>
+   <p class="code-description">fits the t2 based on Marty B et.al. Simultaneous muscle water t2 and fat fraction mapping using transverse relaxometry with stimulated echo compensation. Exitation and refocus are the RF pulse angles e.g. 90,180. They can also be a range of angeles over the slice profile as defined by GetSliceProfile. The output is in units as defined by the detlaTE, e.g. if detlaTE is in ms the output is in ms. The exitation and refocus are defined in Degrees. Output is {{{T2map,B1Map},{wat, fat, fatMap}, residual},callibration} or {{T2map,B1Map},{wat, fat, fatMap}, residual}. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
@@ -43,30 +34,30 @@
    <p class="code-description">is based on DOI: 10.1002/nbm.3459.</p>
   </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details and Options</h1>
+   <h1 class="toggle">Details</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="436727496"></a>The following options can be given: </li>
+     <li><a name="409794071"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="59372606"></a>
+      <a name="533412860"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
        <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/EPGRelaxPars.html">EPGRelaxPars</a></td><td><span class="openbrace">{</span>1400.<span class="comma">,</span> 365.<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGRelaxPars.html">EPGRelaxPars</a></span> is and option for <span class="IF">EPGT2Fit</span><span class="specialcharacters">. Needs to be <span class="openbrace">{</span>T1muscl<span class="comma">,</span> T1Fat<span class="comma">,</span> T2Fat<span class="closebrace">}</span> in ms<span class="comma">,</span> defaul is <span class="openbrace">{</span>1400<span class="comma">,</span>365<span class="comma">,</span>137<span class="closebrace">}</span> in ms.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictB1Range.html">DictB1Range</a></td><td><span class="openbrace">{</span>0.5<span class="comma">,</span> 1.4<span class="comma">,</span> 0.02<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictB1Range.html">DictB1Range</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CreateT2Dictionary.html">CreateT2Dictionary</a></span> and <span class="IF">EPGT2Fit</span><span class="specialcharacters">. It specifies the range and step of the B1 values in the dictionary <span class="openbrace">{</span>min<span class="comma">,</span> max<span class="comma">,</span> step<span class="closebrace">}</span>.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictT2Range.html">DictT2Range</a></td><td><span class="openbrace">{</span>15.<span class="comma">,</span> 45.<span class="comma">,</span> 0.2<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictT2Range.html">DictT2Range</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CreateT2Dictionary.html">CreateT2Dictionary</a></span> and <span class="IF">EPGT2Fit</span><span class="specialcharacters">. is specifies the range and step of the T2 values in the dictionary <span class="openbrace">{</span>min<span class="comma">,</span> max<span class="comma">,</span> step<span class="closebrace">}</span> in ms.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictB1Range.html">DictB1Range</a></td><td><span class="openbrace">{</span>0.5<span class="comma">,</span> 1.4<span class="comma">,</span> 0.02<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictB1Range.html">DictB1Range</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CreateT2Dictionary.html">CreateT2Dictionary</a></span> and <span class="IF">EPGT2Fit</span><span class="specialcharacters">. It specifies the range and step of the b1 values in the dictionary <span class="openbrace">{</span>min<span class="comma">,</span> max<span class="comma">,</span> step<span class="closebrace">}</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictT2Range.html">DictT2Range</a></td><td><span class="openbrace">{</span>15.<span class="comma">,</span> 45.<span class="comma">,</span> 0.2<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictT2Range.html">DictT2Range</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CreateT2Dictionary.html">CreateT2Dictionary</a></span> and <span class="IF">EPGT2Fit</span><span class="specialcharacters">. is specifies the range and step of the t2 values in the dictionary <span class="openbrace">{</span>min<span class="comma">,</span> max<span class="comma">,</span> step<span class="closebrace">}</span> in ms.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGFitFat.html">EPGFitFat</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGFitFat.html">EPGFitFat</a></span> is an option for <span class="IF">EPGT2Fit</span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGCalibrate.html">EPGCalibrate</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGCalibrate.html">EPGCalibrate</a></span> is an option for <span class="IF">EPGT2Fit</span>. If set to <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it does autmatic callibration of the T2 fat relaxation time.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictT2fRange.html">DictT2fRange</a></td><td><span class="openbrace">{</span>120<span class="comma">,</span> 190.<span class="comma">,</span> 2.5<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictT2fRange.html">DictT2fRange</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CreateT2Dictionary.html">CreateT2Dictionary</a></span> and <span class="IF">EPGT2Fit</span><span class="specialcharacters">. is specifies the range and step of the T2 fat values in the dictionary <span class="openbrace">{</span>min<span class="comma">,</span> max<span class="comma">,</span> step<span class="closebrace">}</span> in ms. 
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGCalibrate.html">EPGCalibrate</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGCalibrate.html">EPGCalibrate</a></span> is an option for <span class="IF">EPGT2Fit</span>. If set to True it does autmatic callibration of the t2 fat relaxation time.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictT2fRange.html">DictT2fRange</a></td><td><span class="openbrace">{</span>120<span class="comma">,</span> 190.<span class="comma">,</span> 2.5<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictT2fRange.html">DictT2fRange</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/CreateT2Dictionary.html">CreateT2Dictionary</a></span> and <span class="IF">EPGT2Fit</span><span class="specialcharacters">. is specifies the range and step of the t2 fat values in the dictionary <span class="openbrace">{</span>min<span class="comma">,</span> max<span class="comma">,</span> step<span class="closebrace">}</span> in ms. 
 If a single value is given this fixed value is used a long as </span><span class="IF"><a class="package-symbol" href="../ref/EPGCalibrate.html">EPGCalibrate</a></span> is False.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DictT2fValue.html">DictT2fValue</a></td><td>150.</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DictT2fValue.html">DictT2fValue</a></span> is an option for EPGFit.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGFitPoints.html">EPGFitPoints</a></td><td>50</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGFitPoints.html">EPGFitPoints</a></span> is a option for <span class="IF"><a class="package-symbol" href="../ref/CalibrateEPGT2Fit.html">CalibrateEPGT2Fit</a></span> and <span class="IF">EPGT2Fit</span>. Number of points is 200 by default.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGMethod.html">EPGMethod</a></td><td>&quot;dictionary&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGMethod.html">EPGMethod</a></span> is an optionf for <span class="IF">EPGT2Fit</span><span class="specialcharacters">. Values can be &quot;NLLS&quot;<span class="comma">,</span> &quot;dictionary&quot; or &quot;dictionaryM&quot;.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MonitorEPGFit.html">MonitorEPGFit</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MonitorEPGFit.html">MonitorEPGFit</a></span> show waitbar during <span class="IF">EPGT2Fit</span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></span> is an option for many processing functions. When true the proceses of the calculation is shown.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutputCalibration.html">OutputCalibration</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutputCalibration.html">OutputCalibration</a></span> is an option for <span class="IF">EPGT2Fit</span> and <span class="IF"><a class="package-symbol" href="../ref/TriExponentialT2Fit.html">TriExponentialT2Fit</a></span>. If true it outputs the calibartion values.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGSmoothB1.html">EPGSmoothB1</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGSmoothB1.html">EPGSmoothB1</a></span> is an options for <span class="IF">EPGT2Fit</span>. If set to <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> the B1 map of the fit will be smoothed after which the minimization if perfomed again but with a fixed B1.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGSmoothB1.html">EPGSmoothB1</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGSmoothB1.html">EPGSmoothB1</a></span> is an options for <span class="IF">EPGT2Fit</span>. If set to True the b1 map of the fit will be smoothed after which the minimization if perfomed again but with a fixed b1.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/WaterFatShift.html">WaterFatShift</a></td><td>0.</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/WaterFatShift.html">WaterFatShift</a></span> is an options for <span class="IF">EPGT2Fit</span>. It specifies the amount of water fat shift in voxels.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/WaterFatShiftDirection.html">WaterFatShiftDirection</a></td><td>&quot;left&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/WaterFatShift.html">WaterFatShift</a></span>Direction is an options for <span class="IF">EPGT2Fit</span><span class="specialcharacters">. It specifies the water fat shift direction: &quot;left&quot;<span class="comma">,</span> &quot;right&quot;<span class="comma">,</span> &quot;up&quot; and &quot;down&quot;.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/EPGFatShift.html">EPGFatShift</a></td><td>0.</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/EPGFatShift.html">EPGFatShift</a></span> is an options for <span class="IF">EPGT2Fit</span>. Specfies the amount of shift of the fat refocussing pulse relative to the fat exitation pulse.
@@ -77,27 +68,24 @@ Can be obtained form <span class="IF"><a class="package-symbol" href="../ref/Get
      </li>
     </ul>
    </div>
-  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
-   <div id="179215549"
+  </div></section><section id="Examples"><h1 id="18514139" class="toggle open">Examples</h1><div class="hideable">
+   <div id="553795986"
        class="clipboard-input"
        data-in="In[1]:="
        data-in-num="1"
        data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
        data-src="Files/EPGT2Fit.en/I_1.png"
-       data-in-width="147"
-       data-in-height="21"
-       data-link="https://wolfram.com/xid/04kjie7co10ih3rcc6521ho09y-c8zhvz"
-       data-code="Files/EPGT2Fit.en/i_1.txt"
+       data-in-width="125"
+       data-in-height="18"
+       data-link="https://wolfram.com/xid/04kjie7co10ih3rcc6521ho09y-jfz1z4"
+       data-code="Files\EPGT2Fit.en\i_1.txt"
        ></div>
    <div class="clear"><!-- --></div>
-  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
-   <h1>Related Guides</h1>
-   <ul class="functionList">
-    <span class="special-character FilledVerySmallSquare">&#9642;</span>
-    <li>
-     <a href="../guide/RelaxometryTools.html">RelaxometryTools</a>
-    </li>
-   </ul>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList">
+    <span class="IF">&quot;XXXX&quot;</span>
+   </p>
   </div></section>
   
 

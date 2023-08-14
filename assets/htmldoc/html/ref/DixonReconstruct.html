@@ -8,45 +8,48 @@
 		<meta charset="utf-8">
 	
 
-<title>DixonReconstruct&mdash;Wolfram Language Documentation</title>
+<title>DixonReconstruct&#226;&#8364;&#8221;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{, , , }" />
+<meta name="historydata" content="{XX, , , }" />
 <meta name="keywords" content="DixonReconstruct" />
 
-<meta name="description" content="DixonReconstruct[real, imag, echo] reconstruxt Dixon data with initital guess b0 = 0 and T2star = 0. DixonReconstruct[real, imag, echo, b0] reconstructs Dixon data with intitial guess T2star = 0. DixonReconstruct[real, imag, echo, b0, t2] reconstructs Dixon data. real is the real data in radials. imag is the imaginary data in radians. B0 can be estimated from two phase images using Unwrap. T2 can be estimated from multiple echos using T2fit. Output is {{watF,fatF},{watSig,fatSig},{inphase,outphase},{B0,T2star},itterations}. The fractions are between 0 and 1, the B0 field map is in Hz and the T2start map is in ms. DixonReconstruct[] is based on DOI: 10.1002/mrm.20624 and 10.1002/mrm.21737 (10.1002/nbm.3766)." />
+<meta name="description" content="DixonReconstruct[{real, imag}, echo] reconstruxt Dixon data with initital guess b0 = 0 and T2star = 0. DixonReconstruct[{real, imag}, echo, {b0}] reconstructs Dixon data with intitial guess T2star = 0. DixonReconstruct[{real, imag}, echo, {b0, t2}] reconstructs Dixon data with t2star and B0. DixonReconstruct[{real, imag}, echo, {b0, t2, ph0}] reconstructs Dixon data with initial phase. DixonReconstruct[{real, imag}, echo, {b0, t2, ph0, phb}] reconstructs Dixon data with bipolar phase . Output is {{watF,fatF},{watSig,fatSig},{inphase,outphase},{{b0, ph0, phbphb}},{r2, t2}},itterations}. The fractions are between 0 and 1, the B0 field map is in Hz and the T2start map is in ms. DixonReconstruct[] is based on DOI: 10.1002/mrm.20624 and 10.1002/mrm.21737 (10.1002/nbm.3766)." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
 <script>var baselang = 'DixonReconstruct.en';</script>
 </head>
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu related-guides">Related Guides</a>
-    <ul class="sub_menu">
-     <li>
-      <a href="../guide/DixonTools.html"><span class="dropdownPad">DixonTools</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">DixonReconstruct</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">DixonReconstruct</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="comma">,</span><span class="TI">echo</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">echo</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">reconstruxt Dixon data with initital guess <span class="IF"><span class="TI">b0</span></span> = 0 and T2star = 0. </p>
+   <p class="code-description">reconstruxt Dixon data with initital guess b0 = 0 and T2star = 0. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="comma">,</span><span class="TI">echo</span><span class="comma">,</span><span class="TI">b</span><sub><span class="TR">0</span></sub><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">echo</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">b</span><sub><span class="TR">0</span></sub><span class="closebrace">}</span><span class="closebracket">]</span></span>
    </p>
    <p class="code-description">reconstructs Dixon data with intitial guess T2star = 0. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="comma">,</span><span class="TI">echo</span><span class="comma">,</span><span class="TI">b</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">t</span><sub><span class="TR">2</span></sub><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">echo</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">b</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">t</span><sub><span class="TR">2</span></sub><span class="closebrace">}</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">reconstructs Dixon data. <span class="IF"><span class="TI">real</span></span> is the <span class="IF"><span class="TI">real</span></span> data in radials. <span class="IF"><span class="TI">imag</span></span> is the imaginary data in radians. B0 can be estimated from two phase images using <span class="IF"><a class="package-symbol" href="../ref/Unwrap.html">Unwrap</a></span>. T2 can be estimated from multiple echos using T2fit. Output is {{watF,fatF},{watSig,fatSig},{inphase,outphase},{B0,T2star},itterations}. The fractions are between 0 and 1, the B0 field map is in Hz and the T2start map is in ms. </p>
+   <p class="code-description">reconstructs Dixon data with t2star and B0. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">echo</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">b</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">t</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">ph</span><sub><span class="TR">0</span></sub><span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">reconstructs Dixon data with initial phase. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsDixonTools/ref/DixonReconstruct.html">DixonReconstruct</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">real</span><span class="comma">,</span><span class="TI">imag</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">echo</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">b</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">t</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">ph</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">phb</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">reconstructs Dixon data with bipolar phase . Output is {{watF,fatF},{watSig,fatSig},{inphase,outphase},{{b0, <span class="IF"><span class="TI">ph0</span></span>, phb<span class="IF"><span class="TI">phb<span class="closebrace">}</span></span></span>},{r2, t2}},itterations}. The fractions are between 0 and 1, the B0 field map is in Hz and the T2start map is in ms. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
@@ -55,12 +58,12 @@
    <p class="code-description">is based on DOI: 10.1002/mrm.20624 and 10.1002/mrm.21737 (10.1002/nbm.3766).</p>
   </div>
  </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details and Options</h1>
+   <h1 class="toggle">Details</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="259783784"></a>The following options can be given: </li>
+     <li><a name="257611438"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="13157826"></a>
+      <a name="613250526"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -69,42 +72,42 @@
        <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/DixonPrecessions.html">DixonPrecessions</a></td><td>-1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonPrecessions.html">DixonPrecessions</a></span> is an options for <span class="IF">DixonReconstruct</span><span class="specialcharacters">. Defines the rotation of the signal <span class="openbrace">{</span>-1<span class="comma">,</span>1<span class="closebrace">}</span> default is -1.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFieldStrength.html">DixonFieldStrength</a></td><td>3</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFieldStrength.html">DixonFieldStrength</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the fieldstrengths in Tesla on which the data was acquired.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonNucleus.html">DixonNucleus</a></td><td>&quot;1H&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonNucleus.html">DixonNucleus</a></span> is an option for <span class="IF">DixonReconstruct</span>. Defines the nucleus for which the reconstruction is performed.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFrequencies.html">DixonFrequencies</a></td><td><span class="openbrace">{</span><span class="openbrace">{</span>0<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>3.8<span class="comma">,</span> 3.4<span class="comma">,</span> 3.13<span class="comma">,</span> 2.67<span class="comma">,</span> 2.46<span class="comma">,</span> 1.92<span class="comma">,</span> 0.57<span class="comma">,</span> -0.6<span class="closebrace">}</span><span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFrequencies.html">DixonFrequencies</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the frequencies in ppm of the fat peaks being used.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonAmplitudes.html">DixonAmplitudes</a></td><td><span class="openbrace">{</span><span class="openbrace">{</span>1<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>0.089<span class="comma">,</span> 0.598<span class="comma">,</span> 0.047<span class="comma">,</span> 0.077<span class="comma">,</span> 0.052<span class="comma">,</span> 0.011<span class="comma">,</span> 0.035<span class="comma">,</span> 0.066<span class="closebrace">}</span><span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonAmplitudes.html">DixonAmplitudes</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the relative amplitudes of the fat peaks being used.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonIterations.html">DixonIterations</a></td><td>15</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonIterations.html">DixonIterations</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the maximum itterations the fit can use.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonTollerance.html">DixonTollerance</a></td><td>0.001</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonTollerance.html">DixonTollerance</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines at which change per itteration of b0 and R2star the ittarative methods stops. Default value is 0.1.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonMaskThreshhold.html">DixonMaskThreshhold</a></td><td>0.01</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonMaskThreshhold.html">DixonMaskThreshhold</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines at which threshhold the dixon reconstruction considers a voxel to be background noise. Defualt values is 0.05.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterInput.html">DixonFilterInput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterInput.html">DixonFilterInput</a></span> is an options for <span class="IF">DixonReconstruct</span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> the input b0 and T2star values are smoothed using a gaussian kernel.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterOutput.html">DixonFilterOutput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterOutput.html">DixonFilterOutput</a></span> is an options for <span class="IF">DixonReconstruct</span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> the out b0 and T2star values are smoothed Median filter and lowpassfiltering after which the water and fat maps are recomputed.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterDimensions.html">DixonFilterDimensions</a></td><td>&quot;3D&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterDimensions.html">DixonFilterDimensions</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines if the filtering is done in 2D or 3D.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFrequencies.html">DixonFrequencies</a></td><td><span class="openbrace">{</span><span class="openbrace">{</span>0<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>3.8<span class="comma">,</span> 3.4<span class="comma">,</span> 3.1<span class="comma">,</span> 2.7<span class="comma">,</span> 2.5<span class="comma">,</span> 1.95<span class="comma">,</span> 0.5<span class="comma">,</span> -0.5<span class="comma">,</span> -0.6<span class="closebrace">}</span><span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFrequencies.html">DixonFrequencies</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the frequencies in ppm of the fat peaks being used.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonAmplitudes.html">DixonAmplitudes</a></td><td><span class="openbrace">{</span><span class="openbrace">{</span>1<span class="closebrace">}</span><span class="comma">,</span> <span class="openbrace">{</span>0.088<span class="comma">,</span> 0.628<span class="comma">,</span> 0.059<span class="comma">,</span> 0.064<span class="comma">,</span> 0.059<span class="comma">,</span> 0.01<span class="comma">,</span> 0.039<span class="comma">,</span> 0.01<span class="comma">,</span> 0.042<span class="closebrace">}</span><span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonAmplitudes.html">DixonAmplitudes</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the relative amplitudes of the fat peaks being used.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonIterations.html">DixonIterations</a></td><td>20</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonIterations.html">DixonIterations</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the maximum itterations the fit can use.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonTollerance.html">DixonTollerance</a></td><td>0.1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonTollerance.html">DixonTollerance</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines at which change per itteration of b0 and R2star the ittarative methods stops. Default value is 0.1.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonMaskThreshhold.html">DixonMaskThreshhold</a></td><td>0.1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonMaskThreshhold.html">DixonMaskThreshhold</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines at which threshhold the dixon reconstruction considers a voxel to be background noise. Defualt values is 0.05.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterInput.html">DixonFilterInput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterInput.html">DixonFilterInput</a></span> is an options for <span class="IF">DixonReconstruct</span>. If True the input b0 and T2star values are smoothed using a gaussian kernel.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterOutput.html">DixonFilterOutput</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterOutput.html">DixonFilterOutput</a></span> is an options for <span class="IF">DixonReconstruct</span>. If True the out b0 and T2star values are smoothed Median filter and lowpassfiltering after which the water and fat maps are recomputed.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterSize.html">DixonFilterSize</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterSize.html">DixonFilterSize</a></span> is an options for <span class="IF">DixonReconstruct</span>. Defines the number of voxel with which the input b0 and T2star values are smoothed.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonFilterType.html">DixonFilterType</a></td><td>&quot;Median&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonFilterType.html">DixonFilterType</a></span> is an option for <span class="IF">DixonReconstruct</span>. <span class="IF"><a class="package-symbol" href="../ref/FilterType.html">FilterType</a></span> can me &quot;Median&quot; or &quot;Laplacian&quot;.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonBipolar.html">DixonBipolar</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonBipolar.html">DixonBipolar</a></span> is an option for <span class="IF">DixonReconstruct</span>. If set to true it assumes alternating readout directions.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonClipFraction.html">DixonClipFraction</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonClipFraction.html">DixonClipFraction</a></span> is an option for <span class="IF">DixonReconstruct</span>. If set true the fat fraction is clipped between 0 and 1.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonCorrectT1.html">DixonCorrectT1</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonCorrectT1.html">DixonCorrectT1</a></span> is an option for <span class="IF">DixonReconstruct</span><span class="specialcharacters">. To perform T1 correction provide the TR and FA as a list<span class="comma">,</span> <span class="openbrace">{</span>TR<span class="comma">,</span> FA<span class="closebrace">}</span>. TR is in ms and FA in degrees.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DixonComplexOutput.html">DixonComplexOutput</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DixonComplexOutput.html">DixonComplexOutput</a></span> is an options for <span class="IF">DixonReconstruct</span>. If set True <span class="IF">DixonReconstruct</span> will return the complex data instead of the magnitude data.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MonitorCalc.html">MonitorCalc</a></span> is an option for many processing functions. When true the proceses of the calculation is shown.</span></td></tr>
       </table>
      </li>
     </ul>
    </div>
-  </div></section><section id="Examples"><h1 class="toggle open">Examples</h1><div class="hideable">
-   <div id="384598771"
+  </div></section><section id="Examples"><h1 id="544253753" class="toggle open">Examples</h1><div class="hideable">
+   <div id="429500022"
        class="clipboard-input"
        data-in="In[1]:="
        data-in-num="1"
        data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
        data-src="Files/DixonReconstruct.en/I_1.png"
-       data-in-width="147"
-       data-in-height="21"
-       data-link="https://wolfram.com/xid/0b6fc1lcopioarvl5br31wc56q-gm9klh"
-       data-code="Files/DixonReconstruct.en/i_1.txt"
+       data-in-width="125"
+       data-in-height="18"
+       data-link="https://wolfram.com/xid/0b6fc1lcopioarvl5br31wc56q-hdzymg"
+       data-code="Files\DixonReconstruct.en\i_1.txt"
        ></div>
    <div class="clear"><!-- --></div>
-  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
-   <h1>Related Guides</h1>
-   <ul class="functionList">
-    <span class="special-character FilledVerySmallSquare">&#9642;</span>
-    <li>
-     <a href="../guide/DixonTools.html">DixonTools</a>
-    </li>
-   </ul>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList">
+    <span class="IF">&quot;XXXX&quot;</span>
+   </p>
   </div></section>
   
 

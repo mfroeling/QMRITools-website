@@ -1,0 +1,111 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>RegisterTensorData&#226;&#8364;&#8221;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="RegisterTensorData" />
+
+<meta name="description" content="RegisterTensorData[target, moving] registers the moving tensor to the target tensor. After registration the tensor is reorinented apropriately. The inputs target and moving can be in the forms: tensor, {tensor, vox}, {tensor, mask} or {tensor, mask, vox}. RegisterTensorData[target, moving, tensor] registers the moving data to the target data and apllies the deformation to the tensor. The inputs target and moving can be in the form: data, {data, vox}, {data, mask} or {data, mask, vox}. The input tensor can be in the form: tensor or {tensor, vox}. only &quot;rigid&quot;, &quot;affine&quot; and &quot;bspline&quot; can be used as MetReg." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'RegisterTensorData.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">RegisterTensorData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterTensorData.html">RegisterTensorData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">registers the <span class="IF"><span class="TI">moving</span></span> tensor to the <span class="IF"><span class="TI">target</span></span> tensor. After registration the <span class="IF"><span class="TI">tensor</span></span> is reorinented apropriately. The inputs <span class="IF"><span class="TI">target</span></span> and <span class="IF"><span class="TI">moving</span></span> can be in the forms: <span class="IF"><span class="TI">tensor</span></span>, {tensor, vox}, {tensor, mask} or {tensor, mask, vox}. </p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterTensorData.html">RegisterTensorData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="TI">moving</span><span class="comma">,</span><span class="TI">tensor</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">registers the <span class="IF"><span class="TI">moving</span></span> data to the <span class="IF"><span class="TI">target</span></span> data and apllies the deformation to the <span class="IF"><span class="TI">tensor</span></span>. The inputs <span class="IF"><span class="TI">target</span></span> and <span class="IF"><span class="TI">moving</span></span> can be in the form: data, {data, vox}, {data, mask} or {data, mask, vox}. The input <span class="IF"><span class="TI">tensor</span></span> can be in the form: <span class="IF"><span class="TI">tensor</span></span> or {tensor, vox}. only &quot;rigid&quot;, &quot;affine&quot; and &quot;bspline&quot; can be used as MetReg.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="21460535"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="684754787"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/Iterations.html">Iterations</a></td><td>250</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Iterations.html">Iterations</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the number of iterations used by the registration functions.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Resolutions.html">Resolutions</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Resolutions.html">Resolutions</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the number of scale space resolutions used by the registration functions.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/HistogramBins.html">HistogramBins</a></td><td>32</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Hist.html">Hist</a></span>ogramBins is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the number of bins of the joined histogram used by the registration functions.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/NumberSamples.html">NumberSamples</a></td><td>5000</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/NumberSamples.html">NumberSamples</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the number of random samples that are taken each iteration used by the registration functions.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/InterpolationOrderReg.html">InterpolationOrderReg</a></td><td>3</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/InterpolationOrderReg.html">InterpolationOrderReg</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the interpolation order used in the registration functions.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/BsplineSpacing.html">BsplineSpacing</a></td><td>30</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/BsplineSpacing.html">BsplineSpacing</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterCardiacData.html">RegisterCardiacData</a></span> and <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the spacing of the bsplines if the method is &quot;bspline&quot;.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/BsplineDirections.html">BsplineDirections</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/BsplineDirections.html">BsplineDirections</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span> ad <span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span>. 
+It gives the direction in which the bsplines are allowed to move when registering diffusion data to anatomical space.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/AffineDirections.html">AffineDirections</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/AffineDirections.html">AffineDirections</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span> ad <span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span>. 
+It gives the directions in which data can be moved when registering diffusion data to anatomical space.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MethodReg.html">MethodReg</a></td><td>&quot;affine&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MethodReg.html">MethodReg</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterCardiacData.html">RegisterCardiacData</a></span> and <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters">Transform. 
+It spefifies which registration method to use. 
+Mehtods can be be &quot;translation&quot;<span class="comma">,</span> &quot;rigid&quot;<span class="comma">,</span> &quot;affine&quot;<span class="comma">,</span> &quot;bspline&quot;<span class="comma">,</span> &quot;rigidDTI&quot;<span class="comma">,</span> &quot;affineDTI&quot;<span class="comma">,</span> &quot;PCAtranslation&quot;<span class="comma">,</span> &quot;PCArigid&quot;<span class="comma">,</span> &quot;PCAaffine&quot;<span class="comma">,</span> or &quot;PCAbspline&quot;.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutputImage.html">OutputImage</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutputImage.html">OutputImage</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> and </span><span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies if the result image should be writen in the <span class="IF"><a class="package-symbol" href="../ref/TempDirectory.html">TempDirectory</a></span> as nii file.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TempDirectory.html">TempDirectory</a></td><td>&quot;Default&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TempDirectory.html">TempDirectory</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterCardiacData.html">RegisterCardiacData</a></span> and <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies the temprary directory used to perform and output the registration.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DeleteTempDirectory.html">DeleteTempDirectory</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DeleteTempDirectory.html">DeleteTempDirectory</a></span> an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterCardiacData.html">RegisterCardiacData</a></span> and <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It specifies if the temp directory should be deleted after the registration is finisched.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PrintTempDirectory.html">PrintTempDirectory</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PrintTempDirectory.html">PrintTempDirectory</a></span> is an options for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/RegisterCardiacData.html">RegisterCardiacData</a></span> and <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>Transform. 
+It spefifies if the location of the temp directory should be deplayed.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span> ad <span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters">.
+It specifies if the tranformation paramters <span class="openparenthesis">(</span>translation<span class="comma">,</span> rotation<span class="comma">,</span> scale and skew<span class="closeparenthesis">)</span> should be given as output in the registration functions.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></td><td><span class="openbrace">{</span>False<span class="comma">,</span> Automatic<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span><span class="specialcharacters">. The value is <span class="openbrace">{</span>bool<span class="comma">,</span> gpu<span class="closebrace">}</span> where bool is True or False<span class="comma">,</span> and gpu is the gpu ID which is an integer or Automatic.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>. It speciefies how many PCA components are used if method is set to &quot;PCA&quot;.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></span> is an option for <span class="IF"><a class="package-symbol" href="../ref/RegisterData.html">RegisterData</a></span>. If set to True it will print a plot of the Metric.</span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="583789776" class="toggle open">Examples</h1><div class="hideable">
+   <div id="475145763"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/RegisterTensorData.en/I_1.png"
+       data-in-width="125"
+       data-in-height="18"
+       data-link="https://wolfram.com/xid/0cexzvz8hie71t2sn91mtkbb2-h46a3p"
+       data-code="Files\RegisterTensorData.en\i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList">
+    <span class="IF">&quot;XXXX&quot;</span>
+   </p>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>
