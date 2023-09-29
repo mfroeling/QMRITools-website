@@ -48,7 +48,7 @@ widget3:
   <a href="https://mrshub.org/software_analysis/#QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
   <img alt="MRSHub" title="MRSHub" src="/assets/images/MRSHub.png" style="margin-right:10px"></a>
   <br><br>
-  Release <b>3.5</b> is live!! With this release a extensive fiber <a href="https://www.qmritools.com/tool/tractographytools/" target="_blank">tractography</a>  framework was added.
+  Release <b>3.9</b> is live!! With this release we introduced UNET based fully automated whole leg muscle segmentation.
   <br><br>
   Live discussion with the Wolfram academic outreach team about <a href="https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D" target="_blank">QMRITools</a> and the role of computational Wolfram technology.
   <br><br>
