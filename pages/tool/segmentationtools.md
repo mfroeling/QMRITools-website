@@ -31,10 +31,7 @@ segmentation of all lower extremity bones. [Back››](/tool/)
 
 ### References
 
-> - Mori, S., Crain, B. J., Chacko, V. P., van Zijl, P. C. M. (1999). Three-dimensional tracking of axonal
-projections in the brain by magnetic resonance imaging. Annals of Neurology, 45(2),
-265–269. [link››](https://doi.org/https://doi.org/10.1002/1531-8249(199902)45:2<265::AID-ANA21>3.0.CO;2-3)
-> - Damon, B. M., Froeling, M., Buck, A. K. W., Oudeman, J., Ding, Z., Nederveen, A. J.,
-Bush, E. C., Strijkers, G. J. (2017). Skeletal muscle diffusion tensor-MRI fiber tracking:
-rationale, data acquisition and analysis methods, applications and future
-directions. NMR in Biomedicine, 30(3), e3563. [link››](https://doi.org/10.1002/nbm.3563)
+> - Ronneberger O, Fischer P, Brox T (2015) U-net: Convolutional networks for biomedical image segmentation. 9351:234–241.
+[link››](https://arxiv.org/abs/1505.04597)
+> - Rohm M, Markmann M, Forsting J, Rehmann R, Froeling M, Schlaffke L. (2021). 3D automated segmentation of
+lower leg muscles using machine learning on a heterogeneous dataset. Diagnostics. 11(10):1747. [link››](https://doi.org/10.3390/diagnostics11101747)
