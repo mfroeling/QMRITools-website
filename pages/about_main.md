@@ -92,6 +92,19 @@ When using the toolbox it is appreciated if you cite one of the following articl
 
 ### Publications using QMRITools
 
+- Monte, J. R. et al. (2023). ‘DTI and qT2-mapping to monitor muscle recovery following hamstring injury’, NMR in Biomedicine, e4902. doi: 10.1002/NBM.4902
+- Suskens, J. J. M. et al. (2023). ‘Effect of two eccentric hamstring exercises on muscle architectural characteristics assessed with diffusion tensor MRI’, Scandinavian Journal of Medicine & Science in Sports, 33(4), 393–406. doi: 10.1111/SMS.14283
+- Forsting, J. et al. (2022). ‘Robustness and stability of volume-based tractography in a multicenter setting’, NMR in Biomedicine, 35(7), e4707. doi: 10.1002/NBM.4707
+- Forsting, J.et al. (2022). ‘Quantitative muscle MRI captures early muscle degeneration in calpainopathy’, Scientific Reports 2022 12:1, 12(1), 1–10. doi: 10.1038/s41598-022-23972-6
+- Hooijmans, M. T. et al. (2022). ‘Multi-parametric quantitative magnetic resonance imaging of the upper arm muscles of patients with spinal muscular atrophy’, NMR in Biomedicine, 35(7), e4696. doi: 10.1002/NBM.4696
+- van den Wildenberg et al. (2022).‘ In vivo phosphorus magnetic resonance spectroscopic imaging of the whole human liver at 7 T using a phosphorus whole‐body transmit coil and 16‐channel receive array: Repeatability and effects of principal component analysis‐based denoising’, NMR in Biomedicine. doi: 10.1002/NBM.4877
+- Waterval, N. F. J. et al. (2022). ‘The relationship between quantitative magnetic resonance imaging of the ankle plantar flexors, muscle function during walking and maximal strength in people with neuromuscular diseases’, Clinical Biomechanics, 94, 105609. doi: 10.1016/J.CLINBIOMECH.2022.105609
+- Güttsches, A. K. et al.  (2021). ‘Quantitative Muscle-MRI Correlates with Histopathology in Skeletal Muscle Biopsies’, Journal of Neuromuscular Diseases, 8(4), 669–678. doi: 10.3233/JND-210641
+- Rehmann, R. et al. (2021). ‘Diffusion Tensor Imaging Shows Differences Between Myotonic Dystrophy Type 1 and Type 2’, Journal of Neuromuscular Diseases, 8(6), 949–962. doi: 10.3233/jnd-210660
+- Rohm, M. et al.  (2021). ‘3D Automated Segmentation of Lower Leg Muscles Using Machine Learning on a Heterogeneous Dataset’, Diagnostics, 11(10), 1–15. doi: 10.3390/diagnostics11101747
+- Gursan, A., et al. (2021). ‘Residual quadrupolar couplings observed in 7 Tesla deuterium MR spectra of skeletal muscle’, Magnetic Resonance in Medicine. doi: 10.1002/mrm.29053
+- Forsting, J. et al. (2021). ‘High inter-rater reliability of manual segmentation and volume-based tractography in healthy and dystrophic human calf muscle’, Diagnostics, 11(9), 1521. doi: 10.3390/diagnostics11091521
+- Gosselink, M., et al.  (2021). ‘No need to detune transmitters in 32-channel receiver arrays at 7 T’, NMR in Biomedicine, 34(6), e4491. doi: 10.1002/nbm.4491
 - Froeling, M. et al. (2021) ‘PCA denoising and Wiener deconvolution of 31P 3D CSI data to enhance effective SNR and improve point spread function’, Magnetic Resonance in Medicine, 85(6), pp. 2992–3009. doi:10.1002/mrm.28654.
 - Secondulfo, L. et al. (2021) ‘Supervised segmentation framework for evaluation of diffusion tensor imaging indices in skeletal muscle’, NMR in Biomedicine, 34(1), p. e4406. doi:10.1002/nbm.4406.
 - Habets, L.E. et al. (2021) ‘Magnetic resonance reveals mitochondrial dysfunction and muscle remodelling in spinal muscular atrophy’, Brain [Preprint]. doi:10.1093/brain/awab411.
