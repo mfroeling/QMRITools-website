@@ -50,7 +50,9 @@ widget3:
   <br><br>
   Release <b>3.5</b> is live!! With this release a extensive fiber <a href="https://www.qmritools.com/tool/tractographytools/" target="_blank">tractography</a>  framework was added.
   <br><br>
-  Live discussion with the Wolfram academic outreach team about <a href=" https://www.youtube.com/watch?v=wupxxiPJkxU&t=48s" target="_blank">QMRITools</a> and the role of computational Wolfram technology.
+  Live discussion with the Wolfram academic outreach team about <a href="https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D" target="_blank">QMRITools</a> and the role of computational Wolfram technology.
+  <br><br>
+  Presentation for the wolfram R&D Team about <a href="https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx" target="_blank">QMRITools</a> development and functionality.
   <br><br>
 </div>
 <br>
