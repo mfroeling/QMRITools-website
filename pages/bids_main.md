@@ -9,6 +9,12 @@ teaser: "Muscle-BIDS is a work in progress..."
 
 header: no
 
+images:
+  - image_id: 'proc'
+    image_name: 'flowchart_proc.png'
+    image_title: 'flowchart for whole leg automated muscle segmentation using convolutional neural network with the UNET architecture.'
+    image_alt: 'flowchart for whole leg automated muscle segmentation'
+
 ---
 
 
@@ -24,6 +30,8 @@ QMRITools contains a couple of Muscle-BIDS scripts. Of course, all functionality
 > - Processing of Muscle-BIDS data
 > - Analysis of processed Muscle-BIDS data
 > - Conversion of Muscle-BIDS output to DICOM
+
+{% include page-image im_id="proc" %}
 
 Currently, QMRITools supports step 1 for Philips MRI data if the data acquisition is performed in a standardized way. Furthermore, it fully supports steps 2 and 3 for DIXON, T2 and DTI processing and analysis. On this page, for each step, it is explained how QMRITools handles Muscle-BIDS data and what function can be used. Eventually, the aim is to be able to fully automate steps 1 to 4 using stand-alone scripts that only need to be configured once per study or data set.
 

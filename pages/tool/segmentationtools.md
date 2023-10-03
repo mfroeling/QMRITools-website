@@ -8,7 +8,7 @@ tags: tools
 header: no
 
 images:
-  - image_name: 'flowchart.png'
+  - image_name: 'flowchart_seg.png'
     image_title: 'flowchart for whole leg automated muscle segmentation using convolutional neural network with the UNET architecture.'
     image_alt: 'flowchart for whole leg automated muscle segmentation'
   - image_name: 'neural-small.gif'
