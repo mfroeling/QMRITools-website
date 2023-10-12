@@ -11,7 +11,7 @@ header: no
 
 images:
   - image_id: 'proc'
-    image_name: 'flowchart_proc.png'
+    image_name: 'flowchart_proc.gif'
     image_title: 'flowchart for whole leg automated muscle segmentation using convolutional neural network with the UNET architecture.'
     image_alt: 'flowchart for whole leg automated muscle segmentation'
 
