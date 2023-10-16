@@ -14,9 +14,11 @@ images:
   - image_name: 'muscle fiber tractography.jpg'
     image_title: 'Fiber tractography of the soleus muscle color coded for fiber direction.'
     image_alt: 'muscles fiber tractography'
-  - image_name: 'line.gif'
+  - image_name: 'both-small.gif'
     image_title: 'Fiber tractography of the whole leg segmented per muscle.'
     image_alt: 'whole leg muscles fiber tractography'
+
+
 
 ---
 
