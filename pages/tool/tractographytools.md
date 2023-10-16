@@ -22,6 +22,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/TractographyTools.wl)
 
 This toolbox provides functions to perform fiber tractography and fiber analysis.
 The toolbox is still under development. For now tractography, fiber filtering and fiber plotting

@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/)<br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/IVIMTools.wl)
 
 The toolbox includes functions to perform IVIM fitting of DWI data.
 There are two main functions: non linear fitting and Bayesian fitting

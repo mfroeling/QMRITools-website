@@ -16,6 +16,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/JcouplingTools.wl)
 
 A toolbox that allows simulation of NMR spectra using Hamiltonians based
 on methods from [FID-A](https://github.com/CIC-methods/FID-A). It allows

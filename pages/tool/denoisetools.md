@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/DenoiseTools.wl)
 
 The toobox provides two algorithms that allow denoising of DWI data. The
 first is based on and LMMSE framework (Aja-Fernandez et al. 2008) and

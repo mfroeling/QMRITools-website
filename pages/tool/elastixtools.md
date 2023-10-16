@@ -22,6 +22,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/ElastixTools.wl)
 
 A wrapper that calls the Elastix registration framework (Klein et al.
 2010; Shamonin 2013). The toolbox determines what registration or

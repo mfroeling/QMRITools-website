@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/SpectroTools.wl)
 
 The main purpose of this toolbox is to process and visualize spectra data
 and allows to fit spectra using simulated basis spectra. Dynamic spectra and

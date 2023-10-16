@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/RelaxometryTools.wl)
 
 A collection of tools to fit T2, T2\*, T1rho and T1 relaxometry data.
 The main function of this toolbox is an extended phase graph (EPG)

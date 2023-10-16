@@ -16,6 +16,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/GeneralTools.wl)
 
 This toolbox provides core functions used in many other functions and
 features. The functions comprise amongst others: data cropping,

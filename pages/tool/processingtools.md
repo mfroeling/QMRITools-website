@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/ProcessingTools.wl)
 
 The toolbox comprises a variety of functions that allow data
 manipulation and analysis. The main functions allow joining multiple

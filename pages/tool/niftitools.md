@@ -11,6 +11,7 @@ header: no
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/NiftiTools.wl)
 
 Import and export of the NIfTI file format. Part of the code is based on
 previously implemented

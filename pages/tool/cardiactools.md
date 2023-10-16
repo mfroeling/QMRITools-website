@@ -16,6 +16,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/CardiacTools.html)
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/CardiacTools.wl)
 
 A collection of tools to analyze cardiac data. The main features are
 cardiac shape analysis which allows defining the hard in a local

@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/GradientTools.wl)
 
 The main feature is an algorithm that uses static repulsion (Jones,
 Horsfield, and Simmons 1999; Froeling et al. 2017) to generate

@@ -19,6 +19,7 @@ images:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/TensorTools.wl)
 
 The original toolbox where the project started. The main functions in
 this toolbox are to fit and evaluate the diffusion tensor model. Various
