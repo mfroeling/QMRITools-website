@@ -1,0 +1,82 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>MakeUnet&#226;&#8364;&#8221;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="MakeUnet" />
+
+<meta name="description" content="MakeUnet[nChannels, nClasses, dep, dimIn] Generates a UNET with nChannels as input and nClasses as output. he number of parameter of the first convolution layer can be set with dep. The data dimensions can be 2D or 3D and each of the dimensions should be 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240 or 256." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'MakeUnet.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">MakeUnet</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/MakeUnet.html">MakeUnet</a><span class="openbracket">[</span><span class="TI">nChannels</span><span class="comma">,</span><span class="TI">nClasses</span><span class="comma">,</span><span class="TI">dep</span><span class="comma">,</span><span class="TI">dimIn</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">Generates a UNET with <span class="IF"><span class="TI">nChannels</span></span> as input and <span class="IF"><span class="TI">nClasses</span></span> as output. he number of parameter of the first convolution layer can be set with <span class="IF"><span class="TI">dep</span></span>. The data dimensions can be 2D or 3D and each of the dimensions should be 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240 or 256.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="65691890"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="63829761"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/BlockType.html">BlockType</a></td><td>&quot;ResNet&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/BlockType.html">BlockType</a></span> is an option for <span class="IF">MakeUnet</span><span class="specialcharacters">. It specifies which block are used to build the network. 
+Values can be &quot;UNET&quot;<span class="comma">,</span> &quot;ResNet&quot;<span class="comma">,</span> &quot;UResNet&quot;<span class="comma">,</span> &quot;DenseNet&quot; or &quot;UDenseNet&quot;.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DropoutRate.html">DropoutRate</a></td><td>0.2</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DropoutRate.html">DropoutRate</a></span> is an option for <span class="IF">MakeUnet</span><span class="specialcharacters">. It specifies how musch dropout is used after each block. It is a value between 0 and 1<span class="comma">,</span> default is .2.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/NetworkDepth.html">NetworkDepth</a></td><td>5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/NetworkDepth.html">NetworkDepth</a></span> is an option for <span class="IF">MakeUnet</span>. It specifief how deep the UNET will be.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/DownsampleSchedule.html">DownsampleSchedule</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/DownsampleSchedule.html">DownsampleSchedule</a></span> is an option for <span class="IF">MakeUnet</span><span class="specialcharacters">. It defines how the data is downsampled for each of the deeper layers of the Unet. 
+By default is is a factor two for each layer. A custum schedual for a 4 layer 3D Unet could be <span class="openbrace">{</span><span class="openbrace">{</span>2<span class="comma">,</span>2<span class="comma">,</span>2<span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span>1<span class="comma">,</span>2<span class="comma">,</span>2<span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span>2<span class="comma">,</span>2<span class="comma">,</span>2<span class="closebrace">}</span><span class="comma">,</span><span class="openbrace">{</span>1<span class="comma">,</span>2<span class="comma">,</span>2<span class="closebrace">}</span><span class="closebrace">}</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/InputFilters.html">InputFilters</a></td><td>32</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/InputFilters.html">InputFilters</a></span> is an option for <span class="IF">MakeUnet</span>. It defines the amount of convolutional filters of the the first UNET block.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ActivationType.html">ActivationType</a></td><td>&quot;GELU&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ActivationType.html">ActivationType</a></span> is an option for <span class="IF">MakeUnet</span>. It sepecifies which activation layer is used in the network. It can be &quot;LeakyRELU&quot; or any type allowed 
+by a &quot;name&quot; definition in ElementwiseLayer.</span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="22426430" class="toggle open">Examples</h1><div class="hideable">
+   <div id="44533356"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/MakeUnet.en/I_1.png"
+       data-in-width="125"
+       data-in-height="18"
+       data-link="https://wolfram.com/xid/0dbfm1mjyhu3im7c1lq7sm-0ssfy"
+       data-code="Files\MakeUnet.en\i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList">
+    <span class="IF">&quot;XXXX&quot;</span>
+   </p>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>
