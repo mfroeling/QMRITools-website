@@ -17,19 +17,11 @@ As mentioned in main description, Muscle-BIDS uses various standardized entities
 
 Within `QMRITools` currently, four entities are used to indicate the subject, session, stack or repetition.  Based on these values the software will know how to handle the data for further processing.
 
-- `sub-<name>`: The subject label which is an unique identifier for each subject. All data of this subject should be contained within this subjects folder.
+- `sub-<label>`: The subject label which is an unique identifier for each subject. All data of this subject should be contained within this subjects folder.
 - `ses-<index>`: The session label which can be repeated scans of the same protocol, for example for reproducibility studies
-- `stk-<index>`: For imaging extremities it is not uncommon to acquire the data in multiple stacks that have to be merged. This label indicates the stack number.
-- `rep-<index>`: For muscle studies sometimes dynamic experiments are performed, e.g. the same data type but in different conditions (for example ankle flexion) within the same session. This label indicates the repetition description.
-
-## Suffixes: general
-
-MRI data can be stored as magnitude, phase, real or imaginary. For each, a predefined suffix is given that can be used for any type of data.
-
-- `_`: magnitude
-- `_ph`: phase
-- `_real`: real
-- `_imag`: imaginary
+- `chunk-<label>`: For imaging extremities it is not uncommon to acquire the data in multiple stacks/chunks that have to be merged. This label indicates the stack number.
+- `acq-<label>`: For muscle studies sometimes dynamic experiments are performed, e.g. the same data type but in different conditions (for example ankle flexion) within the same session. This label indicates the repetition/acquistion description.
+- `part-<label>`: MRI data can be stored as magnitude, phase, real or imaginary. For each, a predefined suffix is given that can be used for any type of data. The label can be mag, phase, real, imag
 
 ## Suffixes: data type
 
@@ -127,7 +119,7 @@ When the raw input data is processed its outputs are stored in the derived data 
   - `_s0g`: The estimated signal at TE = 0 ms from exponential fitting.
   - `_t2g`: The global T2 calculated with exponential fitting.
   - `_data`: The data used for fitting.
-- `_seg`
+- `seg`
   - `_man`: Indicates the segmentations have been drawn manually.
   - `_auto`: Indicates the segmentations have been generated automatically.
   - `_megre`: Indicates the segmentation aligns with the megre data.
