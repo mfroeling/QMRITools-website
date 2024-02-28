@@ -8,6 +8,8 @@
   dropdown:
   - title: List of toolboxes
     url: /tool/
+  - title: Automated muscle segmentation
+    url: /tool/segmentation/
   - title: Diffusion gradient optimization
     url: /tool/gradient/
     
