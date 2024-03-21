@@ -101,13 +101,13 @@ When using the toolbox it is appreciated if you cite one of the following articl
 1. Gosselink, M., et al.  (2021). ‘No need to detune transmitters in 32-channel receiver arrays at 7 T’, NMR in Biomedicine, 34(6), e4491. doi: 10.1002/nbm.4491
 1. Froeling, M. et al. (2021) ‘PCA denoising and Wiener deconvolution of 31P 3D CSI data to enhance effective SNR and improve point spread function’, Magnetic Resonance in Medicine, 85(6), pp. 2992–3009. doi:10.1002/mrm.28654.
 1. Secondulfo, L. et al. (2021) ‘Supervised segmentation framework for evaluation of diffusion tensor imaging indices in skeletal muscle’, NMR in Biomedicine, 34(1), p. e4406. doi:10.1002/nbm.4406.
-1. Habets, L.E. et al. (2021) ‘Magnetic resonance reveals mitochondrial dysfunction and muscle remodelling in spinal muscular atrophy’, Brain [Preprint]. doi:10.1093/brain/awab411.
+1. Habets, L.E. et al. (2021) ‘Magnetic resonance reveals mitochondrial dysfunction and muscle remodelling in spinal muscular atrophy’, Brain. doi:10.1093/brain/awab411.
 1. Forsting, J. et al. (2021) ‘High inter-rater reliability of manual segmentation and volume-based tractography in healthy and dystrophic human calf muscle’, Diagnostics, 11(9), p. 1521. doi:10.3390/diagnostics11091521.
 1. Straatman, H.C.H. et al. (2021) ‘Quantitative Interpretation of Myocardial Fiber Structure in the Left and Right Ventricle of an Equine Heart Using Diffusion Tensor Cardiovascular Magnetic Resonance Imaging’, in Lecture Notes in Computer Science, pp. 178–188. doi:10.1007/978-3-030-78710-3_18.
 1. Güttsches, A.K. et al. (2021) ‘Quantitative Muscle-MRI Correlates with Histopathology in Skeletal Muscle Biopsies’, Journal of Neuromuscular Diseases, 8(4), pp. 669–678. doi:10.3233/JND-210641.
 1. Mazzoli, V. et al. (2021) ‘Diffusion Tensor Imaging of Skeletal Muscle Contraction Using Oscillating Gradient Spin Echo’, Frontiers in Neurology, 12(February), p. 45. doi:10.3389/fneur.2021.608549.
 1. Otto, L.A.M. et al. (2021) ‘Quantification of disease progression in spinal muscular atrophy with muscle MRI—a pilot study’, NMR in Biomedicine, 34(4), p. e4473. doi:10.1002/nbm.4473.
-1. Gursan, A. et al. (2021) ‘Residual quadrupolar couplings observed in 7 Tesla deuterium MR spectra of skeletal muscle’, Magnetic Resonance in Medicine [Preprint]. doi:10.1002/mrm.29053.
+1. Gursan, A. et al. (2021) ‘Residual quadrupolar couplings observed in 7 Tesla deuterium MR spectra of skeletal muscle’, Magnetic Resonance in Medicine. doi:10.1002/mrm.29053.
 1. Rehmann, R. et al. (2021) ‘Diffusion Tensor Imaging Shows Differences Between Myotonic Dystrophy Type 1 and Type 2’, Journal of Neuromuscular Diseases, 8(6), pp. 949–962. doi:10.3233/jnd-210660.
 1. Forsting, J. et al. (2021) ‘Evaluation of interrater reliability of different muscle segmentation techniques in diffusion tensor imaging’, NMR in Biomedicine, 34(2), p. e4430. doi:10.1002/nbm.4430.
 1. Stouge, A. et al. (2020) ‘MRI of skeletal muscles in participants with type 2 diabetes with or without diabetic polyneuropathy’, Radiology, 297(3), pp. 608–619. doi:10.1148/radiol.2020192647.
