@@ -49,8 +49,8 @@ This website describes the functionality of `QMRITools`, a toolbox for analysis 
   Live discussion with the Wolfram academic outreach team about <a href="https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D" target="_blank">QMRITools</a>.<br>
   Presentation for the wolfram R&D Team about <a href="https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx" target="_blank">QMRITools</a> development and functionality.<br>
   <br>
-  <a href="https://doi.org/10.5281/zenodo.7266917" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="DOI" title="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7266917.svg" style="margin-right:10px"></a>
+  <a href="https://doi.org/10.5281/zenodo.595302" target="_blank" style="text-decoration: none; border-bottom: none;">
+    <img alt="DOI" title="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.595302.svg" style="margin-right:10px"></a>
   <a href="https://joss.theoj.org/papers/10.21105/joss.01204" target="_blank" style="text-decoration: none; border-bottom: none;">
     <img alt="DOI Joss" title="DOI Joss" src="https://joss.theoj.org/papers/10.21105/joss.01204/status.svg" style="margin-right:10px"></a>
   <a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
