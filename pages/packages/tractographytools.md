@@ -4,7 +4,6 @@ layout: page
 title: TractographyTools
 permalink: /tool/tractographytools/
 
-tags: tools
 header: no
 
 images:
@@ -18,7 +17,8 @@ images:
     image_title: 'Fiber tractography of the whole leg segmented per muscle.'
     image_alt: 'whole leg muscles fiber tractography'
 
-
+tags: 
+  - packages
 
 ---
 

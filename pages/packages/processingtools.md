@@ -4,7 +4,6 @@ layout: page
 title: ProcessingTools
 permalink: /tool/processingtools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'spliting data in left and right.jpg'
     image_title: 'Automatically find the plan where to split data into left and right leg.'
     image_alt: 'Split data in left and right'
+
+tags: 
+  - packages
 
 ---
 

@@ -4,7 +4,6 @@ layout: page
 title: RelaxometryTools
 permalink: /tool/relaxometrytools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'simulation of T2 EPG data.png'
     image_title: 'Demonstration of EPG based T2 fitting: the fitted water T2 relaxation as a function of B1, SNR and fat fraction.'
     image_alt: 'T2 EPG reconstruction simulation'
+
+tags: 
+  - packages
 
 ---
 

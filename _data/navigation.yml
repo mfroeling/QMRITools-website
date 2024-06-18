@@ -2,16 +2,18 @@
   url: /
   side: left
 
-- title: Toolboxes
+- title: Projects and tools
   url: /tool/
   side: left
   dropdown:
-  - title: List of toolboxes
-    url: /tool/
+  - title: QMRITools packages
+    url: /tool/QMRITools/
   - title: Automated muscle segmentation
-    url: /tool/segmentation/
+    url: /seg/segmentation/
   - title: Diffusion gradient optimization
     url: /tool/gradient/
+  - title: QMRITools and Muscle-BIDS
+    url: /tool/bids/
     
 - title: Documentation
   url: /doc/
@@ -28,17 +30,24 @@
   url: /bids/
   side: left
   dropdown:
-  - title: Muscle-BIDS
-    url: /bids/
+  - title: QMRITools and Muscle-BIDS
+    url: /tool/bids/
   - title: Files and folders
     url: /bids/files_folders/
   - title: Entities and suffixes
     url: /bids/ents_suffs/
-  - title: Muscle segmentation
-    url: /bids/segment/
-  - title: QMRITools and Muscle-BIDS
-    url: /bids/qmritools/
+  - title: Muscle naming
+    url: /seg/naming/
 
+- title: Muscle Segmentations
+  url: /seg/
+  side: left
+  dropdown:
+  - title: Automated muscle segmentation
+    url: /seg/segmentation/
+  - title: Muscle naming
+    url: /seg/naming/
+  
 - title: About
   url: /about/
   side: left

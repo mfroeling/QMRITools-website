@@ -4,8 +4,10 @@ layout: page
 title: LoggingTools
 permalink: /tool/loggingtools/
 
-tags: tools
 header: no
+
+tags: 
+  - packages
 
 ---
 

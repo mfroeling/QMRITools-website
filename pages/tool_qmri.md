@@ -1,13 +1,16 @@
 ---
 
 layout: page
-permalink: /tool/
+permalink: /tool/QMRITools/
 
-title: "Projects"
-subheadline: "QMRITools and related projects"
-teaser: "It involves more than just a tool"
+title: "QMRITools packages"
+subheadline: "List of toolboxe"
+teaser: a toolbox for each application and more"
 
 header: no
+
+tags: 
+  - tools
 
 ---
 
@@ -15,4 +18,4 @@ header: no
 
 A notebook listing all functions in each toolbox and their full documentation can be found [here](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources/All-Functions.nb){:target="_blank"}. All toolboxes are listed below and under each link a short description of each toolbox is given.
 
-{% include list-pages tag="tools" %}
+{% include list-pages tag="packages" %}

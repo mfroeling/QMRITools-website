@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /bids/qmritools/
+permalink: /tool/bids/
 
 title: "QMRITools and Muscle-BIDS"
 subheadline: "How to use Muscle-BIDS in QMRITools"
@@ -23,6 +23,9 @@ images:
 
 header: no
 
+tags: 
+  - tools
+  - bids
 ---
 
 Automated processing only works if all input data is well-curated and defined. The general rule of garbage in is garbage out applies here as well. `QMRITools` allows for the automatization of most processing steps IF the data is standardized and well-described.
@@ -69,3 +72,5 @@ The following “general” scripts that can summarize qMRI analysis for statist
 > - Masked-based qMRI parameter extraction to xls.
 > - Tract-based qMRI parameter extraction to xls.
 > - Muscle architecture description to xls.
+
+{% include list-pages tag="bids" %}

@@ -4,13 +4,15 @@ layout: page
 title: GeneralTools
 permalink: /tool/generaltools/
 
-tags: tools
 header: no
 
 images:
   - image_name: 'overview.png'
     image_title: 'Overview of qmritools functionality and toolboxes.'
     image_alt: 'Overview of qmritools functionality.' 
+
+tags: 
+  - packages
 
 ---
 

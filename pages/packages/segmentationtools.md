@@ -4,7 +4,6 @@ layout: page
 title: SegmentationTools
 permalink: /tool/segmentationtools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'neural-small.gif'
     image_title: 'whole leg automated segmentation using convolutional neural network with the UNET architecture.'
     image_alt: 'muscle segmentation using convolutional neural network'
+
+tags: 
+  - packages
 
 ---
 

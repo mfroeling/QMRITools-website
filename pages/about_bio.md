@@ -17,7 +17,13 @@ images:
 
 ---
 
-Martijn Froeling has done his master's (July 2009) in Biomedical Engineering at the Eindhoven University of Technology and Performed his PdD studies on Diffusion Tensor Imaging of the human forearm at the Amsterdam University Medical Center and the Eindhoven University of Technology under the supervision of Prof. Dr. Ir. Klaas Nicolay, Prof. Dr. Ir. Gustav Strijkers and Prof. Dr. Ir. Aart Nederveen. Since his Ph.D. (Oktober 2012) he has continued his work on quantitative MRI in various organs such as the brain, peripheral nerves, muscle, kidney, and heart. Since July 2012 he works at the High Field group of the University Medical Center focussing on coil and hardware development for 7T systems and multi-nuclei imaging and clinical studies into neuromuscular diseases. Throughout his career, he has developed and maintained [QMRITools](https://github.com/mfroeling/QMRITools) for Mathematica, a toolbox for quantitative analysis of magnetic resonance imaging data of muscle, nerve, and heart. In 2021, he was awarded an NWO Vidi grant. In this project, he will study the relation between muscle architecture, microstructure, and function using multi-parametric quantitative MRI.
+Dr. Ir. Martijn Froeling is an engineer and researcher specializing in quantitative MRI. He earned his Master’s degree in Biomedical Engineering from Eindhoven University of Technology in July 2009. Following this, he completed his Ph.D. in October 2012, focusing on Diffusion Tensor Imaging of the human forearm at the Amsterdam University Medical Center and Eindhoven University of Technology, under the supervision of Prof. Dr. Ir. Klaas Nicolay, Prof. Dr. Ir. Gustav Strijkers, and Prof. Dr. Ir. Aart Nederveen.
+
+Since his Ph.D., Dr. Froeling has advanced the field of quantitative MRI across various organs including the brain, peripheral nerves, muscle, kidney, and heart. He joined the High Field group at the University Medical Center Utrecht in July 2012, where his work primarily involves coil and hardware development for 7T MRI systems and multi-nuclei imaging. His research also focuses on clinical studies into neuromuscular diseases.
+
+Dr. Froeling is also the developer and maintainer of [QMRITools](https://github.com/mfroeling/QMRITools), a Mathematica toolbox for quantitative analysis of MRI data related to muscle, nerve, and heart. His significant contributions to the field were recognized with an NWO Vidi grant in 2021, supporting his research into the relationship between muscle architecture, microstructure, and function using multi-parametric quantitative MRI.
+
+He has published extensively and holds a position as an Assistant Professor at the University Medical Center Utrecht, contributing to the development of advanced imaging techniques and tools used in clinical and research settings​​.
 
 {% include page-image im_id="me" %}
 

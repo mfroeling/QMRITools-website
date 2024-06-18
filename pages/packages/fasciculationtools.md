@@ -4,13 +4,15 @@ layout: page
 title: FasciculationTools
 permalink: /tool/fasciculationfools/
 
-tags: tools
 header: no
 
 images:
   - image_name: 'muscle fasculation detection.gif'
     image_title: 'Detection of muscle fasculations on diffusion weighted muscle data with data normalization.'
     image_alt: 'muscle fasculation detection'  
+
+tags: 
+  - packages
 
 ---
 

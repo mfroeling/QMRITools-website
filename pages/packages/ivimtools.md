@@ -4,7 +4,6 @@ layout: page
 title: IVIMTools
 permalink: /tool/ivimtools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'ivim curve.png'
     image_title: 'ivim signal curve.'
     image_alt: 'ivim signal curve'
+
+tags: 
+  - packages
 
 ---
 

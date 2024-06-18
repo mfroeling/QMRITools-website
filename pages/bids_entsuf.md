@@ -9,6 +9,9 @@ teaser: "The boring stuff but useful..."
 
 header: no
 
+tags: 
+  - bids
+
 ---
 
 As mentioned in main description, Muscle-BIDS uses various standardized entities and suffixes. Any toolbox is allowed to add as many of those as they want. However, if one uses non-standard entities and suffixes other software packages will probably not know how to use them.
@@ -127,3 +130,5 @@ When the raw input data is processed its outputs are stored in the derived data 
   - `_t2`:  Indicates the segmentation aligns with the t2 data.
   - `_smooth`: Indicates the segmentations have been processed with a mask smoothing algorithm.
   - `_ero`: Indicates the segmentations have been eroded.
+
+{% include list-pages tag="bids" %}

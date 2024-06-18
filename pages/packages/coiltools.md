@@ -4,7 +4,6 @@ layout: page
 title: CoilTools
 permalink: /tool/coiltools/
 
-tags: tools
 header: no
 
 images:
@@ -12,6 +11,9 @@ images:
     image_title: 'Analysis of coil positions and their sensitivity for high density coils.'
     image_alt: 'coil position analysis and sensitivity'  
 
+tags: 
+  - packages
+  
 ---
 
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})

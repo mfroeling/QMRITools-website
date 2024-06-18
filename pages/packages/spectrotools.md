@@ -4,7 +4,6 @@ layout: page
 title: SpectroTools
 permalink: /tool/spectrotools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'MRS spectra fitting.jpg'
     image_title: 'MRS spectra fit of 31P data splited for each metabolite.'
     image_alt: 'MRS spectra fitting 31P'
+
+tags: 
+  - packages
 
 ---
 

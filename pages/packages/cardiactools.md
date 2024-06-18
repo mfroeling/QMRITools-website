@@ -4,13 +4,15 @@ layout: page
 title: CardiacTools
 permalink: /tool/cardiactools/
 
-tags: tools
 header: no
 
 images:
   - image_name: 'local mycoardial coordinate system.png'
     image_title: 'Cardiac segmentation in the AHA-17 model and estimation of the local local myocardial coordinate system.'
     image_alt: 'local myocardial coordinate system'
+
+tags: 
+  - packages
 
 ---
 

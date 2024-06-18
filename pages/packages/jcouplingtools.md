@@ -4,13 +4,15 @@ layout: page
 title: JcouplingTools
 permalink: /tool/jcouplingtools/
 
-tags: tools
 header: no
 
 images:
   - image_name: 'j-coupling simulation.png'
     image_title: 'Simulated 31p spectra acquired with a puls acquire sequence.'
     image_alt: 'j-coupling simulation' 
+
+tags: 
+  - packages
 
 ---
 

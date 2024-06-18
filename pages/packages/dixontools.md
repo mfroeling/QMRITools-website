@@ -4,7 +4,6 @@ layout: page
 title: DixonTools
 permalink: /tool/dixontools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'simulation of dixon data.png'
     image_title: 'iDeal based Dixon reconstruction: fitted fat fractions as a function of the imposed fat fraction, SNR and B0 field offset.'
     image_alt: 'dixon reconstruction simulation'
+
+tags: 
+  - packages
 
 ---
 

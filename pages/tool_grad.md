@@ -23,6 +23,9 @@ images:
     image_title: 'visualization of multi shell diffusion gradients'
     image_alt: 'visualization of the gradient optimization result'
 
+tags: 
+  - tools
+
 ---
 
 Within QMRITools there is a function called `GenerateGradientsGUI`, this function allows to generate gradients tables compatible with the philips MRI scanner. Since the list contains gradient directions and b-values in 4 separate columns it can easily be converted to other platforms such as Bruker, Siemens, Cannon or GE.

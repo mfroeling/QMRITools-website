@@ -32,39 +32,37 @@ images:
 <img alt="Wolfram Mathematica" title="Wolfram Mathematica" src="../assets/images/wolfram_mathematica.png"></a>
 <a href="https://marketplace.visualstudio.com/items?itemName=WolframResearch.wolfram" target="_blank" style="text-decoration: none; border-bottom: none;">
 <img alt="visual studio code" title="visual studio code" src="../assets/images/visual-studio-code.png"></a>
-<a href="https://www.eclipse.org/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="eclipse" title="eclipse" src="../assets/images/eclipse.png"></a>
-<a href="https://www.wolfram.com/workbench/" target="_blank" style="text-decoration: none; border-bottom: none;">
-<img alt="wolfram workbench" title="wolfram workbench" src="../assets/images/wolfram_workbench.png"></a>
 <a href="https://community.wolfram.com/groups/-/m/t/1661539" target="_blank" style="text-decoration: none; border-bottom: none;">
 <img alt="Wolfram Community" title="Wolfram Community" src="../assets/images/community.png"></a>
 </p>
 
-`QMRITools` is a collection of tools and functions for processing
-quantitative MRI data. The toolbox is developed for the [Wolfram
-language](https://www.wolfram.com/language/) and runs in the latest version of
-[Wolfram Mathematica](http://www.wolfram.com/mathematica/). The toolbox does not provide a GUI and its primary goal is to allow for fast batch data processing, and
-facilitate development and prototyping of new functions. The core of the
-toolbox contains various functions for data manipulation and restructuring.
+## About QMRITools
+
+`QMRITools` is a comprehensive collection of tools and functions designed for processing quantitative MRI data. Developed specifically for the [Wolfram language](https://www.wolfram.com/language/){target="_blank"}, QMRITools operates within the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/){target="_blank"}. While it does not offer a graphical user interface (GUI), its primary objective is to enable rapid batch data processing and to facilitate the development and prototyping of new functions. At its core, the toolbox includes a variety of functions for data manipulation and restructuring.
 
 {% include page-image im_id="app" %}
 
-The toolbox was developed mostly in the context of quantitative muscle
-([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}), nerve and cardiac magnetic resonance imaging. The library of functions grows along with the research it is used for and started as a toolbox to analyze DWI data of muscle. Since then it has grown to include many other features such as cardiac analysis
-(tagging and T1 mapping), dixon reconstruction, EPG modeling and fitting, j-coupling
-simulations and more. It currently contains over 450 custom functions (over 30.000 lines of code) complete with more than 750 documentation pages and demonstrations for each toolbox.
+## Key Features of QMRITools
+
+[Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}- Extensive Function Library: QMRITools boasts over 450 custom functions, encompassing more than 30,000 lines of code, complete with over 750 documentation pages and demonstrations.
+- Wide Range of Applications: Initially developed for analyzing DWI data of muscle, QMRITools has expanded to support cardiac analysis (including tagging and T1 mapping), Dixon reconstruction, EPG modeling and fitting, j-coupling simulations, and more.
+
+
+## Applications in Quantitative MRI
+
+QMRITools was primarily developed for use in quantitative muscle MRI ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}), nerve imaging, and cardiac magnetic resonance imaging. The toolbox evolves continuously, with new functions added in response to ongoing research needs.
 
 {% include page-image im_id="proc" %}
 
-### Awards and media
+## Recognition and Awards
 
-During the 2023 ISMRM in Toronto QMRITools was awarded received the "Best Open Source Tool Award" from the Quantitative MRI study group.
+QMRITools received the “Best Open Source Tool Award” from the Quantitative MRI Study Group during the 2023 ISMRM conference in Toronto. This accolade highlights the toolbox's significant contributions to the field of quantitative MRI. Additionally, it was awarded the [Wolfram Innovator Award in 2023](https://www.wolfram.com/events/technology-conference/innovator-award/2023/martijn-froeling/){:target="_blank"}.
 
 {% include page-image im_id="award" %}
 
-If you want to learn more about the workings of QMRITools you can watch a live discussion with the
-Wolfram academic outreach team about <a href="https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D" target="_blank">QMRITools</a>
-and the role of computational Wolfram technology. A more in depth explanation of <a href="https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx" target="_blank">the paclet functionality</a> was presented to the Wolfram R&D Team.
+## Learning and Engagement
+
+To gain deeper insights into QMRITools, you can [watch a live discussion](https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D){target="_blank"} featuring the Wolfram Academic Outreach Team, which delves into the role of computational Wolfram technology in the toolbox's development. Additionally, [a detailed presentation](https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx){target="_blank"} on the paclet functionality was shared with the [Wolfram R&D Team](https://www.youtube.com/@WolframRD){target="_blank"}, providing an in-depth look at the toolbox's capabilities.
 
 ### Referencing
 

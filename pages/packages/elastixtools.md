@@ -4,7 +4,6 @@ layout: page
 title: ElastixTools
 permalink: /tool/elastixtools/
 
-tags: tools
 header: no
 
 images:
@@ -17,6 +16,9 @@ images:
   - image_name: 'non rigid registration of cardiac dti data.gif'
     image_title: 'non rigid registration of mulit slice 2D cardiac diffusion data.'
     image_alt: 'cardiac diffusion data registration'
+
+tags: 
+  - packages
 
 ---
 

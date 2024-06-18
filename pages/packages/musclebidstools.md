@@ -4,8 +4,10 @@ layout: page
 title: MuscleBidsTools
 permalink: /tool/musclebidstools/
 
-tags: tools
 header: no
+
+tags: 
+  - packages
 
 ---
 

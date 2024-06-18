@@ -1,11 +1,11 @@
 ---
 
 layout: page
-permalink: /bids/segment
+permalink: /seg/naming
 
 title: "Muscle segmentation"
 subheadline: "Standardized naming"
-teaser: "A generalized muscle naming convention for BIDS"
+teaser: "A generalized muscle naming convention"
 
 header: no
 
@@ -14,6 +14,9 @@ images:
     image_name: 'LowerLimb.gif'
     image_title: 'muscles of the lower limb'
     image_alt: 'muscles of the lower limb' 
+
+tags: 
+  - segment
 
 ---
 
@@ -418,3 +421,5 @@ If you are looking for images of each muscle please take a look [here](https://w
 | 232500 | Quadratus_Femoris_Both | Both | LowerLimb | Hip | Deep | QuadratusFemoris |  |
 | 232501 | Quadratus_Femoris_Left | Left | LowerLimb | Hip | Deep | QuadratusFemoris |  |
 | 232502 | Quadratus_Femoris_Right | Right | LowerLimb | Hip | Deep | QuadratusFemoris |  |
+
+{% include list-pages tag="segment" %}

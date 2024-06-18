@@ -4,7 +4,6 @@ layout: page
 title: GradientTools
 permalink: /tool/gradienttools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'gradient duty cycle optimization.png'
     image_title: 'Optimization of multi shell diffusion gradients accounting for duty cycle.'
     image_alt: 'gradient duty cycle optimization'
+
+tags: 
+  - packages
 
 ---
 

@@ -4,7 +4,6 @@ layout: page
 title: TensorTools
 permalink: /tool/tensortools/
 
-tags: tools
 header: no
 
 images:
@@ -15,6 +14,9 @@ images:
     image_title: 'MD and FA as a function of SNR and fat fraction. Results are from simulated data using an iWLLS algorithm with outlier rejection.'
     image_alt: 'dti reconstruction simulation'
 
+tags: 
+  - packages
+  
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>

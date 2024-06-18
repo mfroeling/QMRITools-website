@@ -4,7 +4,6 @@ layout: page
 title: PlottingTools
 permalink: /tool/plottingtools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'data vizualization 3D.png'
     image_title: 'data vizualization of 3D and 4D data'
     image_alt: 'data vizualization of 3D and 4D data'
+
+tags: 
+  - packages
 
 ---
 

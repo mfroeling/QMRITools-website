@@ -4,7 +4,6 @@ layout: page
 title: DenoiseTools
 permalink: /tool/denoisetools/
 
-tags: tools
 header: no
 
 images:
@@ -14,6 +13,9 @@ images:
   - image_name: 'comparison of denoising methods.gif'
     image_title: 'comparison of MP-PCA, anisotropic filtering, LMMSE and patch2self.'
     image_alt: 'comparison of denoising methods'  
+
+tags: 
+  - packages
 
 ---
 

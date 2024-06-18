@@ -15,6 +15,9 @@ images:
     image_title: 'flowchart for whole leg automated muscle segmentation using convolutional neural network with the UNET architecture.'
     image_alt: 'flowchart for whole leg automated muscle segmentation'
 
+tags: 
+  - bids
+
 ---
 
 
@@ -160,3 +163,6 @@ A Muscle-BIDS dataset must contain the source data, which in this case is the un
 &nbsp;&nbsp;├─DcmToNii_281222-091810.log<br>
 &nbsp;&nbsp;└─FileTree.txt
 </div>
+
+
+{% include list-pages tag="bids" %}

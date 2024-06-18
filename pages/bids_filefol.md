@@ -9,6 +9,9 @@ teaser: "Muscle-BIDS file structure explained."
 
 header: no
 
+tags: 
+  - bids
+
 ---
 
 
@@ -92,3 +95,6 @@ An example of a folder structure is shown below:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─raw/
 
 </div>
+
+
+{% include list-pages tag="bids" %}

@@ -4,7 +4,6 @@ layout: page
 title: SimulationTools
 permalink: /tool/simulationtools/
 
-tags: tools
 header: no
 
 images:
@@ -17,6 +16,9 @@ images:
   - image_name: 'simulation of T2 EPG data.png'
     image_title: 'EPG base T2 fitting: fitted T2 value as a function of B1, SNR and fat fraction.'
     image_alt: 'T2 EPG reconstruction simulation'
+
+tags: 
+  - packages
 
 ---
 

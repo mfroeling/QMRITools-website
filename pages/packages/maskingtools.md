@@ -4,13 +4,15 @@ layout: page
 title: MaskingTools
 permalink: /tool/maskingtools/
 
-tags: tools
 header: no
 
 images:
   - image_name: 'muscle segmentation.gif'
     image_title: 'processing and evaluation of muscle segmentation.'
     image_alt: 'muscle segmentation' 
+
+tags: 
+  - packages
 
 ---
 

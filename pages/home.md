@@ -33,7 +33,7 @@ This website describes the functionality of `QMRITools`, a toolbox for analysis 
 
 <div align="center" style="background-color: #D3D3D3; border-radius: 10px;">
   <br>
-  Release <b>3.16</b> is live!! Whole leg muscle segmentation with a single command <a href="https://www.qmritools.com/tool/segmentationtools" target="_blank"></a>.<br>
+  Release <b>3.16</b> is live!! Whole leg muscle segmentation with a <a href="https://www.qmritools.com/tool/segmentationtools" target="_blank">single command</a>.<br>
   <br>
   <a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
     <img alt="Github" title="Github" src="/assets/images/github.png" style="margin-right:10px" height="40"></a>

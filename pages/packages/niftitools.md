@@ -4,8 +4,10 @@ layout: page
 title: NiftiTools
 permalink: /tool/niftitools/
 
-tags: tools
 header: no
+
+tags: 
+  - packages
 
 ---
 
