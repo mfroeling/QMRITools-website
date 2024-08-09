@@ -40,7 +40,7 @@
     url: /seg/naming/
 
 - title: Muscle Segmentations
-  url: /seg/
+  url: /seg/segmentation/
   side: left
   dropdown:
   - title: Automated muscle segmentation
