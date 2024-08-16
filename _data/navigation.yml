@@ -45,9 +45,11 @@
   dropdown:
   - title: Automated muscle segmentation
     url: /seg/segmentation/
+  - title: Segmentation methods and tools
+    url: /seg/methods/
   - title: Muscle naming
     url: /seg/naming/
-  
+
 - title: About
   url: /about/
   side: left
