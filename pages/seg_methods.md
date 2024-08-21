@@ -101,7 +101,7 @@ To work with segmentations various functions have been implemented that can spli
 - `ReplaceSegmentations` replaces segmentation labels with other label.
 - `SmoothSegmentation` smooths each of the individual segmentations using the `SmoothMask` fucntion.
 
-For manually drawing ITKSnap is used. Therefore `QMRITools` has various default ITKSnap label files with stadardized naming, numbering and coloring.
+For manually drawing [ITKSnap](http://www.itksnap.org/pmwiki/pmwiki.php?n=Main.HomePage) is used. Therefore `QMRITools` has various default ITKSnap label files with stadardized naming, numbering and coloring.
 These files can be found in the instalation folder of `QMRITools` in the folder "NeuralNetworks" and are also used for the naming and numbering in the segmentation framework.
 
 - *Bones_leg.txt* - all bones of the leg (no left or right).
@@ -153,8 +153,8 @@ When segmentations contain mistaces or inperfections there are multiple function
 
 ```Wolfram
 segOut = SmoothSegmentation[segIn, MaskComponents -> 1, 
-  MaskClosing -> True, MaskFiltKernel -> 2, 
-  MaskDilation ->  SmoothItterations -> 3];
+  MaskClosing -> True, MaskDilation -> 0,
+  MaskFiltKernel -> 2, SmoothItterations -> 3];
 ```
 
 {% include page-image im_id="clean" %}
