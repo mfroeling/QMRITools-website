@@ -8,48 +8,42 @@
 		<meta charset="utf-8">
 	
 
-<title>PrepTrainData&#226;&#8364;&#8221;Wolfram Language Documentation</title>
+<title>NetSummary&#226;&#8364;&#8221;Wolfram Language Documentation</title>
 <meta name="buildnumber" content="0000000">
 <meta name="historydata" content="{XX, , , }" />
-<meta name="keywords" content="PrepTrainData" />
+<meta name="keywords" content="NetSummary" />
 
-<meta name="description" content="PrepTrainData[data, segmentation] crops and normalizes the data and segementation such that it is optimal for training CCN for segmentation. PrepTrainData[data, segmentation, labin] does the same but only selects the labin from the segmentation. PrepTrainData[data, segmentation, {labin, labout}] does the same but only selects the labin from the segmentation and replaces it with labout." />
+<meta name="description" content="NetSummary[net] gives a short summary of the convolution kernels and array elements in the network. NetSummary[net, what] does the same but what can be &quot;Full&quot; which also includes net and node images or &quot;Mem&quot; which only reporst the memory." />
 <link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'PrepTrainData.en';</script>
+<script>var baselang = 'NetSummary.en';</script>
 </head>
 
 <body id="ref" class="package">
   <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">PrepTrainData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">NetSummary</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/PrepTrainData.html">PrepTrainData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">segmentation</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/NetSummary.html">NetSummary</a><span class="openbracket">[</span><span class="TI">net</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">crops and normalizes the <span class="IF"><span class="TI">data</span></span> and segementation such that it is optimal for training CCN for <span class="IF"><span class="TI">segmentation</span></span>. </p>
+   <p class="code-description">gives a short summary of the convolution kernels and array elements in the network. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/PrepTrainData.html">PrepTrainData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">segmentation</span><span class="comma">,</span><span class="TI">labin</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/NetSummary.html">NetSummary</a><span class="openbracket">[</span><span class="TI">net</span><span class="comma">,</span><span class="TI">what</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">does the same but only selects the <span class="IF"><span class="TI">labin</span></span> from the <span class="IF"><span class="TI">segmentation</span></span>. </p>
+   <p class="code-description">does the same but <span class="IF"><span class="TI">what</span></span> can be &quot;Full&quot; which also includes <span class="IF"><span class="TI">net</span></span> and node images or &quot;Mem&quot; which only reporst the memory.</p>
   </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/PrepTrainData.html">PrepTrainData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">segmentation</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">labin</span><span class="comma">,</span><span class="TI">labout</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">does the same but only selects the <span class="IF"><span class="TI">labin</span></span> from the <span class="IF"><span class="TI">segmentation</span></span> and replaces it with labout.</p>
-  </div>
- </div><section id="Examples"><h1 id="287038334" class="toggle open">Examples</h1><div class="hideable">
-   <div id="146079627"
+ </div><section id="Examples"><h1 id="140336278" class="toggle open">Examples</h1><div class="hideable">
+   <div id="413862517"
        class="clipboard-input"
        data-in="In[1]:="
        data-in-num="1"
        data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-       data-src="Files/PrepTrainData.en/I_1.png"
+       data-src="Files/NetSummary.en/I_1.png"
        data-in-width="126"
        data-in-height="18"
-       data-link="https://wolfram.com/xid/0e2rmv5n8jld89tbs2zxqla6-co891p"
-       data-code="Files\PrepTrainData.en\i_1.txt"
+       data-link="https://wolfram.com/xid/0e2rmv5n8jld89tid5zkgcuo-g4osnb"
+       data-code="Files\NetSummary.en\i_1.txt"
        ></div>
    <div class="clear"><!-- --></div>
   </div></section>

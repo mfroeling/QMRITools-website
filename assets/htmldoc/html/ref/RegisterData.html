@@ -31,7 +31,7 @@
    <p class="code">
     <span class="IF"><a class="package-symbol" href="../QMRIToolsElastixTools/ref/RegisterData.html">RegisterData</a><span class="openbracket">[</span><span class="TI">target</span><span class="comma">,</span><span class="TI">moving</span><span class="closebracket">]</span></span>
    </p>
-   <p class="code-description">registers the moving data to the target data. target can be 2D or 3D. moving can be the same of one dimension higher than the target. The inputs target and moving can be in the forms: data, <span class="IF"><span class="TI"><span class="openbrace">{</span>data</span></span>, vox}, {data, mask} or {data, mask, vox}. Output is the registered data with the dimensions of the <span class="IF"><span class="TI">moving</span></span> data. If <span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is True it also outputs the translation, rotation scale and skew of all images or volumes. </p>
+   <p class="code-description">registers the moving data to the target data. target can be 2D or 3D. moving can be the same of one dimension higher than the target. The inputs target and moving can be in the forms: data, <span class="IF"><span class="TI"><span class="openbrace">{</span>data</span></span>, vox}, {data, mask} or {data, mask, vox}. Output is the registered data with the dimensions of the <span class="IF"><span class="TI">moving</span></span> data. If <span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it also outputs the translation, rotation scale and skew of all images or volumes. </p>
   </div>
   <div class="functionIntro">
    <p class="code">
@@ -43,9 +43,9 @@
    <h1 class="toggle">Details</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="409561577"></a>The following options can be given: </li>
+     <li><a name="689016420"></a>The following options can be given: </li>
      <li class="NotesTable">
-      <a name="65119990"></a>
+      <a name="127129728"></a>
       <table>
        <col width="1%" />
        <col width="28%" />
@@ -80,31 +80,26 @@ It specifies if the temp directory should be deleted after the registration is f
 It spefifies if the location of the temp directory should be deplayed.</span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/OutputTransformation.html">OutputTransformation</a></span> is an option for <span class="IF">RegisterData</span> ad <span class="IF"><a class="package-symbol" href="../ref/RegisterDiffusionData.html">RegisterDiffusionData</a></span><span class="specialcharacters">.
 It specifies if the tranformation paramters <span class="openparenthesis">(</span>translation<span class="comma">,</span> rotation<span class="comma">,</span> scale and skew<span class="closeparenthesis">)</span> should be given as output in the registration functions.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></td><td><span class="openbrace">{</span>False<span class="comma">,</span> Automatic<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></span> is an option for <span class="IF">RegisterData</span><span class="specialcharacters">. The value is <span class="openbrace">{</span>bool<span class="comma">,</span> gpu<span class="closebrace">}</span> where bool is True or False<span class="comma">,</span> and gpu is the gpu ID which is an integer or Automatic.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></td><td><span class="openbrace">{</span>False<span class="comma">,</span> Automatic<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/UseGPU.html">UseGPU</a></span> is an option for <span class="IF">RegisterData</span><span class="specialcharacters">. The value is <span class="openbrace">{</span>bool<span class="comma">,</span> gpu<span class="closebrace">}</span> where bool is </span><span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span><span class="specialcharacters"> or False<span class="comma">,</span> and gpu is the gpu ID which is an integer or Automatic.</span></span></td></tr>
        <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/PCAComponents.html">PCAComponents</a></span> is an option for <span class="IF">RegisterData</span>. It speciefies how many PCA components are used if method is set to &quot;PCA&quot;.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></span> is an option for <span class="IF">RegisterData</span>. If set to True it will print a plot of the Metric.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/ShowMetric.html">ShowMetric</a></span> is an option for <span class="IF">RegisterData</span>. If set to <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it will print a plot of the Metric.</span></td></tr>
       </table>
      </li>
     </ul>
    </div>
-  </div></section><section id="Examples"><h1 id="385802647" class="toggle open">Examples</h1><div class="hideable">
-   <div id="176126716"
+  </div></section><section id="Examples"><h1 id="451640618" class="toggle open">Examples</h1><div class="hideable">
+   <div id="16001110"
        class="clipboard-input"
        data-in="In[1]:="
        data-in-num="1"
        data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
        data-src="Files/RegisterData.en/I_1.png"
-       data-in-width="125"
+       data-in-width="126"
        data-in-height="18"
-       data-link="https://wolfram.com/xid/0nxgdpbhs8dxtwfqko93m-c65ai2"
+       data-link="https://wolfram.com/xid/0nxgdpbhs8dxtwfqko93m-js8tk"
        data-code="Files\RegisterData.en\i_1.txt"
        ></div>
    <div class="clear"><!-- --></div>
-  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
-   <h1>See Also</h1>
-   <p class="inlineFunctionList">
-    <span class="IF">&quot;XXXX&quot;</span>
-   </p>
   </div></section>
   
 
