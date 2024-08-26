@@ -40,7 +40,6 @@ images:
     image_alt: 'Animation of 3D UNET learning to segment muscle data.' 
 
 tags: 
-  - tools
   - segment
 
 ---
@@ -65,18 +64,21 @@ The segmentation networks are based on the UNET architecture with ResNet convolu
 {% include page-image im_id="unet" %}
 
 ## Data Augmentation and Training
+
 For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Training is conducted with a batch size of 2 and a patch size of 32x112x112 voxels, with 256 datasets seen per epoch. Patches are selected after data augmentation. Training typically continues for 200-300 epochs, taking approximately 8-12 hours. Below are examples of the first 100 epochs for the upper and lower leg. The resulting segmentations from both networks are displayed.
 
 {% include page-image im_id="upper" %}
 {% include page-image im_id="lower" %}
 
 ## Using SegmentData as a Script
+
 To use SegmentData as a script, you can refer to the README available on GitHub. The README provides detailed instructions on how to implement the function, ensuring users can effectively utilize the tool for their specific research needs.
 
 {% include page-image im_id="exp" %}
 {% include page-image im_id="train" %}
 
 ## Features Include
+
 - Automated region recognition
 - Memory optimized segmentation
 - CPU and GPU support

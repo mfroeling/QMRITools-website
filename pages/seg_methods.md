@@ -70,10 +70,16 @@ images:
     image_name: 'segIms\loss layers.png'
     image_title: 'Loss layers availible in the segmentation framework.'
     image_alt: 'Loss layers availible in the segmentation framework.' 
-
+  - image_id: 'boxL'
+    image_name: 'segIms\boxL.png'
+    image_title: 'Dice similarity score for different network architectures applied to lower legs.'
+    image_alt: 'Dice similarity score for different network architectures applied to lower legs.' 
+  - image_id: 'boxU'
+    image_name: 'segIms\boxU.png'
+    image_title: 'Dice similarity score for different network architectures applied to upper legs.'
+    image_alt: 'Dice similarity score for different network architectures applied to upper legs.' 
 
 tags: 
-  - tools
   - segment
 
 ---
@@ -200,7 +206,7 @@ MakeUnet[1, 18, {32, 112, 112},
 
 ## 4. Training Networks
 
-If all the data is prepared the training can begin. If the folder with the traindata is created with `PrepareTrainData` everything is set to go. With the following code the networks in `QMRITools` are trained. During the training a dynamic image of the training status is shown. 
+If all the data is prepared the training can begin. If the folder with the traindata is created with `PrepareTrainData` everything is set to go. With the following code the networks in `QMRITools` are trained. During the training a dynamic image of the training status is shown.
 
 ```Wolfram
 TrainSegmentationNetwork[{trainFolder, outputFolder},
@@ -221,7 +227,7 @@ If the training is aborted by the user of for any other reason the trainig can b
 
 {% include page-image im_id="train" %}
 
-In the output folder all training progress is saved. When the training is initialized a test dataset will be made. For every itteration an progress image and segmentation data is made using this data. After each itteration the latest network is saved. If the training is completed a final network is also saved. 
+In the output folder all training progress is saved. When the training is initialized a test dataset will be made. For every itteration an progress image and segmentation data is made using this data. After each itteration the latest network is saved. If the training is completed a final network is also saved.
 
 {% include page-image im_id="output" %}
 
@@ -243,4 +249,22 @@ Next to the default loss layers availible in the Wolfram Language the toolbox al
 
 ## 5. Using Networks
 
-Comming soon.
+To use the integrated segemetation pipeline the function `SegmentData` should be used. However if custon networks are to be used the function `ApplySegmentationNetwork` is availible.
+For `SegmentData` a few custom scripts are implemented, which currently only are "Legs", "LegBones" but more will be comming soon. For custom networks any network can be used with any data.
+
+``` Wolfram
+ApplySegmentationNetwork[data, network]
+ApplySegmentationNetwork[{data1, data2, ...}, network]
+ApplySegmentationNetwork[folder, network]
+```
+
+This will apply the segmentation network, which can be a `NetGraph` or a file name, to the given dataset list of datasets or all datasets in the folder.
+
+For the evaluation of segmentation networks multiple similarity mesasures have been implemented. The main ones are `DiceSimilarity`, `JaccardSimilarity`, and `SufaceDistance`.
+The latter can calcualte, amongst others, the mean, max, and 95% Hausdorff distance.
+During optimization of the networks in QMRITools multiple architectures have been tested. Below you can see the performance for the dice similarity metic for some architectures.
+
+{% include page-image im_id="boxU" %}
+{% include page-image im_id="boxL" %}
+
+{% include list-pages tag="segment" %}
