@@ -3,7 +3,7 @@
 layout: page
 permalink: /tool/segmentation
 
-title: "Automated muscle segmentation"
+title: "Tools for muscle segmentation"
 subheadline: "Full leg AI segmentation using CNN"
 teaser: "based on UNET architecture"
 
