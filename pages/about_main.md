@@ -38,7 +38,7 @@ images:
 
 ## About QMRITools
 
-`QMRITools` is a comprehensive collection of tools and functions designed for processing quantitative MRI data. Developed specifically for the [Wolfram language](https://www.wolfram.com/language/){target="_blank"}, QMRITools operates within the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/){target="_blank"}. While it does not offer a graphical user interface (GUI), its primary objective is to enable rapid batch data processing and to facilitate the development and prototyping of new functions. At its core, the toolbox includes a variety of functions for data manipulation and restructuring.
+`QMRITools` is a comprehensive collection of tools and functions designed for processing quantitative MRI data. Developed specifically for the [Wolfram language](https://www.wolfram.com/language/){:target="_blank"}, QMRITools operates within the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/){:target="_blank"}. While it does not offer a graphical user interface (GUI), its primary objective is to enable rapid batch data processing and to facilitate the development and prototyping of new functions. At its core, the toolbox includes a variety of functions for data manipulation and restructuring.
 
 {% include page-image im_id="app" %}
 
@@ -62,7 +62,7 @@ QMRITools received the “Best Open Source Tool Award” from the Quantitative M
 
 ## Learning and Engagement
 
-To gain deeper insights into QMRITools, you can [watch a live discussion](https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D){target="_blank"} featuring the Wolfram Academic Outreach Team, which delves into the role of computational Wolfram technology in the toolbox's development. Additionally, [a detailed presentation](https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx){target="_blank"} on the paclet functionality was shared with the [Wolfram R&D Team](https://www.youtube.com/@WolframRD){target="_blank"}, providing an in-depth look at the toolbox's capabilities.
+To gain deeper insights into QMRITools, you can [watch a live discussion](https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D){:target="_blank"} featuring the Wolfram Academic Outreach Team, which delves into the role of computational Wolfram technology in the toolbox's development. Additionally, [a detailed presentation](https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx){:target="_blank"} on the paclet functionality was shared with the [Wolfram R&D Team](https://www.youtube.com/@WolframRD){:target="_blank"}, providing an in-depth look at the toolbox's capabilities.
 
 ### Referencing
 
