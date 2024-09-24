@@ -3,8 +3,8 @@
 layout: page
 permalink: /seg/naming
 
-title: "Muscle segmentation"
-subheadline: "Standardized naming"
+title: "Muscle segmentation naming"
+subheadline: "Standardized in QMRITools"
 teaser: "A generalized muscle naming convention"
 
 header: no
