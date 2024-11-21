@@ -47,7 +47,7 @@ Some functions in QMRITools require external executables and software. These exe
 
 All functionalities are tested on Windows and macOS with the latest Mathematica version. The Mathematica code is cross-platform compatible, except for external tools compiled for each OS. The included versions are:
 
-- **Elastix:** Version 5.0.1 with OpenCL support
+- **Elastix:** Version 5.2.0 with OpenCL support
 - **dcm2niix:** Latest version, and various versions for windows
 
 Cross-platform compatibility is supported but not extensively tested. Please report any issues encountered.
@@ -74,7 +74,19 @@ To list all functions in DTITools or a specific toolbox:
     QMRIToolsFunctions[]
     QMRIToolsFunctions["toolbox name"]
 
+### Listing Available Packages and Functions
+
+After loading the toolbox to find the install location of the toolbox run 
+
+    OpenQMRIToolsLocation[]
+
+And to open the 'Demonstrations.nb' notebook run
+
+    OpenDemonstrationNotebook[]
+
 ### Documentation
+
+An online version of the documention can be found [here](https://www.qmritools.com/assets/htmldoc/html/guide/qmritools){:target="_blank"}.
 
 To print documentation of all functions:
 

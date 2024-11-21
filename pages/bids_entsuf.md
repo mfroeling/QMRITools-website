@@ -14,7 +14,7 @@ tags:
 
 ---
 
-As mentioned in main description, Muscle-BIDS uses various standardized entities and suffixes. Any toolbox is allowed to add as many of those as they want. However, if one uses non-standard entities and suffixes other software packages will probably not know how to use them.
+As mentioned in main description, Muscle-BIDS uses various standardized entities and suffixes. Any toolbox is allowed to add as many of those as they want. However, if one uses non-standard entities and suffixes other software packages will probably not know how to use them. The list of BIDS entities can be found [here](https://bids-specification.readthedocs.io/en/stable/appendices/entities.html) and an overview of how to use entities and which are OPTIONAL or REQUIRED can be found [here](https://bids-specification.readthedocs.io/en/stable/appendices/entity-table.html). 
 
 ## Entities
 

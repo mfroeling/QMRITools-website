@@ -13,9 +13,9 @@ header: no
 
 The release and repository contains [a demo data sets and a demonstration file](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources){:target="_blank"}
 in which there is a file `Demonstrations.nb` and a folder `DemoData`.
-If the tool has been installed as a paclet the paclet folder contains the `Demonstrations.nb` which will automatically unpack the demo data. By default the
-`Demonstrations.nb` looks for the folders `DemoData` in the same
-folder as the notebook.
+If the tool has been installed as a paclet the paclet folder contains the `Demonstrations.nb` which will automatically unpack the demo data. By default the `Demonstrations.nb` looks for the folders `DemoData` in the same folder as the notebook.
+
+To open the `Demonstrations.nb` open run the command `OpenDemonstrationNotebook[]` after installation and loading of the toolbox. 
 
 The `Demonstrations.nb` contains the following demonstrations.
 
