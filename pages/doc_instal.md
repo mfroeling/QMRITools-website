@@ -16,12 +16,13 @@ header: no
 The latest release of `QMRITools` can be found [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}. For optimal performance, it is recommended to install the toolbox via the Mathematica paclet system.
 
 ### Automatic Installation
+
 1. Download the Latest Paclet:
 2. Download the latest QMRITools-x.x.x.paclet from the release page.
 
 Install the Paclet Using PacletInstall:
 
-### Automatic installation:
+### Automatic installation
 
 1. Download the latest `QMRITools-x.x.x.paclet`.
 2. Install the paclet using `PacletInstall`.
@@ -74,9 +75,9 @@ To list all functions in DTITools or a specific toolbox:
     QMRIToolsFunctions[]
     QMRIToolsFunctions["toolbox name"]
 
-### Listing Available Packages and Functions
+### Helpfull functions
 
-After loading the toolbox to find the install location of the toolbox run 
+After loading the toolbox to find the install location of the toolbox run
 
     OpenQMRIToolsLocation[]
 

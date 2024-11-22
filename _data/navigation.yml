@@ -36,7 +36,7 @@
     url: /bids/files_folders/
   - title: Entities and suffixes
     url: /bids/ents_suffs/
-- title: Muscle-BIDS step by step
+  - title: Muscle-BIDS step by step
     url: /bids/tutorial/
 
 - title: Muscle Segmentations
