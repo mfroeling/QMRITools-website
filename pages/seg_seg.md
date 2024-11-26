@@ -44,7 +44,7 @@ tags:
 
 ---
 
-The `SegmentData` function within the `QMRITools` package is designed to automatically segment lower extremity muscles of the hip, thigh, and leg. This function is an essential tool in the [Segmentationtools](https://www.qmritools.com/tool/segmentationtools) package, leveraging advanced neural networks for precise muscle segmentation.
+The `SegmentData` function within the `QMRITools` package is designed to automatically segment lower extremity muscles of healthy subjects of the hip, thigh, and leg. This function is an essential tool in the [Segmentationtools](https://www.qmritools.com/tool/segmentationtools) package, leveraging advanced neural networks for precise muscle segmentation.
 
 ## Function Overview
 
@@ -72,7 +72,9 @@ For training, data is heavily augmented using various techniques such as scale, 
 
 ## Using SegmentData as a Script
 
-To use SegmentData as a script, you can refer to the README available on GitHub. The README provides detailed instructions on how to implement the function, ensuring users can effectively utilize the tool for their specific research needs.
+No Mathematica licence? Not a problem it also works without. How this works you can read [here](https://www.qmritools.com/seg/script){:target="_blank"}.
+
+To use SegmentData as a script, you can refer to the README available on [GitHub](https://github.com/mfroeling/QMRITools/tree/master/scripts){:target="_blank"}. The README provides detailed instructions on how to implement the function, ensuring users can effectively utilize the tool for their specific research needs.
 
 {% include page-image im_id="exp" %}
 {% include page-image im_id="train" %}
