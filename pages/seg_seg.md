@@ -4,8 +4,8 @@ layout: page
 permalink: /seg/segmentation
 
 title: "Automated muscle segmentation"
-subheadline: "Full leg AI segmentation using CNN"
-teaser: "based on UNET architecture"
+subheadline: "Full leg AI muscle segmentation using CNN"
+teaser: "muscle segmentation based on UNET architecture"
 
 header: no
 
@@ -46,7 +46,7 @@ tags:
 
 The `SegmentData` function within the `QMRITools` package is designed to automatically segment lower extremity muscles of healthy subjects of the hip, thigh, and leg. This function is an essential tool in the [Segmentationtools](https://www.qmritools.com/tool/segmentationtools) package, leveraging advanced neural networks for precise muscle segmentation.
 
-## Function Overview
+## Function Overview for muscle segmentation
 
 `SegmentData` employs four neural networks:
 

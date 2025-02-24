@@ -4,7 +4,7 @@ layout: page
 permalink: /seg/methods
 
 title: "How to use the muscle segmentation framwork"
-subheadline: "A step by step manual for using our methods"
+subheadline: "A step by step manual for using our muscle segmentation"
 teaser: "Automated muscle segmentation made easy"
 
 header: no
