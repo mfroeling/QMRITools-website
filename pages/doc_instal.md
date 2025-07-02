@@ -15,13 +15,6 @@ header: no
 
 The latest release of `QMRITools` can be found [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}. For optimal performance, it is recommended to install the toolbox via the Mathematica paclet system.
 
-### Automatic Installation
-
-1. Download the Latest Paclet:
-2. Download the latest QMRITools-x.x.x.paclet from the release page.
-
-Install the Paclet Using PacletInstall:
-
 ### Automatic installation
 
 1. Download the latest `QMRITools-x.x.x.paclet`.
@@ -48,10 +41,11 @@ Some functions in QMRITools require external executables and software. These exe
 
 All functionalities are tested on Windows and macOS with the latest Mathematica version. The Mathematica code is cross-platform compatible, except for external tools compiled for each OS. The included versions are:
 
-- **Elastix:** Version 5.2.0 with OpenCL support
+- **Elastix:** Latest version, with OpenCL support
 - **dcm2niix:** Latest version, and various versions for windows
 
 Cross-platform compatibility is supported but not extensively tested. Please report any issues encountered.
+Most likely the external dependancys for non windows systems may be out of date.
 
 ### Loading the toolbox
 
