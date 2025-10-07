@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /bids/tutoral/
+permalink: /bids/tutorial/
 
 title: "Muscle-BIDS step by step"
 subheadline: "data anlysis made easy"
