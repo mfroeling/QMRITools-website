@@ -69,9 +69,10 @@ The segmentation networks are based on the UNET architecture with ResNet convolu
 
 ## Data Augmentation and Training
 
-For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Training is conducted with a batch size of 2 and a patch size of 32x112x112 voxels, with 256 datasets seen per epoch. Patches are selected after data augmentation. Training typically continues for 200-300 epochs, taking approximately 8-12 hours. Below are examples of the first 100 epochs for the upper and lower leg. The resulting segmentations from both networks are displayed.
+For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Training is conducted with a batch size of 2 and a patch size of 40x96x96 voxels, with 512 datasets seen per epoch. Patches are selected after data augmentation. Training typically continues for 200-300 epochs, taking approximately 8-12 hours. Below are examples of 36 different patches with augmentation selected from the same dataset. The resulting segmentations from both networks are displayed. The training for the upper leg is shown below.
 
 {% include page-image im_id="augmentation" %}
+{% include page-image im_id="train" %}
 
 ## Using SegmentData as a Script
 
@@ -80,7 +81,6 @@ No Mathematica licence? Not a problem it also works without. How this works you 
 To use SegmentData as a script, you can refer to the README available on [GitHub](https://github.com/mfroeling/QMRITools/tree/master/scripts){:target="_blank"}. The README provides detailed instructions on how to implement the function, ensuring users can effectively utilize the tool for their specific research needs.
 
 {% include page-image im_id="exp" %}
-{% include page-image im_id="train" %}
 
 ## Features Include
 
