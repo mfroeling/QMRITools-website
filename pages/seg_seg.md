@@ -25,7 +25,11 @@ images:
   - image_id: 'upper'
     image_name: 'upper-demo.gif'
     image_title: 'Example of data augmentation used for training the upper leg segmentation UNET.'
-    image_alt: 'Example of data augmentation used for training the upper leg segmentation UNET.'         
+    image_alt: 'Example of data augmentation used for training the upper leg segmentation UNET.'  
+  - image_id: 'augmentation'
+    image_name: 'augment.png'
+    image_title: 'Example of data augmentation used for training the upper and lower leg segmentation UNET.'
+    image_alt: 'Example of data augmentation used for training the upper and lower leg segmentation UNET.'         
   - image_id: 'lower'
     image_name: 'lower-demo.gif'
     image_title: 'Example of data augmentation used for training the lower leg segmentation UNET.'
@@ -67,8 +71,7 @@ The segmentation networks are based on the UNET architecture with ResNet convolu
 
 For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Training is conducted with a batch size of 2 and a patch size of 32x112x112 voxels, with 256 datasets seen per epoch. Patches are selected after data augmentation. Training typically continues for 200-300 epochs, taking approximately 8-12 hours. Below are examples of the first 100 epochs for the upper and lower leg. The resulting segmentations from both networks are displayed.
 
-{% include page-image im_id="upper" %}
-{% include page-image im_id="lower" %}
+{% include page-image im_id="augmentation" %}
 
 ## Using SegmentData as a Script
 
