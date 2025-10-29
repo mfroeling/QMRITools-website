@@ -258,7 +258,7 @@ This will apply the segmentation network, which can be a `NetGraph` or a file na
 
 For the evaluation of segmentation networks multiple similarity mesasures have been implemented. The main ones are `DiceSimilarity`, `JaccardSimilarity`, and `SufaceDistance`.
 The latter can calcualte, amongst others, the mean, max, and 95% Hausdorff distance.
-During optimization of the networks in QMRITools multiple architectures have been tested. Below you can see the performance for the dice similarity metic for some architectures.
+During optimization of the networks in QMRITools multiple architectures have been tested. Below you can see the performance for the dice similarity metic for the various generations of our segmentation networks, that become better every generation.
 
 {% include page-image im_id="generations" %}
 
