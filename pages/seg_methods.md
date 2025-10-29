@@ -70,14 +70,10 @@ images:
     image_name: 'segIms\loss layers.png'
     image_title: 'Loss layers availible in the segmentation framework.'
     image_alt: 'Loss layers availible in the segmentation framework.' 
-  - image_id: 'boxL'
-    image_name: 'segIms\boxL.png'
-    image_title: 'Dice similarity score for different network architectures applied to lower legs.'
-    image_alt: 'Dice similarity score for different network architectures applied to lower legs.' 
-  - image_id: 'boxU'
-    image_name: 'segIms\boxU.png'
-    image_title: 'Dice similarity score for different network architectures applied to upper legs.'
-    image_alt: 'Dice similarity score for different network architectures applied to upper legs.' 
+  - image_id: 'generations'
+    image_name: 'segIms\network-generations.png'
+    image_title: 'Dice similarity score for different network generations applied to lower and upper legs.'
+    image_alt: 'Dice similarity score for different network generations applied to lower and upper legs.'
 
 tags: 
   - segment
@@ -264,7 +260,6 @@ For the evaluation of segmentation networks multiple similarity mesasures have b
 The latter can calcualte, amongst others, the mean, max, and 95% Hausdorff distance.
 During optimization of the networks in QMRITools multiple architectures have been tested. Below you can see the performance for the dice similarity metic for some architectures.
 
-{% include page-image im_id="boxU" %}
-{% include page-image im_id="boxL" %}
+{% include page-image im_id="generations" %}
 
 {% include list-pages tag="segment" %}
