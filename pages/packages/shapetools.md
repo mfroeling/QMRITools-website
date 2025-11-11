@@ -27,7 +27,7 @@ tags:
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
 [Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
-[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/NiftiTools.wl)
+[Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/ShapeTools.wl)
 
 A framework for shape analyis. It was developed specifically for statistical shape analysis of muscle.
 The toolbox contains functions for 
