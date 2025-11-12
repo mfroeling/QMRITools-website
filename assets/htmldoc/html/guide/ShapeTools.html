@@ -1,0 +1,289 @@
+<!--#include virtual="/language-assets-v2/inc/doc-beginning.html.en"-->
+
+<title>ShapeTools&#226;&#8364;&#8221;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{, , , }" />
+<meta name="keywords" content="ShapeTools" />
+
+<meta name="description" content="QMRITools package: Functions statistical shape modeling of volumes, muscles and segmentation. " />
+<!--#include virtual="/language-assets-v2/inc/head-inc.html.en"-->
+<script>var baselang = 'ShapeTools.en';</script>
+</head>
+
+<body id="guide">
+  <!--#include virtual="/language-assets-v2/inc/header.html.en"-->
+  <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div class="title" id="title">ShapeTools</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+  <ul class="select-container"
+      id="select-container">
+   <li class="dropdownmenu dropdownitem-1">
+    <a href="#" class="dropdownmenutitle see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a class="sub-ref" href="../ref/EvaluateModel.html"><span class="dropdownPad">EvaluateModel</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/FitShapeModel.html"><span class="dropdownPad">FitShapeModel</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MakeMuscleTemplate.html"><span class="dropdownPad">MakeMuscleTemplate</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MakeRegionMesh.html"><span class="dropdownPad">MakeRegionMesh</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MakeShapeModel.html"><span class="dropdownPad">MakeShapeModel</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MakeTemplatePlot.html"><span class="dropdownPad">MakeTemplatePlot</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MaskFromDistanceMap.html"><span class="dropdownPad">MaskFromDistanceMap</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MaskToDistanceMap.html"><span class="dropdownPad">MaskToDistanceMap</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/MeshGridPlot.html"><span class="dropdownPad">MeshGridPlot</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/PlotMesh.html"><span class="dropdownPad">PlotMesh</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/PlotShapeVariation.html"><span class="dropdownPad">PlotShapeVariation</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/ScaleToVolume.html"><span class="dropdownPad">ScaleToVolume</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/SplitRegionMesh.html"><span class="dropdownPad">SplitRegionMesh</span></a>
+     </li>
+     <li>
+      <a class="sub-ref" href="../ref/TemplateToVolume.html"><span class="dropdownPad">TemplateToVolume</span></a>
+     </li>
+    </ul>
+   </li>
+   <li class="dropdownmenu lastitem dropdownitem-2">
+    <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+    <ul class="sub_menu">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a class="sub-ref" href="../ref/EvaluateModel.html"><span class="dropdownPad">EvaluateModel</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/FitShapeModel.html"><span class="dropdownPad">FitShapeModel</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeMuscleTemplate.html"><span class="dropdownPad">MakeMuscleTemplate</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeRegionMesh.html"><span class="dropdownPad">MakeRegionMesh</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeShapeModel.html"><span class="dropdownPad">MakeShapeModel</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeTemplatePlot.html"><span class="dropdownPad">MakeTemplatePlot</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MaskFromDistanceMap.html"><span class="dropdownPad">MaskFromDistanceMap</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MaskToDistanceMap.html"><span class="dropdownPad">MaskToDistanceMap</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MeshGridPlot.html"><span class="dropdownPad">MeshGridPlot</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/PlotMesh.html"><span class="dropdownPad">PlotMesh</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/PlotShapeVariation.html"><span class="dropdownPad">PlotShapeVariation</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/ScaleToVolume.html"><span class="dropdownPad">ScaleToVolume</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/SplitRegionMesh.html"><span class="dropdownPad">SplitRegionMesh</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/TemplateToVolume.html"><span class="dropdownPad">TemplateToVolume</span></a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </div></header>
+    <div class="page-container menu-empty">
+  	<div class="menu-container">
+  		
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="select-container2"
+        id="select-container2">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a class="sub-ref" href="../ref/EvaluateModel.html"><span class="dropdownPad">EvaluateModel</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/FitShapeModel.html"><span class="dropdownPad">FitShapeModel</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeMuscleTemplate.html"><span class="dropdownPad">MakeMuscleTemplate</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeRegionMesh.html"><span class="dropdownPad">MakeRegionMesh</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeShapeModel.html"><span class="dropdownPad">MakeShapeModel</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MakeTemplatePlot.html"><span class="dropdownPad">MakeTemplatePlot</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MaskFromDistanceMap.html"><span class="dropdownPad">MaskFromDistanceMap</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MaskToDistanceMap.html"><span class="dropdownPad">MaskToDistanceMap</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/MeshGridPlot.html"><span class="dropdownPad">MeshGridPlot</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/PlotMesh.html"><span class="dropdownPad">PlotMesh</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/PlotShapeVariation.html"><span class="dropdownPad">PlotShapeVariation</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/ScaleToVolume.html"><span class="dropdownPad">ScaleToVolume</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/SplitRegionMesh.html"><span class="dropdownPad">SplitRegionMesh</span></a>
+       </li>
+       <li>
+        <a class="sub-ref" href="../ref/TemplateToVolume.html"><span class="dropdownPad">TemplateToVolume</span></a>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdownmenu lastitem dropdownitem-2">
+      <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+      <ul class="sub_menu">
+       <li class="dropdownmenu dropdownitem-1">
+        <a href="#" class="dropdownmenutitle see-also">Functions</a>
+        <ul class="sub_menu">
+         <li>
+          <a class="sub-ref" href="../ref/EvaluateModel.html"><span class="dropdownPad">EvaluateModel</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/FitShapeModel.html"><span class="dropdownPad">FitShapeModel</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MakeMuscleTemplate.html"><span class="dropdownPad">MakeMuscleTemplate</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MakeRegionMesh.html"><span class="dropdownPad">MakeRegionMesh</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MakeShapeModel.html"><span class="dropdownPad">MakeShapeModel</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MakeTemplatePlot.html"><span class="dropdownPad">MakeTemplatePlot</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MaskFromDistanceMap.html"><span class="dropdownPad">MaskFromDistanceMap</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MaskToDistanceMap.html"><span class="dropdownPad">MaskToDistanceMap</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/MeshGridPlot.html"><span class="dropdownPad">MeshGridPlot</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/PlotMesh.html"><span class="dropdownPad">PlotMesh</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/PlotShapeVariation.html"><span class="dropdownPad">PlotShapeVariation</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/ScaleToVolume.html"><span class="dropdownPad">ScaleToVolume</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/SplitRegionMesh.html"><span class="dropdownPad">SplitRegionMesh</span></a>
+         </li>
+         <li>
+          <a class="sub-ref" href="../ref/TemplateToVolume.html"><span class="dropdownPad">TemplateToVolume</span></a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul></nav>
+   <div class="main-heading"><h1 class="main-title">ShapeTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section><div class="inner">
+   <p class="intro"><a name="69434082"></a><a href="../guide/QMRITools.html">QMRITools</a> package: Functions statistical shape modeling of volumes, muscles and segmentation. </p>
+   <div class="GuideDelimiterSubsection"><!-- --></div>
+   <p class="singleFunction"><a name="88373909"></a><span class="IFSans"><a class="package-symbol" href="../ref/MakeMuscleTemplate.html">MakeMuscleTemplate</a></span> <span class="dash">&mdash;</span> Makes a template muscle from a series of muscle segmentations.</p>
+   <p class="singleFunction"><a name="258425196"></a><span class="IFSans"><a class="package-symbol" href="../ref/TemplateToVolume.html">TemplateToVolume</a></span> <span class="dash">&mdash;</span> Aligns a muscle template to a single or series of muscle volumes.</p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="115705116"></a>
+    <span class="IFSans"><a class="package-symbol" href="../ref/MakeShapeModel.html">MakeShapeModel</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/FitShapeModel.html">FitShapeModel</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/EvaluateModel.html">EvaluateModel</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/ScaleToVolume.html">ScaleToVolume</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="567549859"></a>
+    <span class="IFSans"><a class="package-symbol" href="../ref/MakeRegionMesh.html">MakeRegionMesh</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/SplitRegionMesh.html">SplitRegionMesh</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/MaskFromDistanceMap.html">MaskFromDistanceMap</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/MaskToDistanceMap.html">MaskToDistanceMap</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="368293262"></a>
+    <span class="IFSans"><a class="package-symbol" href="../ref/PlotMesh.html">PlotMesh</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/MakeTemplatePlot.html">MakeTemplatePlot</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/MeshGridPlot.html">MeshGridPlot</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a class="package-symbol" href="../ref/PlotShapeVariation.html">PlotShapeVariation</a></span>
+   </p>
+  </div></section>
+  <!--#include virtual="/language-assets-v2/inc/feedback.html.en"-->
+
+  <!--#include virtual="/language-assets-v2/inc/footer-inc.html.en"-->
+</body>
+
+</html>
