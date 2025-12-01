@@ -33,8 +33,8 @@ This website describes the functionality of `QMRITools`, a toolbox for analysis 
 
 <div align="center" style="background-color: #D3D3D3; border-radius: 10px;">
   <br>
-  Release <b>4.0</b> is live!!<br>
-  A complete segmentation framework for <a href="https://www.qmritools.com/seg/segmentation" target="_blank">automated muscle segmentation</a> and <a href="https://www.qmritools.com/seg/methods" target="_blank">(re)training the segmentation networks</a>.<br>
+  Release <b>4.5</b> is live!!<br>
+  A new integrated framework for <a href="https://www.qmritools.com/seg/segmentation" target="_blank">statistical shape modeling</a> and <a href="https://www.qmritools.com/tool/shapetools/" target="_blank">shape analysis</a>.<br>
   <br>
   <a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
     <img alt="Github" title="Github" src="/assets/images/github.png" style="margin-right:10px" height="40"></a>
