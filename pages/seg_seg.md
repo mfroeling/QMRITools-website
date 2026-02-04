@@ -91,3 +91,5 @@ To use SegmentData as a script, you can refer to the README available on [GitHub
 - Standardized muscle labels
 
 {% include list-pages tag="segment" %}
+
+We gratefully acknowledge the support of NVIDIA with the donation of the GPU used for this work.

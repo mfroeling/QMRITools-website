@@ -76,3 +76,5 @@ By default the CPU is used, if you want to switch to GPU open the script in any 
 {% include page-image im_id="script" %}
 
 {% include list-pages tag="segment" %}
+
+We gratefully acknowledge the support of NVIDIA with the donation of the GPU used for this work.

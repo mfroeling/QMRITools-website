@@ -263,3 +263,5 @@ During optimization of the networks in QMRITools multiple architectures have bee
 {% include page-image im_id="generations" %}
 
 {% include list-pages tag="segment" %}
+
+We gratefully acknowledge the support of NVIDIA with the donation of GPU used for this work.
