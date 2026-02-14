@@ -47,6 +47,8 @@
     url: /seg/segmentation/
   - title: Segmentation methods and tools
     url: /seg/methods/
+  - title: Segmentation networks and locations
+    url: /seg/networks/
   - title: Segmentation with command line scripts
     url: /seg/script/
   - title: Muscle naming
