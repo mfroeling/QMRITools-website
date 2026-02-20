@@ -33,8 +33,8 @@ This website describes the functionality of `QMRITools`, a toolbox for analysis 
 
 <div align="center" style="background-color: #D3D3D3; border-radius: 10px;">
   <br>
-  Release <b>4.6</b> is live!!<br>
-  New networks for <a href="https://www.qmritools.com/seg/segmentation" target="_blank">muscle segmentation</a> that work any derivtaive from <a href="https://www.muscle-atlas.org/projects/progress" target="_blank">GE Dixon scans</a>.<br>
+  Release <b>4.7</b> is live!!<br>
+  New networks for <a href="https://www.qmritools.com/seg/segmentation" target="_blank">muscle segmentation</a> that work any derivative from <a href="https://www.muscle-atlas.org/projects/progress" target="_blank">GE Dixon scans</a> both on 2D and 3D data.<br>
   <br>
   <a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
     <img alt="Github" title="Github" src="/assets/images/github.png" style="margin-right:10px" height="40"></a>
