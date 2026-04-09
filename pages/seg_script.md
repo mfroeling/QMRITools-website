@@ -79,7 +79,7 @@ Run the segmentation script (works on in or out phase data, raw echo data, water
 wolframscript -f "path to file\Segment_Nii.wls" --i "file to be segmented.nii.gz" --o "output file.nii"
 ```
 
-It does not matter what part of the leg it is and if one or two legs are in the field of view. 
+It does not matter what part of the leg it is and if one or two legs are in the field of view.
 For the situation where you run the scrip from its own folder with the test folder also there this will be script.
 
 ``` bash
