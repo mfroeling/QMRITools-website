@@ -36,8 +36,8 @@ images:
     image_alt: 'Example of data augmentation used for training the lower leg segmentation UNET.'        
   - image_id: 'exp'
     image_name: 'seg example.png'
-    image_title: 'Example segmentations of the thigh and leg automated segmention UNET neural networks.'
-    image_alt: 'Example segmentations of the thigh and leg automated segmention UNET neural networks.' 
+    image_title: 'Example segmentations of the thigh and leg automated segmentation UNET neural networks.'
+    image_alt: 'Example segmentations of the thigh and leg automated segmentation UNET neural networks.' 
   - image_id: 'train'
     image_name: 'train.gif'
     image_title: 'Animation of 3D UNET learning to segment muscle data.'
@@ -48,7 +48,7 @@ tags:
 
 ---
 
-The `SegmentData` function within the `QMRITools` package is designed to automatically segment lower extremity muscles of healthy subjects of the hip, thigh, and leg. This function is an essential tool in the [Segmentationtools](https://www.qmritools.com/tool/segmentationtools) package, leveraging advanced neural networks for precise muscle segmentation.
+The `SegmentData` function within the `QMRITools` package is designed to automatically segment lower extremity muscles of healthy subjects of the hip, thigh, and leg. This function is an essential tool in the [SegmentationTools](https://www.qmritools.com/tool/segmentationtools) package, leveraging advanced neural networks for precise muscle segmentation.
 
 ## Function Overview for muscle segmentation
 
@@ -69,14 +69,14 @@ The segmentation networks are based on the UNET architecture with ResNet convolu
 
 ## Data Augmentation and Training
 
-For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Training is conducted with a batch size of 2 and a patch size of 40x96x96 voxels, with 512 datasets seen per epoch. Patches are selected after data augmentation. Training typically continues for 200-300 epochs, taking approximately 8-12 hours. Below are examples of 36 different patches with augmentation selected from the same dataset. The resulting segmentations from both networks are displayed. The training for the upper leg is shown below.
+For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Training is conducted with a batch size of 2 and a patch size of 40x96x96 voxels, with 512 datasets seen per epoch. Patches are selected after data augmentation. Training typically continues for 200-300 epochs, taking approximately 8-12 hours. Below are examples of 36 different patches with augmentation selected from the same dataset. The resulting segmentation from both networks are displayed. The training for the upper leg is shown below.
 
 {% include page-image im_id="augmentation" %}
 {% include page-image im_id="train" %}
 
 ## Using SegmentData as a Script
 
-No Mathematica licence? Not a problem it also works without. How this works you can read [here](https://www.qmritools.com/seg/script){:target="_blank"}.
+No Mathematica license? Not a problem it also works without. How this works you can read [in the script tutorial](https://www.qmritools.com/seg/script){:target="_blank"}.
 
 To use SegmentData as a script, you can refer to the README available on [GitHub](https://github.com/mfroeling/QMRITools/tree/master/scripts){:target="_blank"}. The README provides detailed instructions on how to implement the function, ensuring users can effectively utilize the tool for their specific research needs.
 

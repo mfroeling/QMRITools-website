@@ -32,8 +32,8 @@ images:
     image_alt: 'Example of data augmentation used for training the lower leg segmentation UNET.'        
   - image_id: 'exp'
     image_name: 'seg example.png'
-    image_title: 'Example segmentations of the thigh and leg automated segmention UNET neural networks.'
-    image_alt: 'Example segmentations of the thigh and leg automated segmention UNET neural networks.' 
+    image_title: 'Example segmentations of the thigh and leg automated segmentation UNET neural networks.'
+    image_alt: 'Example segmentations of the thigh and leg automated segmentation UNET neural networks.' 
 
 tags: 
   - tools

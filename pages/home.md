@@ -31,30 +31,28 @@ widget3:
 
 This website describes the functionality of `QMRITools`, a toolbox for analysis of quantitative magnetic resonance imaging data. `QMRITools` is a collection of tools and functions for processing quantitative MRI data, runs in the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/) and is developed and maintained by [Martijn Froeling](https://www.researchgate.net/profile/Martijn-Froeling){:target="_blank"}. The toolbox was initially developed for the analysis of diffusion imaging data of skeletal muscle ([Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}). Over the years it has grown in its functionality and is currently used for the analysis, processing and simulations of quantitative muscle, nerve and cardiac magnetic resonance imaging and spectroscopy data. The library of functions grows along with the research it is used for.
 
-<div align="center" style="background-color: #D3D3D3; border-radius: 10px;">
-  <br>
-  Release <b>4.7</b> is live!!<br>
-  New networks for <a href="https://www.qmritools.com/seg/segmentation" target="_blank">muscle segmentation</a> that work any derivative from <a href="https://www.muscle-atlas.org/projects/progress" target="_blank">GE Dixon scans</a> both on 2D and 3D data.<br>
-  <br>
-  <a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="Github" title="Github" src="/assets/images/github.png" style="margin-right:10px" height="40"></a>
-  <a href="https://ismrm.github.io/mrhub/" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="MR-Hub" title="MR-Hub" src="/assets/images/MR-Hub.png" style="margin-right:10px" height="40"></a>
-  <a href="https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="OpenSourceImaging" title="OpenSourceImaging" src="/assets/images/open_source_images.png" style="margin-right:10px"  height="40"></a>
-  <a href="https://mrshub.org/software_analysis/#QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="MRSHub" title="MRSHub" src="/assets/images/MRSHub.png" style="margin-right:10px"  height="40"></a>
-  <a href="https://ormircommunity.github.io/packages.html#other-packages" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="Open and Reproducible Musculoskeletal Imaging Research" title="Open and Reproducible Musculoskeletal Imaging ResearchMIR" src="/assets/images/ORMIR.png" style="margin-right:10px"  height="40"></a><br>
-  <br>
-  Live discussion with the Wolfram academic outreach team about <a href="https://www.youtube.com/live/wupxxiPJkxU?si=22BV_HSSa5u7Ds3D" target="_blank">QMRITools</a>.<br>
-  Presentation for the wolfram R&D Team about <a href="https://www.youtube.com/live/LVUBupORthA?si=UjoNpM2szsrgB7xx" target="_blank">QMRITools</a> development and functionality.<br>
-  <br>
-  <a href="https://doi.org/10.5281/zenodo.595302" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="DOI" title="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.595302.svg" style="margin-right:10px"></a>
-  <a href="https://joss.theoj.org/papers/10.21105/joss.01204" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="DOI Joss" title="DOI Joss" src="https://joss.theoj.org/papers/10.21105/joss.01204/status.svg" style="margin-right:10px"></a>
-  <a href="https://github.com/mfroeling/QMRITools" target="_blank" style="text-decoration: none; border-bottom: none;">
-    <img alt="contributions welcome" title="contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" style="margin-right:10px"></a><br>
-  <br>
+<div align="center" style="background-color: #D3D3D3; border-radius: 10px; padding: 20px;" markdown="1">
+  
+**Release 4.10 is live!**<br>
+New networks for [muscle segmentation](https://www.qmritools.com/seg/segmentation){:target="_blank"} now support derivatives (source, water, fat, in-phase and out-phase) from [GE and TSE Dixon scans](https://www.muscle-atlas.org/projects/progress){:target="_blank"} on both 2D and 3D data. <br>
+QMRITools can also now call [MuscleMap](https://musclemap.github.io/MuscleMap/){:target="_blank"} for segmentation. All muscle labels are [standardized](https://www.qmritools.com/seg/naming/){:target="_blank"} and grouped by anatomical function.
+
+[![Automated muscle segmentation](/assets/images/Muscle_segmentation.png)](https://www.qmritools.com/seg/networks){:target="_blank"}
+
+<!-- Community Links Grid -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin: 15px 0;">
+  <a href="https://github.com/mfroeling/QMRITools" target="_blank"><img src="/assets/images/github.png" alt="GitHub" style="height: 32px;"></a>
+  <a href="https://ismrm.github.io/mrhub/" target="_blank"><img src="/assets/images/MR-Hub.png" alt="MR-Hub" style="height: 32px;"></a>
+  <a href="https://www.opensourceimaging.org/project/qmritools-mathematica-toolbox-for-quantitative-mri-data/" target="_blank"><img src="/assets/images/open_source_images.png" alt="OpenSourceImaging" style="height: 32px;"></a>
+  <a href="https://mrshub.org/software_analysis/#QMRITools" target="_blank"><img src="/assets/images/MRSHub.png" alt="MRS-Hub" style="height: 32px;"></a>
+  <a href="https://ormircommunity.github.io/packages.html#other-packages" target="_blank"><img src="/assets/images/ORMIR.png" alt="ORMIR" style="height: 32px;"></a>
+  <a href="https://musclemap.github.io/MuscleMap/" target="_blank"><img src="/assets/images/MuscleMap.png" alt="MuscleMap" style="height: 32px;"></a>
+</div>
+<!-- Badges Row -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px;">
+  <a href="https://doi.org/10.5281/zenodo.595302" target="_blank"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.595302.svg" alt="DOI"></a>
+  <a href="https://joss.theoj.org/papers/10.21105/joss.01204" target="_blank"><img src="https://joss.theoj.org/papers/10.21105/joss.01204/status.svg" alt="DOI Joss"></a>
+  <a href="https://github.com/mfroeling/QMRITools" target="_blank"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions Welcome"></a>
+</div>
+
 </div>

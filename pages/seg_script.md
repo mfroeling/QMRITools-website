@@ -20,9 +20,9 @@ tags:
 
 ---
 
-Everyting in QMRITools can also run from the command line using the Wolfram engine.
+Everything in QMRITools can also run from the command line using the Wolfram engine.
 For segmentation there are dedicated scripts that install and run the segmentation software.
-Below is a short manual on how to use these tools. The scripts and so example data can be found [here](https://github.com/mfroeling/QMRITools/tree/master/scripts).
+Below is a short manual on how to use these tools. The scripts and so example data can be found on [the github page](https://github.com/mfroeling/QMRITools/tree/master/scripts).
 
 ## Wolfram engine and script
 
@@ -34,13 +34,13 @@ Below is a short manual on how to use these tools. The scripts and so example da
 
 ## QMRITools
 
-Install the latest version of QMRITools for the worlfram enging using the `Install_QMRITools.wls` WolframScript.
+Install the latest version of QMRITools for the Wolfram engine using the `Install_QMRITools.wls` WolframScript.
 
 ``` bash
 wolframscript -f "path to file\Install_QMRITools.wls"
 ```
 
-To install an other version of the QMRITools from the gihub release [pages](https://github.com/mfroeling/QMRITools/releases) use
+To install an other version of the QMRITools from the GitHub release [pages](https://github.com/mfroeling/QMRITools/releases) use
 
 ``` bash
 wolframscript -f "path to file\Install_QMRITools.wls" https://github.com/mfroeling/QMRITools/releases/download/4.x.x/QMRITools-4.x.x.paclet
