@@ -34,7 +34,7 @@ This website describes the functionality of `QMRITools`, a toolbox for analysis 
 <div align="center" style="background-color: #D3D3D3; border-radius: 10px; padding: 20px;" markdown="1">
   
 **Release 4.10 is live!**<br>
-New networks for [muscle segmentation](https://www.qmritools.com/seg/segmentation){:target="_blank"} now support derivatives (source, water, fat, in-phase and out-phase) from [GE and TSE Dixon scans](https://www.muscle-atlas.org/projects/progress){:target="_blank"} on both 2D and 3D data. <br>
+New networks for [muscle segmentation](https://www.qmritools.com/seg/segmentation){:target="_blank"} now support derivatives (source, water, fat, in-phase and out-phase) from [GE and TSE Dixon scans](https://www.muscle-atlas.org/projects/progress){:target="_blank"} and DWI/DTI data (b-value up to 600) on both [2D and 3D](https://www.qmritools.com/seg/networks)data. <br>
 QMRITools can also now call [MuscleMap](https://musclemap.github.io/MuscleMap/){:target="_blank"} for segmentation. All muscle labels are [standardized](https://www.qmritools.com/seg/naming/){:target="_blank"} and grouped by anatomical function.
 
 [![Automated muscle segmentation](/assets/images/Muscle_segmentation.png)](https://www.qmritools.com/seg/networks){:target="_blank"}
