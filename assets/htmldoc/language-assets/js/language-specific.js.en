@@ -48,15 +48,15 @@ $(document).ready(function(){
                 }
             }
             if(type == 'c') {
-                if(value =='available') {
-                    mediaType = 'Available on the cloud';
-                } else if(value == 'unavailable') {
-                    mediaType = 'Unavailable on the cloud';
-                } else if(value == 'unknown') {
-                    mediaType = 'Unknown on the cloud';
+                if(value =='') {
+                    mediaType = '';
+                } else if(value == 'r') {
+                    mediaType = 'Unsupported in Public Cloud';
+                } else if(value == 'u') {
+                    mediaType = 'Unsupported in Cloud';
                 }
                 if(mediaType !== '') {
-                    media += '<span class="media cloud '+value+'"><span class="triangle"></span></span><span class="tooltip">'+mediaType+'</span>';
+                    media += '<span oclass="media cloud '+value+'"><span class="text">'+mediaType+'</span></span>';
                 }
             }
             if(type == 'e') {
@@ -91,7 +91,7 @@ $(document).ready(function(){
         iconography += other;
         $('.iconography').html(iconography);
     }
-    $('#DetailsAndOptions').on('load change click', function(){
+    $('[id="DetailsAndOptions"]').on('load change click', function(){
     /* ==========================================================================
        Details and Options close button
        ========================================================================== */
@@ -105,8 +105,25 @@ $(document).ready(function(){
             }
         });
     });
-    $('#DetailsAndOptions').on('click', '.hideable-close-button', function(){
+    $('[id="DetailsAndOptions"]').on('click', '.hideable-close-button', function(){
         $('#DetailsAndOptions').removeClass('open');
+    });
+    $('[id="ListAllOptions"]').on('load change click', function(){
+        /* ==========================================================================
+           List of All Options close button
+           ========================================================================== */
+        $('#ListAllOptions .toggle').each(function(){
+            var hideableHeight = $(this).siblings('.hideable').height();
+            var sectionID = $(this).parents('section').prop('id');
+            if(hideableHeight > 600 && $('.toggle').hasClass('open')) {
+                if(!$(this).siblings('.hideable').find('.hideable-close-button').length) {
+                    $(this).siblings('.hideable').append('<a href="#'+sectionID+'" class="hideable-close-button">close</a>');
+                }
+            }
+        });
+    });
+    $('[id="ListAllOptions"]').on('click', '.hideable-close-button', function(){
+        $(this).parents('section').removeClass('open');
     });
 });
 const descriptions = [
@@ -120,3 +137,9 @@ const descriptions = [
     {"name":"Neat Examples", "text":"Surprising or curious use cases"},
     {"name":"Interactive Examples", "text":"Examples with interactive outputs"}
 ];
+
+if($('body').prop('id') === 'ref') {
+    $(function() {
+        $(".example-jump-link").attr('data-title', 'Jump to Examples');
+    });
+}

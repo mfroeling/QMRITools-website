@@ -1,90 +1,158 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>FiberTractography&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
-<meta name="keywords" content="FiberTractography" />
-
-<meta name="description" content="FiberTractography[tensor, vox] performs fibertractography on the tensor with voxels dimensions vox. FiberTractography[tensor, vox, {par, {min, max}}] performs fibertractography on the tensor with voxels dimensions vox with additional stoppin criteria par, where tracts are only generated between values of par min and max. FiberTractography[tensor, vox, {{par, {min, max}}, ..}] performs fibertractography on the tensor with voxels dimensions vox with multiple additional stopping criteria." />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'FiberTractography.en';</script>
-</head>
-
-<body id="ref" class="package">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">FiberTractography</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span>. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with additional stoppin criteria par, where tracts are only generated between values of par min and max. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsTractographyTools/ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="comma">,</span>..<span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">performs fibertractography on the <span class="IF"><span class="TI">tensor</span></span> with voxels dimensions <span class="IF"><span class="TI">vox</span></span> with multiple additional stopping criteria.</p>
-  </div>
- </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
-   <div class="hideable">
-    <ul class="functionList">
-     <li><a name="86468087"></a>The following options can be given: </li>
-     <li class="NotesTable">
-      <a name="441342762"></a>
-      <table>
-       <col width="1%" />
-       <col width="28%" />
-       <col width="28%" />
-       <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></td><td><span class="openbrace">{</span>20<span class="comma">,</span> 500<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FiberLength.html">FiberLength</a></span>Range is an option for <span class="IF">FiberTractography</span> and specifies the allowed tract range.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></td><td>30</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed angle change per tract step.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorFilps.html">TensorFilps</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Filps is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is fliped<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TensorPermutations.html">TensorPermutations</a></td><td><span class="openbrace">{</span>x<span class="comma">,</span> y<span class="comma">,</span> z<span class="closebrace">}</span></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Permutations is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and speciefies if the tensor orientation is permuted<span class="comma">,</span> see </span><span class="IF"><a class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/InterpolationOrder.html">InterpolationOrder</a></td><td>1</td><td><span class="TT"><span class="specialcharacters">InterpolationOrder is an option for Interpolation<span class="comma">,</span> as well as ListLinePlot<span class="comma">,</span> ListPlot3D<span class="comma">,</span> ListContourPlot<span class="comma">,</span> and related functions<span class="comma">,</span> that specifies what order of interpolation to use.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/StopThreshhold.html">StopThreshhold</a></td><td>0.5</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/StopThreshhold.html">StopThreshhold</a></span> is an option for <span class="IF">FiberTractography</span> and defines the stop threshhold which is a value between 0 and 1.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/StepSize.html">StepSize</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/StepSize.html">StepSize</a></span> is an option for <span class="IF">FiberTractography</span> and defines the tractography step size.</span></td></tr>
-       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Method.html">Method</a></td><td>&quot;Euler&quot;</td><td><span class="TT">Method is an option for various algorithm-intensive functions that specifies what internal methods they should use.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MaxSeedPoints.html">MaxSeedPoints</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MaxSeedPoints.html">MaxSeedPoints</a></span> is an option for <span class="IF">FiberTractography</span> and defines the maximum number of seedspoints to be used.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/TracMonitor.html">TracMonitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TracMonitor.html">TracMonitor</a></span> is an option for <span class="IF">FiberTractography</span>. When set <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it prints the progress.</span></td></tr>
-      </table>
-     </li>
-    </ul>
-   </div>
-  </div></section><section id="Examples"><h1 id="8697350" class="toggle open">Examples</h1><div class="hideable">
-   <div id="138947836"
-       class="clipboard-input"
-       data-in="In[1]:="
-       data-in-num="1"
-       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-       data-src="Files/FiberTractography.en/I_1.png"
-       data-in-width="126"
-       data-in-height="18"
-       data-link="https://wolfram.com/xid/0bgtp89qj6t2olc652a9doq7e7d11r-ck0e4e"
-       data-code="Files\FiberTractography.en\i_1.txt"
-       ></div>
-   <div class="clear"><!-- --></div>
-  </div></section>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>FiberTractography&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="FiberTractography" />
+
+<meta name="description" content="FiberTractography[tensor, vox] performs fiber tractography on the tensor with voxel dimensions vox. FiberTractography[tensor, vox, {par, {min, max}}] performs fiber tractography on the tensor with voxel dimensions vox with additional stopping criteria par, where tracts are only generated between values of par min and max. FiberTractography[tensor, vox, {{par, {min, max}}, ..}] performs fiber tractography on the tensor with voxel dimensions vox with multiple additional stopping criteria." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'FiberTractography.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+    <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div translate="no" class="title" id="title">FiberTractography</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+ </div></header>
+    <div class="page-container menu-full">
+  	<div class="menu-container">
+  		<div class="menu-nav">
+ <div class="usage-container">
+  <div class="menu-item">
+   <div data-id="FunctionIntroduction"
+       class="menu-link function-usage-box">
+    <div class="sidebarfunctionIntroWrap">
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">performs fiber tractography on the <span class="IF"><span class="TI">tensor</span></span> with voxel dimensions <span class="IF"><span class="TI">vox</span></span>. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">performs fiber tractography on the <span class="IF"><span class="TI">tensor</span></span> with voxel dimensions <span class="IF"><span class="TI">vox</span></span> with additional stopping criteria par, where tracts are only generated between values of par min and max. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="comma">,</span>..<span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">performs fiber tractography on the <span class="IF"><span class="TI">tensor</span></span> with voxel dimensions <span class="IF"><span class="TI">vox</span></span> with multiple additional stopping criteria.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="details-and-options-container menu-link"
+     data-id="DetailsAndOptions">
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions" class="menu-link details-and-options-label">Details</div>
+  </div>
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions"
+       class="menu-link details-and-options-image-container">
+    <img src="../../language-assets/img/DetailsOptions-gray.png"
+        alt="Details and Options"
+        class="box-image gray-image" />
+    <img src="../../language-assets/img/DetailsOptions-hover.png"
+        alt="Details and Options"
+        class="box-image hover-image" />
+   </div>
+  </div>
+ </div>
+ 
+</div>
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS SYMBOL</span></nav>
+   <div class="ContextNameCell">QMRITools`</div>
+   <div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 translate="no" class="main-title">FiberTractography</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section class="function-wrapper"><div class="inner">
+   <div class="functionIntroWrap">
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">performs fiber tractography on the <span class="IF"><span class="TI">tensor</span></span> with voxel dimensions <span class="IF"><span class="TI">vox</span></span>. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">performs fiber tractography on the <span class="IF"><span class="TI">tensor</span></span> with voxel dimensions <span class="IF"><span class="TI">vox</span></span> with additional stopping criteria par, where tracts are only generated between values of par min and max. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberTractography.html">FiberTractography</a><span class="openbracket">[</span><span class="TI">tensor</span><span class="comma">,</span><span class="TI">vox</span><span class="comma">,</span><span class="openbrace">{</span><span class="openbrace">{</span><span class="TI">par</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">min</span><span class="comma">,</span><span class="TI">max</span><span class="closebrace">}</span><span class="closebrace">}</span><span class="comma">,</span>..<span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">performs fiber tractography on the <span class="IF"><span class="TI">tensor</span></span> with voxel dimensions <span class="IF"><span class="TI">vox</span></span> with multiple additional stopping criteria.</p>
+    </div>
+   </div>
+  </div></section><section id="DetailsAndOptions" class="preview-wrapper"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="details-preview">
+    <div class="hideable">
+     <ul class="functionList">
+      <li><a name="12531729"></a>The following options can be given: </li>
+      <li class="NotesTable"
+          translate="no">
+       <a name="287495139"></a>
+       <table>
+        <col width="1%" />
+        <col width="28%" />
+        <col width="28%" />
+        <col width="43%" />
+        <tr class="lineAbove" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></td><td><span class="openbrace">{</span>20<span class="comma">,</span> 500<span class="closebrace">}</span></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberLengthRange.html">FiberLengthRange</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed tract range.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></td><td>30</td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/FiberAngle.html">FiberAngle</a></span> is an option for <span class="IF">FiberTractography</span> and specifies the allowed angle change per tract step.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/TensorFlips.html">TensorFlips</a></td><td><span class="openbrace">{</span>1<span class="comma">,</span> 1<span class="comma">,</span> 1<span class="closebrace">}</span></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Flips is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and specifies if the tensor orientation is flipped<span class="comma">,</span> see </span><span class="IF"><a translate="no" class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/TensorPermutations.html">TensorPermutations</a></td><td><span class="openbrace">{</span>x<span class="comma">,</span> y<span class="comma">,</span> z<span class="closebrace">}</span></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a></span>Permutations is an option for <span class="IF">FiberTractography</span><span class="specialcharacters"> and specifies if the tensor orientation is permuted<span class="comma">,</span> see </span><span class="IF"><a translate="no" class="package-symbol" href="../ref/FlipTensorOrientation.html">FlipTensorOrientation</a></span>.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" href="http://reference.wolfram.com/language/ref/InterpolationOrder.html">InterpolationOrder</a></td><td>0</td><td><span class="TT" translate="yes"><span class="specialcharacters">InterpolationOrder is an option for Interpolation<span class="comma">,</span> as well as ListLinePlot<span class="comma">,</span> ListPlot3D<span class="comma">,</span> ListContourPlot<span class="comma">,</span> and related functions<span class="comma">,</span> that specifies what order of interpolation to use.</span></span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/StopThreshold.html">StopThreshold</a></td><td>0.5</td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/StopThreshold.html">StopThreshold</a></span> is an option for <span class="IF">FiberTractography</span> and defines the stop threshold which is a value between 0 and 1.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/StepSize.html">StepSize</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/StepSize.html">StepSize</a></span> is an option for <span class="IF">FiberTractography</span> and defines the tractography step size.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" href="http://reference.wolfram.com/language/ref/Method.html">Method</a></td><td>&quot;RK4&quot;</td><td><span class="TT" translate="yes">Method is an option for various algorithm-intensive functions that specifies what internal methods they should use.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/MaxSeedPoints.html">MaxSeedPoints</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/MaxSeedPoints.html">MaxSeedPoints</a></span> is an option for <span class="IF">FiberTractography</span> and defines the maximum number of seed points to be used.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/TractMonitor.html">TractMonitor</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/TractMonitor.html">TractMonitor</a></span> is an option for <span class="IF">FiberTractography</span>. When set <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it prints the progress.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" href="http://reference.wolfram.com/language/ref/Parallelization.html">Parallelization</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT" translate="yes">Parallelization is an option for Compile that specifies whether it should create a compiled function that could run in parallel. </span></td></tr>
+       </table>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
 </html>

@@ -2,12 +2,17 @@
 .workflow .special:first-of-type { margin: 0 0 .8rem; }
 .iconography-wrapper.wrap-down { padding: 0 5px 0 0; }
 @media all and (max-width: 600px) {
-    .iconography { height: auto; position: relative; text-align: left; top: 0; vertical-align: middle; display: table-cell; padding: 0 5px 0 12px; top: 2px; vertical-align: middle; }
+    .iconography { height: auto; position: relative; text-align: left; top: 0; vertical-align: middle; display: block; /*top: 2px;*/ vertical-align: middle; }
     .iconography-wrapper { text-align: left; display: table-cell; vertical-align: middle; }
-    .iconography-wrapper:not(.empty) { height: 22px; }
+    /*.iconography-wrapper:not(.empty) { height: 22px; }*/
     .iconography span { margin: 0; text-align: left; display: inline-block; vertical-align: baseline; }
-    .iconography-wrapper + a.related-interpreter, .iconography + a.related-interpreter { display: table-cell; position: relative; text-align: left; top: 3px; border-top: 0; border-left: 1px solid #ddd; padding: 0 0 0 5px; margin: 0 0 0 5px; vertical-align: middle; }
-    .iconography-wrapper.empty + a.related-interpreter { padding: 0 0 0 22px; margin: -13px 0 0 0; display: inline-block; }
+    /*.iconography-wrapper + a.related-interpreter, .iconography + a.related-interpreter { display: table-cell; position: relative; text-align: left; top: 3px; border-top: 0; border-left: 1px solid #ddd; padding: 0 0 0 5px; margin: 0 0 0 5px; vertical-align: middle; }*/
+    .iconography-wrapper + a.related-interpreter, 
+    .iconography + a.related-interpreter,
+    .iconography-wrapper.empty + a.related-interpreter { 
+        padding: 0 0 0 10px; margin: 3px 10px 0 0; display: inline-block; 
+        grid-row: 2;border-top: 0;
+    }
     .FullListing { margin: 0 0 0 12px; }
 }
 @media all and (min-width: 601px) and (max-height: 400px) {

@@ -55,6 +55,7 @@ WORKFLOW
 .workflow .toggle + .hideable img + h2, .workflow .toggle + .hideable .AnnotatedInput + h2 { margin-top: 1.5rem; }
 .workflow .ThickSpace { display: none; }
 .workflow .feedback-content { max-width: 960px; margin: 0 auto; position: relative; border: 0; }
+.workflow .feedback-wrapper #feedback {position: relative;top:0;margin-bottom: 3rem;}
 .workflow .modified { display: none; }
 .workflow .footer-links { margin: 0; }
 .workflow .footer-links .inner { max-width: 100%; margin: 0; border: 0; background: #eee; border-top: 2px solid #cacaca; padding: 1rem 0 2rem; }
@@ -66,9 +67,27 @@ WORKFLOW
 
 .workflow .workflow-tabs { position: relative; margin: 0; z-index: 0; }
 .workflow .workflow-tabs li { display: inline-block; margin: 0 -4px 0 0; vertical-align: bottom; }
-.workflow .workflow-tabs a { display: block; padding: .2rem 1rem .4rem; color: #898989; font-size: 1rem; bottom: -1px; position: relative; border: 1px solid transparent; z-index: 10; }
+.workflow .workflow-tabs a { 
+    background: #fff; 
+    border: 1px solid transparent; 
+    border-bottom-color: #fff !important; 
+    bottom: -1px; 
+    color: #898989; 
+    display: block; 
+    padding: 3px 1rem 6px; 
+    font-size: 1rem; 
+    line-height: 20px;
+    position: relative; 
+    z-index: 10; 
+}
+.workflow .workflow-tabs a.selected { 
+    border-color: #d1d1d1; 
+    border-radius: 4px 4px 0 0; 
+    border-style: solid; 
+    border-width: 1px; 
+    color: rgba(55,165,169, 1); 
+}
 .workflow .workflow-tabs a:hover { opacity: .75; }
-.workflow .workflow-tabs a.selected { border-width: 1px 1px 0 1px; border-style: solid; border-color: #d1d1d1; color: rgba(55,165,169, 1); border-bottom: 1px solid #fff; border-radius: 4px 4px 0 0; background: #fff; }
 .workflow .workflow-tabs a.selected:hover { color: rgba(55,165,169, .7); opacity: 1; }
 .workflow .workflow-tabs a.selected:hover:before { opacity: .7; }
 .workflow .workflow-tabs a:after { content: ''; border-left: 1px solid #d1d1d1; display: inline-block; height: 18px; bottom: 5px; position: absolute; left: -1px; }
@@ -171,7 +190,7 @@ WORKFLOW
    .workflow .guide:last-of-type .grid { border-bottom: 1px solid #e5e5e5 !important; }
    .workflow { z-index: 100000; max-width: 100%; }
    .workflow .workflow-tabs li { margin: .55rem -4px 0 0; }
-   .workflow .workflow-tabs a { display: block; padding: .2rem .8rem .4rem; }
+   .workflow .workflow-tabs a { display: block; padding: 3px 10px 6px; }
    .workflow .num-workflows { display: inline-block; }
 
    .workflow h1.toggle:before { width: 6px; height: 6px; }

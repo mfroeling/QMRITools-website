@@ -1,246 +1,588 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>SegmentationTools&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
-<meta name="keywords" content="SegmentationTools" />
-
-<meta name="description" content="QMRITools package: functions for segmenting muscle data using convolutional neural networks." />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'SegmentationTools.en';</script>
-</head>
-
-<body id="guide">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu see-also">Functions</a>
-    <ul class="sub_menu">
-     <li>
-      <a class="sub-ref" href="../ref/AddLossLayer.html"><span class="dropdownPad">AddLossLayer</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/AnalyseNetworkFeatures.html"><span class="dropdownPad">AnalyseNetworkFeatures</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ApplySegmentationNetwork.html"><span class="dropdownPad">ApplySegmentationNetwork</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/AugmentImageData.html"><span class="dropdownPad">AugmentImageData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/AugmentTrainingData.html"><span class="dropdownPad">AugmentTrainingData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ChangeNetDimensions.html"><span class="dropdownPad">ChangeNetDimensions</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/CheckSegmentation.html"><span class="dropdownPad">CheckSegmentation</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ClassDecoder.html"><span class="dropdownPad">ClassDecoder</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ClassEncoder.html"><span class="dropdownPad">ClassEncoder</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ClassifyData.html"><span class="dropdownPad">ClassifyData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/DataToPatches.html"><span class="dropdownPad">DataToPatches</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/DiceLossLayer.html"><span class="dropdownPad">DiceLossLayer</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/DiceSimilarity.html"><span class="dropdownPad">DiceSimilarity</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/FocalLossLayer.html"><span class="dropdownPad">FocalLossLayer</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/GetNeuralNet.html"><span class="dropdownPad">GetNeuralNet</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/GetTrainData.html"><span class="dropdownPad">GetTrainData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ImportITKLabels.html"><span class="dropdownPad">ImportITKLabels</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/JaccardLossLayer.html"><span class="dropdownPad">JaccardLossLayer</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/JaccardSimilarity.html"><span class="dropdownPad">JaccardSimilarity</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeChannelClassGrid.html"><span class="dropdownPad">MakeChannelClassGrid</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeChannelClassImage.html"><span class="dropdownPad">MakeChannelClassImage</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeChannelImage.html"><span class="dropdownPad">MakeChannelImage</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeClassifyImage.html"><span class="dropdownPad">MakeClassifyImage</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeClassifyNetwork.html"><span class="dropdownPad">MakeClassifyNetwork</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeClassImage.html"><span class="dropdownPad">MakeClassImage</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeDistanceMap.html"><span class="dropdownPad">MakeDistanceMap</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeNode.html"><span class="dropdownPad">MakeNode</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeUnet.html"><span class="dropdownPad">MakeUnet</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MuscleLabelToName.html"><span class="dropdownPad">MuscleLabelToName</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MuscleNameToLabel.html"><span class="dropdownPad">MuscleNameToLabel</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/NetDimensions.html"><span class="dropdownPad">NetDimensions</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/NetSummary.html"><span class="dropdownPad">NetSummary</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PatchesToData.html"><span class="dropdownPad">PatchesToData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PrepareTrainingData.html"><span class="dropdownPad">PrepareTrainingData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SegmentData.html"><span class="dropdownPad">SegmentData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SegmentDataGUI.html"><span class="dropdownPad">SegmentDataGUI</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ShowTrainLog.html"><span class="dropdownPad">ShowTrainLog</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SplitDataForSegementation.html"><span class="dropdownPad">SplitDataForSegementation</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SurfaceDistance.html"><span class="dropdownPad">SurfaceDistance</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/TrainSegmentationNetwork.html"><span class="dropdownPad">TrainSegmentationNetwork</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/TverskyLossLayer.html"><span class="dropdownPad">TverskyLossLayer</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="main-heading"><h1 class="main-title">SegmentationTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="36385227"></a><a href="../guide/QMRITools.html">QMRITools</a> package: functions for segmenting muscle data using convolutional neural networks.</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="89711506"></a><span class="IFSans"><a class="package-symbol" href="../ref/MakeUnet.html">MakeUnet</a></span> <span class="dash">&mdash;</span> Makes a 2D or 3D UNET.</p><p class="singleFunction"><a name="38030680"></a><span class="IFSans"><a class="package-symbol" href="../ref/MakeNode.html">MakeNode</a></span> <span class="dash">&mdash;</span> Makes a node for a UNET.</p><p class="singleFunction"><a name="279965309"></a><span class="IFSans"><a class="package-symbol" href="../ref/SegmentData.html">SegmentData</a></span> <span class="dash">&mdash;</span> Segments out of phase Dixon muscle data.</p><p class="singleFunction"><a name="146920601"></a><span class="IFSans"><a class="package-symbol" href="../ref/$debugUnet.html">$debugUnet</a></span> <span class="dash">&mdash;</span> If set True the MakeUnet and MakeNode can be debugged.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="123436460"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/AddLossLayer.html">AddLossLayer</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/DiceLossLayer.html">DiceLossLayer</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/FocalLossLayer.html">FocalLossLayer</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/JaccardLossLayer.html">JaccardLossLayer</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/TverskyLossLayer.html">TverskyLossLayer</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="104860154"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/DiceSimilarity.html">DiceSimilarity</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SurfaceDistance.html">SurfaceDistance</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/JaccardSimilarity.html">JaccardSimilarity</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeDistanceMap.html">MakeDistanceMap</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="346391450"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeChannelClassImage.html">MakeChannelClassImage</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeChannelImage.html">MakeChannelImage</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeClassImage.html">MakeClassImage</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeChannelClassGrid.html">MakeChannelClassGrid</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="49191283"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ImportITKLabels.html">ImportITKLabels</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MuscleLabelToName.html">MuscleLabelToName</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MuscleNameToLabel.html">MuscleNameToLabel</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="113225673"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ClassifyData.html">ClassifyData</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeClassifyImage.html">MakeClassifyImage</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeClassifyNetwork.html">MakeClassifyNetwork</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="127281569"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ClassDecoder.html">ClassDecoder</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ClassEncoder.html">ClassEncoder</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/DataToPatches.html">DataToPatches</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PatchesToData.html">PatchesToData</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="165822454"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/TrainSegmentationNetwork.html">TrainSegmentationNetwork</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/AugmentTrainingData.html">AugmentTrainingData</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/AugmentImageData.html">AugmentImageData</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PrepareTrainingData.html">PrepareTrainingData</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/GetTrainData.html">GetTrainData</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/CheckSegmentation.html">CheckSegmentation</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ShowTrainLog.html">ShowTrainLog</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="584621530"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ApplySegmentationNetwork.html">ApplySegmentationNetwork</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SplitDataForSegementation.html">SplitDataForSegementation</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SegmentDataGUI.html">SegmentDataGUI</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/GetNeuralNet.html">GetNeuralNet</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/NetDimensions.html">NetDimensions</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ChangeNetDimensions.html">ChangeNetDimensions</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/AnalyseNetworkFeatures.html">AnalyseNetworkFeatures</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/NetSummary.html">NetSummary</a></span>
- </p>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
-
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>SegmentationTools&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="SegmentationTools" />
+
+<meta name="description" content="QMRITools package: functions for segmenting muscle data using convolutional neural networks." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'SegmentationTools.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="guide">
+  <main class="main">
+  <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div class="title" id="title">SegmentationTools</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+  <ul class="select-container"
+      id="select-container">
+   <li class="dropdownmenu dropdownitem-1">
+    <a href="#" class="dropdownmenutitle see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ApplySegmentationNetwork.html"><span class="dropdownPad">ApplySegmentationNetwork</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/AugmentImageData.html"><span class="dropdownPad">AugmentImageData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/AugmentTrainingData.html"><span class="dropdownPad">AugmentTrainingData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/CheckSegmentation.html"><span class="dropdownPad">CheckSegmentation</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ClassifyData.html"><span class="dropdownPad">ClassifyData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/CommonLabels.html"><span class="dropdownPad">CommonLabels</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/CompareSegmentations.html"><span class="dropdownPad">CompareSegmentations</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/CopyTrainedNetwork.html"><span class="dropdownPad">CopyTrainedNetwork</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/DataToPatches.html"><span class="dropdownPad">DataToPatches</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/DiceSimilarity.html"><span class="dropdownPad">DiceSimilarity</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/FindPatchDim.html"><span class="dropdownPad">FindPatchDim</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/FreezeEncoderLayers.html"><span class="dropdownPad">FreezeEncoderLayers</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GetNeuralNet.html"><span class="dropdownPad">GetNeuralNet</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GetTrainData.html"><span class="dropdownPad">GetTrainData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ImportITKLabels.html"><span class="dropdownPad">ImportITKLabels</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/JaccardSimilarity.html"><span class="dropdownPad">JaccardSimilarity</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeChannelClassGrid.html"><span class="dropdownPad">MakeChannelClassGrid</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeChannelClassImage.html"><span class="dropdownPad">MakeChannelClassImage</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeChannelGrid.html"><span class="dropdownPad">MakeChannelGrid</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeChannelImage.html"><span class="dropdownPad">MakeChannelImage</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeClassImage.html"><span class="dropdownPad">MakeClassImage</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeDistanceMap.html"><span class="dropdownPad">MakeDistanceMap</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeTrainData.html"><span class="dropdownPad">MakeTrainData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MuscleLabelToName.html"><span class="dropdownPad">MuscleLabelToName</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MuscleNameToLabel.html"><span class="dropdownPad">MuscleNameToLabel</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PatchesToData.html"><span class="dropdownPad">PatchesToData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PrepareTrainingData.html"><span class="dropdownPad">PrepareTrainingData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/RunMuscleMap.html"><span class="dropdownPad">RunMuscleMap</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SegmentData.html"><span class="dropdownPad">SegmentData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SegmentDataGUI.html"><span class="dropdownPad">SegmentDataGUI</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ShowTrainLog.html"><span class="dropdownPad">ShowTrainLog</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SplitDataForSegmentation.html"><span class="dropdownPad">SplitDataForSegmentation</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SurfaceDistance.html"><span class="dropdownPad">SurfaceDistance</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/TrainSegmentationNetwork.html"><span class="dropdownPad">TrainSegmentationNetwork</span></a>
+     </li>
+    </ul>
+   </li>
+   <li class="dropdownmenu lastitem dropdownitem-2">
+    <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+    <ul class="sub_menu">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ApplySegmentationNetwork.html"><span class="dropdownPad">ApplySegmentationNetwork</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/AugmentImageData.html"><span class="dropdownPad">AugmentImageData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/AugmentTrainingData.html"><span class="dropdownPad">AugmentTrainingData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CheckSegmentation.html"><span class="dropdownPad">CheckSegmentation</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ClassifyData.html"><span class="dropdownPad">ClassifyData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CommonLabels.html"><span class="dropdownPad">CommonLabels</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CompareSegmentations.html"><span class="dropdownPad">CompareSegmentations</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CopyTrainedNetwork.html"><span class="dropdownPad">CopyTrainedNetwork</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/DataToPatches.html"><span class="dropdownPad">DataToPatches</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/DiceSimilarity.html"><span class="dropdownPad">DiceSimilarity</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/FindPatchDim.html"><span class="dropdownPad">FindPatchDim</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/FreezeEncoderLayers.html"><span class="dropdownPad">FreezeEncoderLayers</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetNeuralNet.html"><span class="dropdownPad">GetNeuralNet</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetTrainData.html"><span class="dropdownPad">GetTrainData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ImportITKLabels.html"><span class="dropdownPad">ImportITKLabels</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/JaccardSimilarity.html"><span class="dropdownPad">JaccardSimilarity</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelClassGrid.html"><span class="dropdownPad">MakeChannelClassGrid</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelClassImage.html"><span class="dropdownPad">MakeChannelClassImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelGrid.html"><span class="dropdownPad">MakeChannelGrid</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelImage.html"><span class="dropdownPad">MakeChannelImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeClassImage.html"><span class="dropdownPad">MakeClassImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeDistanceMap.html"><span class="dropdownPad">MakeDistanceMap</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeTrainData.html"><span class="dropdownPad">MakeTrainData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MuscleLabelToName.html"><span class="dropdownPad">MuscleLabelToName</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MuscleNameToLabel.html"><span class="dropdownPad">MuscleNameToLabel</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PatchesToData.html"><span class="dropdownPad">PatchesToData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PrepareTrainingData.html"><span class="dropdownPad">PrepareTrainingData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/RunMuscleMap.html"><span class="dropdownPad">RunMuscleMap</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SegmentData.html"><span class="dropdownPad">SegmentData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SegmentDataGUI.html"><span class="dropdownPad">SegmentDataGUI</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ShowTrainLog.html"><span class="dropdownPad">ShowTrainLog</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SplitDataForSegmentation.html"><span class="dropdownPad">SplitDataForSegmentation</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SurfaceDistance.html"><span class="dropdownPad">SurfaceDistance</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/TrainSegmentationNetwork.html"><span class="dropdownPad">TrainSegmentationNetwork</span></a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </div></header>
+    <div class="page-container menu-empty">
+  	<div class="menu-container">
+  		
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS GUIDE</span><ul class="select-container2"
+        id="select-container2">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ApplySegmentationNetwork.html"><span class="dropdownPad">ApplySegmentationNetwork</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/AugmentImageData.html"><span class="dropdownPad">AugmentImageData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/AugmentTrainingData.html"><span class="dropdownPad">AugmentTrainingData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CheckSegmentation.html"><span class="dropdownPad">CheckSegmentation</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ClassifyData.html"><span class="dropdownPad">ClassifyData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CommonLabels.html"><span class="dropdownPad">CommonLabels</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CompareSegmentations.html"><span class="dropdownPad">CompareSegmentations</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/CopyTrainedNetwork.html"><span class="dropdownPad">CopyTrainedNetwork</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/DataToPatches.html"><span class="dropdownPad">DataToPatches</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/DiceSimilarity.html"><span class="dropdownPad">DiceSimilarity</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/FindPatchDim.html"><span class="dropdownPad">FindPatchDim</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/FreezeEncoderLayers.html"><span class="dropdownPad">FreezeEncoderLayers</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetNeuralNet.html"><span class="dropdownPad">GetNeuralNet</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetTrainData.html"><span class="dropdownPad">GetTrainData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ImportITKLabels.html"><span class="dropdownPad">ImportITKLabels</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/JaccardSimilarity.html"><span class="dropdownPad">JaccardSimilarity</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelClassGrid.html"><span class="dropdownPad">MakeChannelClassGrid</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelClassImage.html"><span class="dropdownPad">MakeChannelClassImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelGrid.html"><span class="dropdownPad">MakeChannelGrid</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeChannelImage.html"><span class="dropdownPad">MakeChannelImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeClassImage.html"><span class="dropdownPad">MakeClassImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeDistanceMap.html"><span class="dropdownPad">MakeDistanceMap</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeTrainData.html"><span class="dropdownPad">MakeTrainData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MuscleLabelToName.html"><span class="dropdownPad">MuscleLabelToName</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MuscleNameToLabel.html"><span class="dropdownPad">MuscleNameToLabel</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PatchesToData.html"><span class="dropdownPad">PatchesToData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PrepareTrainingData.html"><span class="dropdownPad">PrepareTrainingData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/RunMuscleMap.html"><span class="dropdownPad">RunMuscleMap</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SegmentData.html"><span class="dropdownPad">SegmentData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SegmentDataGUI.html"><span class="dropdownPad">SegmentDataGUI</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ShowTrainLog.html"><span class="dropdownPad">ShowTrainLog</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SplitDataForSegmentation.html"><span class="dropdownPad">SplitDataForSegmentation</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SurfaceDistance.html"><span class="dropdownPad">SurfaceDistance</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/TrainSegmentationNetwork.html"><span class="dropdownPad">TrainSegmentationNetwork</span></a>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdownmenu lastitem dropdownitem-2">
+      <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+      <ul class="sub_menu">
+       <li class="dropdownmenu dropdownitem-1">
+        <a href="#" class="dropdownmenutitle see-also">Functions</a>
+        <ul class="sub_menu">
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ApplySegmentationNetwork.html"><span class="dropdownPad">ApplySegmentationNetwork</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/AugmentImageData.html"><span class="dropdownPad">AugmentImageData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/AugmentTrainingData.html"><span class="dropdownPad">AugmentTrainingData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/CheckSegmentation.html"><span class="dropdownPad">CheckSegmentation</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ClassifyData.html"><span class="dropdownPad">ClassifyData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/CommonLabels.html"><span class="dropdownPad">CommonLabels</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/CompareSegmentations.html"><span class="dropdownPad">CompareSegmentations</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/CopyTrainedNetwork.html"><span class="dropdownPad">CopyTrainedNetwork</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/DataToPatches.html"><span class="dropdownPad">DataToPatches</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/DiceSimilarity.html"><span class="dropdownPad">DiceSimilarity</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/FindPatchDim.html"><span class="dropdownPad">FindPatchDim</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/FreezeEncoderLayers.html"><span class="dropdownPad">FreezeEncoderLayers</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GetNeuralNet.html"><span class="dropdownPad">GetNeuralNet</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GetTrainData.html"><span class="dropdownPad">GetTrainData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ImportITKLabels.html"><span class="dropdownPad">ImportITKLabels</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/JaccardSimilarity.html"><span class="dropdownPad">JaccardSimilarity</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeChannelClassGrid.html"><span class="dropdownPad">MakeChannelClassGrid</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeChannelClassImage.html"><span class="dropdownPad">MakeChannelClassImage</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeChannelGrid.html"><span class="dropdownPad">MakeChannelGrid</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeChannelImage.html"><span class="dropdownPad">MakeChannelImage</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeClassImage.html"><span class="dropdownPad">MakeClassImage</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeDistanceMap.html"><span class="dropdownPad">MakeDistanceMap</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeTrainData.html"><span class="dropdownPad">MakeTrainData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MuscleLabelToName.html"><span class="dropdownPad">MuscleLabelToName</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MuscleNameToLabel.html"><span class="dropdownPad">MuscleNameToLabel</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PatchesToData.html"><span class="dropdownPad">PatchesToData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PrepareTrainingData.html"><span class="dropdownPad">PrepareTrainingData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/RunMuscleMap.html"><span class="dropdownPad">RunMuscleMap</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SegmentData.html"><span class="dropdownPad">SegmentData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SegmentDataGUI.html"><span class="dropdownPad">SegmentDataGUI</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ShowTrainLog.html"><span class="dropdownPad">ShowTrainLog</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SplitDataForSegmentation.html"><span class="dropdownPad">SplitDataForSegmentation</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SurfaceDistance.html"><span class="dropdownPad">SurfaceDistance</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/TrainSegmentationNetwork.html"><span class="dropdownPad">TrainSegmentationNetwork</span></a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul></nav>
+   <div class="main-heading"><h1 class="main-title">SegmentationTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section><div class="inner">
+   <p class="intro"><a name="36385227"></a><a href="../guide/QMRITools.html">QMRITools</a> package: functions for segmenting muscle data using convolutional neural networks.</p>
+   <div class="GuideDelimiterSubsection"><!-- --></div>
+   <p class="singleFunction"><a name="279965309"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a></span> <span class="dash">&mdash;</span> Segments out of phase Dixon muscle data.</p>
+   <p class="singleFunction"><a name="88182897"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ClassifyData.html">ClassifyData</a></span> <span class="dash">&mdash;</span> Classifies an image using a pretrained classification network.</p>
+   <p class="singleFunction"><a name="396574033"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/TrainSegmentationNetwork.html">TrainSegmentationNetwork</a></span> <span class="dash">&mdash;</span> Train a network that can be used in SegmentData.</p>
+   <p class="singleFunction"><a name="417253981"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/RunMuscleMap.html">RunMuscleMap</a></span> <span class="dash">&mdash;</span> Runs MuscleMap segmentation on a nii file or data.</p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="104860154"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/DiceSimilarity.html">DiceSimilarity</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SurfaceDistance.html">SurfaceDistance</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/JaccardSimilarity.html">JaccardSimilarity</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeDistanceMap.html">MakeDistanceMap</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/CompareSegmentations.html">CompareSegmentations</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/CommonLabels.html">CommonLabels</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="346391450"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeChannelClassImage.html">MakeChannelClassImage</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeChannelImage.html">MakeChannelImage</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeClassImage.html">MakeClassImage</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeChannelClassGrid.html">MakeChannelClassGrid</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeChannelGrid.html">MakeChannelGrid</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="49191283"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ImportITKLabels.html">ImportITKLabels</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MuscleLabelToName.html">MuscleLabelToName</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MuscleNameToLabel.html">MuscleNameToLabel</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/$SegmentationLabels.html">$SegmentationLabels</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="165822454"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/AugmentTrainingData.html">AugmentTrainingData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/AugmentImageData.html">AugmentImageData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PrepareTrainingData.html">PrepareTrainingData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GetTrainData.html">GetTrainData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/CheckSegmentation.html">CheckSegmentation</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ShowTrainLog.html">ShowTrainLog</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/DataToPatches.html">DataToPatches</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PatchesToData.html">PatchesToData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeTrainData.html">MakeTrainData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/FindPatchDim.html">FindPatchDim</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/FreezeEncoderLayers.html">FreezeEncoderLayers</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/CopyTrainedNetwork.html">CopyTrainedNetwork</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="584621530"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ApplySegmentationNetwork.html">ApplySegmentationNetwork</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SplitDataForSegmentation.html">SplitDataForSegmentation</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SegmentDataGUI.html">SegmentDataGUI</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GetNeuralNet.html">GetNeuralNet</a></span>
+   </p>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
 </html>

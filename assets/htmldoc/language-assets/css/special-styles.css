@@ -377,6 +377,7 @@
 .special-character.Iota,
 .special-character.Kappa,
 .special-character.KernelIcon,
+.special-character.KeyBar,
 .special-character.Koppa,
 .special-character.Lambda,
 .special-character.LastPage,
@@ -562,8 +563,10 @@
 .special-character.ScriptZero,
 .special-character.SelectionPlaceholder,
 .special-character.ShiftKey,
+.special-character.ShortDownArrow,
 .special-character.ShortLeftArrow,
 .special-character.ShortRightArrow,
+.special-character.ShortUpArrow,
 .special-character.Sigma,
 .special-character.SpaceKey,
 .special-character.SpanFromAbove,
@@ -663,6 +666,8 @@
 
 .ThinSpace { display: inline-block; margin: 0 .1rem; }
 .NonBreakingSpace { white-space: nowrap; font-size: 0 }
+p.singleFunction span.special-character.NonBreakingSpace { white-space: nowrap; font-size: 1rem;}
+.GuideText span.special-character.NonBreakingSpace { white-space: nowrap; font-size: 1rem;}
 .functionList .NonBreakingSpace, .inlineFunctionList .NonBreakingSpace { display: none; }
 
 .IF a { margin: 0 2px 0 0; }
@@ -671,6 +676,23 @@
 .IFSans, span.IFSansUnlinked { font-weight: 400; color: #636363; font-size: .88rem; }
 .IFSans a { font-size: .96rem; font-weight: 600; }
 .TI { font-family: "Times New Roman", Times, serif; font-style: italic; font-weight: 400; font-size: 1rem; line-height: 1.1; }
+
+.functionIntro .usage-head .TI,
+.functionIntro .usage-head .TI *,
+.functionIntro .usage-head .IF,
+.functionIntro .usage-head .IF *,
+.functionIntro .usage-head .code.clipboard-inline * {
+    /* font-weight: 600 !important; */
+}
+
+.functionIntro .code.clipboard-inline .TI,
+.functionIntro .code.clipboard-inline .TI *,
+.functionIntro .code.clipboard-inline .IF,
+.functionIntro .code.clipboard-inline .IF *,
+.functionIntro .code.clipboard-inline * {
+    /* font-weight: 600 !important; */
+}
+
 .IF .comma, .MathTable .comma { margin: 0 4px 0 1px; }
 .IF .openbrace, .MathTable .openbrace { margin: 0 2px 0 2px; }
 
@@ -701,7 +723,7 @@ pre { margin: .67rem 0 1.33rem; background: #f2f2f2; border: 1px solid #d5d5d5; 
 
 .Code pre { margin: 0; }
 
-.Program pre { white-space: pre; margin: 0; }
+.Program pre { white-space: pre-wrap; margin: 0; }
 
 .Message { vertical-align: middle; }
 section ul.functionList li.MessageNote { line-height: 1; }
@@ -754,6 +776,26 @@ table .special-character.GraySquare, table .special-character.GrayCircle { color
 .Notes li { position: relative; margin: .3rem 0 0 .7rem; }
 
 .ServiceAbstract { color: #888; }
+
+.specialcharacters .textfunction {
+margin-left:3px;
+margin-right:3px;
+}
+.specialcharacters .textfunction .verticalbar {
+margin:0 -1px 0 0;
+font-family: monospace;
+font-size: 80%;
+}
+
+.specialcharacters .textrule {
+font-family: monospace;
+font-size: 80%;
+}
+
+.specialcharacters .textruledelayed {
+font-family: monospace;
+font-size: 80%;
+}
 
 @font-face {
     font-family: 'Mathematica';

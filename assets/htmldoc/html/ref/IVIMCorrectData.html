@@ -1,71 +1,126 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>IVIMCorrectData&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
-<meta name="keywords" content="IVIMCorrectData" />
-
-<meta name="description" content="IVIMCorrectData[data, {s0, f, pdc}, bval] removes the ivim signal from the data. data is the original data. {{s0s0, f, pdc} are the solution to a 2 compartment IVIM fit using IVIMCalc or BayesianIVIMFit2. bval are the bvalues. The fraction is defined between 0 and 1, the pdc is in mm^2/s. output is the corrected data." />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'IVIMCorrectData.en';</script>
-</head>
-
-<body id="ref" class="package">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">IVIMCorrectData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsIVIMTools/ref/IVIMCorrectData.html">IVIMCorrectData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">s</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">f</span><span class="comma">,</span><span class="TI">pdc</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">bval</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">removes the ivim signal from the <span class="IF"><span class="TI">data</span></span>. <span class="IF"><span class="TI">data</span></span> is the original <span class="IF"><span class="TI">data</span></span>. {<span class="IF"><span class="TI"><span class="openbrace">{</span>s0</span></span>s0, <span class="IF"><span class="TI">f</span></span>, <span class="IF"><span class="TI">pdc<span class="closebrace">}</span></span></span> are the solution to a 2 compartment IVIM fit using <span class="IF"><a class="package-symbol" href="../ref/IVIMCalc.html">IVIMCalc</a></span> or <span class="IF"><a class="package-symbol" href="../ref/BayesianIVIMFit2.html">BayesianIVIMFit2</a></span>. bval are the bvalues. The fraction is defined between 0 and 1, the pdc is in mm^2/s. output is the corrected data.</p>
-  </div>
- </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
-   <div class="hideable">
-    <ul class="functionList">
-     <li><a name="2773309"></a>The following options can be given: </li>
-     <li class="NotesTable">
-      <a name="220792486"></a>
-      <table>
-       <col width="1%" />
-       <col width="28%" />
-       <col width="28%" />
-       <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/FilterMaps.html">FilterMaps</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FilterMaps.html">FilterMaps</a></span> is an option for <span class="IF">IVIMCorrectData</span>. If <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> the IVIM parameter maps are filtered before signal correction.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FilterType.html">FilterType</a></td><td>&quot;Median&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FilterType.html">FilterType</a></span> is an option for <span class="IF">IVIMCorrectData</span>. If <span class="IF"><a class="package-symbol" href="../ref/FilterMaps.html">FilterMaps</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it tells which filter to use. can be &quot;Median&quot; of &quot;Gausian&quot;.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/FilterSize.html">FilterSize</a></td><td>1</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/FilterSize.html">FilterSize</a></span> is an option for <span class="IF">IVIMCorrectData</span>. If <span class="IF"><a class="package-symbol" href="../ref/FilterMaps.html">FilterMaps</a></span> is <span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it gives the kernel size.</span></td></tr>
-      </table>
-     </li>
-    </ul>
-   </div>
-  </div></section><section id="Examples"><h1 id="76578423" class="toggle open">Examples</h1><div class="hideable">
-   <div id="39670052"
-       class="clipboard-input"
-       data-in="In[1]:="
-       data-in-num="1"
-       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-       data-src="Files/IVIMCorrectData.en/I_1.png"
-       data-in-width="126"
-       data-in-height="18"
-       data-link="https://wolfram.com/xid/0vjz9r0e8j6hftq49mvzjvhlw5av2-xwjv6"
-       data-code="Files\IVIMCorrectData.en\i_1.txt"
-       ></div>
-   <div class="clear"><!-- --></div>
-  </div></section>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>IVIMCorrectData&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="IVIMCorrectData" />
+
+<meta name="description" content="IVIMCorrectData[data, {s0, f, pdc}, bval] removes the ivim signal from the data. data is the original data. {{s0s0, f, pdc} are the solution to a 2 compartment IVIM fit using IVIMCalc or BayesianIVIMFit2. bval are the bvalues. The fraction is defined between 0 and 1, the pdc is in mm^2/s. output is the corrected data." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'IVIMCorrectData.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+    <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div translate="no" class="title" id="title">IVIMCorrectData</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+ </div></header>
+    <div class="page-container menu-full">
+  	<div class="menu-container">
+  		<div class="menu-nav">
+ <div class="usage-container">
+  <div class="menu-item">
+   <div data-id="FunctionIntroduction"
+       class="menu-link function-usage-box">
+    <div class="sidebarfunctionIntroWrap">
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/IVIMCorrectData.html">IVIMCorrectData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">s</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">f</span><span class="comma">,</span><span class="TI">pdc</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">bval</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">removes the ivim signal from the <span class="IF"><span class="TI">data</span></span>. <span class="IF"><span class="TI">data</span></span> is the original <span class="IF"><span class="TI">data</span></span>. {<span class="IF"><span class="TI"><span class="openbrace">{</span>s0</span></span>s0, <span class="IF"><span class="TI">f</span></span>, <span class="IF"><span class="TI">pdc<span class="closebrace">}</span></span></span> are the solution to a 2 compartment IVIM fit using <span class="IF"><a translate="no" class="package-symbol" href="../ref/IVIMCalc.html">IVIMCalc</a></span> or BayesianIVIMFit2. bval are the bvalues. The fraction is defined between 0 and 1, the pdc is in mm^2/s. output is the corrected data.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="details-and-options-container menu-link"
+     data-id="DetailsAndOptions">
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions" class="menu-link details-and-options-label">Details</div>
+  </div>
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions"
+       class="menu-link details-and-options-image-container">
+    <img src="../../language-assets/img/DetailsOptions-gray.png"
+        alt="Details and Options"
+        class="box-image gray-image" />
+    <img src="../../language-assets/img/DetailsOptions-hover.png"
+        alt="Details and Options"
+        class="box-image hover-image" />
+   </div>
+  </div>
+ </div>
+ 
+</div>
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS SYMBOL</span></nav>
+   <div class="ContextNameCell">QMRITools`</div>
+   <div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 translate="no" class="main-title">IVIMCorrectData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section class="function-wrapper"><div class="inner">
+   <div class="functionIntroWrap">
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/IVIMCorrectData.html">IVIMCorrectData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">s</span><sub><span class="TR">0</span></sub><span class="comma">,</span><span class="TI">f</span><span class="comma">,</span><span class="TI">pdc</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">bval</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">removes the ivim signal from the <span class="IF"><span class="TI">data</span></span>. <span class="IF"><span class="TI">data</span></span> is the original <span class="IF"><span class="TI">data</span></span>. {<span class="IF"><span class="TI"><span class="openbrace">{</span>s0</span></span>s0, <span class="IF"><span class="TI">f</span></span>, <span class="IF"><span class="TI">pdc<span class="closebrace">}</span></span></span> are the solution to a 2 compartment IVIM fit using <span class="IF"><a translate="no" class="package-symbol" href="../ref/IVIMCalc.html">IVIMCalc</a></span> or BayesianIVIMFit2. bval are the bvalues. The fraction is defined between 0 and 1, the pdc is in mm^2/s. output is the corrected data.</p>
+    </div>
+   </div>
+  </div></section><section id="DetailsAndOptions" class="preview-wrapper"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="details-preview">
+    <div class="hideable">
+     <ul class="functionList">
+      <li><a name="52147332"></a>The following options can be given: </li>
+      <li class="NotesTable"
+          translate="no">
+       <a name="210644584"></a>
+       <table>
+        <col width="1%" />
+        <col width="28%" />
+        <col width="28%" />
+        <col width="43%" />
+        <tr class="lineAbove" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/FilterMaps.html">FilterMaps</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT" translate="yes">FilterMaps is an option for <span class="IF">IVIMCorrectData</span>. If <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span> the IVIM parameter maps are filtered before signal correction.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/FilterType.html">FilterType</a></td><td>&quot;Median&quot;</td><td><span class="TT" translate="yes">FilterType is an option for <span class="IF">IVIMCorrectData</span>. If FilterMaps is <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it tells which filter to use. can be &quot;Median&quot; of &quot;Gaussian&quot;.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/FilterSize.html">FilterSize</a></td><td>1</td><td><span class="TT" translate="yes">FilterSize is an option for <span class="IF">IVIMCorrectData</span>. If FilterMaps is <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span> it gives the kernel size.</span></td></tr>
+       </table>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
 </html>

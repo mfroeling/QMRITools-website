@@ -42,3 +42,4 @@ body#guide .align-right, body#guide .inlineFunctionList .align-right { right: 0;
 #guide .expanded:after { transform: rotate(-135deg); top: 6px; }
 #guide .more-container { display: none; }
 #guide .intro .IFSans { position: relative; }
+

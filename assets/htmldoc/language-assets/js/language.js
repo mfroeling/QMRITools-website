@@ -8,7 +8,21 @@ $(document).ready(function(){
         $('.clearfield').hide();
         $('#query').focus();
     })
+    
+    $('.stickyclearfield').click(function(e){
+        e.preventDefault();
+        $('#sticky-query').prop('value', '');
+        $('.stickyclearfield').hide();
+        $('#sticky-query').focus();
+    })
     $("#ref-search-form").submit(function() {
+        const queryVal = $("#query").val().trim();
+
+		if (!queryVal) {
+			// If input is blank (or whitespace), do nothing
+			return false;
+		}
+
         $.ajax({
             type: "GET",
             traditional: true,
@@ -37,6 +51,120 @@ $(document).ready(function(){
         });
         return false;
     });
+    
+    $("#sticky-ref-search-form").submit(function() {
+    	const queryVal = $("#sticky-query").val().trim();
+
+		if (!queryVal) {
+			// If input is blank (or whitespace), do nothing
+			return false;
+		}
+    
+        $.ajax({
+            type: "GET",
+            traditional: true,
+            url: "/search-api/search.json",
+            dataType: "json",
+            data: {
+                query: $("#sticky-query").val(),
+                limit: 3,
+                disableSpelling: true,
+                collection: ["documentation10"],
+                fields: "uri,title"
+            },
+
+            success: function(data) {
+                if(data.adResult) {
+                    if(data.adResult.fields.title[0] == $("#sticky-query").val()) {
+                        location.href = "/language/" + data.adResult.fields.uri[0] + ".html?q=" + encodeURIComponent($("#sticky-query").val());
+                    } else {
+                            location.href = "/search/?q="+ encodeURIComponent($("#sticky-query").val());
+                    }
+                } else {
+                    location.href = "/search/?q="+ encodeURIComponent($("#sticky-query").val());
+                }
+            }
+
+        });
+        return false;
+    });
+    
+  $("#expanded-search-form").submit(function() {
+      	const queryVal = $("#expanded-query").val().trim();
+
+		if (!queryVal) {
+			// If input is blank (or whitespace), do nothing
+			return false;
+		}
+  
+        $.ajax({
+            type: "GET",
+            traditional: true,
+            url: "/search-api/search.json",
+            dataType: "json",
+            data: {
+                query: $("#expanded-query").val(),
+                limit: 3,
+                disableSpelling: true,
+                collection: ["documentation10"],
+                fields: "uri,title"
+            },
+
+            success: function(data) {
+                if(data.adResult) {
+                    if(data.adResult.fields.title[0] == $("#expanded-query").val()) {
+                        location.href = "/language/" + data.adResult.fields.uri[0] + ".html?q=" + encodeURIComponent($("#expanded-query").val());
+                    } else {
+                            location.href = "/search/?q="+ encodeURIComponent($("#expanded-query").val());
+                    }
+                } else {
+                    location.href = "/search/?q="+ encodeURIComponent($("#expanded-query").val());
+                }
+            }
+
+        });
+        return false;
+    });
+    
+    $(document).on("submit", "#sticky-expanded-search-form", function (e) {
+	    e.preventDefault(); // prevent normal form submission
+
+      	const queryVal = $("#sticky-expanded-query").val().trim();
+
+		if (!queryVal) {
+			// If input is blank (or whitespace), do nothing
+			return false;
+		}
+
+        $.ajax({
+            type: "GET",
+            traditional: true,
+            url: "/search-api/search.json",
+            dataType: "json",
+            data: {
+                query: $("#sticky-expanded-query").val(),
+                limit: 3,
+                disableSpelling: true,
+                collection: ["documentation10"],
+                fields: "uri,title"
+            },
+
+            success: function(data) {
+                if(data.adResult) {
+                    if(data.adResult.fields.title[0] == $("#sticky-expanded-query").val()) {
+                        location.href = "/language/" + data.adResult.fields.uri[0] + ".html?q=" + encodeURIComponent($("#sticky-expanded-query").val());
+                    } else {
+                            location.href = "/search/?q="+ encodeURIComponent($("#sticky-expanded-query").val());
+                    }
+                } else {
+                    location.href = "/search/?q="+ encodeURIComponent($("#sticky-expanded-query").val());
+                }
+            }
+
+        });
+        return false;
+    });
+    
     if(window.location.search.length) {
         if(window.location.search.indexOf('q=') > -1) {
             $('.search #query').prop('value', decodeURIComponent(window.location.search.split('q=')[1]));
@@ -52,9 +180,21 @@ $(document).on('ready change keyup', function(){
         $('.clearfield').hide();
     }
 });
+$(document).on('ready change keyup', function(){
+    if($('#sticky-query').prop('value') == '') {
+        $('.stickyclearfield').hide();
+    }
+});
+
 $(document).on('keyup ready', function(){
     if($('#query').prop('value') !== '') {
         $('.clearfield').show();
+    }
+});
+
+$(document).on('keyup ready', function(){
+    if($('#sticky-query').prop('value') !== '') {
+        $('.stickyclearfield').show();
     }
 });
 $(document).ready(function() {
@@ -70,11 +210,11 @@ $(document).ready(function() {
    Sticky header
    ========================================================================== */
 // Hide header on on scroll down
-var didScroll;
+var didScroll = true;
 var scrollPosition = 0;
 var delta = 5;
-var navbarHeight = $('.header').height() + $('.main-heading-wrapper').height();
-var stickyHeight = $('.main-heading-wrapper').not('.sticky').outerHeight()+50;
+var navbarHeight = $('.main-header').height() + 20;
+var stickyHeight = $('.stickyheader').not('.sticky-active').outerHeight();
 
 var alphabet = $('.AlphabetListingJumpTo');
 if(alphabet.length) {
@@ -101,17 +241,15 @@ function hasScrolled() {
 
     // If scrolled down and past the navbar
     // This is necessary so you never see what is "behind" the navbar.
-    if (currentScrollPosition > scrollPosition || currentScrollPosition < navbarHeight) {
+    if (currentScrollPosition < navbarHeight) {
         // Scroll down
-        $('.main-heading-wrapper').removeClass('sticky');
-        $('.filler').remove();
+        $('body').removeClass('main-header-inactive');
+        $('.stickyheader').removeClass('sticky-active');
     }
-    else if (currentScrollPosition + 50 < scrollPosition) {
+    else if (currentScrollPosition > navbarHeight) {
         // Scroll up
-        $('.main-heading-wrapper').addClass('sticky');
-        if(!$('.main-heading-wrapper').next('.filler').length) {
-            $('.main-heading-wrapper').after('<div class="filler" style="height: '+navbarHeight+'px"></div>');
-        } 
+        $('.stickyheader').addClass('sticky-active');
+        $('body').addClass('main-header-inactive');
     } else {
         $('.dropdown').find('.hover').removeClass('hover');
     }

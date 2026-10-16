@@ -70,8 +70,41 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function () {
+  $('a[href*="#"]').on('click', function (e) {
+    // Get the path and hash from the href
+    const pathname = this.pathname.replace(/^\//, '');
+    const locationPath = location.pathname.replace(/^\//, '');
+
+    // Only handle same-page anchors
+    if (pathname === locationPath && this.hostname === location.hostname) {
+      const hash = this.hash;
+      let $target = $(hash);
+
+		if (!$target.length) {
+			$target = $('[name="' + hash.slice(1) + '"]');
+		}
+
+      if ($target.length) {
+        e.preventDefault();
+
+        const offset = 101; // adjust to match your sticky header height
+
+        $('html, body').animate({
+          scrollTop: $target.offset().top - offset
+        }, 500); // 500ms for smooth scrolling
+
+        // Optionally update the URL hash without jumping
+        history.pushState(null, null, hash);
+      }
+    }
+  });
+});
+
+
+
 /* ==========================================================================
-   Highlight
+   Highlight changes
    ========================================================================== */
     $('.main-heading').on('click', '.highlight-link', function() {
         $('highlighting').not('.highlight-link').toggleClass('highlighting');
@@ -81,6 +114,26 @@ $(document).ready(function(){
             $('.HighlightableSection h1, .alternateHeader h1').toggleClass('highlighting');
         }
     });
+/* ==========================================================================
+   Highlight modified options
+   ========================================================================== */
+if ($('.HighlightOptionsCheckbox').hasClass('highlight')) {
+  $('.HighlightOptionsCheckbox').prop('checked', true);
+} else {
+  $('.HighlightOptionsCheckbox').prop('checked', false);
+}
+   
+$('#ListAllOptions').on('load change click', '.HighlightOptionsCheckbox', function() {
+  if($('.HighlightOptionsCheckbox').is(':checked')) {
+    $('option-highlighting').not('.HighlightOptionsCheckbox').addClass('option-highlighting');
+    $('.HighlightOptionsCheckbox').addClass('option-highlighting');
+    $('.modified-option').addClass('option-highlighting');
+  } else {
+    $('option-highlighting').not('.HighlightOptionsCheckbox').removeClass('option-highlighting');
+    $('.HighlightOptionsCheckbox').removeClass('option-highlighting');
+    $('.modified-option').removeClass('option-highlighting');
+  }
+});
 /* ==========================================================================
    Tooltips in top icons
    ========================================================================== */

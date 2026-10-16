@@ -24,8 +24,10 @@
 .products:before { content: ''; background-image: url('../img/wolfram-language2x.png'); background-size: 30px 30px; width: 30px; height: 30px; display: inline-block; }
 .feedback:before { content: ''; background: url('../img/feedback2x.png') no-repeat center 0; background-size: 20px 32px; width: 22px; height: 16px; display: inline-block; margin: 0 3px 0 0; top: .15rem; position: relative; right: .2rem; }
 .feedback:hover:before { background-position: center -16px; }
-.NotesThumbnails:before { content: ''; background: url('../img/details-magnify2x.png'); background-size: 25px 50px; width: 25px; height: 25px; display: inline-block; bottom: 0; left: 3rem; top: 0; margin: auto; position: absolute; z-index: 11; }
+.NotesThumbnails:before { content: ''; background: url('../img/details-magnify2x.png'); background-size: 25px 50px; width: 25px; height: 25px; display: inline-block; bottom: 0; left: 3rem; top: 0; margin: auto; position: absolute; z-index: 9; }
+.ListOptionsThumbnails:before { content: ''; background: url('../img/details-magnify2x.png'); background-size: 25px 50px; width: 25px; height: 25px; display: inline-block; bottom: 0; left: 3rem; top: 0; margin: auto; position: absolute; z-index: 11; }
 #DetailsAndOptions:hover .NotesThumbnails:before { background-position: left bottom; }
+#ListAllOptions:hover .ListOptionsThumbnails:before { background-position: left bottom; }
 .animation:hover .playAnimation + span:before { content: ''; background: url('../img/animation2x.png') 0 -50px; background-size: 100px; width: 50px; height: 50px; display: inline-block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
 .service-credit:before { content: ''; background-image: url('../img/service-credit2x.png'); background-size: 20px 20px; width: 20px; height: 20px; display: inline-block; }
 .AwaitingReviewNote .inner:before, .ObsolescenceNote .inner:before { content: ''; width: 24px; height: 21px; background: url('../img/warning2x.png') no-repeat center center; background-size: 24px 21px; position: absolute;  top: 0; bottom: 0; margin: auto; left: 0; }

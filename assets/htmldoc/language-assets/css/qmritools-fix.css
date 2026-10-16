@@ -1,0 +1,3 @@
+html { border-top: 0 !important; }
+html, body { background: #fff !important; }
+#_header, #_footer, #_footer-offset, .input-container, .search-content, #sticky-search-toggle { display: none !important; }

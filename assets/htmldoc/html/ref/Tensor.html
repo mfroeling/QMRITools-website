@@ -1,93 +1,172 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>Tensor&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
-<meta name="keywords" content="Tensor" />
-
-<meta name="description" content="Tensor[{l1, l2, l3}] creates a diffuison tensor with vectors {{0,0,1},{0,1,0},{1,0,0}} and eigenvalues {l1, l2, l3}. Tensor[{l1,l2,l3},{e1,e2,e3}] creates a diffuison tensor with vectors {e1, e2, e3} and eigenvalues {l1, l2, l3}. Tensor[{l1,l2,l3},&quot;Random&quot;] creates a diffuison tensor with random orthogonal eigenvectors {{e1e1, e2, e2} and eigenvalues {l1, l2, l3}. Tensor[{l1, l2, l3}, &quot;RandomZ&quot;] creates a diffuison tensor with random orthogonal eigenvectors {{1,0,0}, e2, e3} with random eigenvectors and eigenvalues {l1, l2, l3}. Tensor[{l1,l2,l3},&quot;OrtRandom&quot;] creates a diffuison tensor with random orthogonal eigenvectors {{1,0,0},{0,1,0},{0,0,1}} and eigenvalues {l1, l2, l3l3}}. Tensor[] is based on DOI: 10.1002/nbm.2959." />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'Tensor.en';</script>
-</head>
-
-<body id="ref" class="package">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">Tensor</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSimulationTools/ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">l</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">3</span></sub><span class="closebrace">}</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">creates a diffuison tensor with vectors {{0,0,1},{0,1,0},{1,0,0}} and eigenvalues {l1, l2, l3}. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">Tensor[<span class="IF"><span class="TI"><span class="openbrace">{</span>l1</span></span>,l2,l3},{e1,e2,e3}]</p>
-   <p class="code-description">creates a diffuison tensor with vectors {e1, e2, e3} and eigenvalues {l1, <span class="IF"><span class="TI">l2</span></span>, l3}. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">Tensor[{l1,l2,<span class="IF"><span class="TI">l3<span class="closebrace">}</span></span></span>,&quot;Random&quot;]</p>
-   <p class="code-description">creates a diffuison tensor with random orthogonal eigenvectors {<span class="IF"><span class="TI"><span class="openbrace">{</span>e1</span></span>e1, <span class="IF"><span class="TI">e2</span></span>, e2} and eigenvalues {l1, l2, l3}. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSimulationTools/ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">l</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">3</span></sub><span class="closebrace">}</span><span class="comma">,</span>&quot;RandomZ&quot;<span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">creates a diffuison tensor with random orthogonal eigenvectors {{1,0,0}, e2, <span class="IF"><span class="TI">e3<span class="closebrace">}</span></span></span> with random eigenvectors and eigenvalues {l1, l2, l3}. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">Tensor[<span class="IF"><span class="TI"><span class="openbrace">{</span>l1</span></span>,l2,l3},&quot;OrtRandom&quot;]</p>
-   <p class="code-description">creates a diffuison tensor with random orthogonal eigenvectors {{1,0,0},{0,1,0},{0,0,1}} and eigenvalues {l1, <span class="IF"><span class="TI">l2</span></span>, l3<span class="IF"><span class="TI">l3<span class="closebrace">}</span></span></span>}. </p>
-  </div>
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSimulationTools/ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">is based on DOI: 10.1002/nbm.2959.</p>
-  </div>
- </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
-   <div class="hideable">
-    <ul class="functionList">
-     <li><a name="414909459"></a>The following options can be given: </li>
-     <li class="NotesTable">
-      <a name="4450718"></a>
-      <table>
-       <col width="1%" />
-       <col width="28%" />
-       <col width="28%" />
-       <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/TensOutput.html">TensOutput</a></td><td>&quot;Vector&quot;</td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/TensOutput.html">TensOutput</a></span> is an option for <span class="IF">Tensor</span>. Values can be &quot;Vector&quot; or &quot;Matrix&quot;.</span></td></tr>
-      </table>
-     </li>
-    </ul>
-   </div>
-  </div></section><section id="Examples"><h1 id="262298836" class="toggle open">Examples</h1><div class="hideable">
-   <div id="580700836"
-       class="clipboard-input"
-       data-in="In[1]:="
-       data-in-num="1"
-       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-       data-src="Files/Tensor.en/I_1.png"
-       data-in-width="126"
-       data-in-height="18"
-       data-link="https://wolfram.com/xid/0jzye1emkh6hk9e4ci-jv0pw2"
-       data-code="Files\Tensor.en\i_1.txt"
-       ></div>
-   <div class="clear"><!-- --></div>
-  </div></section>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>Tensor&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="Tensor" />
+
+<meta name="description" content="Tensor[{l1, l2, l3}] creates a diffusion tensor with vectors {{0,0,1},{0,1,0},{1,0,0}} and eigenvalues {l1, l2, l3}. Tensor[{l1,l2,l3},{e1,e2,e3}] creates a diffusion tensor with vectors {e1, e2, e3} and eigenvalues {l1, l2, l3}. Tensor[{l1,l2,l3},Random] creates a diffusion tensor with random orthogonal eigenvectors {{e1e1, e2, e2} and eigenvalues {l1, l2, l3}. Tensor[{l1, l2, l3}, RandomZ] creates a diffusion tensor with random orthogonal eigenvectors {{1,0,0}, e2, e3} with random eigenvectors and eigenvalues {l1, l2, l3}. Tensor[{l1,l2,l3},OrtRandom] creates a diffusion tensor with random orthogonal eigenvectors {{1,0,0},{0,1,0},{0,0,1}} and eigenvalues {l1, l2, l3l3}}. Tensor[] is based on DOI: 10.1002/nbm.2959." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'Tensor.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+    <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div translate="no" class="title" id="title">Tensor</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+ </div></header>
+    <div class="page-container menu-full">
+  	<div class="menu-container">
+  		<div class="menu-nav">
+ <div class="usage-container">
+  <div class="menu-item">
+   <div data-id="FunctionIntroduction"
+       class="menu-link function-usage-box">
+    <div class="sidebarfunctionIntroWrap tallUsage">
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">l</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">3</span></sub><span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">creates a diffusion tensor with vectors {{0,0,1},{0,1,0},{1,0,0}} and eigenvalues {l1, l2, l3}. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">Tensor[<span class="IF"><span class="TI"><span class="openbrace">{</span>l1</span></span>,l2,l3},{e1,e2,e3}]</p>
+      <p class="code-description">creates a diffusion tensor with vectors {e1, e2, e3} and eigenvalues {l1, <span class="IF"><span class="TI">l2</span></span>, l3}. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">Tensor[{l1,l2,<span class="IF"><span class="TI">l3<span class="closebrace">}</span></span></span>,&quot;Random&quot;]</p>
+      <p class="code-description">creates a diffusion tensor with random orthogonal eigenvectors {<span class="IF"><span class="TI"><span class="openbrace">{</span>e1</span></span>e1, <span class="IF"><span class="TI">e2</span></span>, e2} and eigenvalues {l1, l2, l3}. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">l</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">3</span></sub><span class="closebrace">}</span><span class="comma">,</span>&quot;RandomZ&quot;<span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">creates a diffusion tensor with random orthogonal eigenvectors {{1,0,0}, e2, <span class="IF"><span class="TI">e3<span class="closebrace">}</span></span></span> with random eigenvectors and eigenvalues {l1, l2, l3}. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">Tensor[<span class="IF"><span class="TI"><span class="openbrace">{</span>l1</span></span>,l2,l3},&quot;OrtRandom&quot;]</p>
+      <p class="code-description">creates a diffusion tensor with random orthogonal eigenvectors {{1,0,0},{0,1,0},{0,0,1}} and eigenvalues {l1, <span class="IF"><span class="TI">l2</span></span>, l3<span class="IF"><span class="TI">l3<span class="closebrace">}</span></span></span>}. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">is based on DOI: 10.1002/nbm.2959.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="details-and-options-container menu-link"
+     data-id="DetailsAndOptions">
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions" class="menu-link details-and-options-label">Details</div>
+  </div>
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions"
+       class="menu-link details-and-options-image-container">
+    <img src="../../language-assets/img/DetailsOptions-gray.png"
+        alt="Details and Options"
+        class="box-image gray-image" />
+    <img src="../../language-assets/img/DetailsOptions-hover.png"
+        alt="Details and Options"
+        class="box-image hover-image" />
+   </div>
+  </div>
+ </div>
+ 
+</div>
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS SYMBOL</span></nav>
+   <div class="ContextNameCell">QMRITools`</div>
+   <div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 translate="no" class="main-title">Tensor</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section class="function-wrapper"><div class="inner">
+   <div class="functionIntroWrap">
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">l</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">3</span></sub><span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">creates a diffusion tensor with vectors {{0,0,1},{0,1,0},{1,0,0}} and eigenvalues {l1, l2, l3}. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">Tensor[<span class="IF"><span class="TI"><span class="openbrace">{</span>l1</span></span>,l2,l3},{e1,e2,e3}]</p>
+     <p class="code-description">creates a diffusion tensor with vectors {e1, e2, e3} and eigenvalues {l1, <span class="IF"><span class="TI">l2</span></span>, l3}. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">Tensor[{l1,l2,<span class="IF"><span class="TI">l3<span class="closebrace">}</span></span></span>,&quot;Random&quot;]</p>
+     <p class="code-description">creates a diffusion tensor with random orthogonal eigenvectors {<span class="IF"><span class="TI"><span class="openbrace">{</span>e1</span></span>e1, <span class="IF"><span class="TI">e2</span></span>, e2} and eigenvalues {l1, l2, l3}. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">l</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="TI">l</span><sub><span class="TR">3</span></sub><span class="closebrace">}</span><span class="comma">,</span>&quot;RandomZ&quot;<span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">creates a diffusion tensor with random orthogonal eigenvectors {{1,0,0}, e2, <span class="IF"><span class="TI">e3<span class="closebrace">}</span></span></span> with random eigenvectors and eigenvalues {l1, l2, l3}. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">Tensor[<span class="IF"><span class="TI"><span class="openbrace">{</span>l1</span></span>,l2,l3},&quot;OrtRandom&quot;]</p>
+     <p class="code-description">creates a diffusion tensor with random orthogonal eigenvectors {{1,0,0},{0,1,0},{0,0,1}} and eigenvalues {l1, <span class="IF"><span class="TI">l2</span></span>, l3<span class="IF"><span class="TI">l3<span class="closebrace">}</span></span></span>}. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/Tensor.html">Tensor</a><span class="openbracket">[</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">is based on DOI: 10.1002/nbm.2959.</p>
+    </div>
+   </div>
+  </div></section><section id="DetailsAndOptions" class="preview-wrapper"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="details-preview">
+    <div class="hideable">
+     <ul class="functionList">
+      <li><a name="444459087"></a>The following options can be given: </li>
+      <li class="NotesTable"
+          translate="no">
+       <a name="221656543"></a>
+       <table>
+        <col width="1%" />
+        <col width="28%" />
+        <col width="28%" />
+        <col width="43%" />
+        <tr class="lineAbove" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/TensOutput.html">TensOutput</a></td><td>&quot;Vector&quot;</td><td><span class="TT" translate="yes">TensOutput is an option for <span class="IF">Tensor</span>. Values can be &quot;Vector&quot; or &quot;Matrix&quot;.</span></td></tr>
+       </table>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
 </html>

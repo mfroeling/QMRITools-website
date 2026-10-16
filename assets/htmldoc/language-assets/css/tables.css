@@ -4,6 +4,7 @@
 table { position: relative; width: 80%; margin: 0 0 1rem; border-collapse: collapse; font-size: .92rem; vertical-align: top; }
 ul.functionList li.NotesTable:before { display: none; }
 #DetailsAndOptions ul.functionList li.NotesTable { margin: 0; text-indent: 0; }
+#ListAllOptions ul.functionList li.NotesTable { margin: 0; text-indent: 0; }
 .NotesTable a:empty { font-size: 0; }
 .NotesTable td { border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7; padding: .33rem .2rem; line-height: 145%; vertical-align: top; text-indent: 0; word-break: break-word; }
 .NotesTable td:first-child { padding: 0; }
@@ -65,8 +66,8 @@ ul.functionList li.functionTable { margin: 0; }
     .NotesTable td { border-top: 0; border-bottom: 0; }
     .NotesTable td:first-child { padding: 0; }
     .NotesTable colgroup { display: none; }
-    .NotesTable.three-col td:nth-child(2) { display: inline-block; padding-bottom: 0; }
-    .NotesTable.three-col td:nth-child(3) { font-weight: normal; display: inline-block; padding-bottom: 0; padding-right: 0; float: right; color: #333; }
+    .NotesTable.three-col td:nth-child(2) { display: inline-block; padding-bottom: 0; width: 45%; }
+    .NotesTable.three-col td:nth-child(3) { font-weight: normal; display: inline-block; padding-bottom: 0; padding-right: 0; float: right; color: #333; width: 45%; }
     .NotesTable.three-col td:nth-child(3) a { color: #333; font-weight: normal; }
     .NotesTable.three-col td:nth-child(4) { border-bottom: 1px solid #ddd; display: block; width: 100%; padding-left: 1.33rem; padding-top: 0; }
     .NotesTable.two-col td:nth-child(2) { display: block; width: 100%; padding-bottom: 0; }

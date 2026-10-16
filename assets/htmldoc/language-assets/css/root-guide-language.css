@@ -17,6 +17,7 @@ Color variables so it's easier to manage
 }
 
 body#languageRootGuide { background: #4b4b4b; }
+body#languageRootGuide div#IPstripe-wrap {padding: 0 !important;}
 #languageRootGuide .header { background: #4b4b4b; }
 #languageRootGuide .header .inner { padding: 3rem 1rem 2rem; max-width: 1180px; }
 #languageRootGuide .main { margin: 0; background: #4b4b4b; padding: 0; overflow: hidden; }
@@ -153,8 +154,8 @@ html[lang="ja"] #languageRootGuide .list-table~.resources:before { content: '関
 html[lang="zh"] #languageRootGuide .list-table~.resources:before { content: '更多相关函数：';}
 #languageRootGuide .related-in { background-size: 14px auto !important; background-position: left top; color: #828282; display: block !important; font-size: 12px !important; padding: 0 0 10px 18px !important; margin: 0; line-height: .7; }
 #languageRootGuide .related-in .chevron-after:after { font-size: 16px; line-height: .7; position: relative; top: 1px; }
-#languageRootGuide a.function { background-image: url('/language-assets/img/wolfram-function-repository.png'); background-repeat: no-repeat; }
-#languageRootGuide a.data { background-image: url('/language-assets/img/wolfram-data-repository.png'); background-repeat: no-repeat; }
+#languageRootGuide a.function { background-image: url('../img/wolfram-function-repository.png'); background-repeat: no-repeat; }
+#languageRootGuide a.data { background-image: url('../img/wolfram-data-repository.png'); background-repeat: no-repeat; }
 
 /* Tooltips
    ========================================================================== */
@@ -179,7 +180,7 @@ html[lang="zh"] #languageRootGuide .list-table~.resources:before { content: '更
 #languageRootGuide .function-intro-tooltip span.IFSansUnlinked, 
 #languageRootGuide .function-intro-tooltip span.IFSansUnlinked a, 
 #languageRootGuide .function-intro-tooltip .TI { font-size: .7rem !important; }
-#languageRootGuide .function-intro-tooltip img { height: 1.2vh; width: auto; min-height: 11px; }
+#languageRootGuide .function-intro-tooltip img { height: .7rem; width: auto; min-height: 11px; }
 #languageRootGuide .function-intro-tooltip .GuideDelimiterSubsection, #languageRootGuide .function-intro-tooltip .GuideDelimiter { margin: .5rem auto !important; }
 #languageRootGuide .function-intro-tooltip h2 + .GuideDelimiterSubsection { display: none; }
 #languageRootGuide .redbg .function-intro-tooltip h2 a:after { color: var(--orange); }
@@ -194,6 +195,11 @@ html[lang="zh"] #languageRootGuide .list-table~.resources:before { content: '更
 #languageRootGuide .function-intro-tooltip .sub-ref a { padding: 0 3px; line-height: 1.5; }
 #languageRootGuide .function-intro-tooltip .dash, #languageRootGuide .function-intro-tooltip .LongDash { display: block; font-size: 0; line-height: 0; }
 #languageRootGuide .function-intro-tooltip .dash ~ .dash, #languageRootGuide .function-intro-tooltip .LongDash ~ .LongDash { display: inline; font-size: inherit; }
+
+#languageRootGuide .function-intro-tooltip .page-container.menu-empty {grid-template-columns:266px;}
+#languageRootGuide .function-intro-tooltip .content-container>section {padding: 0 0px !important;}
+
+#languageRootGuide .function-intro-tooltip .monospace {display: initial;}
 
 /* Subfooter
    ========================================================================== */

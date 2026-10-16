@@ -1,0 +1,162 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>AmaresFitFidI&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="AmaresFitFidI" />
+
+<meta name="description" content="AmaresFitFidI[fid, time, gyro, basis, matrix, cons] fits the fid with using the basis spectra. AmaresFitFidI[fid, time, gyro, basis, matrix, {cons, init}] fits the fid using initial values init which can be obtained from a previous fit or from AmaresInitialValues. AmaresFitFidI[fid, time, gyro, basis, matrix, b 1 pars, cons] the b1pars are needed if in the matrix B1 correction is set True. The b1pars are defined as {tau, fa, TR} with tau and TR in ms and fa in degrees. AmaresFitFidI[fid, time, gyro, basis, matrix, b 1 pars, {cons, init}] fits using initial values using b1pars for B1 correction. The time, basis and gyro can be obtained from AmaresBasis and the matrix can be obtained form EditMaresMatrix. The cons have to be defined for {amp, sigma, gamma, shift, phase, B1} as {min, max} for each. Output is the {fitted parameters, the SE, the SE in %, the standard deviation of the residuals.}." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'AmaresFitFidI.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+    <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div translate="no" class="title" id="title">AmaresFitFidI</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+ </div></header>
+    <div class="page-container menu-full">
+  	<div class="menu-container">
+  		<div class="menu-nav">
+ <div class="usage-container">
+  <div class="menu-item">
+   <div data-id="FunctionIntroduction"
+       class="menu-link function-usage-box">
+    <div class="sidebarfunctionIntroWrap tallUsage">
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="TI">cons</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">fits the <span class="IF"><span class="TI">fid</span></span> with using the <span class="IF"><span class="TI">basis</span></span> spectra. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">cons</span><span class="comma">,</span><span class="TI">init</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">fits the <span class="IF"><span class="TI">fid</span></span> using initial values init which can be obtained from a previous fit or from <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresInitialValues.html">AmaresInitialValues</a></span>. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="TI">b</span><sub><span class="TI">1pars</span></sub><span class="comma">,</span><span class="TI">cons</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">the <span class="IF"><span class="TI">b1pars</span></span> are needed if in the <span class="IF"><span class="TI">matrix</span></span> B1 correction is set <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span>. The <span class="IF"><span class="TI">b1pars</span></span> are defined as {tau, fa, TR} with tau and TR in ms and fa in degrees. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="TI">b</span><sub><span class="TI">1pars</span></sub><span class="comma">,</span><span class="openbrace">{</span><span class="TI">cons</span><span class="comma">,</span><span class="TI">init</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">fits using initial values using <span class="IF"><span class="TI">b1pars</span></span> for B1 correction. The <span class="IF"><span class="TI">time</span></span>, <span class="IF"><span class="TI">basis</span></span> and <span class="IF"><span class="TI">gyro</span></span> can be obtained from <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresBasis.html">AmaresBasis</a></span> and the <span class="IF"><span class="TI">matrix</span></span> can be obtained form EditMaresMatrix. The <span class="IF"><span class="TI">cons</span></span> have to be defined for {&quot;amp&quot;, &quot;sigma&quot;, &quot;gamma&quot;, &quot;shift&quot;, &quot;phase&quot;, &quot;B1&quot;} as {min, max} for each. Output is the {fitted parameters, the SE, the SE in %, the standard deviation of the residuals.}.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="details-and-options-container menu-link"
+     data-id="DetailsAndOptions">
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions" class="menu-link details-and-options-label">Details</div>
+  </div>
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions"
+       class="menu-link details-and-options-image-container">
+    <img src="../../language-assets/img/DetailsOptions-gray.png"
+        alt="Details and Options"
+        class="box-image gray-image" />
+    <img src="../../language-assets/img/DetailsOptions-hover.png"
+        alt="Details and Options"
+        class="box-image hover-image" />
+   </div>
+  </div>
+ </div>
+ 
+</div>
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS SYMBOL</span></nav>
+   <div class="ContextNameCell">QMRITools`</div>
+   <div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 translate="no" class="main-title">AmaresFitFidI</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section class="function-wrapper"><div class="inner">
+   <div class="functionIntroWrap">
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="TI">cons</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">fits the <span class="IF"><span class="TI">fid</span></span> with using the <span class="IF"><span class="TI">basis</span></span> spectra. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">cons</span><span class="comma">,</span><span class="TI">init</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">fits the <span class="IF"><span class="TI">fid</span></span> using initial values init which can be obtained from a previous fit or from <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresInitialValues.html">AmaresInitialValues</a></span>. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="TI">b</span><sub><span class="TI">1pars</span></sub><span class="comma">,</span><span class="TI">cons</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">the <span class="IF"><span class="TI">b1pars</span></span> are needed if in the <span class="IF"><span class="TI">matrix</span></span> B1 correction is set <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span>. The <span class="IF"><span class="TI">b1pars</span></span> are defined as {tau, fa, TR} with tau and TR in ms and fa in degrees. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresFitFidI.html">AmaresFitFidI</a><span class="openbracket">[</span><span class="TI">fid</span><span class="comma">,</span><span class="TI">time</span><span class="comma">,</span><span class="TI">gyro</span><span class="comma">,</span><span class="TI">basis</span><span class="comma">,</span><span class="TI">matrix</span><span class="comma">,</span><span class="TI">b</span><sub><span class="TI">1pars</span></sub><span class="comma">,</span><span class="openbrace">{</span><span class="TI">cons</span><span class="comma">,</span><span class="TI">init</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">fits using initial values using <span class="IF"><span class="TI">b1pars</span></span> for B1 correction. The <span class="IF"><span class="TI">time</span></span>, <span class="IF"><span class="TI">basis</span></span> and <span class="IF"><span class="TI">gyro</span></span> can be obtained from <span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresBasis.html">AmaresBasis</a></span> and the <span class="IF"><span class="TI">matrix</span></span> can be obtained form EditMaresMatrix. The <span class="IF"><span class="TI">cons</span></span> have to be defined for {&quot;amp&quot;, &quot;sigma&quot;, &quot;gamma&quot;, &quot;shift&quot;, &quot;phase&quot;, &quot;B1&quot;} as {min, max} for each. Output is the {fitted parameters, the SE, the SE in %, the standard deviation of the residuals.}.</p>
+    </div>
+   </div>
+  </div></section><section id="DetailsAndOptions" class="preview-wrapper"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="details-preview">
+    <div class="hideable">
+     <ul class="functionList">
+      <li><a name="451832982"></a>The following options can be given: </li>
+      <li class="NotesTable"
+          translate="no">
+       <a name="798531532"></a>
+       <table>
+        <col width="1%" />
+        <col width="28%" />
+        <col width="28%" />
+        <col width="43%" />
+        <tr class="lineAbove" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/AmaresUseB1.html">AmaresUseB1</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT" translate="yes"><span class="IF"><a translate="no" class="package-symbol" href="../ref/AmaresUseB1.html">AmaresUseB1</a></span> is an option for <span class="IF">AmaresFitFidI</span>. When <span class="IF"><a translate="no" href="http://reference.wolfram.com/language/ref/True.html">True</a></span><span class="specialcharacters"><span class="comma">,</span> the B1 value supplied through init is used to apply 
+the Ernst-angle amplitude correction even if the fitting matrix has &quot;B1&quot;<span class="textrule">-&gt;</span>False for all metabolites 
+<span class="openparenthesis">(</span>i.e. B1 is applied but not fitted<span class="closeparenthesis">)</span>. Default is False.</span></span></td></tr>
+       </table>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

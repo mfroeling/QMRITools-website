@@ -1,111 +1,315 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>JcouplingTools&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{, , , }" />
-<meta name="keywords" content="JcouplingTools" />
-
-<meta name="description" content="QMRITools package. Functions for simulation of j-coupled spectra (link and link)." />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'JcouplingTools.en';</script>
-</head>
-
-<body id="guide">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu see-also">Functions</a>
-    <ul class="sub_menu">
-     <li>
-      <a class="sub-ref" href="../ref/GetSpinSystem.html"><span class="dropdownPad">GetSpinSystem</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeSpinSystem.html"><span class="dropdownPad">MakeSpinSystem</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SequencePulseAcquire.html"><span class="dropdownPad">SequencePulseAcquire</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SequenceSpaceEcho.html"><span class="dropdownPad">SequenceSpaceEcho</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SequenceSpinEcho.html"><span class="dropdownPad">SequenceSpinEcho</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SequenceSteam.html"><span class="dropdownPad">SequenceSteam</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SequenceTSE.html"><span class="dropdownPad">SequenceTSE</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimAddPhase.html"><span class="dropdownPad">SimAddPhase</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimEvolve.html"><span class="dropdownPad">SimEvolve</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimHamiltonian.html"><span class="dropdownPad">SimHamiltonian</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimReadout.html"><span class="dropdownPad">SimReadout</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimRotate.html"><span class="dropdownPad">SimRotate</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimSignal.html"><span class="dropdownPad">SimSignal</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SimSpoil.html"><span class="dropdownPad">SimSpoil</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/SysTable.html"><span class="dropdownPad">SysTable</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="main-heading"><h1 class="main-title">JcouplingTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="18089218"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for simulation of j-coupled spectra (<a href="https://www.sciencedirect.com/science/article/pii/S1090780710004003?via%3Dihub">link</a> and <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.24340">link</a>).</p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="369160313"></a><span class="IFSans"><a class="package-symbol" href="../ref/GetSpinSystem.html">GetSpinSystem</a></span> <span class="dash">&mdash;</span> Get the j-coupling values for a metabolite.</p><p class="singleFunction"><a name="171327523"></a><span class="IFSans"><a class="package-symbol" href="../ref/SimHamiltonian.html">SimHamiltonian</a></span> <span class="dash">&mdash;</span> Simulate the Hamiltonian structure and the initial spin system.</p><p class="singleFunction"><a name="455110841"></a><span class="IFSans"><a class="package-symbol" href="../ref/MakeSpinSystem.html">MakeSpinSystem</a></span> <span class="dash">&mdash;</span> Define a spin system for a metabolite.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="15229764"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SimEvolve.html">SimEvolve</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SimReadout.html">SimReadout</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SimRotate.html">SimRotate</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SimAddPhase.html">SimAddPhase</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SimSignal.html">SimSignal</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SimSpoil.html">SimSpoil</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="590642696"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SequencePulseAcquire.html">SequencePulseAcquire</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SequenceSpinEcho.html">SequenceSpinEcho</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SequenceSteam.html">SequenceSteam</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SequenceTSE.html">SequenceTSE</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SequenceSpaceEcho.html">SequenceSpaceEcho</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="950930"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/SysTable.html">SysTable</a></span>
- </p>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
-
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>JcouplingTools&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{, , , }" />
+<meta name="keywords" content="JcouplingTools" />
+
+<meta name="description" content="QMRITools package. Functions for simulation of j-coupled spectra (link and link)." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'JcouplingTools.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="guide">
+  <main class="main">
+  <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div class="title" id="title">JcouplingTools</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+  <ul class="select-container"
+      id="select-container">
+   <li class="dropdownmenu dropdownitem-1">
+    <a href="#" class="dropdownmenutitle see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GetSpinSystem.html"><span class="dropdownPad">GetSpinSystem</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeSpinSystem.html"><span class="dropdownPad">MakeSpinSystem</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SequencePulseAcquire.html"><span class="dropdownPad">SequencePulseAcquire</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SequenceSpaceEcho.html"><span class="dropdownPad">SequenceSpaceEcho</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SequenceSpinEcho.html"><span class="dropdownPad">SequenceSpinEcho</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SequenceSteam.html"><span class="dropdownPad">SequenceSteam</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SequenceTSE.html"><span class="dropdownPad">SequenceTSE</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimAddPhase.html"><span class="dropdownPad">SimAddPhase</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimEvolve.html"><span class="dropdownPad">SimEvolve</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimHamiltonian.html"><span class="dropdownPad">SimHamiltonian</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimReadout.html"><span class="dropdownPad">SimReadout</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimRotate.html"><span class="dropdownPad">SimRotate</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimSignal.html"><span class="dropdownPad">SimSignal</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SimSpoil.html"><span class="dropdownPad">SimSpoil</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/SysTable.html"><span class="dropdownPad">SysTable</span></a>
+     </li>
+    </ul>
+   </li>
+   <li class="dropdownmenu lastitem dropdownitem-2">
+    <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+    <ul class="sub_menu">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetSpinSystem.html"><span class="dropdownPad">GetSpinSystem</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeSpinSystem.html"><span class="dropdownPad">MakeSpinSystem</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequencePulseAcquire.html"><span class="dropdownPad">SequencePulseAcquire</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceSpaceEcho.html"><span class="dropdownPad">SequenceSpaceEcho</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceSpinEcho.html"><span class="dropdownPad">SequenceSpinEcho</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceSteam.html"><span class="dropdownPad">SequenceSteam</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceTSE.html"><span class="dropdownPad">SequenceTSE</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimAddPhase.html"><span class="dropdownPad">SimAddPhase</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimEvolve.html"><span class="dropdownPad">SimEvolve</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimHamiltonian.html"><span class="dropdownPad">SimHamiltonian</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimReadout.html"><span class="dropdownPad">SimReadout</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimRotate.html"><span class="dropdownPad">SimRotate</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimSignal.html"><span class="dropdownPad">SimSignal</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimSpoil.html"><span class="dropdownPad">SimSpoil</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SysTable.html"><span class="dropdownPad">SysTable</span></a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </div></header>
+    <div class="page-container menu-empty">
+  	<div class="menu-container">
+  		
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS GUIDE</span><ul class="select-container2"
+        id="select-container2">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetSpinSystem.html"><span class="dropdownPad">GetSpinSystem</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeSpinSystem.html"><span class="dropdownPad">MakeSpinSystem</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequencePulseAcquire.html"><span class="dropdownPad">SequencePulseAcquire</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceSpaceEcho.html"><span class="dropdownPad">SequenceSpaceEcho</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceSpinEcho.html"><span class="dropdownPad">SequenceSpinEcho</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceSteam.html"><span class="dropdownPad">SequenceSteam</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SequenceTSE.html"><span class="dropdownPad">SequenceTSE</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimAddPhase.html"><span class="dropdownPad">SimAddPhase</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimEvolve.html"><span class="dropdownPad">SimEvolve</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimHamiltonian.html"><span class="dropdownPad">SimHamiltonian</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimReadout.html"><span class="dropdownPad">SimReadout</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimRotate.html"><span class="dropdownPad">SimRotate</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimSignal.html"><span class="dropdownPad">SimSignal</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SimSpoil.html"><span class="dropdownPad">SimSpoil</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/SysTable.html"><span class="dropdownPad">SysTable</span></a>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdownmenu lastitem dropdownitem-2">
+      <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+      <ul class="sub_menu">
+       <li class="dropdownmenu dropdownitem-1">
+        <a href="#" class="dropdownmenutitle see-also">Functions</a>
+        <ul class="sub_menu">
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GetSpinSystem.html"><span class="dropdownPad">GetSpinSystem</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeSpinSystem.html"><span class="dropdownPad">MakeSpinSystem</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SequencePulseAcquire.html"><span class="dropdownPad">SequencePulseAcquire</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SequenceSpaceEcho.html"><span class="dropdownPad">SequenceSpaceEcho</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SequenceSpinEcho.html"><span class="dropdownPad">SequenceSpinEcho</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SequenceSteam.html"><span class="dropdownPad">SequenceSteam</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SequenceTSE.html"><span class="dropdownPad">SequenceTSE</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimAddPhase.html"><span class="dropdownPad">SimAddPhase</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimEvolve.html"><span class="dropdownPad">SimEvolve</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimHamiltonian.html"><span class="dropdownPad">SimHamiltonian</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimReadout.html"><span class="dropdownPad">SimReadout</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimRotate.html"><span class="dropdownPad">SimRotate</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimSignal.html"><span class="dropdownPad">SimSignal</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SimSpoil.html"><span class="dropdownPad">SimSpoil</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/SysTable.html"><span class="dropdownPad">SysTable</span></a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul></nav>
+   <div class="main-heading"><h1 class="main-title">JcouplingTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section><div class="inner">
+   <p class="intro"><a name="18089218"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for simulation of j-coupled spectra (<a href="https://www.sciencedirect.com/science/article/pii/S1090780710004003?via%3Dihub">link</a> and <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.24340">link</a>).</p>
+   <div class="GuideDelimiterSubsection"><!-- --></div>
+   <p class="singleFunction"><a name="369160313"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GetSpinSystem.html">GetSpinSystem</a></span> <span class="dash">&mdash;</span> Get the j-coupling values for a metabolite.</p>
+   <p class="singleFunction"><a name="171327523"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimHamiltonian.html">SimHamiltonian</a></span> <span class="dash">&mdash;</span> Simulate the Hamiltonian structure and the initial spin system.</p>
+   <p class="singleFunction"><a name="455110841"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeSpinSystem.html">MakeSpinSystem</a></span> <span class="dash">&mdash;</span> Define a spin system for a metabolite.</p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="15229764"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimEvolve.html">SimEvolve</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimReadout.html">SimReadout</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimRotate.html">SimRotate</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimAddPhase.html">SimAddPhase</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimSignal.html">SimSignal</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SimSpoil.html">SimSpoil</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="590642696"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SequencePulseAcquire.html">SequencePulseAcquire</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SequenceSpinEcho.html">SequenceSpinEcho</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SequenceSteam.html">SequenceSteam</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SequenceTSE.html">SequenceTSE</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SequenceSpaceEcho.html">SequenceSpaceEcho</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="950930"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/SysTable.html">SysTable</a></span>
+   </p>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
 </html>

@@ -17,6 +17,16 @@
 #tutorialOverview .toggle { margin: 0; }
 #tutorialOverview .hideable .hideable { margin: .5rem .5rem; }
 
+#tutorialOverview.packageTutorialOverview h2, #tutorialOverview.packageTutorialOverview h2.toggle { color: #a33910; padding: .6rem .2rem .2rem; }
+#tutorialOverview.packageTutorialOverview h2:before { content: ''; width: 6px; height: 6px; display: inline-block; }
+#tutorialOverview.packageTutorialOverview h2 a { color: #a33910; font-size: 1.08rem; }
+#tutorialOverview.packageTutorialOverview h2 a:hover { color: #d45b1d; }
+#tutorialOverview.packageTutorialOverview section {margin: 0;}
+#tutorialOverview.packageTutorialOverview h2.Section {
+    color: #000;
+    font-weight: 400;
+}
+
 #tutorial .main-title, #tutorialOverview .main-title { font-family: 'Linux Libertine', Georgia, Times, serif; font-weight: 400; }
 
 /*  Technotes 
@@ -24,11 +34,12 @@
 #techNote .bullet-list li, #tutorial .bullet-list li { font-size: .93rem; line-height: 1.5; }
 #techNote h2.Section, .TechNoteSection { color: #6276b3; font-size: 1.8rem; font-weight: 400; border-top: 1px solid #d6d6d6; margin: 2.5rem 0 0; }
 #tutorial h2.Section { font-size: 1.5rem; font-weight: 400; }
-#techNote h3, #tutorial h3 { color: #b46625; font-size: 1.3rem; }
+#techNote h3, #tutorial h3, #monograph h3 { color: #4e4e4e; font-size: 1.3rem; }
 #techNote h1, #tutorial h1 { line-height: 1.2; }
 
 #tutorial .TechNoteCaption { margin: 0 0 1rem; }
-#tutorial h3, #monograph h3 { color: #b46625; font-size: 1.3rem; }
+#tutorial h4, #monograph h4, #monograph h4.Subsubsection { color: #4e4e4e; font-size: 1rem; }
+div.TechNoteTableText {display: inline;}
 
 #techNote .TechNoteText, #techNote .Text { margin: 1rem 0 1.2rem; }
 #techNote .FilledSmallSquare { color: #adadad; margin: 0 2px 0 0; }
@@ -44,15 +55,19 @@ ul.Text li { position: relative; line-height: 1.3; margin: 0 0 .6rem; }
 ul.Text li:before { top: .55rem; }
 ul li > ul.Text li.Subitem { margin: 0 0 .6rem 1rem;  }
 ul.Text li.Subitem { margin: 0 0 0 2rem; font-size: .93rem; }
+#techNote div.TechNoteSection + ul.Text { margin-top: 2rem; }
 
 /*  Jumpboxes 
     ---------------------------- */
 .TutorialJumpBox, .TechNoteJumpBox { margin: 0 0 2rem; }
-#tutorial .TutorialJumpBox { margin: 1rem 0 2rem; }
-.TutorialJumpBox a:before, .TechNoteJumpBox a:before { content: '∨'; transform: scaleX(2); position: absolute; left: .2rem; display: inline-block; color: #6276b3; font-family: monospace; font-size: .6rem; top: .3rem; }
-.TutorialJumpBox .nogridboxdividers { margin: 0; }
-.TutorialJumpBox a, .TechNoteJumpBox a { color: #222; font-size: .9rem; line-height: 1.5; display: block; padding: 0 0 0 1.5rem; text-indent: 0; position: relative; }
 #monograph .TutorialJumpBox a:before, #monograph .TechNoteJumpBox a:before, #tutorial .TutorialJumpBox a:before, #tutorial .TechNoteJumpBox a:before { color: #b46625; }
+#tutorial .TutorialJumpBox { margin: 1rem 0 2rem; }
+#tutorial .nogridboxdividers td { width: 50%;}
+#tutorial .TutorialJumpBox a:before, .TechNoteJumpBox a:before { content: ''; border: solid #6276b3; border-width: 0 2px 2px 0; display: inline-block; padding: 2px; transform: rotate(45deg); -webkit-transform: rotate(45deg); margin:0px 7px 2px 0px; }
+#tutorial .TutorialJumpBox a:hover:before{ content: ''; border: solid #f77700; border-width: 0 2px 2px 0; display: inline-block; padding: 2px; transform: rotate(45deg); -webkit-transform: rotate(45deg); margin:0px 7px 2px 0px; }
+.TutorialJumpBox .nogridboxdividers { margin: 0; }
+.TutorialJumpBox a, .TechNoteJumpBox a {color: #222;font-size: .9rem;line-height: 1.5;display: block;padding: 0 0 0 1.0rem;text-indent: 0;position: relative;}
+#tutorial .TutorialJumpBox a{ padding:0;}
 #techNote .TechNoteJumpBox { background: #f5f5f5; padding: 1rem 1.5rem .5rem; margin: 1.5rem 0 2.8rem; border-top: 2px solid #6276b3; }
 #techNote .TechNoteJumpBox table { width: auto; }
 #techNote .TechNoteJumpBox td { min-width: 200px; padding: 0 2rem 0 0; }
@@ -60,7 +75,7 @@ ul.Text li.Subitem { margin: 0 0 0 2rem; font-size: .93rem; }
 /*  Monographs 
     ---------------------------- */
 #monograph h2.Section { font-weight: 400; }
-#monographOverview .main-heading-wrapper:not(.sticky) { background: #be5324; color: #fff; border-top: 1.75rem solid #be5324; border-bottom: 1.75rem solid #be5324; margin: 0 0 3rem; }
+#monographOverview .main-heading-wrapper:not(.sticky) {background: #be5324; color: #fff; border-bottom: 1.75rem solid #be5324; margin: 0 0 3rem;}
 #monograph .main-title, #monographOverview .main-title { font-family: 'Georgia', serif; font-weight: 400; }
 #monograph section .inner, #monograph .TutorialAbstract .inner, #monograph .breadcrumb, #monograph .overview-menu-items { background-color: #fff !important; font-family: Georgia, serif; }
 #monographOverview .main { counter-reset: h2counter; }
@@ -132,7 +147,7 @@ ul.Text li.Subitem { margin: 0 0 0 2rem; font-size: .93rem; }
 #monograph .sticky .overview-menu { font-size: 2rem; }
 #monograph .sticky .hamburger { top: 6px; }
 #monograph #_footer-offset { margin: 0 auto; background: #fff; }
-#monograph .DisplayFormula { margin: 1.07rem 0; }
+#monograph .DisplayFormula { margin: 1.07rem 3rem; }
 #monograph .MonographReference { font-size: .9rem; }
 #monograph .TutorialJumpBox { margin: -.5rem 0 2rem; }
 

@@ -1,0 +1,939 @@
+.main-heading-wrapper,
+.main-heading-wrapper.sticky {
+	top: 53px;
+}
+
+.page-container {
+	display: grid;
+	grid-template-columns: 325px 1fr;
+	margin-left: 0;
+}
+
+
+.page-container.menu-empty {
+	display: grid;
+	grid-template-columns:1fr;
+	margin-left: 0;
+}
+
+.page-container.menu-empty .menu-container {
+	display: none;
+}
+
+
+body .main > div.page-container {
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+
+.menu-container {
+	background-color: #f8f8f8;
+}
+
+.stickypresent .menu-container .menu-nav {
+	top: 102px;
+}
+
+.menu-container .menu-nav {
+	position: sticky;
+	top: 93px;
+	margin-left: 10px;
+	padding-bottom:120px;
+	max-height: calc(100vh - 65px);
+	overflow-y: hidden;
+	scrollbar-width:thin;
+}
+
+.menu-container .menu-nav:hover {
+	overflow-y: auto;
+}
+
+.menu-container .menu-nav::-webkit-scrollbar-thumb {
+	visibility: hidden;
+}
+
+.menu-container .menu-nav:hover ::-webkit-scrollbar-thumb {
+	visibility: visible;
+}
+
+.usage-container {
+	margin-top:25px;
+	margin-left: 13px;
+	padding-bottom:18px;
+	width: 275px;
+	/* border-bottom: 1px solid #ddd; */
+}
+
+.details-and-options-container {
+	margin-top:0px;
+	margin-left: 13px;
+	padding-bottom: 7px;
+    padding-left: 4px;
+	width: 280px;
+	border-bottom: 1px solid #ddd;
+}
+
+.details-and-options-container .details-and-options-label{
+	font-size: 16px;
+}
+
+.examples-container {
+	margin-top:7px;
+	margin-left: 13px;
+	margin-bottom:13px;
+	padding-bottom: 13px;
+    padding-left: 0px;
+	width: 280px;
+	border-bottom: 1px solid #ddd;
+}
+
+.functionessaysection, .interpretersection, .servicesubsection, .resourceobjectsection, .questioninterfacesection, .programsection, .externalevaluatesystemsection, .entitysection, .embeddingformatsection, .databaseconnectionsection {
+    margin-top: 7px;
+    margin-left: 13px;
+    margin-bottom: 10px;
+    width: 280px;
+    border-bottom: 1px solid #ddd;
+}
+
+.functionessaysection .menu-link, .interpretersection .menu-link, .servicesubsection .menu-link, .resourceobjectsection .menu-link, .questioninterfacesection .menu-link, .programsection .menu-link, .externalevaluatesystemsection .menu-link, .entitysection .menu-link, .embeddingformatsection .menu-link, .databaseconnectionsection .menu-link {
+    margin-left: -5px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.examples-container > .menu-item {
+	margin-left:-5px;
+	font-size: 16px;
+}
+
+/* 
+.content-container {
+	margin:0 auto;
+	max-width: 1100px;
+	width:100%;
+}
+ */
+
+
+.content-container>header,
+.content-container>section,
+.content-container>div {
+	padding: 0 25px !important;
+}
+
+.ObsolescenceNote ~ li {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.menu-item {
+	padding: 2px 0;
+	display: flex;
+	/* Use flexbox to align items */
+	align-items: center;
+	/* Center items vertically */
+}
+
+.submenu {
+	margin-left: 8px;
+	display: none;
+}
+
+.submenu.open {
+	display: block;
+}
+
+.submenu .menu-item {
+	font-size: 14.5px;
+	padding: 4px 0;
+}
+
+.subsubmenu {
+	margin-left: 0px;
+	margin-bottom: 10px;
+	display: none;
+	font-size:14px;
+}
+
+.subsubmenu.open {
+	display: block;
+}
+
+.subsubmenu .menu-item {
+	font-size: 12px;
+	padding: 3px 0;
+}
+
+.subsubsubmenu {
+	margin-left: 9px;
+	display: none;
+	font-size:12px;
+}
+
+.subsubsubmenu.open {
+	display: block;
+}
+
+.subsubsubmenu .menu-item {
+	font-size: 11px;
+	padding: 3px 0;
+}
+
+.menu-item .arrow:before {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	position: relative;
+	top: -0.2rem;
+	margin-right: 5px;
+	/* Adjust the margin to align the arrows */
+}
+
+.menu-item.toggleable .arrow:before {
+	background: none;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	border-left: 0;
+	border-color: #5f564e;
+	border-width: 0 2px 2px 0;
+	border-style: solid;
+	left: -3px;
+	top: -0.1rem;
+	cursor: pointer;
+}
+
+.menu-item.toggleable.open .arrow:before {
+	border-width: 0 0 2px 2px;
+	left: -3px;
+	top: -0.2rem;
+	cursor: pointer;
+}
+
+.menu-item.toggleable .arrow:hover:before,
+.menu-item.toggleable.open .arrow:hover:before {
+    border-color: #f77700;  /* Orange hover color */
+}
+
+
+.sticky-enabled .menu-nav {
+	top: 110px;
+}
+
+h1,h2,h3,h4 {
+	scroll-margin-top: 62px;
+}
+
+/* 
+.main #searchlink p,
+.inner {
+	max-width: 1100px;
+	margin: 0 auto 0 0;
+	position: relative;
+}
+ */
+
+.main #searchlink p,
+.device .main-heading-wrapper ~ .Code,
+.inner {
+	max-width: 1050px;
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* 
+.main-heading-wrapper .inner {
+	margin: 0 auto 0 0;
+}
+ */
+
+.main-heading-wrapper .inner {
+	margin: 0 auto;
+}
+
+.main-heading-wrapper.sticky .inner {
+	/* margin: 0 auto; */
+}
+
+ .content-container .main-heading-wrapper.sticky {
+    padding: 0 10px !important;
+}
+
+.header .inner {
+	margin: 0 auto;
+}
+
+.footer-links .inner {
+	margin: 0 auto;
+}
+
+.menu-link {
+	color: #111;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.menu-link:hover, .submenu .menu-link:hover, .subsubmenu .menu-link:hover {
+	color: #f77700;
+}
+
+.submenu .menu-link {
+	color: #222;
+}
+
+.subsubmenu .menu-link {
+	color: #6c6c6c;
+}
+
+.usage-box, .details-and-options-image-container {
+    width: 267px;
+    height: 68px; /* Allow height to adjust according to the aspect ratio of the image */
+    position: relative; /* Ensure positioning context for absolute positioning of images */
+}
+
+.details-and-options-container:hover {
+    cursor: pointer;
+}
+
+.details-and-options-container:hover .menu-link {
+    color: #f77700;
+}
+
+.details-and-options-container:hover .gray-image {
+    opacity: 0; 
+}
+
+.details-and-options-container:hover .hover-image {
+    opacity: 1; 
+}
+
+.details-and-options-image-container {
+    image-rendering: -moz-crisp-edges;
+}
+
+.showlist-image-container {
+	cursor: pointer;
+    width: 10px;
+    height: 19px; /* Allow height to adjust according to the aspect ratio of the image */
+    position: relative; /* Ensure positioning context for absolute positioning of images */
+    margin-left: 15px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.box-image {
+    width: 267px; /* Ensure the image fills the container */
+    height: 68px; /* Allow height to adjust according to the aspect ratio of the image */
+    position: absolute; /* Position images relative to the container */
+    top: 0;
+    left: 0;
+    transition: opacity 0.1s ease; /* Add transition for smooth effect */
+}
+
+.showlist-image {
+    width: 10px; /* Ensure the image fills the container */
+    height: 19px; /* Allow height to adjust according to the aspect ratio of the image */
+    position: absolute; /* Position images relative to the container */
+    top: 0;
+    left: 0;
+    transition: opacity 0.1s ease; /* Add transition for smooth effect */
+}
+
+.hover-image {
+    opacity: 0; /* Initially hide the hover image */
+}
+
+img.showlist-image.hover-image {
+    /*filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(500%) hue-rotate(-20deg); */
+}
+
+.usage-box:hover .hover-image, .details-and-options-image-container:hover .hover-image, .showlist-image-container:hover .hover-image {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.usage-box:hover .gray-image, .details-and-options-image-container:hover .gray-image, .showlist-image-container:hover .gray-image {
+    opacity: 0; /* Hide the gray image on hover */
+}
+
+.main .sidebarfunctionIntro a:hover {
+    /* color: #0549a6; */
+       color:#000;
+}
+
+.menu-link.function-usage-box:hover {
+       color: #5f564e; 
+}
+
+.sidebarfunctionIntroWrap {padding: 1rem 0px;background: #fff; border: 2px solid #d3d3d3; user-select: none; -webkit-user-select: none;}
+.sidebarfunctionIntroWrap:hover {padding: 1rem 0px; background: #f3fbff; border: 2px solid #d3d3d3;}
+.sidebarfunctionIntroWrap .sidebarfunctionIntro { border-bottom: 1px solid #ddd; margin: 0 1.64rem; padding: .87rem 0; }
+.sidebarfunctionIntroWrap:hover .sidebarfunctionIntro { /* border-bottom: 1px solid #d9e5f3; */}
+
+.sidebarfunctionIntroWrap.tallUsage {
+    position: relative;
+}
+
+.sidebarfunctionIntro:last-child { border-bottom: 0; padding: .7rem 0; }
+.sidebarfunctionIntro .code { margin: 0; line-height: 1.1; position: relative; display: inline-block; padding: .05rem; }
+
+.sidebarfunctionIntro .code a { font-size: 1.07rem; }
+.sidebarfunctionIntro .code-description { margin: 0 0 0 1.07rem; font-size: .97rem; line-height: 1.3; }
+.sidebarfunctionIntro .TI { font-size: 1rem; padding: 0 0 0 .08rem; }
+sub .TI, sup .TI, .functionIntro sub .TI, .functionIntro sup .TI { font-size: .8rem; }
+
+.c .sidebarfunctionIntroWrap, .non-wl .functionIntroWrap { background: #f8fffa; border-color: #dcebd1; }
+
+.character .sidebarfunctionIntro table { margin: 0; width: 100%; }
+.character .sidebarfunctionIntroWrap { background: #f3f3f3; padding: 1.37rem 1.87rem; border: 0; margin: 0 0 2.2rem; }
+.character .sidebarfunctionIntroWrap .functionList { margin: 0; padding: 0; }
+
+.device .sidebarfunctionIntroWrap { margin: 0 .3rem 1.07rem; }
+.device section .sidebarfunctionIntroWrap { border-width: 1px; padding: 0; }
+.device section .sidebarfunctionIntro  { margin: 0 1rem; padding: .8rem 0; }
+
+.entity .sidebarfunctionIntroWrap { background: #fefaee; border-color: #f9d398; }
+.entity .sidebarfunctionIntro { border-color: #f9d398; }
+
+.sidebarfunctionIntroWrap .MenuName { font-weight: 600; }
+
+.sidebarfunctionIntroWrap span.IM {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.sidebarfunctionIntroWrap a {
+    color: #0549a6;
+}
+.sidebarfunctionIntroWrap:hover a {
+   /* color: #f77700; */
+}
+
+.sidebarfunctionIntro {
+    display: none;
+}
+.sidebarfunctionIntro:nth-of-type(1), .sidebarfunctionIntro:nth-of-type(2), .sidebarfunctionIntro:nth-of-type(3) {
+    display: block;
+}
+.sidebarfunctionIntro:nth-of-type(3) {
+    border:none
+}
+
+.sidebarfunctionIntroWrap:hover .sidebarfunctionIntro:nth-of-type(3) {
+    border:none
+}
+
+.sidebarfunctionIntroWrap .sidebarfunctionIntro:last-child {
+    border:none
+}
+
+.sidebarfunctionIntroWrap:hover .sidebarfunctionIntro:last-child {
+    border:none
+}
+
+.sidebarfunctionIntroWrap {
+    width: 275px;
+}
+
+.sidebarfunctionIntroWrap {
+    padding: .25rem 0px;
+    background: #f6f9fb;
+    border: 1px solid #ddd;
+    user-select: none;
+    border-radius: 4px;
+}
+
+.sidebarfunctionIntroWrap:hover {
+    padding: .25rem 0px;
+    border: 1px solid #6a9dd8;
+}
+
+.sidebarfunctionIntroWrap::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+}
+
+.sidebarfunctionIntroWrap:hover::after {
+   background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebarfunctionIntroWrap .sidebarfunctionIntro {
+    border-bottom: 1px solid #e0e5eb;
+    margin: 0 .44rem;
+    padding: .22rem 0;
+}
+
+.sidebarfunctionIntro {
+    font-size: .25rem;
+}
+
+.sidebarfunctionIntro .TI {
+    font-size: .25rem;
+    padding: 0 0 0 .08rem;
+}
+
+.sidebarfunctionIntro .code a {
+    font-size: .25rem;
+}
+
+.sidebarfunctionIntro .code-description {
+    margin: 0 0 0 .25rem;
+    font-size: .25rem;
+    line-height: 1.3;
+}
+ 
+.sidebarfunctionIntroWrap.tallUsage::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    background-color: #c1c6cb;
+    box-shadow: 0 -3px 0 #c1c6cb, 0 3px 0 #c1c6cb;
+    transform: translate(-50%, -50%);
+}
+
+ .sidebarfunctionIntroWrap.tallUsage .sidebarfunctionIntro:nth-of-type(3) {
+    padding-bottom:10px;
+}
+
+.sidebarfunctionIntroWrap .sidebarfunctionIntro:nth-of-type(3) {
+    border: none;
+}
+
+.sidebarfunctionIntroWrap:hover .sidebarfunctionIntro:nth-of-type(3) {
+    border: none;
+}
+
+
+
+
+.sidebarfunctionIntroWrap .IF a {margin: 0 .5px 0 0;}
+.sidebarfunctionIntroWrap .IF .Rule, .sidebarfunctionIntroWrap .MathTable .Rule { margin: 0 .5px 0 .5px; }
+.sidebarfunctionIntroWrap .NotesTable .Rule { margin: 0 .5px 0 .5px; }
+.sidebarfunctionIntroWrap .IF .comma, .sidebarfunctionIntroWrap .MathTable .comma { margin: 0 1px 0 .25px;}
+.sidebarfunctionIntroWrap .NotesTable .comma { margin: 0 .75px 0 .25px; }
+.sidebarfunctionIntroWrap .openbracket { margin: 0 .5px 0 .25px; }
+.sidebarfunctionIntroWrap .closebracket { margin: 0 .25px 0 .25px; }
+.sidebarfunctionIntroWrap .verticalbar { margin: 0 .75px; }
+.sidebarfunctionIntroWrap .openparenthesis, .closeparenthesis { margin: 0 .5px; }
+.sidebarfunctionIntroWrap .IF .openbrace, .sidebarfunctionIntroWrap .MathTable .openbrace { margin: 0 .75px 0 0; }
+.sidebarfunctionIntroWrap .NotesTable .openbrace { margin: 0 .25px 0 .5px; }
+.sidebarfunctionIntroWrap .IF .closebrace, .sidebarfunctionIntroWrap .MathTable .closebrace { margin: 0 0 0 .25px; }
+.sidebarfunctionIntroWrap .NotesTable .closebrace { margin: 0 .5px 0 .25px; }
+.sidebarfunctionIntroWrap .IF .comma, .sidebarfunctionIntroWrap .MathTable .comma { margin: 0 1px 0 .25px; }
+.sidebarfunctionIntroWrap .IF .closebrace, .sidebarfunctionIntroWrap .MathTable .closebrace { margin: 0 .5px 0 .25px; }
+.sidebarfunctionIntroWrap .MathTable sub { top: -.5px;}
+
+.sidebarfunctionIntroWrap img {zoom:.28;}
+
+
+.additional-links-container {
+   margin-bottom:120px;
+   margin-left: 7px;
+   margin-top: 19px;
+}
+
+.additional-links-container .menu-item {
+    font-size: 13.5px;
+    line-height: 19px;
+}
+
+.seealso.menu-item, .moreabout.menu-item, .relatedguides.menu-item, .relateddemonstrations.menu-item, .relatedlinks.menu-item, .relatedworkflows.menu-item, .history.menu-item , .citations.menu-item, .tutorials.menu-item, .technotes.menu-item {
+    font-size: 13.5px;
+    margin-left: 7px;
+    line-height: 19px;
+}
+
+.seealso.menu-item .menu-link,
+.moreabout.menu-item .menu-link,
+.relatedguides.menu-item .menu-link,
+.relateddemonstrations.menu-item .menu-link,
+.relatedlinks.menu-item .menu-link,
+.relatedworkflows.menu-item .menu-link,
+.history.menu-item .menu-link,
+.citations.menu-item .menu-link,
+.tutorials.menu-item .menu-link,
+.technotes.menu-item .menu-link {
+    color:#666;
+}
+
+.seealso.menu-item .menu-link:hover,
+.moreabout.menu-item .menu-link:hover,
+.relatedguides.menu-item .menu-link:hover,
+.relateddemonstrations.menu-item .menu-link:hover,
+.relatedlinks.menu-item .menu-link:hover,
+.relatedworkflows.menu-item .menu-link:hover,
+.history.menu-item .menu-link:hover,
+.citations.menu-item .menu-link:hover,
+.tutorials.menu-item .menu-link:hover,
+.technotes.menu-item .menu-link:hover {
+    color:#f77700;
+}
+ 
+ .seealso.menu-item .menu-link::before,
+.moreabout.menu-item .menu-link::before,
+.relatedguides.menu-item .menu-link::before,
+.relateddemonstrations.menu-item .menu-link::before,
+.relatedlinks.menu-item .menu-link::before,
+.relatedworkflows.menu-item .menu-link::before,
+.history.menu-item .menu-link::before,
+.citations.menu-item .menu-link::before,
+.tutorials.menu-item .menu-link::before,
+.technotes.menu-item .menu-link::before {
+content: "";
+width: 4px;
+height: 4px;
+background-color: #a8a8a8;
+margin-right: 8px;
+display: inline-block;
+position: relative;
+top: -2px;
+}
+
+
+.main-heading-wrapper.sticky {
+    background: #fff;
+    border-bottom: 4px solid #136eb7;
+}
+
+/*
+.main-heading-wrapper.sticky .clipboard-tooltip, .main-heading-wrapper.sticky .clipboard-copy {
+	display:none !important;
+}
+.main-heading-wrapper.sticky .clipboard-tooltip.show {
+	display:none !important;
+}
+
+.main-heading-wrapper.sticky .clipboard-inline.main-title:hover, .main-heading-wrapper.sticky .clipboard-inline.main-title:focus {
+    box-shadow: initial;
+    background: initial;
+    border:0;
+}
+*/
+
+.sticky .main-heading h1, .sticky .main-heading .main-title {
+    padding-top: 3px;
+    font-size: 24px;
+}
+
+.functionIntro .code span.IF > a:first-of-type {
+    font-weight: 600 !important;
+}
+
+.topContentWrap {
+    grid-template-columns: auto 1fr;
+}
+
+.badge {
+    padding: 3px 8px 3px 8px;
+    font-size: .72rem;
+}
+
+.main-heading-wrapper:not(.sticky) .main-title { /* padding: 0; */}
+
+/*
+.sidebar-highlighter {
+   background: linear-gradient(to bottom, #FF770021 0%, #FF770021 75%, white 100%);
+}
+*/
+    .hiddenlist {
+      display: flex;
+      align-items: stretch; 
+    }
+    
+    .hiddenlist-grouptoggler {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 14px;
+		margin-left: -7px;
+		cursor: pointer;
+    }
+    
+    .hamburger-top, .hamburger-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .hamburger-top div, .hamburger-bottom div {
+      width: 3px;
+      height: 1px;
+      background-color: #a8a8a8;
+    }
+
+    .long-vertical-line {
+      width: 1px;
+      background-color: #a8a8a8;
+      flex-grow: 1;
+      margin: 2px 0;
+    }
+
+    .hiddenlist-content {
+      margin-left: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+    }
+
+	.hiddenlist-content span.arrow {
+    	display: none;
+	}
+
+    /* Hover Effect */
+    .hiddenlist-grouptoggler:hover .hamburger-top div,
+    .hiddenlist-grouptoggler:hover .hamburger-bottom div,
+    .hiddenlist-grouptoggler:hover .long-vertical-line {
+      background-color: #f77700;
+    }
+
+
+#ref .content-container section.gradient .inner::before, #ref .content-container h1.gradient, #ref .content-container h2.gradient, #ref .content-container h3.gradient, #ref .content-container h4.gradient {
+    background-color:#fff0;
+    transition: background-color .5s ease-out;
+}
+
+#ref .content-container section.gradient .inner::before {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background-image: linear-gradient(to bottom, #fff0 0%,  #fff 45%, #fff 100%);
+}
+
+#ref .content-container h1.gradient, #ref .content-container h2.gradient, #ref .content-container h3.gradient, #ref .content-container h4.gradient {
+    background-image: linear-gradient(to bottom, #fff0 0%, #fff0 50%, #fff 100%);
+}
+
+#ref .content-container h1.sidebar-highlighter, #ref .content-container h2.sidebar-highlighter, #ref .content-container h3.sidebar-highlighter, #ref .content-container h4.sidebar-highlighter {
+    background-color:#ff77001f;
+    background-image: linear-gradient(to bottom, #fff0 0%, #fff0 50%, #fff 100%);
+    transition: none;
+}
+
+#ref .content-container section.sidebar-highlighter .inner::before {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background-color:#ff77001f;
+    background-image: linear-gradient(to bottom, #fff0 0%,  #fff 45%, #fff 100%);
+    transition: none;    
+}
+
+#ref .content-container section.related-links > div.inner > h1 {
+    background: none;
+}
+
+.AwaitingReviewNote .inner, .ObsolescenceNote .inner, .DataPageEntityNote .inner, .PlatformAvailabilityNote .inner {
+    padding: 10px 0 10px 28px;
+}
+
+.AwaitingReviewNote .inner:before, .ObsolescenceNote .inner:before, .DataPageEntityNote .inner:before, .PlatformAvailabilityNote .inner:before  {
+	margin:auto auto auto -30px;
+	left:auto;
+}
+
+/* 
+.AwaitingReviewNote, .ObsolescenceNote, .DataPageEntityNote, 
+.PlatformAvailabilityNote, .main > .AwaitingReviewNote, 
+.main > .ObsolescenceNote, .main > .DataPageEntityNote, .main > .PlatformAvailabilityNote {
+margin: 0 auto 1.5rem;font-size: .9rem;max-width: 1050px;text-align: center;position: relative;padding: .5rem 3% !important;
+border-radius: 4px;background: #f8f8f8;border: 1px solid #dedede;padding: .7rem;}
+ */
+
+.AwaitingReviewNote, .DataPageEntityNote, 
+.PlatformAvailabilityNote, .main > .AwaitingReviewNote, 
+.main > .ObsolescenceNote, .main > .DataPageEntityNote, .main > .PlatformAvailabilityNote {
+margin: 0 auto 1.5rem;font-size: .9rem;max-width: 1050px;text-align: center;position: relative;padding: .5rem 3% !important;
+border-radius: 4px;background: #f8f8f8;border: 1px solid #dedede;padding: .7rem;}
+
+
+
+.AlphabetListingJumpTo.sticky {
+    top: 104px;
+}
+
+
+/* 
+.workflow .main-heading-wrapper, .workflow #RelatedWorkflows, .workflow #RelatedFunctions, .workflow #RelatedGuides, .workflow #RelatedLinks, .workflow #RelatedTechNotes, .workflow .footer-links {
+  width: 100vw;          /* Full viewport width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;    /* Cancel out the centered content-container */
+  margin-right: -50vw !important;
+  max-width: none;       /* Remove the usual constraint */
+  top: 0px;
+}
+ */
+
+.workflow .main-heading-wrapper .inner, .workflow #RelatedWorkflows .inner, .workflow #RelatedFunctions .inner, 
+.workflow #RelatedGuides .inner, .workflow #RelatedLinks .inner, .workflow #RelatedTechNotes .inner, .workflow .footer-links inner {
+  max-width: 1050px;     /* Keep inner content aligned if needed */
+  margin: 0 auto;
+}
+
+
+.workflow .workflow-tabs a {
+display: block;
+padding: .2rem 1rem .4rem;
+color: #898989;
+font-size: 1rem;
+bottom: -1px;
+position: relative;
+border: 1px solid transparent;
+z-index: 10;
+background:inherit;
+border-bottom-color: #d1d1d1 !important;
+}
+
+.workflow .workflow-tabs a.selected { 
+border-width: 1px 1px 0 1px; 
+border-style: solid; 
+border-color: #d1d1d1; 
+color: rgba(55,165,169, 1); 
+border-bottom: 1px solid #fff; 
+border-radius: 4px 4px 0 0; 
+background: #fff;
+border-bottom-color: #fff !important;
+}
+
+.menu-nav div.Graphics, .menu-nav div.Image {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+	.page-container {
+		display: grid;
+		grid-template-columns: 250px 1fr;
+		margin-left: 0;
+	}
+	
+	.usage-container {
+    	width: 195px;
+	}
+	
+	.details-and-options-image-container {
+    	width: 195px;
+    	height:49px;
+	}
+	
+	.sidebarfunctionIntroWrap {
+    	width: 200px;
+	}
+	
+	.box-image {
+    	width: 195px;
+    	height:49px;
+	}
+	
+	.details-and-options-container {
+    	width: 200px;
+    }
+	
+	.examples-container {
+    	width: 200px;
+    }
+	
+
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .menu-container .menu-nav {
+		margin-left: 0;
+	}
+	
+	.usage-container {
+    	width: 215px;
+	}
+	
+	.details-and-options-image-container {
+    	width: 215px;
+    	height:51px;
+	}
+	
+	.sidebarfunctionIntroWrap {
+    	width: 220px;
+	}
+	
+	.box-image {
+    	width: 215px;
+    	height:51px;
+	}
+	
+	.details-and-options-container {
+    	width: 220px;
+    }
+	
+	.examples-container {
+    	width: 220px;
+    }
+	
+	.functionessaysection, .interpretersection, .servicesubsection, .resourceobjectsection, .questioninterfacesection, .programsection, .externalevaluatesystemsection, .entitysection, .embeddingformatsection, .databaseconnectionsection {
+	    width: 220px;
+	}
+	
+}
+
+
+@media (max-width: 900px) {
+	.menu-container {
+		display: none;
+	}
+
+	.page-container {
+		grid-template-columns: 1fr;
+	}
+
+	.main-heading-wrapper,
+	.main-heading-wrapper.sticky {
+		top: 53px;
+	}
+}
+
+@media (max-width: 600px) {
+    .device p.intro, .main-heading-wrapper .main-heading {
+         padding: 0; 
+    }
+    
+    .badge {
+        margin-left: 0px !important;
+        font-size: .86rem;
+    }
+    
+    .content-container>header, .content-container>section, .content-container>div {
+   	 padding: 0 11px !important;
+	}
+
+ .content-container>section.function-wrapper {
+	padding: 0 !important;
+  }
+  
+  .functionIntroWrap {
+    border-radius: 0px;
+}
+  
+  .main > div {
+        padding: 0 !important;
+    }
+}

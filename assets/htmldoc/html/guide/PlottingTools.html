@@ -1,119 +1,386 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>PlottingTools&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{, , , }" />
-<meta name="keywords" content="PlottingTools" />
-
-<meta name="description" content="QMRITools package. Functions for displaying and visualization of multi dimensional data. " />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'PlottingTools.en';</script>
-</head>
-
-<body id="guide">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS GUIDE</span><ul class="dropdown">
-   <li>
-    <a href="#" class="menu see-also">Functions</a>
-    <ul class="sub_menu">
-     <li>
-      <a class="sub-ref" href="../ref/ColorFAPlot.html"><span class="dropdownPad">ColorFAPlot</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/GetSliceData.html"><span class="dropdownPad">GetSliceData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/GetSlicePositions.html"><span class="dropdownPad">GetSlicePositions</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/GradientPlot.html"><span class="dropdownPad">GradientPlot</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/Link3DGraphic.html"><span class="dropdownPad">Link3DGraphic</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/ListSpherePlot.html"><span class="dropdownPad">ListSpherePlot</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/MakeSliceImages.html"><span class="dropdownPad">MakeSliceImages</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotContour.html"><span class="dropdownPad">PlotContour</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotCorrection.html"><span class="dropdownPad">PlotCorrection</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotData.html"><span class="dropdownPad">PlotData</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotData3D.html"><span class="dropdownPad">PlotData3D</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotDefGrid.html"><span class="dropdownPad">PlotDefGrid</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotDuty.html"><span class="dropdownPad">PlotDuty</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotIVIM.html"><span class="dropdownPad">PlotIVIM</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotMoments.html"><span class="dropdownPad">PlotMoments</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotSegmentations.html"><span class="dropdownPad">PlotSegmentations</span></a>
-     </li>
-     <li>
-      <a class="sub-ref" href="../ref/PlotSequence.html"><span class="dropdownPad">PlotSequence</span></a>
-     </li>
-    </ul>
-   </li>
-  </ul></nav><div class="main-heading"><h1 class="main-title">PlottingTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div><p class="intro"><a name="69198492"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for displaying and visualization of multi dimensional data. </p><div class="GuideDelimiterSubsection"><!-- --></div><p class="singleFunction"><a name="11866959"></a><span class="IFSans"><a class="package-symbol" href="../ref/PlotData.html">PlotData</a></span> <span class="dash">&mdash;</span> Plots 2D 3D and 4D data. One ore two datasets, adding legends, changing colors, adding labels, etc.</p><p class="singleFunction"><a name="21975540"></a><span class="IFSans"><a class="package-symbol" href="../ref/PlotData3D.html">PlotData3D</a></span> <span class="dash">&mdash;</span> Plots 3D data in a 3D data viewer WIP.</p><p class="singleFunction"><a name="174982341"></a><span class="IFSans"><a class="package-symbol" href="../ref/PlotSegmentations.html">PlotSegmentations</a></span> <span class="dash">&mdash;</span> Plots a 3D surface render of segmentations.</p><p class="singleFunction"><a name="243014282"></a><span class="IFSans"><a class="package-symbol" href="../ref/GradientPlot.html">GradientPlot</a></span> <span class="dash">&mdash;</span> Plots the diffusion gradients.</p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="6657206"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/GetSliceData.html">GetSliceData</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/GetSlicePositions.html">GetSlicePositions</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/MakeSliceImages.html">MakeSliceImages</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="189135043"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ListSpherePlot.html">ListSpherePlot</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotContour.html">PlotContour</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotIVIM.html">PlotIVIM</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotCorrection.html">PlotCorrection</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotDuty.html">PlotDuty</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/ColorFAPlot.html">ColorFAPlot</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/Link3DGraphic.html">Link3DGraphic</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotDefGrid.html">PlotDefGrid</a></span>
- </p><div class="GuideDelimiter"><!-- --></div><p class="inlineFunctionList">
-  <a name="900004176"></a>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotMoments.html">PlotMoments</a></span>
-  <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
-  <span class="IFSans"><a class="package-symbol" href="../ref/PlotSequence.html">PlotSequence</a></span>
- </p>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
-
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>PlottingTools&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{, , , }" />
+<meta name="keywords" content="PlottingTools" />
+
+<meta name="description" content="QMRITools package. Functions for displaying and visualization of multi dimensional data. " />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'PlottingTools.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="guide">
+  <main class="main">
+  <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div class="title" id="title">PlottingTools</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+  <ul class="select-container"
+      id="select-container">
+   <li class="dropdownmenu dropdownitem-1">
+    <a href="#" class="dropdownmenutitle see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ColorFAPlot.html"><span class="dropdownPad">ColorFAPlot</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GenerateRotationFrames.html"><span class="dropdownPad">GenerateRotationFrames</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GetSliceData.html"><span class="dropdownPad">GetSliceData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GetSlicePositions.html"><span class="dropdownPad">GetSlicePositions</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/GradientPlot.html"><span class="dropdownPad">GradientPlot</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/LegendImage.html"><span class="dropdownPad">LegendImage</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/Link3DGraphic.html"><span class="dropdownPad">Link3DGraphic</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ListSpherePlot.html"><span class="dropdownPad">ListSpherePlot</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/LoessPlot.html"><span class="dropdownPad">LoessPlot</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/MakeSliceImages.html"><span class="dropdownPad">MakeSliceImages</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotContour.html"><span class="dropdownPad">PlotContour</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotCorrection.html"><span class="dropdownPad">PlotCorrection</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotData.html"><span class="dropdownPad">PlotData</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotData3D.html"><span class="dropdownPad">PlotData3D</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotDuty.html"><span class="dropdownPad">PlotDuty</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotIVIM.html"><span class="dropdownPad">PlotIVIM</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotMoments.html"><span class="dropdownPad">PlotMoments</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotSegmentations.html"><span class="dropdownPad">PlotSegmentations</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/PlotSequence.html"><span class="dropdownPad">PlotSequence</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="../ref/ShowLink.html"><span class="dropdownPad">ShowLink</span></a>
+     </li>
+    </ul>
+   </li>
+   <li class="dropdownmenu lastitem dropdownitem-2">
+    <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+    <ul class="sub_menu">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ColorFAPlot.html"><span class="dropdownPad">ColorFAPlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GenerateRotationFrames.html"><span class="dropdownPad">GenerateRotationFrames</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetSliceData.html"><span class="dropdownPad">GetSliceData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetSlicePositions.html"><span class="dropdownPad">GetSlicePositions</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GradientPlot.html"><span class="dropdownPad">GradientPlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/LegendImage.html"><span class="dropdownPad">LegendImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/Link3DGraphic.html"><span class="dropdownPad">Link3DGraphic</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ListSpherePlot.html"><span class="dropdownPad">ListSpherePlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/LoessPlot.html"><span class="dropdownPad">LoessPlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeSliceImages.html"><span class="dropdownPad">MakeSliceImages</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotContour.html"><span class="dropdownPad">PlotContour</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotCorrection.html"><span class="dropdownPad">PlotCorrection</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotData.html"><span class="dropdownPad">PlotData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotData3D.html"><span class="dropdownPad">PlotData3D</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotDuty.html"><span class="dropdownPad">PlotDuty</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotIVIM.html"><span class="dropdownPad">PlotIVIM</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotMoments.html"><span class="dropdownPad">PlotMoments</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotSegmentations.html"><span class="dropdownPad">PlotSegmentations</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotSequence.html"><span class="dropdownPad">PlotSequence</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ShowLink.html"><span class="dropdownPad">ShowLink</span></a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </div></header>
+    <div class="page-container menu-empty">
+  	<div class="menu-container">
+  		
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS GUIDE</span><ul class="select-container2"
+        id="select-container2">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ColorFAPlot.html"><span class="dropdownPad">ColorFAPlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GenerateRotationFrames.html"><span class="dropdownPad">GenerateRotationFrames</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetSliceData.html"><span class="dropdownPad">GetSliceData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GetSlicePositions.html"><span class="dropdownPad">GetSlicePositions</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/GradientPlot.html"><span class="dropdownPad">GradientPlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/LegendImage.html"><span class="dropdownPad">LegendImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/Link3DGraphic.html"><span class="dropdownPad">Link3DGraphic</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ListSpherePlot.html"><span class="dropdownPad">ListSpherePlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/LoessPlot.html"><span class="dropdownPad">LoessPlot</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/MakeSliceImages.html"><span class="dropdownPad">MakeSliceImages</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotContour.html"><span class="dropdownPad">PlotContour</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotCorrection.html"><span class="dropdownPad">PlotCorrection</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotData.html"><span class="dropdownPad">PlotData</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotData3D.html"><span class="dropdownPad">PlotData3D</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotDuty.html"><span class="dropdownPad">PlotDuty</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotIVIM.html"><span class="dropdownPad">PlotIVIM</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotMoments.html"><span class="dropdownPad">PlotMoments</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotSegmentations.html"><span class="dropdownPad">PlotSegmentations</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/PlotSequence.html"><span class="dropdownPad">PlotSequence</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="../ref/ShowLink.html"><span class="dropdownPad">ShowLink</span></a>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdownmenu lastitem dropdownitem-2">
+      <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+      <ul class="sub_menu">
+       <li class="dropdownmenu dropdownitem-1">
+        <a href="#" class="dropdownmenutitle see-also">Functions</a>
+        <ul class="sub_menu">
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ColorFAPlot.html"><span class="dropdownPad">ColorFAPlot</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GenerateRotationFrames.html"><span class="dropdownPad">GenerateRotationFrames</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GetSliceData.html"><span class="dropdownPad">GetSliceData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GetSlicePositions.html"><span class="dropdownPad">GetSlicePositions</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/GradientPlot.html"><span class="dropdownPad">GradientPlot</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/LegendImage.html"><span class="dropdownPad">LegendImage</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/Link3DGraphic.html"><span class="dropdownPad">Link3DGraphic</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ListSpherePlot.html"><span class="dropdownPad">ListSpherePlot</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/LoessPlot.html"><span class="dropdownPad">LoessPlot</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/MakeSliceImages.html"><span class="dropdownPad">MakeSliceImages</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotContour.html"><span class="dropdownPad">PlotContour</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotCorrection.html"><span class="dropdownPad">PlotCorrection</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotData.html"><span class="dropdownPad">PlotData</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotData3D.html"><span class="dropdownPad">PlotData3D</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotDuty.html"><span class="dropdownPad">PlotDuty</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotIVIM.html"><span class="dropdownPad">PlotIVIM</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotMoments.html"><span class="dropdownPad">PlotMoments</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotSegmentations.html"><span class="dropdownPad">PlotSegmentations</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/PlotSequence.html"><span class="dropdownPad">PlotSequence</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="../ref/ShowLink.html"><span class="dropdownPad">ShowLink</span></a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul></nav>
+   <div class="main-heading"><h1 class="main-title">PlottingTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section><div class="inner">
+   <p class="intro"><a name="69198492"></a><a href="../guide/QMRITools.html">QMRITools</a> package. Functions for displaying and visualization of multi dimensional data. </p>
+   <div class="GuideDelimiterSubsection"><!-- --></div>
+   <p class="singleFunction"><a name="11866959"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotData.html">PlotData</a></span> <span class="dash">&mdash;</span> Plots 2D 3D and 4D data. One ore two datasets, adding legends, changing colors, adding labels, etc.</p>
+   <p class="singleFunction"><a name="21975540"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotData3D.html">PlotData3D</a></span> <span class="dash">&mdash;</span> Plots 3D data in a 3D data viewer WIP.</p>
+   <p class="singleFunction"><a name="174982341"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotSegmentations.html">PlotSegmentations</a></span> <span class="dash">&mdash;</span> Plots a 3D surface render of segmentations.</p>
+   <p class="singleFunction"><a name="243014282"></a><span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GradientPlot.html">GradientPlot</a></span> <span class="dash">&mdash;</span> Plots the diffusion gradients.</p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="6657206"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GetSliceData.html">GetSliceData</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GetSlicePositions.html">GetSlicePositions</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/MakeSliceImages.html">MakeSliceImages</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="189135043"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ListSpherePlot.html">ListSpherePlot</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotContour.html">PlotContour</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotIVIM.html">PlotIVIM</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotCorrection.html">PlotCorrection</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotDuty.html">PlotDuty</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ColorFAPlot.html">ColorFAPlot</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/Link3DGraphic.html">Link3DGraphic</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/GenerateRotationFrames.html">GenerateRotationFrames</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/ShowLink.html">ShowLink</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/LegendImage.html">LegendImage</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/LoessPlot.html">LoessPlot</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/$plotOptions.html">$plotOptions</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="900004176"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotMoments.html">PlotMoments</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="../ref/PlotSequence.html">PlotSequence</a></span>
+   </p>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
 </html>

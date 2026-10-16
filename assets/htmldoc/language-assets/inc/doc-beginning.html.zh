@@ -15,7 +15,7 @@
     <script src="//www.wolframcdn.com/consent/cookie-consent.js"></script>
     <script src="/common/javascript/wal/latest/walLoad.js"></script>
     <script src="/common/framework/js/head.zh.js"></script>
-    <script src="/common/js/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/common/js/jquery/3.7.1/jquery.min.js"></script>
     <script src="/common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script>
     <script src="/common/javascript/analytics.js"></script>
 

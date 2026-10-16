@@ -1,71 +1,176 @@
-
-		<!DOCTYPE html>
-		<html lang="en">
-
-		<head>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-
-<title>SegmentData&#226;&#8364;&#8221;Wolfram Language Documentation</title>
-<meta name="buildnumber" content="0000000">
-<meta name="historydata" content="{XX, , , }" />
-<meta name="keywords" content="SegmentData" />
-
-<meta name="description" content="SegmentData[data, what] segements the data. The what specifies the segmentation to be done. It currently allows for &quot;LegBones&quot; for the bones or &quot;Legs&quot; for the muscles." />
-<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
-<script>var baselang = 'SegmentData.en';</script>
-</head>
-
-<body id="ref" class="package">
-  <main class="main">
-  <nav class="topContentWrap"><span class="badge">Q M R I TOOLS SYMBOL</span></nav><div class="ContextNameCell">QMRITools`</div><div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 class="main-title">SegmentData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
-  <div class="functionIntro">
-   <p class="code">
-    <span class="IF"><a class="package-symbol" href="../QMRIToolsSegmentationTools/ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">what</span><span class="closebracket">]</span></span>
-   </p>
-   <p class="code-description">segements the <span class="IF"><span class="TI">data</span></span>. The <span class="IF"><span class="TI">what</span></span> specifies the segmentation to be done. It currently allows for &quot;LegBones&quot; for the bones or &quot;Legs&quot; for the muscles.</p>
-  </div>
- </div><section id="DetailsAndOptions"><div class="inner">
-   <h1 class="toggle">Details</h1>
-   <div class="hideable">
-    <ul class="functionList">
-     <li><a name="6243969"></a>The following options can be given: </li>
-     <li class="NotesTable">
-      <a name="471050314"></a>
-      <table>
-       <col width="1%" />
-       <col width="28%" />
-       <col width="28%" />
-       <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/TargetDevice.html">TargetDevice</a></td><td>&quot;GPU&quot;</td><td><span class="TT">TargetDevice is an option for certain functions that specifies on which device the computation should be attempted.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/MaxPatchSize.html">MaxPatchSize</a></td><td><a href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/MaxPatchSize.html">MaxPatchSize</a></span> is an option for <span class="IF">SegmentData</span> and <span class="IF"><a class="package-symbol" href="../ref/ApplySegmentationNetwork.html">ApplySegmentationNetwork</a></span>. Defines the patch size used when segmenting data. Bigger patches are better.</span></td></tr>
-       <tr class="" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Monitor.html">Monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="IF">Monitor<span class="specialcharacters"><span class="openbracket"><span class="openbracket">[</span></span></span><span class="TI">expr</span><span class="specialcharacters"><span class="comma"><span class="comma">,</span></span></span><span class="TI">mon</span><span class="specialcharacters"><span class="closebracket"><span class="closebracket">]</span></span></span></span> generates a temporary monitor cell in which the continually updated current value of <span class="IF"><span class="TI">mon</span></span> is displayed during the course of evaluation of <span class="IF"><span class="TI">expr</span></span>. </span></td></tr>
-      </table>
-     </li>
-    </ul>
-   </div>
-  </div></section><section id="Examples"><h1 id="17455907" class="toggle open">Examples</h1><div class="hideable">
-   <div id="275416192"
-       class="clipboard-input"
-       data-in="In[1]:="
-       data-in-num="1"
-       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-       data-src="Files/SegmentData.en/I_1.png"
-       data-in-width="126"
-       data-in-height="18"
-       data-link="https://wolfram.com/xid/0bhemfq4rul1905z5qekhwma-et9er2"
-       data-code="Files\SegmentData.en\i_1.txt"
-       ></div>
-   <div class="clear"><!-- --></div>
-  </div></section>
-  
-
-  
-		</main>
-		<div id="_footer-offset"></div>
-		<div id="_footer"></div>
-		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
-</body>
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>SegmentData&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="SegmentData" />
+
+<meta name="description" content="SegmentData[data] segments the data using the default Legs method. SegmentData[data, what] segments using the specified anatomical region. What can be Legs, LegsHip, UpperLegs, LowerLegs, Shoulder, Hip, or Body. SegmentData[data, {what, netFile}] uses a custom network file instead of the built-in net. SegmentData[{data, vox}] and SegmentData[{data, vox}, what] additionally give the voxel size of data. Unless vox is {1, 1, 1}, data is rescaled before segmentation to {vox[[1]], 1.5, 1.5} for SegmentationDimension -&gt; 2D or to {6, 1.5, 1.5} for 3D. If NetworkOutput -&gt; Both returns {segmentation, confidence}, any other value always returns just the segmentation." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'SegmentData.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+    <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div translate="no" class="title" id="title">SegmentData</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+ </div></header>
+    <div class="page-container menu-full">
+  	<div class="menu-container">
+  		<div class="menu-nav">
+ <div class="usage-container">
+  <div class="menu-item">
+   <div data-id="FunctionIntroduction"
+       class="menu-link function-usage-box">
+    <div class="sidebarfunctionIntroWrap tallUsage">
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">segments the <span class="IF"><span class="TI">data</span></span> using the default &quot;Legs&quot; method. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">what</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">segments using the specified anatomical region. What can be &quot;Legs&quot;, &quot;LegsHip&quot;, &quot;UpperLegs&quot;, &quot;LowerLegs&quot;, &quot;Shoulder&quot;, &quot;Hip&quot;, or &quot;Body&quot;. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">what</span><span class="comma">,</span><span class="TI">netFile</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">uses a custom network file instead of the built-in net. </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">and </p>
+     </div>
+     <div class="sidebarfunctionIntro">
+      <p class="code">
+       <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">what</span><span class="closebracket">]</span></span>
+      </p>
+      <p class="code-description">additionally give the voxel size of <span class="IF"><span class="TI">data</span></span>. Unless vox is {1, 1, 1}, <span class="IF"><span class="TI">data</span></span> is rescaled before segmentation to {vox[[1]], 1.5, 1.5} for <span class="IF"><span class="specialcharacters">SegmentationDimension<span class="textrule">-&gt;</span>&quot;2D&quot;</span></span> or to {6, 1.5, 1.5} for &quot;3D&quot;. If <span class="IF"><span class="specialcharacters">NetworkOutput<span class="textrule">-&gt;</span>&quot;Both&quot;</span></span> returns {segmentation, confidence}, any other value always returns just the segmentation.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="details-and-options-container menu-link"
+     data-id="DetailsAndOptions">
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions" class="menu-link details-and-options-label">Details</div>
+  </div>
+  <div class="menu-item">
+   <div data-id="DetailsAndOptions"
+       class="menu-link details-and-options-image-container">
+    <img src="../../language-assets/img/DetailsOptions-gray.png"
+        alt="Details and Options"
+        class="box-image gray-image" />
+    <img src="../../language-assets/img/DetailsOptions-hover.png"
+        alt="Details and Options"
+        class="box-image hover-image" />
+   </div>
+  </div>
+ </div>
+ 
+</div>
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">QMRITOOLS SYMBOL</span></nav>
+   <div class="ContextNameCell">QMRITools`</div>
+   <div class="main-heading"><span class="main-title-top">QMRITools`</span><h1 translate="no" class="main-title">SegmentData</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section class="function-wrapper"><div class="inner">
+   <div class="functionIntroWrap">
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">segments the <span class="IF"><span class="TI">data</span></span> using the default &quot;Legs&quot; method. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="TI">what</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">segments using the specified anatomical region. What can be &quot;Legs&quot;, &quot;LegsHip&quot;, &quot;UpperLegs&quot;, &quot;LowerLegs&quot;, &quot;Shoulder&quot;, &quot;Hip&quot;, or &quot;Body&quot;. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="TI">data</span><span class="comma">,</span><span class="openbrace">{</span><span class="TI">what</span><span class="comma">,</span><span class="TI">netFile</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">uses a custom network file instead of the built-in net. </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">and </p>
+    </div>
+    <div class="functionIntro">
+     <p class="code">
+      <span class="IF"><a translate="no" class="package-symbol" href="../ref/SegmentData.html">SegmentData</a><span class="openbracket">[</span><span class="openbrace">{</span><span class="TI">data</span><span class="comma">,</span><span class="TI">vox</span><span class="closebrace">}</span><span class="comma">,</span><span class="TI">what</span><span class="closebracket">]</span></span>
+     </p>
+     <p class="code-description">additionally give the voxel size of <span class="IF"><span class="TI">data</span></span>. Unless vox is {1, 1, 1}, <span class="IF"><span class="TI">data</span></span> is rescaled before segmentation to {vox[[1]], 1.5, 1.5} for <span class="IF"><span class="specialcharacters">SegmentationDimension<span class="textrule">-&gt;</span>&quot;2D&quot;</span></span> or to {6, 1.5, 1.5} for &quot;3D&quot;. If <span class="IF"><span class="specialcharacters">NetworkOutput<span class="textrule">-&gt;</span>&quot;Both&quot;</span></span> returns {segmentation, confidence}, any other value always returns just the segmentation.</p>
+    </div>
+   </div>
+  </div></section><section id="DetailsAndOptions" class="preview-wrapper"><div class="inner">
+   <h1 class="toggle">Details</h1>
+   <div class="details-preview">
+    <div class="hideable">
+     <ul class="functionList">
+      <li><a name="172613387"></a>The following options can be given: </li>
+      <li class="NotesTable"
+          translate="no">
+       <a name="423153246"></a>
+       <table>
+        <col width="1%" />
+        <col width="28%" />
+        <col width="28%" />
+        <col width="43%" />
+        <tr class="lineAbove" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/MaxMemorySize.html">MaxMemorySize</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/Automatic.html">Automatic</a></td><td><span class="TT" translate="yes">MaxMemorySize is an option for <span class="IF">SegmentData</span> and ApplySegmentationNetwork. Defines the maximum memory a patch can use in Gb. Higher is better.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/SegmentationDimension.html">SegmentationDimension</a></td><td>&quot;3D&quot;</td><td><span class="TT" translate="yes">SegmentationDimension is an option for <span class="IF">SegmentData</span>. The default value is &quot;3D&quot; but can also be set to &quot;2D&quot; to used 2D slice by slice segmentation.</span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" class="package-symbol" href="../ref/NetworkOutput.html">NetworkOutput</a></td><td>&quot;Segmentation&quot;</td><td><span class="TT" translate="yes"><span class="specialcharacters">NetworkOutput is an option for ApplySegmentationNetwork. Can be &quot;Segmentation&quot; <span class="openparenthesis">(</span>default<span class="closeparenthesis">)</span> to return the segmentation<span class="comma">,</span> &quot;Confidence&quot; to return the
+per-voxel class confidence <span class="openparenthesis">(</span>see ClassConfidence<span class="closeparenthesis">)</span><span class="comma">,</span> or &quot;Both&quot; to return <span class="openbrace">{</span>segmentation<span class="comma">,</span> confidence<span class="closebrace">}</span>.</span></span></td></tr>
+        <tr class="" style=""><td /><td><a translate="no" href="http://reference.wolfram.com/language/ref/Monitor.html">Monitor</a></td><td><a translate="no" href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT" translate="yes"><span class="IF">Monitor<span class="specialcharacters"><span class="openbracket"><span class="openbracket">[</span></span></span><span class="TI">expr</span><span class="specialcharacters"><span class="comma"><span class="comma">,</span></span></span><span class="TI">mon</span><span class="specialcharacters"><span class="closebracket"><span class="closebracket">]</span></span></span></span> generates a temporary monitor cell in which the continually updated current value of <span class="IF"><span class="TI">mon</span></span> is displayed during the course of evaluation of <span class="IF"><span class="TI">expr</span></span>. </span></td></tr>
+       </table>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
 </html>

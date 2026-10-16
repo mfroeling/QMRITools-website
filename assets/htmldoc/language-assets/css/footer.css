@@ -29,6 +29,9 @@ section.modified-wrapper { margin: 0; }
 .history-delimiter ~ .history-version:after { content: ''; width: 4px; height: 4px; border-radius: 4px; display: inline-block; background: #a4a4a4; vertical-align: middle; margin: 0 5.1px 1px; }
 .history-delimiter ~ .history-version:last-of-type:after { display: none; }
 
+
+/* Feedback */
+
 .feedback-content { border-top: 1px solid #cacaca; margin: 0 auto; }
 .modified-wrapper + .feedback-wrapper .feedback-content { border: 0; margin: 0; }
 

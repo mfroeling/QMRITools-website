@@ -1,0 +1,401 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>NeuralNetworkTools: Guide&#8212;Wolfram Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{, , , }" />
+<meta name="keywords" content="NeuralNetworkTools" />
+
+<meta name="description" content="QMRITools package: functions for making and manipulating CNNs and UNETs for image segmentation." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'NeuralNetworkTools.en';</script>
+<link rel="stylesheet" href="../../language-assets/css/sidebar-nav.css"><link rel="stylesheet" href="../../language-assets/css/stickynavigation.css"><link rel="stylesheet" href="../../language-assets/css/header-v2.css"><link rel="stylesheet" href="../../language-assets/css/qmritools-fix.css">
+</head>
+
+<body id="guide">
+  <main class="main">
+  <header class="stickyheader"><div class="container2"
+     id="container2">
+  <div class="title-container"
+      id="title-container"
+      style="">
+   <div class="title" id="title">NeuralNetworkTools</div>
+  </div>
+  <div class="input-container"
+      id="input-container"
+      style="">
+   <div class="search-content"
+       id="search-content">
+    <form class="search" method="get" name="sticky-searchpageform" action="/search/" id="sticky-ref-search-form"><input type="submit" value="q" id="sticky-search-button" /><input id="sticky-query" name="q" type="text" value="" placeholder="Search Documentation" /><button class="stickyclearfield" style="display: none;"><!-- --></button></form>
+   </div>
+   <button id="sticky-search-toggle" class="sticky-search-toggle-icon" style="display: none;"><!-- --></button>
+  </div>
+  <ul class="select-container"
+      id="select-container">
+   <li class="dropdownmenu dropdownitem-1">
+    <a href="#" class="dropdownmenutitle see-also">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ActivationLayer.html"><span class="dropdownPad">ActivationLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AddLossLayer.html"><span class="dropdownPad">AddLossLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AnalyzeNetworkFeatures.html"><span class="dropdownPad">AnalyzeNetworkFeatures</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossFunction.html"><span class="dropdownPad">CELossFunction</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossLayer.html"><span class="dropdownPad">CELossLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ChangeNetDimensions.html"><span class="dropdownPad">ChangeNetDimensions</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassConfidence.html"><span class="dropdownPad">ClassConfidence</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassDecoder.html"><span class="dropdownPad">ClassDecoder</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassEncoder.html"><span class="dropdownPad">ClassEncoder</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/DiceLossLayer.html"><span class="dropdownPad">DiceLossLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/FocalLossLayer.html"><span class="dropdownPad">FocalLossLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/GetNetNodes.html"><span class="dropdownPad">GetNetNodes</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/JaccardLossLayer.html"><span class="dropdownPad">JaccardLossLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyImage.html"><span class="dropdownPad">MakeClassifyImage</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyNetwork.html"><span class="dropdownPad">MakeClassifyNetwork</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeNode.html"><span class="dropdownPad">MakeNode</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeUnet.html"><span class="dropdownPad">MakeUnet</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetDimensions.html"><span class="dropdownPad">NetDimensions</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetSummary.html"><span class="dropdownPad">NetSummary</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/OverlapLossFunction.html"><span class="dropdownPad">OverlapLossFunction</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TopKLossLayer.html"><span class="dropdownPad">TopKLossLayer</span></a>
+     </li>
+     <li>
+      <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TverskyLossLayer.html"><span class="dropdownPad">TverskyLossLayer</span></a>
+     </li>
+    </ul>
+   </li>
+   <li class="dropdownmenu lastitem dropdownitem-2">
+    <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+    <ul class="sub_menu">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ActivationLayer.html"><span class="dropdownPad">ActivationLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AddLossLayer.html"><span class="dropdownPad">AddLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AnalyzeNetworkFeatures.html"><span class="dropdownPad">AnalyzeNetworkFeatures</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossFunction.html"><span class="dropdownPad">CELossFunction</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossLayer.html"><span class="dropdownPad">CELossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ChangeNetDimensions.html"><span class="dropdownPad">ChangeNetDimensions</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassConfidence.html"><span class="dropdownPad">ClassConfidence</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassDecoder.html"><span class="dropdownPad">ClassDecoder</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassEncoder.html"><span class="dropdownPad">ClassEncoder</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/DiceLossLayer.html"><span class="dropdownPad">DiceLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/FocalLossLayer.html"><span class="dropdownPad">FocalLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/GetNetNodes.html"><span class="dropdownPad">GetNetNodes</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/JaccardLossLayer.html"><span class="dropdownPad">JaccardLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyImage.html"><span class="dropdownPad">MakeClassifyImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyNetwork.html"><span class="dropdownPad">MakeClassifyNetwork</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeNode.html"><span class="dropdownPad">MakeNode</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeUnet.html"><span class="dropdownPad">MakeUnet</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetDimensions.html"><span class="dropdownPad">NetDimensions</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetSummary.html"><span class="dropdownPad">NetSummary</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/OverlapLossFunction.html"><span class="dropdownPad">OverlapLossFunction</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TopKLossLayer.html"><span class="dropdownPad">TopKLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TverskyLossLayer.html"><span class="dropdownPad">TverskyLossLayer</span></a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </div></header>
+    <div class="page-container menu-empty">
+  	<div class="menu-container">
+  		
+  	</div>
+  	<div class="content-container">
+	 <div class="main-heading-wrapper">
+  <div class="inner">
+   <nav class="topContentWrap"><span class="badge">CUSTOM GUIDE</span><ul class="select-container2"
+        id="select-container2">
+     <li class="dropdownmenu dropdownitem-1">
+      <a href="#" class="dropdownmenutitle see-also">Functions</a>
+      <ul class="sub_menu">
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ActivationLayer.html"><span class="dropdownPad">ActivationLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AddLossLayer.html"><span class="dropdownPad">AddLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AnalyzeNetworkFeatures.html"><span class="dropdownPad">AnalyzeNetworkFeatures</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossFunction.html"><span class="dropdownPad">CELossFunction</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossLayer.html"><span class="dropdownPad">CELossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ChangeNetDimensions.html"><span class="dropdownPad">ChangeNetDimensions</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassConfidence.html"><span class="dropdownPad">ClassConfidence</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassDecoder.html"><span class="dropdownPad">ClassDecoder</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassEncoder.html"><span class="dropdownPad">ClassEncoder</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/DiceLossLayer.html"><span class="dropdownPad">DiceLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/FocalLossLayer.html"><span class="dropdownPad">FocalLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/GetNetNodes.html"><span class="dropdownPad">GetNetNodes</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/JaccardLossLayer.html"><span class="dropdownPad">JaccardLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyImage.html"><span class="dropdownPad">MakeClassifyImage</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyNetwork.html"><span class="dropdownPad">MakeClassifyNetwork</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeNode.html"><span class="dropdownPad">MakeNode</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeUnet.html"><span class="dropdownPad">MakeUnet</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetDimensions.html"><span class="dropdownPad">NetDimensions</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetSummary.html"><span class="dropdownPad">NetSummary</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/OverlapLossFunction.html"><span class="dropdownPad">OverlapLossFunction</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TopKLossLayer.html"><span class="dropdownPad">TopKLossLayer</span></a>
+       </li>
+       <li>
+        <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TverskyLossLayer.html"><span class="dropdownPad">TverskyLossLayer</span></a>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdownmenu lastitem dropdownitem-2">
+      <a href="#" class="dropdownmenutitle lastselect" id="lastselect"><span class="square"><!-- --></span><span class="square"><!-- --></span><span class="square"><!-- --></span></a>
+      <ul class="sub_menu">
+       <li class="dropdownmenu dropdownitem-1">
+        <a href="#" class="dropdownmenutitle see-also">Functions</a>
+        <ul class="sub_menu">
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ActivationLayer.html"><span class="dropdownPad">ActivationLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AddLossLayer.html"><span class="dropdownPad">AddLossLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/AnalyzeNetworkFeatures.html"><span class="dropdownPad">AnalyzeNetworkFeatures</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossFunction.html"><span class="dropdownPad">CELossFunction</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/CELossLayer.html"><span class="dropdownPad">CELossLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ChangeNetDimensions.html"><span class="dropdownPad">ChangeNetDimensions</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassConfidence.html"><span class="dropdownPad">ClassConfidence</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassDecoder.html"><span class="dropdownPad">ClassDecoder</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/ClassEncoder.html"><span class="dropdownPad">ClassEncoder</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/DiceLossLayer.html"><span class="dropdownPad">DiceLossLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/FocalLossLayer.html"><span class="dropdownPad">FocalLossLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/GetNetNodes.html"><span class="dropdownPad">GetNetNodes</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/JaccardLossLayer.html"><span class="dropdownPad">JaccardLossLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyImage.html"><span class="dropdownPad">MakeClassifyImage</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyNetwork.html"><span class="dropdownPad">MakeClassifyNetwork</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeNode.html"><span class="dropdownPad">MakeNode</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/MakeUnet.html"><span class="dropdownPad">MakeUnet</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetDimensions.html"><span class="dropdownPad">NetDimensions</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/NetSummary.html"><span class="dropdownPad">NetSummary</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/OverlapLossFunction.html"><span class="dropdownPad">OverlapLossFunction</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TopKLossLayer.html"><span class="dropdownPad">TopKLossLayer</span></a>
+         </li>
+         <li>
+          <a translate="no" class="sub-ref" href="http://reference.wolfram.com/language/QMRITools/ref/TverskyLossLayer.html"><span class="dropdownPad">TverskyLossLayer</span></a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul></nav>
+   <div class="main-heading"><h1 class="main-title">NeuralNetworkTools</h1><div class="iconography" data-src="f= s= d= m= c= u= l= n= e="></div></div>
+  </div>
+ </div><section><div class="inner">
+   <p class="intro"><a name="2001916300"></a><a href="http://reference.wolfram.com/language/QMRITools/guide/QMRITools.html">QMRITools</a> package: functions for making and manipulating CNNs and UNETs for image segmentation.</p>
+   <div class="GuideDelimiterSubsection"><!-- --></div>
+   <p class="singleFunction"><a name="138729883"></a><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/MakeUnet.html">MakeUnet</a></span> <span class="dash">&mdash;</span> Makes a 2D or 3D UNET.</p>
+   <p class="singleFunction"><a name="337768848"></a><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/MakeNode.html">MakeNode</a></span> <span class="dash">&mdash;</span> Makes a node for a UNET.</p>
+   <p class="singleFunction"><a name="403393543"></a><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/$debugUnet.html">$debugUnet</a></span> <span class="dash">&mdash;</span> If set True the MakeUnet and MakeNode can be debugged.</p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList"><a name="256710328"></a><a translate="no" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyImage.html">MakeClassifyImage</a> <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <a translate="no" href="http://reference.wolfram.com/language/QMRITools/ref/MakeClassifyNetwork.html">MakeClassifyNetwork</a><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/ActivationLayer.html">ActivationLayer</a></span></p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList"><a name="2038009"></a><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/NetSummary.html">NetSummary</a></span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/NetDimensions.html">NetDimensions</a></span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/ChangeNetDimensions.html">ChangeNetDimensions</a></span> <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/GetNetNodes.html">GetNetNodes</a></span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span><span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/AnalyzeNetworkFeatures.html">AnalyzeNetworkFeatures</a></span></p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="123436460"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/AddLossLayer.html">AddLossLayer</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/DiceLossLayer.html">DiceLossLayer</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/FocalLossLayer.html">FocalLossLayer</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/JaccardLossLayer.html">JaccardLossLayer</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/TverskyLossLayer.html">TverskyLossLayer</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/OverlapLossFunction.html">OverlapLossFunction</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/TopKLossLayer.html">TopKLossLayer</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/CELossFunction.html">CELossFunction</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/CELossLayer.html">CELossLayer</a></span>
+   </p>
+   <div class="GuideDelimiter"><!-- --></div>
+   <p class="inlineFunctionList">
+    <a name="345912900"></a>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/ClassDecoder.html">ClassDecoder</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/ClassEncoder.html">ClassEncoder</a></span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="inlineBullet">&nbsp;&#9642;&nbsp;</span>
+    <span class="IFSans"><a translate="no" class="package-symbol" href="http://reference.wolfram.com/language/QMRITools/ref/ClassConfidence.html">ClassConfidence</a></span>
+   </p>
+  </div></section>
+  <!--#include virtual="/language-assets/inc/feedback.html.en"-->
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/3.7.1/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.js"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script type="module" src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/stickynavigation.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+
+</html>

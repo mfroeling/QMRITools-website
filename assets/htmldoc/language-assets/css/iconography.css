@@ -1,8 +1,8 @@
 /* ==========================================================================
    iconography
    ========================================================================== */
-.iconography { display: inline-block; margin: auto; position: absolute; right: 0; top: 5px; bottom: 0; text-align: right; z-index: 1; }
-.iconography span { display: inline-block; margin: 0 0 0 .3rem; vertical-align: middle; }
+.iconography { display: block; margin: 0; padding: 0; position: relative; text-align: right; z-index: 1; }
+.iconography span { display: inline-block; margin: 0; vertical-align: middle; }
 .iconography:empty { display: none; }
 
 .iconography .media-icons { position: relative; margin: .45rem 0 0 .3rem; vertical-align: top; }
@@ -14,22 +14,49 @@
 .iconography .media.hover:before { opacity: 1; }
 .iconography .media.hover + .tooltip { display: block; }
 
-.iconography .updated { padding: .33rem; margin: -.13rem 0 0 .8rem; color: #d96500; font-style: italic; text-transform: uppercase; font-size:  1.27rem; font-weight: 400; line-height: 1.1; position: relative; }
+.iconography .updated { padding: 0; margin: 0; color: #d96500; font-style: italic; text-transform: uppercase; font-size:  1.27rem; font-weight: 400; line-height: 1.1; position: relative; }
+html[lang="ja"] .iconography .updated, html[lang="zh"] .iconography .updated {font-style: normal;}
 .iconography .updated.highlight-link { cursor: pointer; }
 .iconography .updated .changes, .updated .hide-changes { font-size: .77rem; color: #999; margin: 0; text-transform: none; font-style: normal; }
-.iconography .updated .changes { display: block; }
-.iconography .updated .hide-changes { display: none; }
+.iconography .updated .changes { display: block !important; }
+.iconography .updated.highlighting .changes { display: none !important; }
+.iconography .updated .hide-changes { display: none !important; }
+.iconography .updated.highlighting .hide-changes { display: block !important; }
 .iconography .updated.highlight-link:hover { color: #f77700; }
 .iconography .new { color: #d96500; font-style: italic; text-transform: uppercase; font-size:  1.27rem; font-weight: 400; line-height: 1.1; display: block; }
+html[lang="ja"] .iconography .new, html[lang="zh"] .iconography .new {font-style: normal;}
 .iconography .pipe { border-right: 1px solid #e5e5e5; margin: 0 .6rem; height: 26px; }
-.iconography .experimental { font-size: 1rem; color: #848484; text-transform: uppercase; letter-spacing: 0; left: 0; font-weight: 600; display: block; position: relative; }
-.iconography .experimental .text { color: #136eb7; margin: 0; vertical-align: top; top: 1px; position: relative; }
+.iconography .experimental { font-size: 1rem; color: #848484; text-transform: uppercase; letter-spacing: 0; font-weight: 600; display: block !important; position: relative; }
+.iconography .experimental .text { display: inline;color: #136eb7; margin: 0; vertical-align: top; top: 1px; position: relative; }
+
+.iconography .core-area.audio:before {content: url(../img/core-areas-AudioComputation.png); position: relative; top: 12px;}
+.iconography .core-area.calculus-algebra:before {content: url(../img/core-areas-Calculus-Algebra.png); position: relative; top: 12px;}
+.iconography .core-area.chemistry:before {content: url(../img/core-areas-Chemistry.png); position: relative; top: 12px;}
+.iconography .core-area.controls:before {content: url(../img/core-areas-ControlSystems.png); position: relative; top: 12px;}
+.iconography .core-area.fem:before {content: url(../img/core-areas-FEM.png); position: relative; top: 12px;}
+.iconography .core-area.geography:before {content: url(../img/core-areas-Geography.png); position: relative; top: 12px;}
+.iconography .core-area.geometry:before {content: url(../img/core-areas-Geometry.png); position: relative; top: 12px;}
+.iconography .core-area.image:before {content: url(../img/core-areas-Image.png); position: relative; top: 12px;}
+.iconography .core-area.knowledgebase:before {content: url(../img/core-areas-Knowledgebase.png); position: relative; top: 12px;}
+.iconography .core-area.machine-learning:before {content: url(../img/core-areas-Machine-Learning.png); position: relative; top: 12px;}
+.iconography .core-area.mathematical-functions:before {content: url(../img/core-areas-Mathematical-Functions.png); position: relative; top: 12px;}
+.iconography .core-area.optimization:before {content: url(../img/core-areas-Optimization.png); position: relative; top: 12px;}
+.iconography .core-area.signal:before {content: url(../img/core-areas-Signal.png); position: relative; top: 12px;}
+.iconography .core-area.video:before {content: url(../img/core-areas-Video.png); position: relative; top: 12px;}
+.iconography .core-area.visualization:before {content: url(../img/core-areas-Visualization.png); position: relative; top: 12px;}
 
 .iconography-wrapper.wrap-down { text-align: left; padding: 0 5px 0 12px; display: table-cell; }
 .iconography-wrapper.wrap-down .iconography { position: relative; text-align: left; top: 0; vertical-align: middle; }
-a.related-interpreter { font-size: 13px; font-weight: 300; color: #636363; font-style: italic; position: absolute; right: 0; z-index: 1; display: inline-block; }
-.iconography-wrapper + a.related-interpreter { margin: -.5rem 0 0; border-top: 1px solid #ddd; padding: .18rem 0 0; }
-.iconography-wrapper.empty + a.related-interpreter { margin: -2.18rem 0 0 0; border: 0; }
+a.related-interpreter { font-size: 13px; font-weight: 300; color: #636363; font-style: italic; position: relative; right: 0; z-index: 1; display: inline-block; }
+.iconography-wrapper + a.related-interpreter, .iconography + a.related-interpreter { margin: 0; margin-right: 12px; border-top: 1px solid #ddd; padding: 0; grid-column: 2; grid-row: 3; }
+.iconography-wrapper.empty + a.related-interpreter { margin: 0; margin-right: 12px; border: 0; grid-row: 1 / span 4;}
+html[lang="ja"] .iconography-wrapper + a.related-interpreter { margin-left: -10pt; }
+html[lang="ja"] .iconography-wrapper.empty + a.related-interpreter { margin-left: -10pt; }
+
 .iconography-wrapper.wrap-down + a.related-interpreter { display: table-cell; position: relative; text-align: left; top: 3px; border-top: 0; border-left: 1px solid #ddd; padding: 0 0 0 5px; margin: 0 0 0 5px; vertical-align: middle; }
 .iconography-wrapper.wrap-down .iconography span { margin: 0; text-align: left; display: inline-block; }
 .sticky a.related-interpreter { display: none !important; }
+
+.iconography .prerequisite {font-size: 1.00rem; color: #7d7d7d; font-style: normal; text-transform: none; font-weight: 400; display: block; position: relative;}
+
+.NewInGraphic img {display:none;}

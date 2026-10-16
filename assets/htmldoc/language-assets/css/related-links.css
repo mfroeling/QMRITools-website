@@ -27,13 +27,14 @@
 .related-links#RelatedWorkflowGuides .inner { background-image: url('../img/icon_workflowguide2x.png'); }
 .related-links#RelatedMonographs .inner { background-image: url('../img/icon_monographs2x.png'); }
 .related-links#RelatedTechNotes .inner { background-image: url('../img/icon_technotes2x.png'); }
+.related-links#TechNotes .inner { background-image: url('../img/icon_wolframtech2x.png'); }
 .related-links#RelatedInterpreters .inner, .related-links#RelatedInterpreterSection .inner { background-image: url('../img/icon_interpreters2x.png'); }
 .related-links#RelatedFormats .inner { background-image: url('../img/icon_formats2x.png'); }
 .related-links#RelatedEntityTypes .inner { background-image: url('../img/icon_entity2x.png'); }
 .related-links#History .inner { background-image: url('../img/history.png'); }
 
 .related-links .inner .functionList { padding: 0 0 0 3.2rem; }
-.related-links .inner .related-grid { display: grid; grid-template-columns: 50% 50%; max-width: 70%; }
+.related-links .inner .related-grid { display: grid; grid-template-columns: 50% 50%; grid-column-gap: 2rem; max-width: 70%; }
 .related-links .inner .functionList > *:not(li) { display: none; }
 .related-links .inner .inlineFunctionList { padding: .2rem 0 0 3.9rem; margin: 0; }
 .related-links#SeeAlso .inner .inlineFunctionList { padding: 0 0 0 2.69rem; }
@@ -46,6 +47,7 @@
 /* RelatedLinks icons */
 #RelatedLinks.related-links .FilledVerySmallSquare { font-size: 16px; color: #adadad; }
 #RelatedLinks.related-links .functionList li[class]:before { content: ''; display: inline-block !important; width: 1.6rem; height: 1.6rem; background-size: contain; position: absolute; left: 0; top: 0; }
+#RelatedLinks.related-links .functionList li.core-areas:before {left: -3px; }
 .related-links .demonstrations:before { background: url('../img/icon-demonstrations2x.png') no-repeat; }
 .related-links .elementary-intro:before { background: url('../img/icon-eiwl2x.png') no-repeat; }
 .related-links .fast-intro:before { background: url('../img/icon-fast-intro2x.png') no-repeat; }
@@ -59,6 +61,7 @@
 .related-links .tmj:before { background: url('../img/icon-tmj2x.png') no-repeat; }
 .related-links .wolframalpha:before { background: url('../img/icon-wolframalpha2x.png') no-repeat; }
 .related-links .wolframu:before { background: url('../img/icon-wolframu2x.png') no-repeat; }
+.related-links .core-areas:before { background: url('../img/icon-core-areas2x.png') no-repeat; }
 
 body:not(.workflow) .related-links#RelatedLinks .functionList li { padding: 0 0 0 2.06rem; display: block; vertical-align: top; background-size: 30px auto; margin: .3rem 33px 20px -33px !important; }
 body:not(.workflow) .related-links#RelatedLinks .functionList li:not(.BulletedText):before { display: none; }
@@ -76,6 +79,7 @@ body:not(.workflow) .related-links#RelatedLinks .functionList li:not(.BulletedTe
 }
 @media all and (max-width: 900px) {
     .related-links .inner { min-height: 75px; margin: 0 auto .9rem !important; }
+    .related-links .inner .related-grid { max-width: 90%; }
 }
 @media all and (max-width: 600px) {
     .related-links .inner { min-height: 70px; }
