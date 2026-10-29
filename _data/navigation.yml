@@ -2,57 +2,61 @@
   url: /
   side: left
 
-- title: Projects and tools
-  url: /tool/
-  side: left
-  dropdown:
-  - title: QMRITools packages
-    url: /tool/QMRITools/
-  - title: Automated muscle segmentation
-    url: /seg/segmentation/
-  - title: Diffusion gradient optimization
-    url: /tool/gradient/
-  - title: QMRITools and Muscle-BIDS
-    url: /tool/bids/
-    
-- title: Documentation
+- title: Get started
   url: /doc/
   side: left
   dropdown:
   - title: Installation
     url: /doc/instal/
+  - title: What's new
+    url: /doc/whatsnew/
+  - title: Manuals and scripts
+    url: /doc/manuals/
   - title: Demonstration
     url: /doc/demo/
-  - title: Guide pages
-    url: /assets/htmldoc/html/guide/qmritools
 
 - title: Muscle-BIDS
   url: /bids/
   side: left
   dropdown:
-  - title: QMRITools and Muscle-BIDS
-    url: /tool/bids/
+  - title: Muscle-BIDS overview
+    url: /bids/
+  - title: Muscle-BIDS manual
+    url: https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md
+  - title: Muscle-BIDS step by step
+    url: /bids/tutorial/
   - title: Files and folders
     url: /bids/files_folders/
   - title: Entities and suffixes
     url: /bids/ents_suffs/
-  - title: Muscle-BIDS step by step
-    url: /bids/tutorial/
 
-- title: Muscle Segmentations
+- title: Muscle Segmentation
   url: /seg/segmentation/
   side: left
   dropdown:
   - title: Automated muscle segmentation
     url: /seg/segmentation/
-  - title: Segmentation methods and tools
-    url: /seg/methods/
   - title: Segmentation networks and locations
     url: /seg/networks/
+  - title: Segmentation methods and tools
+    url: /seg/methods/
   - title: Segmentation with command line scripts
     url: /seg/script/
   - title: Muscle naming
     url: /seg/naming/
+
+- title: Reference
+  url: /tool/
+  side: left
+  dropdown:
+  - title: QMRITools packages
+    url: /tool/
+  - title: Guide pages
+    url: /assets/htmldoc/html/guide/QMRITools.html
+  - title: All functions (pdf)
+    url: https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Resources/All-Functions.pdf
+  - title: Diffusion gradient optimization
+    url: /tool/gradienttools/
 
 - title: About
   url: /about/

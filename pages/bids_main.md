@@ -4,8 +4,8 @@ layout: page
 permalink: /bids/
 
 title: "Muscle-BIDS"
-subheadline: "Why QMRITools uses Muscle-BIDS"
-teaser: "Muscle-BIDS is a work in progress..."
+subheadline: "Automated muscle MRI processing from DICOM to per-muscle results"
+teaser: "Why QMRITools uses Muscle-BIDS"
 
 header: no
 
@@ -27,16 +27,25 @@ For automated data processing of processing with various tool-boxes data managem
 
 ## QMRITools and Muscle-BIDS
 
-QMRITools contains a couple of Muscle-BIDS scripts. Of course, all functionality of QMRITools remains available without the use of Muscle-BIDS but for standardized qMRI muscle studies using the Muscle-BIDS conventions can save lots of time and fully automated scripts are available for common data processing methods. Muscle-BIDS pipelines can support the following steps:
+QMRITools contains a complete Muscle-BIDS pipeline that takes a study from DICOM to per-muscle results. Of course, all functionality of QMRITools remains available without the use of Muscle-BIDS, but for standardized qMRI muscle studies using the Muscle-BIDS conventions can save lots of time.
 
-> - Conversion of DICOM to raw Muscle-BIDS NIfTI
-> - Processing of Muscle-BIDS data
-> - Analysis of processed Muscle-BIDS data
-> - Conversion of Muscle-BIDS output to DICOM
+Automated processing only works if all input data is well-curated and defined. The general rule of garbage in is garbage out applies here as well. A config file (`config.json`) for a study describes which data to expect and in which form. Based on the data described the correct (pre-)processing is selected and performed. If expected data is not found the processing step is skipped, and if data is not described in the config it is ignored. The config file can be general for the entire study folder, or can be defined on a per subject or session level to make exceptions.
+
+**Muscle BIDS manual:** a complete manual with a step by step example, all config options and troubleshooting is available [on GitHub](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md){:target="_blank"} (also as [pdf](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.pdf){:target="_blank"}). Example config files for different studies are listed under [manuals and scripts](../doc/manuals).
+
+The pipeline runs in the following steps, each step writes its results in its own folder and already processed data is skipped:
+
+> 1. `BidsDcmToNii`: conversion of DICOM to raw NIfTI (using dcm2niix).
+> 2. `MuscleBidsConvert`: collecting, renaming and moving the data to Muscle-BIDS compliant files and folders, based on the config file.
+> 3. `MuscleBidsProcess`: processing of the data, such as Dixon reconstruction, IVIM-DTI preprocessing and modelling, and water T2 mapping with EPG modelling.
+> 4. `MuscleBidsMerge`: merging of multiple stacks into one dataset.
+> 5. `MuscleBidsSegment`: automated muscle segmentation, see [automated muscle segmentation](../seg/segmentation/).
+> 6. `MuscleBidsTractography`: whole volume muscle fiber tractography.
+> 7. `MuscleBidsAnalysis`: extraction of the qMRI parameters per muscle, and of tract based and muscle architecture parameters, to Excel files for statistical analysis.
 
 {% include page-image im_id="proc" %}
 
-Currently, QMRITools supports step 1 for Philips MRI data if the data acquisition is performed in a standardized way. Furthermore, it fully supports steps 2 and 3 for DIXON, T2 and DTI processing and analysis. On this page, for each step, it is explained how QMRITools handles Muscle-BIDS data and what function can be used. Eventually, the aim is to be able to fully automate steps 1 to 4 using stand-alone scripts that only need to be configured once per study or data set.
+Reprocessing of data can be forced for all data, or for data processed before a specific date or with an older `QMRITools` version. To keep track of this `QMRITools` creates additional `.json` files with the suffix `_check`. The manual describes how to [view and check](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md#checking-and-viewing-your-study){:target="_blank"} the study and how to force a redo.
 
 ## General guidelines
 
@@ -50,119 +59,7 @@ To reduce the number of files, where appropriate, 4D NIfTI datasets are used ins
 
 A Muscle-BIDS dataset must contain the source data, which in this case is the unprocessed nifty data with its headers. Each unique subject has its folder. Within the subject folder, there are session folders for when the same subject is scanned on multiple occasions. Within the session folder, each datatype is again stored in its subfolders.
 
-`QMRITools` add various other logging and file tree files to each folder that are not mandatory but can be useful and are sometimes needed for processing. An example of a Muscle-BIDS folder structure is given below:
-
-<div style="
-  background-color:black;
-  font-family:Roboto Mono,SFMono-Regular,Consolas,Menlo,monospace;
-  line-height: 1.17;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: white;
-  font-weight: bold;
-  font-size: 12px">
-└─sourcedata/<br>
-&nbsp;&nbsp;├─sub-Test001/<br>
-&nbsp;&nbsp;│&nbsp;└─ses-001/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─dix/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DIXON1_megre_imag.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DIXON1_megre_imag.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DIXON1_megre.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<34>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DIXON5_megre_ph.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DIXON5_megre_real.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-Test001_ses-001_stk-DIXON5_megre_real.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─dwi/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DTI1_dwi_dti.bval<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DTI1_dwi_dti.bvec<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DTI1_dwi_dti.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<14>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DTI5_dwi_dti.bvec<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test001_ses-001_stk-DTI5_dwi_dti.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-Test001_ses-001_stk-DTI5_dwi_dti.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─raw/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─101_20221213162506_20221212-set1_Ph_20221212-set1_SURVEY_2_LEG_GR.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─101_20221213162506_20221212-set1_Ph_20221212-set1_SURVEY_2_LEG_GR.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─201_20221213162506_20221212-set1_Ph_20221212-set1_SURVEY_2_LEG_GR.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<512>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─905_20221213162506_20221212-set1_Ph_20221212-set1_WIP_DTI5_SE.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─905_20221213162506_20221212-set1_Ph_20221212-set1_WIP_DTI5_SE.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─DcmToNiiLog.txt<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─BIDSConvert.log<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└─FileTree.txt<br>
-&nbsp;&nbsp;├─sub-Test002/<br>
-&nbsp;&nbsp;│&nbsp;└─ses-001/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─dix/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DIXON1_megre_imag.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DIXON1_megre_imag.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DIXON1_megre.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<34>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DIXON5_megre_ph.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DIXON5_megre_real.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-Test002_ses-001_stk-DIXON5_megre_real.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─dwi/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DTI1_dwi_dti.bval<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DTI1_dwi_dti.bvec<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DTI1_dwi_dti.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<14>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DTI5_dwi_dti.bvec<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-Test002_ses-001_stk-DTI5_dwi_dti.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-Test002_ses-001_stk-DTI5_dwi_dti.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─raw/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─101_20221213173147_20221212-set2_Ph_20221212-set2_SURVEY_2_LEG-1_GR.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─101_20221213173147_20221212-set2_Ph_20221212-set2_SURVEY_2_LEG-1_GR.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─201_20221213173147_20221212-set2_Ph_20221212-set2_SURVEY_2_LEG-2_GR.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<432>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─805_20221213173147_20221212-set2_Ph_20221212-set2_WIP_DTI5_SE.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─805_20221213173147_20221212-set2_Ph_20221212-set2_WIP_DTI5_SE.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─DcmToNiiLog.txt<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─BIDSConvert.log<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└─FileTree.txt<br>
-&nbsp;&nbsp;├─sub-viditest/<br>
-&nbsp;&nbsp;│&nbsp;└─ses-001/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─dix/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DIXON1_megre_dix_imag.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DIXON1_megre_dix_imag.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DIXON1_megre_dix.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<42>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DIXON6_megre_dix_ph.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DIXON6_megre_dix_real.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-viditest_ses-001_stk-DIXON6_megre_dix_real.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─dwi/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DTI1_dwi_dti.bval<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DTI1_dwi_dti.bvec<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DTI1_dwi_dti.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<18>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DTI6_dwi_dti.bvec<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-DTI6_dwi_dti.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-viditest_ses-001_stk-DTI6_dwi_dti.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─quant/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-T21_mese_t2.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-T21_mese_t2.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-T22_mese_t2.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<6>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-T25_mese_t2.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─sub-viditest_ses-001_stk-T26_mese_t2.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─sub-viditest_ses-001_stk-T26_mese_t2.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─raw/<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─101_20230103162213_20230103-viditest_Ph_20230103-viditest_SUR-PLAN_GR.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─101_20230103162213_20230103-viditest_Ph_20230103-viditest_SUR-PLAN_GR.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─301_20230103162213_20230103-viditest_Ph_20230103-viditest_SUR-COR-1_GR.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─..<<697>>..<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─806_20230103162213_20230103-viditest_Ph_20230103-viditest_T2-6_RM_e9.json<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;├─806_20230103162213_20230103-viditest_Ph_20230103-viditest_T2-6_RM_e9.nii.gz<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;└─DcmToNiiLog.txt<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├─FileTree.txt<br>
-&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└─sub-viditest_ses-001_BIDSConvert.log<br>
-&nbsp;&nbsp;├─DcmToNii_030123-191446.log<br>
-&nbsp;&nbsp;├─DcmToNii_040123-085253.log<br>
-&nbsp;&nbsp;├─DcmToNii_050123-170902.log<br>
-&nbsp;&nbsp;├─DcmToNii_271222-131841.log<br>
-&nbsp;&nbsp;├─DcmToNii_281222-091810.log<br>
-&nbsp;&nbsp;└─FileTree.txt
-</div>
+`QMRITools` add various other logging and file tree files to each folder that are not mandatory but can be useful and are sometimes needed for processing. The folder structure of a study (`01_sourcedata` to `05_analysis`), with an example, is described on the [files and folders](../files_folders/) page.
 
 
 {% include list-pages tag="bids" %}

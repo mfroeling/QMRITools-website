@@ -38,13 +38,15 @@ images:
 
 ## About QMRITools
 
-`QMRITools` is a comprehensive collection of tools and functions designed for processing quantitative MRI data. Developed specifically for the [Wolfram language](https://www.wolfram.com/language/){:target="_blank"}, QMRITools operates within the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/){:target="_blank"}. While it does not offer a graphical user interface (GUI), its primary objective is to enable rapid batch data processing and to facilitate the development and prototyping of new functions. At its core, the toolbox includes a variety of functions for data manipulation and restructuring.
+`QMRITools` is a comprehensive collection of tools and functions designed for processing quantitative MRI data. Developed specifically for the [Wolfram language](https://www.wolfram.com/language/){:target="_blank"}, QMRITools operates within the latest version of [Wolfram Mathematica](http://www.wolfram.com/mathematica/){:target="_blank"}. While it is mainly a scripting toolbox with only a few graphical user interfaces (GUIs), such as for segmentation and gradient design, its primary objective is to enable rapid batch data processing and to facilitate the development and prototyping of new functions. At its core, the toolbox includes a variety of functions for data manipulation and restructuring.
 
 {% include page-image im_id="app" %}
 
 ## Key Features of QMRITools
 
-[Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}- Extensive Function Library: QMRITools boasts over 450 custom functions, encompassing more than 30,000 lines of code, complete with over 750 documentation pages and demonstrations.
+[Froeling et al. 2012](https://onlinelibrary.wiley.com/doi/10.1002/jmri.23608){:target="_blank"}
+
+- Extensive Function Library: QMRITools contains about 1000 documented functions and options in 30 toolboxes, encompassing more than 45,000 lines of code, complete with over 1000 documentation pages and demonstrations.
 - Wide Range of Applications: Initially developed for analyzing DWI data of muscle, QMRITools has expanded to support cardiac analysis (including tagging and T1 mapping), Dixon reconstruction, EPG modeling and fitting, j-coupling simulations, and more.
 
 

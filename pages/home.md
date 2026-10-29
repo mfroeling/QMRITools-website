@@ -33,9 +33,10 @@ This website describes the functionality of `QMRITools`, a toolbox for analysis 
 
 <div align="center" style="background-color: #D3D3D3; border-radius: 10px; padding: 20px;" markdown="1">
   
-**Release 4.10 is live!**<br>
-New networks for [muscle segmentation](https://www.qmritools.com/seg/segmentation){:target="_blank"} now support derivatives (source, water, fat, in-phase and out-phase) from [GE and TSE Dixon scans](https://www.muscle-atlas.org/projects/progress){:target="_blank"} and DWI/DTI data (b-value up to 600) on both [2D and 3D](https://www.qmritools.com/seg/networks){:target="_blank"} data. <br>
-QMRITools can also now call [MuscleMap](https://musclemap.github.io/MuscleMap/){:target="_blank"} for segmentation. All muscle labels are [standardized](https://www.qmritools.com/seg/naming/){:target="_blank"} and grouped by anatomical function.
+**QMRITools 5 is live!**<br>
+Deep learning [muscle segmentation](https://www.qmritools.com/seg/segmentation){:target="_blank"} now has a full train-and-deploy workflow and supports Dixon derivatives (source, water, fat, in-phase and out-phase) and DWI/DTI data on both [2D and 3D](https://www.qmritools.com/seg/networks){:target="_blank"} data for multiple body regions. <br>
+New in this release are end-to-end [Muscle-BIDS](https://www.qmritools.com/bids/){:target="_blank"} processing from DICOM to per-muscle results, statistical shape models, AMARES spectroscopy fitting, and [command line scripts](https://www.qmritools.com/seg/script){:target="_blank"} for installation and segmentation. QMRITools can also call [MuscleMap](https://musclemap.github.io/MuscleMap/){:target="_blank"} for segmentation. All muscle labels are [standardized](https://www.qmritools.com/seg/naming/){:target="_blank"} and grouped by anatomical function. <br>
+**[What's new in QMRITools 5 ››](/doc/whatsnew/)** &nbsp;&nbsp; **[Manuals and scripts ››](/doc/manuals/)**
 
 [![Automated muscle segmentation](/assets/images/Muscle_segmentation.png)](https://www.qmritools.com/seg/networks){:target="_blank"}
 

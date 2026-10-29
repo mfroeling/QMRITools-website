@@ -11,7 +11,7 @@ tags:
 
 ---
 
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/ReconstructionTools.wl)
 
 A variety of function for raw MRI data reconstruction. The main goal was to

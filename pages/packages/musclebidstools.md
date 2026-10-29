@@ -11,7 +11,7 @@ tags:
 
 ---
 
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/MuscleBidsTools.wl)
 
 The first steps into making QMRITools fully [Mulsce-Bids](https://github.com/muscle-bids/muscle-bids){:target="_blank"}

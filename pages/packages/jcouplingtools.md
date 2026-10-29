@@ -17,7 +17,7 @@ tags:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/JcouplingTools.wl)
 
 A toolbox that allows simulation of NMR spectra using Hamiltonians based

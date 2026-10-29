@@ -29,6 +29,14 @@ compatibility. After the toolbox is installed correctly it should show up as a p
 
 The installation manual can be found [here](../doc/instal).
 
+### What's new
+
+A summary of the changes in QMRITools 5 can be found [here](../doc/whatsnew).
+
+### Manuals and scripts
+
+The Muscle-BIDS manual, example configurations, command line scripts for installation and segmentation, and demonstration notebooks are listed [here](../doc/manuals).
+
 ### Demonstrations
 
 The tool includes demonstration code and data which can be found [here](../doc/demo).
@@ -36,6 +44,6 @@ The tool includes demonstration code and data which can be found [here](../doc/d
 ### Documentation
 
 A notebook with all functions and their description can be found [here](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/Resources/All-Functions.nb){:target="_blank"}.
-Documentation of all functions and their options is fully integrated in the Mathematica documentation. An online version of the full documentation can be found [here](../assets/htmldoc/html/guide/qmritools){:target="_blank"}.
+Documentation of all functions and their options is fully integrated in the Mathematica documentation. An online version of the full documentation can be found [here](../assets/htmldoc/html/guide/QMRITools.html){:target="_blank"}.
 
 {% include page-image im_id="guide" %}

@@ -20,7 +20,7 @@ tags:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/RelaxometryTools.wl)
 
 A collection of tools to fit T2, T2\*, T1rho and T1 relaxometry data.

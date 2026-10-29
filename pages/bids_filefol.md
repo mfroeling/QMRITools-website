@@ -37,6 +37,38 @@ Based on the Muscle-BIDS filename and its location it should be clear what data 
 > - "sub-anonab_ses-002_stk-upper_wt2_t2.nii.gz"
 > - "sub-anonab_ses-002_stk-upper_wt2_t2.json"
 
+## Study folder
+
+A Muscle-BIDS study is one study folder (`dir`) that holds the file `config.json` and the following folders (the default names, which can be changed in the `folders` section of the config). `QMRITools` creates the ones it needs.
+
+| Folder | Contents |
+| --- | --- |
+| `01_sourcedata` | The DICOM files from the scanner, one folder per subject and session (`subject` or `subject_session`) |
+| `02_rawdata` | Converted NIfTI files with BIDS names, sorted by subject and session |
+| `03_derivatives` | Processed maps (for example fat fraction and diffusion maps), in the native space of the scan |
+| `04_merged` | Joined and registered data, segmentations and tractography results |
+| `05_analysis` | Excel sheets with the results per subject and one combined file for all subjects |
+
+After a run the study folder looks like this (for one subject `001_1` with Dixon data):
+
+```text
+<study>/
+  config.json
+  01_sourcedata/001_1/
+  02_rawdata/sub-001/ses-1/
+    raw/                    dcm2niix output
+    dix/                    sub-001_ses-1_stk-DIXON1_megre_dix_*.nii and .json
+  03_derivatives/sub-001/ses-1/dix/    fitted maps and *_check.json files
+  04_merged/sub-001/ses-1/
+    dix/                    merged maps: sub-001_ses-1_megre_dix_wat.nii
+    seg/                    sub-001_ses-1_seg_auto_megre_dix_outph.nii
+  05_analysis/
+    sub-001/ses-1/          sub-001_ses-1.xlsx
+    All_<date>.xlsx         all subjects in one table
+```
+
+More details and a complete step by step example are given in the [Muscle-BIDS manual](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md#folder-layout-after-a-run){:target="_blank"}.
+
 ## Folders
 
 To prevent ambiguity most MRI acquisitions are stored in predefined folders. Muscle-BIDS-compliant software will look in these folders for their needed raw source data. The following folders have been defined in Muscle-BIDS. QMRITools uses the following subfolders to store data in the Muscle-BIDS dataset.
@@ -46,7 +78,7 @@ To prevent ambiguity most MRI acquisitions are stored in predefined folders. Mus
 - `dix`: Dixon data.
 - `quant`: Relaxometry data (e.g. T1 or T2 mapping).
 - `seg`: Segmentation labels (e.g. manual segmentations).
-- `raw`: Unspecified non-BIDS files.
+- `raw`: Unspecified non-BIDS files (the dcm2niix output before sorting).
 
 An example of a folder structure is shown below:
 

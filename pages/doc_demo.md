@@ -17,6 +17,8 @@ If the tool has been installed as a paclet the paclet folder contains the `Demon
 
 To open the `Demonstrations.nb` open run the command `OpenDemonstrationNotebook[]` after installation and loading of the toolbox. 
 
+The folder also contains `Demo_UNet.nb`, which shows how to build and train a muscle segmentation network. For the Muscle-BIDS pipeline see the [manual and example configurations](../manuals), and for segmentation the [segmentation pages](../../seg/segmentation/).
+
 The `Demonstrations.nb` contains the following demonstrations.
 
 ### Initialization

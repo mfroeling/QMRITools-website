@@ -20,13 +20,14 @@ tags:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/SegmentationTools.wl)
 
 This toolbox provides functions to perform automated muscle segmentation.
-For this trained convolutional neural network using the UNET architecture are included.
-Currently we support the segmentations of 14 leg and 17 thigh muscles as well as
-segmentation of all lower extremity bones. [Back››](/tool/)
+For this trained convolutional neural networks using the UNET architecture are included.
+Currently we support the segmentation of the muscles and bones of the lower leg, upper leg, hip and shoulder (2D and 3D) and of the arm (3D), with standardized full body [muscle labels](/seg/naming).
+The toolbox also contains functions for data preparation, training of your own networks (including multi contrast training and transfer learning), network evaluation and quality control, and it can run [MuscleMap](https://musclemap.github.io/MuscleMap/){:target="_blank"}. The general neural network functions (building UNETs, loss layers, freezing layers) are in the [NeuralNetworkTools](/tool/neuralnetworktools/).
+See the [segmentation pages](/seg/segmentation/) for details, and [Segmentation with command line scripts](/seg/script/) to use it without Mathematica. [Back››](/tool/)
 
 {% include page-images %}
 

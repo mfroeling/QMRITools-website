@@ -13,11 +13,11 @@ header: no
 
 ### Overview
 
-The latest release of `QMRITools` can be found [here](https://github.com/mfroeling/QMRITools/releases){:target="_blank"}. For optimal performance, it is recommended to install the toolbox via the Mathematica paclet system.
+The latest release of `QMRITools` can be found [here](https://github.com/mfroeling/QMRITools/releases/latest){:target="_blank"}. QMRITools requires Wolfram Language 15.0 or newer. For optimal performance, it is recommended to install the toolbox via the Mathematica paclet system.
 
 ### Automatic installation
 
-1. Download the latest `QMRITools-x.x.x.paclet`.
+1. Download the latest `QMRITools-x.x.x.paclet` from the [release page](https://github.com/mfroeling/QMRITools/releases/latest){:target="_blank"}.
 2. Install the paclet using `PacletInstall`.
 
 `PacletInstall["xxx\\QMRITools-x.x.x.paclet"]`  
@@ -31,6 +31,14 @@ Alternatively, you can directly install it from the release page:
 1. Using the resource function `GithubInstall`
 
 `ResourceFunction["GitHubInstall"]["mfroeling", "QMRITools"]`
+
+### Installation without Mathematica
+
+QMRITools can also run from the command line with the free Wolfram Engine. The script [Install_QMRITools.wls](https://github.com/mfroeling/QMRITools/blob/master/scripts/Install_QMRITools.wls){:target="_blank"} installs the latest release (or a specific release if you give the link to the paclet):
+
+    wolframscript -f "path to file\Install_QMRITools.wls"
+
+More details, and the script to segment muscle data from the command line, are described [here](../../seg/script) and in the [manuals and scripts](../manuals) overview.
 
 ### External dependencies
 
@@ -81,11 +89,11 @@ And to open the 'Demonstrations.nb' notebook run
 
 ### Documentation
 
-An online version of the documention can be found [here](https://www.qmritools.com/assets/htmldoc/html/guide/qmritools){:target="_blank"}.
+An online version of the documention can be found [here](https://www.qmritools.com/assets/htmldoc/html/guide/QMRITools.html){:target="_blank"}.
 
 To print documentation of all functions:
 
     QMRIToolsFuncPrint[]
     QMRIToolsFuncPrint["toolbox name"]
 
-A comprehensive list of all functions and their help documentation is available in All-Functions.nb, which can also be downloaded as a [pdf file](https://github.com/mfroeling/QMRITools/releases/download/2.0/All-Functions.pdf).
+A comprehensive list of all functions and their help documentation is available in All-Functions.nb, which can also be downloaded as a [pdf file](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Resources/All-Functions.pdf).

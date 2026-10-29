@@ -23,7 +23,7 @@ tags:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/ElastixTools.wl)
 
 A wrapper that calls the Elastix registration framework (Klein et al.

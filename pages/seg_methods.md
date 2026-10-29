@@ -84,7 +84,7 @@ This page provides a comprehensive guide to the functions available in the `Segm
 
 The SegmentationTools package offers a range of functions that are organized into key categories:
 
-- **Data Visualization:** (Placeholder for functions related to visualizing data).
+- **Data Visualization:** Functions for viewing and checking data and segmentations.
 - **Data Preparation:** Functions for processing and preparing data for segmentation tasks.
 - **UNet Configuration:** Detailed tools for defining, configuring, and managing UNET architectures, including blocks and scaling features.
 - **Training Networks:** Capabilities for training neural networks from scratch or continuing training from existing models.
@@ -106,12 +106,12 @@ To work with segmentations various functions have been implemented that can spli
 For manually drawing [ITKSnap](http://www.itksnap.org/pmwiki/pmwiki.php?n=Main.HomePage) is used. Therefore `QMRITools` has various default ITKSnap label files with standardized naming, numbering and coloring.
 These files can be found in the installation folder of `QMRITools` in the folder "NeuralNetworks" and are also used for the naming and numbering in the segmentation framework.
 
-- *Bones_leg.txt* - all bones of the leg (no left or right).
-- *Muscles_leg_hip.txt* - all hip muscles (no left or right).
-- *Muscles_leg_upper.txt* - all upper leg muscles (no left or right).
-- *Muscles_leg_lower.txt* - all lower leg muscles (no left or right).
-- *Muscles_leg_all.txt* - all lower and upper leg muscles and bones (no left or right).
-- *Muscles_leg.txt* - all lower and upper leg and hip muscles and bones (left and right separate).
+- *S1_Muscles_body_side.txt* - full body muscles and bones (left and right separate). This is the default output of `SegmentData`.
+- *S2_Muscles_leg_side.txt* - lower and upper leg and hip muscles and bones (left and right separate).
+- *S3_Muscles_shoulder_side.txt* - shoulder muscles (left and right separate).
+- *S4_Muscles_arm_upper_side.txt* - upper arm muscles (left and right separate).
+- *T1_Muscles_body.txt* and *T2_Muscles_leg.txt* - the same muscles without left and right separation.
+- *N1* to *N7* - the label sets used for training the networks per region (head and neck, shoulder, torso, hip, upper leg, lower leg and arm).
 
 ## 1. Data Visualization
 
@@ -155,7 +155,7 @@ When segmentations contain mistakes or imperfections there are multiple function
 
 ``` Wolfram
 segOut = SmoothSegmentation[segIn, MaskComponents -> 1, 
-  MaskClosing -> True, MaskDilation -> 0,
+  MaskClosing -> 1, MaskDilation -> 0,
   MaskFiltKernel -> 2, SmoothIterations -> 3];
 ```
 
@@ -183,6 +183,8 @@ The UNet can be configured in various ways in both 2D and 3D in any depth needed
 - U2Net block
 - Inception Block
 
+Downscaling can be done with pooling or with strided convolutions (`RescaleMethod`). The network generation functions are part of the [NeuralNetworkTools](../../tool/neuralnetworktools/).
+
 Although there are many configuration options the recommendation is to use UNet architecture with ResNet blocks which is a right balance between reducing the weights and having enough network complexity that still easily fits the memory of most midrange GPUs for training.
 
 {% include page-image im_id="block" %}
@@ -191,7 +193,7 @@ The configuration that is used for the networks provided with `QMRITools` is as 
 
 ``` Wolfram
 MakeUnet[1, 18, {32, 112, 112},
-  NetworkArchitecture -> "UNet", MonitorCalc -> True,
+  NetworkArchitecture -> "UNet",
   DropoutRate -> 0.2, ActivationType -> "GELU", BlockType -> "ResNet",
   SettingSchedule -> Automatic,
   FeatureSchedule -> {32, 64, 128, 192, 320},
@@ -202,7 +204,7 @@ MakeUnet[1, 18, {32, 112, 112},
 
 ## 4. Training Networks
 
-If all the data is prepared the training can begin. If the folder with the train data is created with `PrepareTrainData` everything is set to go. With the following code the networks in `QMRITools` are trained. During the training a dynamic image of the training status is shown.
+If all the data is prepared the training can begin. If the folder with the train data is created with `PrepareTrainingData` everything is set to go. With the following code the networks in `QMRITools` are trained. During the training a dynamic image of the training status is shown.
 
 ``` Wolfram
 TrainSegmentationNetwork[{trainFolder, outputFolder},
@@ -220,6 +222,8 @@ TrainSegmentationNetwork[{trainFolder, outputFolder},
 ```
 
 If the training is aborted by the user of for any other reason the training can be continues at any moment by specifying the outputFolder as a start position `TrainSegmentationNetwork[{trainFolder, outputFolder}, outputFolder]`. If no training has been performed but a pre-trained network is available this can also be used to start the training from `TrainSegmentationNetwork[{trainFolder, outputFolder}, netFile]`.
+
+Training can be sped up by loading and augmenting data in parallel background kernels (`UseParallelKernels`). Networks can be trained on multiple contrasts at once: `MakeTrainData` blends co-registered datasets (for example out-phase and in-phase, or water and fat) into the channels of one dataset, which is then used as data for `PrepareTrainingData`. During training a random channel is selected for each sample, which acts as contrast augmentation. For transfer learning to a new contrast or anatomy with little labelled data, a network can first be pretrained with self-supervised masked pretraining, which needs no labels (`MaskedPretraining`) and the encoder can be frozen during further training (`FreezeEncoderLayers`, `FreezeEncoderDepth`). See the usage of these functions and options in the documentation of the [SegmentationTools guide](../../assets/htmldoc/html/guide/SegmentationTools.html){:target="_blank"}.
 
 {% include page-image im_id="train" %}
 
@@ -239,14 +243,14 @@ During the training the data is constantly augmented. The stored datasets are mu
 
 {% include page-image im_id="aug" %}
 
-Next to the default loss layers available in the Wolfram Language the toolbox also contains various loss functions dedicated to training segmentation networks. Available loss layers are DiceLossLayer, JaccardLossLayer, TverskyLossLayer, FocalLossLayer, MeanSquaredLossLayer and CrossEntropyLossLayer.
+Next to the default loss layers available in the Wolfram Language the toolbox also contains various loss functions dedicated to training segmentation networks. Available loss layers are `DiceLossLayer`, `JaccardLossLayer`, `TverskyLossLayer`, `FocalLossLayer`, `CELossLayer` and `TopKLossLayer`, next to the Wolfram Language `MeanSquaredLossLayer` and `CrossEntropyLossLayer`. These layers are part of the [NeuralNetworkTools](../../tool/neuralnetworktools/).
 
 {% include page-image im_id="loss" %}
 
 ## 5. Using Networks
 
 To use the integrated segmentation pipeline the function `SegmentData` should be used. However if custom networks are to be used the function `ApplySegmentationNetwork` is available.
-For `SegmentData` a few custom scripts are implemented, which currently only are "Legs", "LegBones" but more will be coming soon. For custom networks any network can be used with any data.
+`SegmentData` can segment the full body or a specific region, for example `SegmentData[data, "UpperLegsBody"]`, see the [segmentation page](../segmentation) for the available regions. For custom networks any network can be used with any data.
 
 ``` Wolfram
 ApplySegmentationNetwork[data, network]
@@ -256,7 +260,7 @@ ApplySegmentationNetwork[folder, network]
 
 This will apply the segmentation network, which can be a `NetGraph` or a file name, to the given dataset list of datasets or all datasets in the folder.
 
-For the evaluation of segmentation networks multiple similarity measures have been implemented. The main ones are `DiceSimilarity`, `JaccardSimilarity`, and `surfaceDistance`.
+For the evaluation of segmentation networks multiple similarity measures have been implemented. The main ones are `DiceSimilarity`, `JaccardSimilarity`, and `SurfaceDistance`. Two segmentations can be compared with `CompareSegmentations`.
 The latter can calculate, amongst others, the mean, max, and 95% Hausdorff distance.
 During optimization of the networks in QMRITools multiple architectures have been tested. Below you can see the performance for the dice similarity metic for the various generations of our segmentation networks, that become better every generation.
 

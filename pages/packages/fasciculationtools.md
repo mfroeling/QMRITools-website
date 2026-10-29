@@ -2,14 +2,14 @@
 
 layout: page
 title: FasciculationTools
-permalink: /tool/fasciculationfools/
+permalink: /tool/fasciculationtools/
 
 header: no
 
 images:
   - image_name: 'muscle fasculation detection.gif'
-    image_title: 'Detection of muscle fasculations on diffusion weighted muscle data with data normalization.'
-    image_alt: 'muscle fasculation detection'  
+    image_title: 'Detection of muscle fasciculations on diffusion weighted muscle data with data normalization.'
+    image_alt: 'muscle fasciculation detection'  
 
 tags: 
   - packages
@@ -17,14 +17,14 @@ tags:
 ---
 
 [`Demonstrations.nb` ››](/doc/demo/) <br>
-[Guide page ››](/assets/htmldoc/html/guide/{{page.title}})
+[Guide page ››](/assets/htmldoc/html/guide/{{page.title}}.html){:target="_blank"}
 [Code on Github ››](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/Kernel/FasciculationTools.wl)
 
-Methods for detecting muscle fasculations from diffusion data. When muscles
+Methods for detecting muscle fasciculations from diffusion data. When muscles
 contract it causes signal dropouts in diffusion weighted data (Steidle 2015).
-The method for detecting muscle fasculations using optimized measurement protocols
+The method for detecting muscle fasciculations using optimized measurement protocols
 has been named MU-MRI (Heskamp 2021). Here methods allow to detect these
-fasculations from any type of diffusion weighted data. [Back››](/tool/)
+fasciculations from any type of diffusion weighted data. [Back››](/tool/)
 
 {% include page-images %}
 
