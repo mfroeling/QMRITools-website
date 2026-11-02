@@ -1,4 +1,6 @@
 @charset "utf-8";
+@use "sass:list";
+@use "sass:string";
 @use "sass:math";
 // Foundation by ZURB
 // foundation.zurb.com
@@ -14,9 +16,9 @@ $modules: () !default;
   // Import from global scope
   $modules: $modules !global;
   // Check if a module is already on the list
-  $module_index: index($modules, $name);
+  $module_index: list.index($modules, $name);
   @if (($module_index == null) or ($module_index == false)) {
-    $modules: append($modules, $name) !global;
+    $modules: list.append($modules, $name) !global;
     @content;
   }
 }
@@ -29,17 +31,17 @@ $modules: () !default;
 // RANGES
 // We use these functions to define ranges for various things, like media queries.
 @function lower-bound($range){
-  @if length($range) <= 0 {
+  @if list.length($range) <= 0 {
     @return 0;
   }
-  @return nth($range,1);
+  @return list.nth($range,1);
 }
 
 @function upper-bound($range) {
-  @if length($range) < 2 {
+  @if list.length($range) < 2 {
     @return 999999999999;
   }
-  @return nth($range, 2);
+  @return list.nth($range, 2);
 }
 
 // STRIP UNIT
@@ -76,12 +78,12 @@ $modules: () !default;
     @each $type in $types {
         @if $type == textarea {
             @if $selector == input {
-              $return: append($return, unquote('#{$type}'), comma)
+              $return: list.append($return, string.unquote('#{$type}'), comma)
             } @else {
-              $return: append($return, unquote('#{$type}#{$selector}'), comma)
+              $return: list.append($return, string.unquote('#{$type}#{$selector}'), comma)
             }
         } @else {
-            $return: append($return, unquote('#{$selector}[type="#{$type}"]'), comma)
+            $return: list.append($return, string.unquote('#{$selector}[type="#{$type}"]'), comma)
         }
     }
 
@@ -124,13 +126,13 @@ $modules: () !default;
 //   rem-calc((16px, 32px, 48), 8px);
 
 @function rem-calc($values, $base-value: $rem-base) {
-  $max: length($values);
+  $max: list.length($values);
 
-  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+  @if $max == 1 { @return convert-to-rem(list.nth($values, 1), $base-value); }
 
   $remValues: ();
   @for $i from 1 through $max {
-    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+    $remValues: list.append($remValues, convert-to-rem(list.nth($values, $i), $base-value));
   }
   @return $remValues;
 }
