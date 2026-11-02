@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mfroeling/my-sites-theme.git
-  revision: c16f33751637eb402d07febe4266a0cf9f38600c
+  revision: 5ada44588869e36cad0039203e42a10280428b5e
   specs:
     my-sites-theme (0.1.0)
       jekyll (>= 4.0, < 5.0)
