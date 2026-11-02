@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /seg/networks
+permalink: /seg/networks/
 
 title: "The available segmentation networks"
 subheadline: "Multi contrast, 2D and 3D"
@@ -46,7 +46,7 @@ Before segmentation, one classification network (`Body_Pos_Side`) determines the
 | Torso | not yet available | not yet available | `N3_Torso` |
 | Head and neck | not yet available | not yet available | `N1_HeadNeck` |
 
-The output of the networks is converted to standardized [muscle labels](../naming). The full body label set (`S1`) is used by default, and older label sets for the legs and hip (`S2`), shoulder (`S3`) and upper arm (`S4`) are available. How to use the networks is described [here](../segmentation), and how to train your own networks [here](../methods).
+The output of the networks is converted to standardized [muscle labels](/seg/naming/). The full body label set (`S1`) is used by default, and older label sets for the legs and hip (`S2`), shoulder (`S3`) and upper arm (`S4`) are available. How to use the networks is described [here](/seg/segmentation/), and how to train your own networks [here](/seg/methods/).
 
 {% include list-pages tag="segment" %}
 

@@ -38,7 +38,7 @@ QMRITools can also run from the command line with the free Wolfram Engine. The s
 
     wolframscript -f "path to file\Install_QMRITools.wls"
 
-More details, and the script to segment muscle data from the command line, are described [here](../../seg/script) and in the [manuals and scripts](../manuals) overview.
+More details, and the script to segment muscle data from the command line, are described [here](/seg/script/) and in the [manuals and scripts](/doc/manuals/) overview.
 
 ### External dependencies
 
@@ -89,7 +89,7 @@ And to open the 'Demonstrations.nb' notebook run
 
 ### Documentation
 
-An online version of the documention can be found [here](https://www.qmritools.com/assets/htmldoc/html/guide/QMRITools.html){:target="_blank"}.
+An online version of the documention can be found [here](/assets/htmldoc/html/guide/QMRITools.html){:target="_blank"}.
 
 To print documentation of all functions:
 

@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines
              processing tools related to quantitative MRI and spectroscopy of muscle, heart and nerves.
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Website by <a href="https://www.QMRITools.com">Martijn Froeling</a> &#128170; <br> Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> &#128170;</p>'
+credits: '<p>Website by <a href="https://www.QMRITools.com">Martijn Froeling</a> &#128170; <br> Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></p>'
 
 # Main author of the website
 # See > authors.yml
@@ -46,6 +46,9 @@ urlimg: '/assets/images/'
 
 # Logo size is 600x80 pixels
 logo: "logo.png"
+
+# Shared theme (https://github.com/mfroeling/my-sites-theme)
+theme: my-sites-theme
 
 # Plugins
 plugins:
@@ -75,13 +78,6 @@ language: 'en'
 
 # Used › default.html front-matter and compress.html
 # Options › http://jch.penibelst.de
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  profile: false
-  ignore:
-    envs: [development]
 
 
 #
@@ -183,12 +179,6 @@ socialmedia:
 #   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
 #
 
-sass:
-    sass_dir : _sass
-    style    : compressed
-    # Fail the build on these Sass deprecations (already fixed), so they do not creep back in.
-    # @import is still allowed (warning only), see docs: https://sass-lang.com/d/import
-    fatal_deprecations: [global-builtin, color-functions, slash-div]
 
 
 #       ___                __      __  _
@@ -201,3 +191,28 @@ sass:
 # used in _includes/footer_scripts
 
 google_analytics_tracking_id: G-9NE9434KNY
+
+# Theme settings. Colours override the defaults in assets/css/site.css (leave a key out to keep the default).
+# custom_css: /assets/css/custom.css   # optional extra stylesheet for site specific CSS
+# og_image: share.png                  # optional image (in urlimg folder) for link previews
+theme_colors:
+  accent: "#008cba"
+  accent_dark: "#006687"
+  bar: "#1f2933"
+  banner_from: "#006687"
+  banner_to: "#0b3a4d"
+
+# Structured data for the home page (schema.org), shown to search engines. Leave out for no extra data.
+jsonld:
+  "@context": https://schema.org
+  "@type": SoftwareSourceCode
+  name: QMRITools
+  description: A Wolfram Language toolbox for the analysis of quantitative MRI and MR spectroscopy data of muscle, nerve and heart.
+  url: https://www.qmritools.com/
+  codeRepository: https://github.com/mfroeling/QMRITools
+  programmingLanguage: Wolfram Language
+  license: https://opensource.org/licenses/BSD-3-Clause
+  author:
+    "@type": Person
+    name: Martijn Froeling
+    sameAs: https://orcid.org/0000-0003-3841-0497

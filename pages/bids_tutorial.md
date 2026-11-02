@@ -28,7 +28,7 @@ This page is a short overview of how to run the Muscle-BIDS pipeline. The full [
 
 The pipeline has seven steps in three groups: BIDS conversion (steps 1 and 2), data processing (steps 3 to 6) and analysis (step 7).
 
-The challenge behind automated processing is actually understanding the data and knowing how to handle it. Here there are many choices and not all can be derived from the data itself. The approach in `QMRITools` to handle this is by specifying these choices in a `config.json` file, see the [config file](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md#the-config-file){:target="_blank"} chapter of the manual. Example config files for different studies are listed under [manuals and scripts](../../doc/manuals/).
+The challenge behind automated processing is actually understanding the data and knowing how to handle it. Here there are many choices and not all can be derived from the data itself. The approach in `QMRITools` to handle this is by specifying these choices in a `config.json` file, see the [config file](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md#the-config-file){:target="_blank"} chapter of the manual. Example config files for different studies are listed under [manuals and scripts](/doc/manuals/).
 
 ## Starting a project
 

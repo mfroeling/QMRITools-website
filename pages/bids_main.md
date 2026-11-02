@@ -31,7 +31,7 @@ QMRITools contains a complete Muscle-BIDS pipeline that takes a study from DICOM
 
 Automated processing only works if all input data is well-curated and defined. The general rule of garbage in is garbage out applies here as well. A config file (`config.json`) for a study describes which data to expect and in which form. Based on the data described the correct (pre-)processing is selected and performed. If expected data is not found the processing step is skipped, and if data is not described in the config it is ignored. The config file can be general for the entire study folder, or can be defined on a per subject or session level to make exceptions.
 
-**Muscle BIDS manual:** a complete manual with a step by step example, all config options and troubleshooting is available [on GitHub](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md){:target="_blank"} (also as [pdf](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.pdf){:target="_blank"}). Example config files for different studies are listed under [manuals and scripts](../doc/manuals).
+**Muscle BIDS manual:** a complete manual with a step by step example, all config options and troubleshooting is available [on GitHub](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.md){:target="_blank"} (also as [pdf](https://github.com/mfroeling/QMRITools/blob/master/QMRITools/BIDS%20Example/BIDS-config.pdf){:target="_blank"}). Example config files for different studies are listed under [manuals and scripts](/doc/manuals/).
 
 The pipeline runs in the following steps, each step writes its results in its own folder and already processed data is skipped:
 
@@ -39,7 +39,7 @@ The pipeline runs in the following steps, each step writes its results in its ow
 > 2. `MuscleBidsConvert`: collecting, renaming and moving the data to Muscle-BIDS compliant files and folders, based on the config file.
 > 3. `MuscleBidsProcess`: processing of the data, such as Dixon reconstruction, IVIM-DTI preprocessing and modelling, and water T2 mapping with EPG modelling.
 > 4. `MuscleBidsMerge`: merging of multiple stacks into one dataset.
-> 5. `MuscleBidsSegment`: automated muscle segmentation, see [automated muscle segmentation](../seg/segmentation/).
+> 5. `MuscleBidsSegment`: automated muscle segmentation, see [automated muscle segmentation](/seg/segmentation/).
 > 6. `MuscleBidsTractography`: whole volume muscle fiber tractography.
 > 7. `MuscleBidsAnalysis`: extraction of the qMRI parameters per muscle, and of tract based and muscle architecture parameters, to Excel files for statistical analysis.
 
@@ -59,7 +59,7 @@ To reduce the number of files, where appropriate, 4D NIfTI datasets are used ins
 
 A Muscle-BIDS dataset must contain the source data, which in this case is the unprocessed nifty data with its headers. Each unique subject has its folder. Within the subject folder, there are session folders for when the same subject is scanned on multiple occasions. Within the session folder, each datatype is again stored in its subfolders.
 
-`QMRITools` add various other logging and file tree files to each folder that are not mandatory but can be useful and are sometimes needed for processing. The folder structure of a study (`01_sourcedata` to `05_analysis`), with an example, is described on the [files and folders](../files_folders/) page.
+`QMRITools` add various other logging and file tree files to each folder that are not mandatory but can be useful and are sometimes needed for processing. The folder structure of a study (`01_sourcedata` to `05_analysis`), with an example, is described on the [files and folders](/bids/files_folders/) page.
 
 
 {% include list-pages tag="bids" %}

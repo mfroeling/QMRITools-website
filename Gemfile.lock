@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/mfroeling/my-sites-theme.git
+  revision: c16f33751637eb402d07febe4266a0cf9f38600c
+  specs:
+    my-sites-theme (0.1.0)
+      jekyll (>= 4.0, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,6 +102,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-gist
+  my-sites-theme!
   wdm
 
 BUNDLED WITH

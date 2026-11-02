@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /about/licence
+permalink: /about/licence/
 
 title: "QMRITools licence"
 
