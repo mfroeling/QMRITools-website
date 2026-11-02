@@ -4,8 +4,9 @@
 {% include _head.html %}
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 {% unless page.skip_boilerplate %}{% include _navigation.html %}{% endunless %}
-<main>
+<main id="main">
 {{ content }}
 </main>
 {% unless page.skip_boilerplate %}{% include _footer.html %}{% endunless %}

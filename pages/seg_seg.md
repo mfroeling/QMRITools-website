@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /seg/segmentation
+permalink: /seg/segmentation/
 
 title: "Automated muscle segmentation"
 subheadline: "AI muscle segmentation of the leg, hip, shoulder and arm using CNN"
@@ -48,14 +48,14 @@ tags:
 
 ---
 
-The `SegmentData` function within the `QMRITools` package automatically segments the muscles of the lower extremities, hip and shoulder, and (3D only) the arm, and can segment several of these regions in one dataset. This function is an essential tool in the [SegmentationTools](https://www.qmritools.com/tool/segmentationtools) package, leveraging neural networks for precise muscle segmentation. It is the segmentation engine used in the [Muscle-BIDS](../../bids/) pipeline.
+The `SegmentData` function within the `QMRITools` package automatically segments the muscles of the lower extremities, hip and shoulder, and (3D only) the arm, and can segment several of these regions in one dataset. This function is an essential tool in the [SegmentationTools](/tool/segmentationtools/) package, leveraging neural networks for precise muscle segmentation. It is the segmentation engine used in the [Muscle-BIDS](/bids/) pipeline.
 
 ## Function Overview for muscle segmentation
 
 `SegmentData` works in two steps:
 
 - **Side and location recognition:** one classification network (`Body_Pos_Side`) identifies the body location (lower leg, knee, upper leg, hip, torso, shoulder, head and neck) and the side (left/right) of the data. If the data contains multiple locations, it is cut in regions with overlap.
-- **Muscle segmentation:** for each region a dedicated network, available in 2D and 3D, performs the segmentation (shoulder, hip, upper leg and lower leg; the arm network is 3D only). The results are merged into one segmentation with standardized [muscle labels](../naming). An overview is given on the [networks page](../networks).
+- **Muscle segmentation:** for each region a dedicated network, available in 2D and 3D, performs the segmentation (shoulder, hip, upper leg and lower leg; the arm network is 3D only). The results are merged into one segmentation with standardized [muscle labels](/seg/naming/). An overview is given on the [networks page](/seg/networks/).
 
 {% include page-image im_id="flow" %}
 
@@ -70,20 +70,20 @@ With the `what` argument the region is selected, e.g. `"Body"` (default), `"Legs
 
 ## Architecture and Training
 
-The segmentation networks are based on the UNET architecture with ResNet convolution blocks that contain short skip connections. Other architectures (UNET++, strided-convolution downscaling) and block types are available. The networks are built with the [NeuralNetworkTools](../../tool/neuralnetworktools/). The block diagrams of the encoding and decoding blocks used in our UNET architecture are shown below.
+The segmentation networks are based on the UNET architecture with ResNet convolution blocks that contain short skip connections. Other architectures (UNET++, strided-convolution downscaling) and block types are available. The networks are built with the [NeuralNetworkTools](/tool/neuralnetworktools/). The block diagrams of the encoding and decoding blocks used in our UNET architecture are shown below.
 
 {% include page-image im_id="unet" %}
 
 ## Data Augmentation and Training
 
-For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Patches are selected after data augmentation. The default training settings are a batch size of 2, a patch size of 32x96x96 voxels and 256 patches seen per training round, see the [methods page](../methods) for details and for training your own network. Below are examples of 36 different patches with augmentation selected from the same dataset. The resulting segmentation from both networks are displayed. The training for the upper leg is shown below.
+For training, data is heavily augmented using various techniques such as scale, skew, rotation, translation, noise, sharpen, contrast, and brightness adjustments. Patches are selected after data augmentation. The default training settings are a batch size of 2, a patch size of 32x96x96 voxels and 256 patches seen per training round, see the [methods page](/seg/methods/) for details and for training your own network. Below are examples of 36 different patches with augmentation selected from the same dataset. The resulting segmentation from both networks are displayed. The training for the upper leg is shown below.
 
 {% include page-image im_id="augmentation" %}
 {% include page-image im_id="train" %}
 
 ## Using SegmentData as a Script
 
-No Mathematica license? Not a problem it also works without, using the free Wolfram Engine and the script `Segment_Nii.wls`, which also lets you select the region and the GPU. How this works you can read [in the script tutorial](https://www.qmritools.com/seg/script){:target="_blank"}. The README in the [scripts folder](https://github.com/mfroeling/QMRITools/tree/master/scripts){:target="_blank"} on GitHub has the same instructions.
+No Mathematica license? Not a problem it also works without, using the free Wolfram Engine and the script `Segment_Nii.wls`, which also lets you select the region and the GPU. How this works you can read [in the script tutorial](/seg/script/){:target="_blank"}. The README in the [scripts folder](https://github.com/mfroeling/QMRITools/tree/master/scripts){:target="_blank"} on GitHub has the same instructions.
 
 {% include page-image im_id="exp" %}
 

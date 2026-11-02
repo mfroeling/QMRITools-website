@@ -1,5 +1,7 @@
 {% assign url = site.baseurl | prepend: site.url %}
-{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+{% comment %} Description: explicit meta_description, else the first words of the page, else teaser, else the site description. {% endcomment %}
+{% assign excerpt = page.content | markdownify | replace: '</', ' </' | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | strip | truncate: 160 %}
+{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif excerpt.size > 60 %}{{ excerpt }}{% elsif page.teaser %}{{ page.teaser }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 {% assign description = description | strip_html | strip_newlines | strip | escape %}
 {% capture title %}{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
 {% assign title = title | strip_html | strip_newlines | strip | escape %}
@@ -14,8 +16,13 @@
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="website">
+{% if site.og_image %}<meta property="og:image" content="{{ url }}{{ site.urlimg }}{{ site.og_image }}">{% endif %}
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css">
 {% include _favicon.html %}
+{% if site.theme_colors %}<style>:root { {% for c in site.theme_colors %}--{{ c[0] | replace: '_', '-' }}: {{ c[1] }}; {% endfor %}}</style>{% endif %}
+{% if site.custom_css %}<link rel="stylesheet" href="{{ site.baseurl }}{{ site.custom_css }}">{% endif %}
 {% if site.google_analytics_tracking_id %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_tracking_id }}"></script>
 <script>

@@ -188,3 +188,13 @@ socialmedia:
 # used in _includes/footer_scripts
 
 google_analytics_tracking_id: G-9NE9434KNY
+
+# Theme settings. Colours override the defaults in assets/css/site.css (leave a key out to keep the default).
+# custom_css: /assets/css/custom.css   # optional extra stylesheet for site specific CSS
+# og_image: share.png                  # optional image (in urlimg folder) for link previews
+theme_colors:
+  accent: "#008cba"
+  accent_dark: "#006687"
+  bar: "#1f2933"
+  banner_from: "#006687"
+  banner_to: "#0b3a4d"

@@ -15,27 +15,27 @@ QMRITools 5 requires Wolfram Language 15.0 or newer. The complete list of change
 
 ### New toolboxes
 
-- **[NeuralNetworkTools](../../tool/neuralnetworktools/)**: building blocks for neural networks, loss layers, transfer learning and inspection of trained networks.
-- **[ShapeTools](../../tool/shapetools/)**: statistical shape models and meshes of segmented structures.
-- **[AmaresTools](../../tool/amarestools/)**: AMARES fitting of MR spectroscopy data.
+- **[NeuralNetworkTools](/tool/neuralnetworktools/)**: building blocks for neural networks, loss layers, transfer learning and inspection of trained networks.
+- **[ShapeTools](/tool/shapetools/)**: statistical shape models and meshes of segmented structures.
+- **[AmaresTools](/tool/amarestools/)**: AMARES fitting of MR spectroscopy data.
 
 ### Muscle segmentation
 
 - Complete train-and-deploy workflow with new architectures (UNET++, strided convolutions), training on multiple contrasts, masked pretraining and encoder freezing for transfer learning, and parallel data loading.
 - More anatomy, including the shoulder, and merging of segmentations.
 - Segmentation confidence maps and QC plots.
-- Command line [scripts](../manuals/) for installing QMRITools and segmenting data without Mathematica.
+- Command line [scripts](/doc/manuals/) for installing QMRITools and segmenting data without Mathematica.
 
-See [automated muscle segmentation](../../seg/segmentation/).
+See [automated muscle segmentation](/seg/segmentation/).
 
 ### Muscle-BIDS
 
 - An end-to-end pipeline from DICOM to per-muscle results, including T2 mapping, tractography and `MuscleBidsAnalysis`.
 - Better DICOM conversion with multiple sessions and repeated scans, combining of config files and batch processing.
 - Integration with [MuscleMap](https://musclemap.github.io/MuscleMap/){:target="_blank"}.
-- A new [manual](../manuals/) with example configurations.
+- A new [manual](/doc/manuals/) with example configurations.
 
-See [Muscle-BIDS](../../bids/).
+See [Muscle-BIDS](/bids/).
 
 ### Diffusion, tractography and fasciculation
 
@@ -51,4 +51,4 @@ See [Muscle-BIDS](../../bids/).
 
 ### Plotting
 
-- Dark mode, `LoessPlot` and Crameri scientific colormaps ([ScientificColorData](../../tool/scientificcolordata/)).
+- Dark mode, `LoessPlot` and Crameri scientific colormaps ([ScientificColorData](/tool/scientificcolordata/)).

@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /seg/methods
+permalink: /seg/methods/
 
 title: "How to use the muscle segmentation framework"
 subheadline: "A step by step manual for using our muscle segmentation"
@@ -183,7 +183,7 @@ The UNet can be configured in various ways in both 2D and 3D in any depth needed
 - U2Net block
 - Inception Block
 
-Downscaling can be done with pooling or with strided convolutions (`RescaleMethod`). The network generation functions are part of the [NeuralNetworkTools](../../tool/neuralnetworktools/).
+Downscaling can be done with pooling or with strided convolutions (`RescaleMethod`). The network generation functions are part of the [NeuralNetworkTools](/tool/neuralnetworktools/).
 
 Although there are many configuration options the recommendation is to use UNet architecture with ResNet blocks which is a right balance between reducing the weights and having enough network complexity that still easily fits the memory of most midrange GPUs for training.
 
@@ -223,7 +223,7 @@ TrainSegmentationNetwork[{trainFolder, outputFolder},
 
 If the training is aborted by the user of for any other reason the training can be continues at any moment by specifying the outputFolder as a start position `TrainSegmentationNetwork[{trainFolder, outputFolder}, outputFolder]`. If no training has been performed but a pre-trained network is available this can also be used to start the training from `TrainSegmentationNetwork[{trainFolder, outputFolder}, netFile]`.
 
-Training can be sped up by loading and augmenting data in parallel background kernels (`UseParallelKernels`). Networks can be trained on multiple contrasts at once: `MakeTrainData` blends co-registered datasets (for example out-phase and in-phase, or water and fat) into the channels of one dataset, which is then used as data for `PrepareTrainingData`. During training a random channel is selected for each sample, which acts as contrast augmentation. For transfer learning to a new contrast or anatomy with little labelled data, a network can first be pretrained with self-supervised masked pretraining, which needs no labels (`MaskedPretraining`) and the encoder can be frozen during further training (`FreezeEncoderLayers`, `FreezeEncoderDepth`). See the usage of these functions and options in the documentation of the [SegmentationTools guide](../../assets/htmldoc/html/guide/SegmentationTools.html){:target="_blank"}.
+Training can be sped up by loading and augmenting data in parallel background kernels (`UseParallelKernels`). Networks can be trained on multiple contrasts at once: `MakeTrainData` blends co-registered datasets (for example out-phase and in-phase, or water and fat) into the channels of one dataset, which is then used as data for `PrepareTrainingData`. During training a random channel is selected for each sample, which acts as contrast augmentation. For transfer learning to a new contrast or anatomy with little labelled data, a network can first be pretrained with self-supervised masked pretraining, which needs no labels (`MaskedPretraining`) and the encoder can be frozen during further training (`FreezeEncoderLayers`, `FreezeEncoderDepth`). See the usage of these functions and options in the documentation of the [SegmentationTools guide](/assets/htmldoc/html/guide/SegmentationTools.html){:target="_blank"}.
 
 {% include page-image im_id="train" %}
 
@@ -243,14 +243,14 @@ During the training the data is constantly augmented. The stored datasets are mu
 
 {% include page-image im_id="aug" %}
 
-Next to the default loss layers available in the Wolfram Language the toolbox also contains various loss functions dedicated to training segmentation networks. Available loss layers are `DiceLossLayer`, `JaccardLossLayer`, `TverskyLossLayer`, `FocalLossLayer`, `CELossLayer` and `TopKLossLayer`, next to the Wolfram Language `MeanSquaredLossLayer` and `CrossEntropyLossLayer`. These layers are part of the [NeuralNetworkTools](../../tool/neuralnetworktools/).
+Next to the default loss layers available in the Wolfram Language the toolbox also contains various loss functions dedicated to training segmentation networks. Available loss layers are `DiceLossLayer`, `JaccardLossLayer`, `TverskyLossLayer`, `FocalLossLayer`, `CELossLayer` and `TopKLossLayer`, next to the Wolfram Language `MeanSquaredLossLayer` and `CrossEntropyLossLayer`. These layers are part of the [NeuralNetworkTools](/tool/neuralnetworktools/).
 
 {% include page-image im_id="loss" %}
 
 ## 5. Using Networks
 
 To use the integrated segmentation pipeline the function `SegmentData` should be used. However if custom networks are to be used the function `ApplySegmentationNetwork` is available.
-`SegmentData` can segment the full body or a specific region, for example `SegmentData[data, "UpperLegsBody"]`, see the [segmentation page](../segmentation) for the available regions. For custom networks any network can be used with any data.
+`SegmentData` can segment the full body or a specific region, for example `SegmentData[data, "UpperLegsBody"]`, see the [segmentation page](/seg/segmentation/) for the available regions. For custom networks any network can be used with any data.
 
 ``` Wolfram
 ApplySegmentationNetwork[data, network]

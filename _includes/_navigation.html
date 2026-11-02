@@ -2,14 +2,20 @@
   Top bar from _data/navigation.yml. One dropdown level, pure CSS (hover / keyboard focus).
   Links starting with http or ending in .html open in a new tab.
 {% endcomment %}
-<header class="topbar">
-  <a class="logo" href="{{ site.baseurl }}/" title="{{ site.title }} – {{ site.slogan }}">
-    <img src="{{ site.baseurl }}{{ site.urlimg }}{{ site.logo }}" alt="{{ site.title }}">
-  </a>
-  <nav aria-label="Main">
+<header>
+  <div class="brand">
+    <a class="logo" href="{{ site.baseurl }}/" title="{{ site.title }} – {{ site.slogan }}">
+      <img src="{{ site.baseurl }}{{ site.urlimg }}{{ site.logo }}" alt="{{ site.title }}">
+    </a>
+  </div>
+  <nav class="topbar" aria-label="Main">
     <ul class="menu">
+      {% assign here = page.url | append: '/' | replace: '//', '/' %}
       {% for link in site.data.navigation %}
-      <li>
+      {% assign active = false %}
+      {% if link.url == here %}{% assign active = true %}{% elsif link.url != '/' and here contains link.url %}{% assign active = true %}{% endif %}
+      {% for sub in link.dropdown %}{% if sub.url == here %}{% assign active = true %}{% endif %}{% endfor %}
+      <li{% if active %} class="active"{% endif %}>
         {% include _nav-link.html link=link %}
         {% if link.dropdown %}
         <ul class="dropdown">

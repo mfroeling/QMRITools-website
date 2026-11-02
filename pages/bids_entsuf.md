@@ -66,7 +66,7 @@ For each data folder, the data that can be stored there is defined by its suffix
 
 ## Suffixes: Data processing
 
-When the raw input data is processed its outputs are stored in the derived data folder (by default `03_derivatives`, and `04_merged` for merged data and segmentations, see [files and folders](../files_folders/)). Within the derived data folder a new Muscle-BIDS structure is created identical to that of the source data.
+When the raw input data is processed its outputs are stored in the derived data folder (by default `03_derivatives`, and `04_merged` for merged data and segmentations, see [files and folders](/bids/files_folders/)). Within the derived data folder a new Muscle-BIDS structure is created identical to that of the source data.
 
 `QMRITools` uses suffixes to indicate what data is generated. The following suffixes are used:
 

@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /about/bio
+permalink: /about/bio/
 
 title: "Biography"
 subheadline: "Yes, it's all about me..."
@@ -21,7 +21,7 @@ I am an Assistant Professor at the University Medical Center Utrecht, in the [Pr
 
 My PhD at Eindhoven University of Technology and Amsterdam UMC introduced me to [diffusion tensor imaging of skeletal muscle](https://research.tue.nl/en/publications/diffusion-tensor-imaging-of-human-skeletal-muscle-from-simulation), establishing a processing framework the field adopted as its reference standard. Since joining UMC Utrecht, my research has expanded to hardware design, multinuclear imaging, and clinical translation, with muscle as the consistent thread.
 
-I develop and maintain [QMRITools](https://github.com/mfroeling/QMRITools), an open-source Mathematica toolbox for [quantitative MRI analysis](https://www.qmritools.com/), and I am building the [Motion Study](https://muscle-atlas.org/projects/motion/), a cross-sectional database of 160 healthy subjects with whole-leg quantitative MRI, force measurements, and lifestyle data.
+I develop and maintain [QMRITools](https://github.com/mfroeling/QMRITools), an open-source Mathematica toolbox for [quantitative MRI analysis](/), and I am building the [Motion Study](https://muscle-atlas.org/projects/motion/), a cross-sectional database of 160 healthy subjects with whole-leg quantitative MRI, force measurements, and lifestyle data.
 
 Looking ahead, I aim to link muscle architecture, dynamics, and metabolism in one integrated framework. This requires MRI methods that capture muscle function under real physiological conditions, to transform how muscle disease, injury, and performance are understood and monitored.
 

@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /seg/naming
+permalink: /seg/naming/
 
 title: "Muscle segmentation naming"
 subheadline: "Standardized in QMRITools"
@@ -20,7 +20,7 @@ tags:
 
 ---
 
-All muscles and bones that are segmented with `QMRITools` have a standardized name and number. The labels are stored as [ITK-SNAP](http://www.itksnap.org/){:target="_blank"} label description files in the folder `NeuralNetworks` of the toolbox ([GitHub](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/NeuralNetworks){:target="_blank"}), and are used for manual segmentation, training of the networks and the output of `SegmentData`. The same names and numbers are used in the [Muscle-BIDS](../../bids/) pipeline.
+All muscles and bones that are segmented with `QMRITools` have a standardized name and number. The labels are stored as [ITK-SNAP](http://www.itksnap.org/){:target="_blank"} label description files in the folder `NeuralNetworks` of the toolbox ([GitHub](https://github.com/mfroeling/QMRITools/tree/master/QMRITools/NeuralNetworks){:target="_blank"}), and are used for manual segmentation, training of the networks and the output of `SegmentData`. The same names and numbers are used in the [Muscle-BIDS](/bids/) pipeline.
 
 ## Label files
 
@@ -62,4 +62,4 @@ MuscleNameToLabel[{"Soleus Left"}]
 MuscleLabelToName[{501, 502}, labelFile]
 ```
 
-Which output label set is used is selected with the `what` argument of `SegmentData`, see the [segmentation page](../segmentation).
+Which output label set is used is selected with the `what` argument of `SegmentData`, see the [segmentation page](/seg/segmentation/).

@@ -1,7 +1,7 @@
 ---
 
 layout: page
-permalink: /seg/script
+permalink: /seg/script/
 
 title: "Script based segmentation without mathematica"
 subheadline: "Using the wolfram engine"

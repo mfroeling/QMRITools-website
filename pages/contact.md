@@ -34,7 +34,7 @@ Leave your message here and we will get in contact as soon as possible.
   <p class="form-row">
     <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
     <textarea name="message" id="contact-form-message"
-      aria-labelledby="contact-form-message-label" class="form-textarea" rows="2" required></textarea>
+      aria-labelledby="contact-form-message-label" class="form-textarea" rows="6" required></textarea>
   </p>
   <p class="form-row"><div data-netlify-recaptcha="true" class="form-row"></div></p>
   <p class="hidden" style="visibility: hidden; height: 0;">
