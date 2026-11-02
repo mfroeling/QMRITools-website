@@ -1,1 +1,0 @@
-{% assign l = include.link %}{% assign external = false %}{% if l.url contains 'http' or l.url contains '.html' %}{% assign external = true %}{% endif %}<a href="{% unless l.url contains 'http' %}{{ site.baseurl }}{% endunless %}{{ l.url }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ l.title | escape }}</a>

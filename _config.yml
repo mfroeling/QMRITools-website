@@ -47,6 +47,9 @@ urlimg: '/assets/images/'
 # Logo size is 600x80 pixels
 logo: "logo.png"
 
+# Shared theme (https://github.com/mfroeling/my-sites-theme)
+theme: my-sites-theme
+
 # Plugins
 plugins:
     - jekyll-gist
