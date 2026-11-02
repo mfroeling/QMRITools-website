@@ -50,9 +50,6 @@ logo: "logo.png"
 # Shared theme (https://github.com/mfroeling/my-sites-theme)
 theme: my-sites-theme
 
-# Plugins
-plugins:
-    - jekyll-gist
 
 
 # Theme works best with Kramdown (using the table of contents function)
