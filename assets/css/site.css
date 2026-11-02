@@ -36,7 +36,8 @@ blockquote { margin: 1em 0; padding: .1em 1em; border-left: 4px solid var(--line
 .content, .widgets, .callforaction { max-width: var(--width); margin: 0 auto; padding: 0 1rem; }
 main { padding: 2rem 0 3rem; min-height: 60vh; }
 .subheadline { margin: 0; color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: .85rem; letter-spacing: .05em; }
-.teaser { font-size: 1.15rem; color: var(--muted); margin-top: 0; }
+article > header h1 { margin-bottom: .1em; }
+.teaser { margin: 0 0 1.5rem; font-size: 1rem; font-style: italic; color: var(--muted); }
 
 /* banner behind the logo, then the menu bar with dropdowns (CSS only, hover and keyboard focus) */
 .brand { background: linear-gradient(120deg, var(--banner-from), var(--banner-to) 70%); padding: .75rem 1rem; }

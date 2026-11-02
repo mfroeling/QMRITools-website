@@ -23,6 +23,12 @@
 {% include _favicon.html %}
 {% if site.theme_colors %}<style>:root { {% for c in site.theme_colors %}--{{ c[0] | replace: '_', '-' }}: {{ c[1] }}; {% endfor %}}</style>{% endif %}
 {% if site.custom_css %}<link rel="stylesheet" href="{{ site.baseurl }}{{ site.custom_css }}">{% endif %}
+{% comment %} Structured data (schema.org JSON-LD). Site specific extras go in _config.yml under jsonld. {% endcomment %}
+{% assign ld_desc = site.description | strip_newlines | strip %}
+<script type="application/ld+json">
+{% if page.url == '/' %}{"@context":"https://schema.org","@type":"WebSite","name":{{ site.title | jsonify }},"url":{{ url | append: '/' | jsonify }},"description":{{ ld_desc | jsonify }}}{% else %}{"@context":"https://schema.org","@type":"WebPage","name":{{ title | jsonify }},"description":{{ description | jsonify }},"url":{{ url | append: page.url | jsonify }},"isPartOf":{"@type":"WebSite","name":{{ site.title | jsonify }},"url":{{ url | append: '/' | jsonify }}}}{% endif %}
+</script>
+{% if site.jsonld and page.url == '/' %}<script type="application/ld+json">{{ site.jsonld | jsonify }}</script>{% endif %}
 {% if site.google_analytics_tracking_id %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_tracking_id }}"></script>
 <script>
