@@ -1,18 +1,10 @@
 {% comment %}
-*   
-*   Example: {% include page-image im_id=''%}
-*   
+  Show the image(s) in page.images with a matching image_id, linked to the full size.
+  Example: {% include page-image im_id='flow' %}
 {% endcomment %}
-
-{% assign id = include.im_id %}
-{% assign img = page.images | where: "image_id", id %}
-
-<div>
-{% for item in img %}
-	<p align="center">
-	<a href = "{{ site.urlimg }}{{ item.image_name }}" target="_blank">
-		<img src = "{{ site.urlimg }}{{ item.image_name }}" {% if item.image_title %}title = "{{ item.image_title }}"{% endif %} {% if item.image_alt %}alt = "{{ item.image_alt }}"{% endif %} width="90%"/>
-	</a>
-	</p><br>
+{% assign items = page.images | where: "image_id", include.im_id %}
+{% for item in items %}
+<figure class="page-image">
+  <a href="{{ site.urlimg }}{{ item.image_name }}" target="_blank" rel="noopener"><img src="{{ site.urlimg }}{{ item.image_name }}"{% if item.image_title %} title="{{ item.image_title }}"{% endif %}{% if item.image_alt %} alt="{{ item.image_alt }}"{% endif %}></a>
+</figure>
 {% endfor %}
-</div>

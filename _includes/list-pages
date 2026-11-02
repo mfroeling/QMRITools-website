@@ -1,17 +1,8 @@
 {% comment %}
-*   
-*   Example: {% include list-pages tag='tools' %}
-*   
+  List all pages that have the given tag. Example: {% include list-pages tag='packages' %}
 {% endcomment %}
-
-{% assign tagin = include.tag %}
-
-<ul class="side-nav">
-{% for page in site.pages %}
-{% for tag in page.tags %}
-{% if tag == tagin %}
-	<li><a href="{{ site.url }}{{ page.url }}">{{page.title}}</a></li>
-{% endif %}
-{% endfor %}
-{% endfor %}
+<ul class="page-list">
+{% for p in site.pages %}{% if p.tags contains include.tag %}
+  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+{% endif %}{% endfor %}
 </ul>

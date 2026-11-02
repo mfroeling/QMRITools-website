@@ -1,0 +1,72 @@
+/* QMRITools site theme: one plain CSS file, no build step.
+   Change the look by editing the variables below. */
+:root {
+  --accent: #008cba;
+  --accent-dark: #006687;
+  --text: #222;
+  --muted: #666;
+  --bg: #fff;
+  --bg-soft: #f4f6f8;
+  --bar: #1f2933;
+  --bar-text: #fff;
+  --line: #d9dee3;
+  --width: 62rem;
+  --font: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, Consolas, Menlo, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 var(--font); color: var(--text); background: var(--bg); }
+a { color: var(--accent); }
+a:hover { color: var(--accent-dark); }
+img { max-width: 100%; height: auto; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.6em 0 .5em; }
+h1 { margin-top: 0; font-size: 2rem; }
+code { font-family: var(--mono); font-size: .9em; background: var(--bg-soft); padding: .1em .3em; border-radius: 3px; }
+pre { background: var(--bg-soft); padding: 1em; overflow-x: auto; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; }
+th, td { border: 1px solid var(--line); padding: .4em .7em; text-align: left; vertical-align: top; }
+th { background: var(--bg-soft); }
+blockquote { margin: 1em 0; padding: .1em 1em; border-left: 4px solid var(--line); color: var(--muted); }
+
+/* layout */
+.content, .widgets, .callforaction { max-width: var(--width); margin: 0 auto; padding: 0 1rem; }
+main { padding: 2rem 0 3rem; min-height: 60vh; }
+.subheadline { margin: 0; color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: .85rem; letter-spacing: .05em; }
+.teaser { font-size: 1.15rem; color: var(--muted); margin-top: 0; }
+
+/* top bar with dropdowns (CSS only, hover and keyboard focus) */
+.topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: .5rem 1rem; background: var(--bar); }
+.topbar .logo img { display: block; height: 2.4rem; width: auto; background: #fff; border-radius: 4px; padding: 2px 6px; }
+.menu, .dropdown { list-style: none; margin: 0; padding: 0; }
+.menu { display: flex; flex-wrap: wrap; gap: .25rem; }
+.menu > li { position: relative; }
+.menu a { display: block; padding: .5rem .8rem; color: var(--bar-text); text-decoration: none; }
+.menu > li:hover > a, .menu > li:focus-within > a { background: rgba(255, 255, 255, .15); }
+.dropdown { display: none; position: absolute; z-index: 10; left: 0; top: 100%; min-width: 17rem; background: var(--bar); box-shadow: 0 4px 10px rgba(0, 0, 0, .3); }
+.menu li:hover > .dropdown, .menu li:focus-within > .dropdown { display: block; }
+.dropdown a:hover, .dropdown a:focus { background: rgba(255, 255, 255, .15); }
+
+/* images and lists */
+.page-image { margin: 1.5rem 0; text-align: center; }
+.page-image img { max-width: 90%; }
+.page-list { padding-left: 1.2rem; }
+
+/* front page */
+.widgets { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem; margin-top: 2rem; }
+.widget h2 { margin-top: .5rem; font-size: 1.25rem; }
+.widget h2 a { text-decoration: none; }
+.callforaction { text-align: center; margin-top: 2rem; }
+.button { display: inline-block; padding: .6em 1.4em; background: var(--accent); color: #fff; border-radius: 4px; text-decoration: none; }
+.button:hover { background: var(--accent-dark); color: #fff; }
+
+/* footer */
+.footer { background: var(--bar); color: #cbd2d9; font-size: .9rem; }
+.footer a { color: #fff; }
+.footer h5 { margin: 0 0 .5rem; color: #fff; font-size: 1rem; }
+.footer ul { list-style: none; margin: 0; padding: 0; }
+.footer-columns { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; max-width: var(--width); margin: 0 auto; padding: 2rem 1rem; }
+.subfooter { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; max-width: var(--width); margin: 0 auto; padding: 1rem; border-top: 1px solid rgba(255, 255, 255, .2); }
+.subfooter p { margin: 0; }
+.social { display: flex; gap: 1rem; }

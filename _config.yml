@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines
              processing tools related to quantitative MRI and spectroscopy of muscle, heart and nerves.
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Website by <a href="https://www.QMRITools.com">Martijn Froeling</a> &#128170; <br> Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> &#128170;</p>'
+credits: '<p>Website by <a href="https://www.QMRITools.com">Martijn Froeling</a> &#128170; <br> Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></p>'
 
 # Main author of the website
 # See > authors.yml
@@ -75,13 +75,6 @@ language: 'en'
 
 # Used › default.html front-matter and compress.html
 # Options › http://jch.penibelst.de
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  profile: false
-  ignore:
-    envs: [development]
 
 
 #
@@ -183,9 +176,6 @@ socialmedia:
 #   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
 #
 
-sass:
-    sass_dir : _sass
-    style    : compressed
 
 
 #       ___                __      __  _

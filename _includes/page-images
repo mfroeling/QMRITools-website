@@ -1,13 +1,8 @@
 {% comment %}
-*   
-*   Example: {% include page-images %}
-*   
+  Show all images in page.images. Example: {% include page-images %}
 {% endcomment %}
-
-<div>
 {% for item in page.images %}
-	<p align="center">
-	<img src = "{{ site.urlimg }}{{ item.image_name }}" {% if item.image_title %}title = "{{ item.image_title }}"{% endif %} {% if item.image_alt %}alt = "{{ item.image_alt }}"{% endif %} width="90%"/>
-	</p><br>
+<figure class="page-image">
+  <img src="{{ site.urlimg }}{{ item.image_name }}"{% if item.image_title %} title="{{ item.image_title }}"{% endif %}{% if item.image_alt %} alt="{{ item.image_alt }}"{% endif %}>
+</figure>
 {% endfor %}
-</div>
