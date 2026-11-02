@@ -186,6 +186,9 @@ socialmedia:
 sass:
     sass_dir : _sass
     style    : compressed
+    # Fail the build on these Sass deprecations (already fixed), so they do not creep back in.
+    # @import is still allowed (warning only), see docs: https://sass-lang.com/d/import
+    fatal_deprecations: [global-builtin, color-functions, slash-div]
 
 
 #       ___                __      __  _
